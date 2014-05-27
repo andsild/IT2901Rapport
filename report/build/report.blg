@@ -1,11 +1,16 @@
-This is BibTeX, Version 0.99d (TeX Live 2013)
+This is BibTeX, Version 0.99d (TeX Live 2012/Debian)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
-The top-level auxiliary file: build/report.aux
-I found no \citation commands---while reading file build/report.aux
-I found no \bibstyle command---while reading file build/report.aux
+The top-level auxiliary file: ./build/report.aux
+A level-1 auxiliary file: src/front.aux
+A level-1 auxiliary file: src/00.Preamble.aux
+A level-1 auxiliary file: src/chapter01.aux
+A level-1 auxiliary file: src/chapter02.aux
+A level-1 auxiliary file: src/07.Design.aux
+I found no \citation commands---while reading file ./build/report.aux
+I found no \bibstyle command---while reading file ./build/report.aux
 You've used 0 entries,
             0 wiz_defined-function locations,
-            84 strings with 518 characters,
+            89 strings with 605 characters,
 and the built_in function-call counts, 0 in all, are:
 = -- 0
 > -- 0

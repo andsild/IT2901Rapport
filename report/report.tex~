@@ -13,7 +13,7 @@
 \fi
 
 \begin{document}
-\include{src/front} % This is the titlepage
+\include{front} % This is the titlepage
 \setcounter{page}{0}
 \pagenumbering{roman}
 %\include{preface}
