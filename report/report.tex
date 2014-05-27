@@ -1,0 +1,17 @@
+\newcount\draft\draft=0 % set to 0 for "publication"
+
+\documentclass{article}
+
+\ifnum\draft=1
+% include the revision number in a footer
+\usepackage{draftfooter}
+\fi
+
+\begin{document}
+
+\input{src/00.Preamble} 
+
+\bibliographystyle{abbrv}
+\bibliography{./src/bib/examplebib} % this comment will be ignored
+% \bibliography{commented}
+\end{document}

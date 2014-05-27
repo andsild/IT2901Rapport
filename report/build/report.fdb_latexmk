@@ -1,0 +1,27 @@
+# Fdb version 3
+["bibtex build/report"] 1401179943 "build/report.aux" "build/report.bbl" "build/report" 1401179943
+  "./src/bib/examplebib.bib" 1401179211 163 bb9dc0effc833445ceae091d1eca1f79 ""
+  "/usr/share/texmf-dist/bibtex/bst/base/abbrv.bst" 1292289607 20329 b5fed53e10044d0f8112183785c759b1 ""
+  "build/report.aux" 1401179943 195 8d860fdf9be3465cd9780eef6a906c57 ""
+  "build/report.bcf" 0 -1 0 ""
+  (generated)
+  "build/report.bbl"
+["pdflatex"] 1401179943 "report.tex" "build/report.pdf" "build/report" 1401179943
+  "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
+  "/usr/share/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1136768653 1324 c910af8c371558dc20f2d7822f66fe64 ""
+  "/usr/share/texmf-dist/fonts/tfm/public/cm/cmr12.tfm" 1136768653 1288 655e228510b4c2a1abe905c368440826 ""
+  "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1248133631 32080 340ef9bf63678554ee606688e7b5339d ""
+  "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1248133631 35752 024fb6c41858982481f6968b5fc26508 ""
+  "/usr/share/texmf-dist/tex/latex/base/article.cls" 1254151887 20571 b8bd218bf2e18b4f5817ee643cd9c515 ""
+  "/usr/share/texmf-dist/tex/latex/base/size10.clo" 1254151887 9042 248dfba326a1b8733d6bb8e0a3ac1e49 ""
+  "/usr/share/texmf-dist/web2c/texmf.cnf" 1396607229 31599 08e0d8b961f90182df27d336ebeae572 ""
+  "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1393011417 1072710 c091807e57312da91899c0831f44ae26 ""
+  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1393011413 3835899 62dd4246191fb9a7c7f13b8925c7f7b6 ""
+  "build/report.aux" 1401179943 195 8d860fdf9be3465cd9780eef6a906c57 ""
+  "build/report.bbl" 1401179943 49 0eba253fc001332e731e8aba3f23127b "bibtex build/report"
+  "report.tex" 1401179396 345 8635b053937f31253a98faffb497c541 ""
+  "src/00.Preamble.tex" 1401177875 2592 c3f2c4f38e99d62f1a26ad2994e1cb7c ""
+  (generated)
+  "build/report.pdf"
+  "build/report.aux"
+  "build/report.log"
