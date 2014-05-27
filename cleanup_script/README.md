@@ -1,2 +1,1 @@
-/cleanup.sh <openoffice-konvertert fil > output.tex
-====================================================
+** /cleanup.sh <openoffice-konvertert fil > output.tex **
