@@ -1,4 +1,4 @@
 ### To execute:
 ```bash
-/cleanup.sh <openoffice-konvertert fil > output.tex
+/cleanup.sh <OO-texfil> > output.tex
 ```
