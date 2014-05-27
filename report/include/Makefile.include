@@ -2,6 +2,7 @@ LATEX=pdflatex
 LATEXMK=latexmk
 LATEXOPT=-file-line-error
 
+BUILD_DIR="./build/"
 
 MAIN=report
 SOURCES=$(MAIN).tex Makefile 
@@ -13,7 +14,7 @@ all:    $(MAIN).pdf
 	touch .refresh
 
 $(MAIN).pdf: $(MAIN).tex .refresh $(SOURCES) # $(FIGURES)
-	$(LATEXMK) -jobname=build/report -pdf $(MAIN).tex
+	$(LATEXMK) -jobname=${BUILD_DIR}report -pdf $(MAIN).tex
 
 force:
 	touch .refresh
@@ -21,7 +22,10 @@ force:
 
 .PHONY: clean force all
 
+view:
+	xdg-open ${BUILD_DIR}${MAIN}.pdf
+
 clean:
-	$(LATEXMK) -C $(MAIN).tex
+	$(LATEXMK) -C $(MAIN).tex -outdir=${BUILD_DIR}
 	rm -f $(MAIN).pdfsync
 	rm -rf *~ *.tmp

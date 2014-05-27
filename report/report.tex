@@ -1,6 +1,10 @@
 \newcount\draft\draft=0 % set to 0 for "publication"
+\nonstopmode % ignore compiler errors
 
 \documentclass{article}
+
+\usepackage{graphicx}
+\usepackage{hyperref}
 
 \ifnum\draft=1
 % include the revision number in a footer
@@ -10,8 +14,11 @@
 \begin{document}
 
 \input{src/00.Preamble} 
+\pagebreak
+\input{src/07.Design}
+\pagebreak
 
-\bibliographystyle{abbrv}
+% \bibliographystyle{abbrv}
 \bibliography{./src/bib/examplebib} % this comment will be ignored
 % \bibliography{commented}
 \end{document}
