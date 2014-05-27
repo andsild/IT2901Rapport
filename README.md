@@ -1,8 +1,9 @@
 IT2901Rapport
 =============
 
-cleanup.sh: ta en openoffice-konvertert fil og clean den opp en del
-man legger til filer i "src", så reffer man dem fra "report.tex"
+cleanup.sh: ta en openoffice-konvertert fil og clean den opp (fjern nesten all bæsj) \n
+
+man legger til latex-filer i src, så reffer man dem fra "report.tex"
 
 make clean && make
 
