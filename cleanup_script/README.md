@@ -1,1 +1,4 @@
-## /cleanup.sh <openoffice-konvertert fil > output.tex
+## 
+```bash
+/cleanup.sh <openoffice-konvertert fil > output.tex
+```
