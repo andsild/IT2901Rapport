@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.2.21)  27 MAY 2014 12:33
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.2.21)  27 MAY 2014 15:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -238,272 +238,673 @@ LaTeX Info: Redefining \nameref on input line 14.
 
  (./src/00.Preamble.tex [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]) (./src/07.Design.tex [2]
-<./src/figure/a07Design-img1.png, id=31, 1284.8pt x 770.88pt>
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]) (./src/01.Introduction.te
+x [2]
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 2.
+
+! Undefined control sequence.
+l.19 ...mportant that students have met the gi\ven
+                                                   deadlines and documented
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.24 ...six members. All the members of the gr\oup
+                                                   are
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.65 engi\neering
+                 , like programming, system architecture, human-machine
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[3]
+! Undefined control sequence.
+l.84 Various prizes are gi\ven
+                               to the teams based on their performance. There
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[4]
+! Undefined control sequence.
+l.122 .... Throughout the process they have gi\ven
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+) [5] (./src/07.Design.tex
+! Missing \endcsname inserted.
+<to be read again> 
+                   \global 
+l.18 ...3.7638in]{./src/figure/a07Design-img1.png}
+                                                  
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 18.
+(/usr/share/texmf-dist/tex/latex/base/omlcmr.fd
+File: omlcmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 18.
+
+! Extra \endcsname.
+<argument> ...text@encoding \@curr@enc \endcsname 
+                                                  
+l.18 ...3.7638in]{./src/figure/a07Design-img1.png}
+                                                  
+I'm ignoring this, since I wasn't doing a \csname.
+
+! Extra \endcsname.
+<recently read> \endcsname 
+                           
+l.18 ...3.7638in]{./src/figure/a07Design-img1.png}
+                                                  
+I'm ignoring this, since I wasn't doing a \csname.
+
+
+! Package keyval Error: heigh\t  undefined.
+
+See the keyval package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.18 ...3.7638in]{./src/figure/a07Design-img1.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+<./src/figure/a07Design-img1.png, id=76, 1284.8pt x 770.88pt>
 File: ./src/figure/a07Design-img1.png Graphic file (type png)
 
 <use ./src/figure/a07Design-img1.png>
-Package pdftex.def Info: ./src/figure/a07Design-img1.png used on input line 16.
+Package pdftex.def Info: ./src/figure/a07Design-img1.png used on input line 18.
 
-(pdftex.def)             Requested size: 453.70566pt x 271.9999pt.
+(pdftex.def)             Requested size: 453.71104pt x 272.22339pt.
 
-Overfull \hbox (123.70566pt too wide) in paragraph at lines 16--17
-[][] 
+Overfull \hbox (111.48883pt too wide) in paragraph at lines 18--19
+[]\OML/cmm/m/it/10 ^^?[] 
  []
 
-<./src/figure/a07Design-img2.png, id=32, 1479.5275pt x 409.53pt>
+! Missing \endcsname inserted.
+<to be read again> 
+                   \unhbox 
+l.31 ...1.7362in]{./src/figure/a07Design-img2.png}
+                                                  
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Extra \endcsname.
+<argument> ...text@encoding \@curr@enc \endcsname 
+                                                  
+l.31 ...1.7362in]{./src/figure/a07Design-img2.png}
+                                                  
+I'm ignoring this, since I wasn't doing a \csname.
+
+! Extra \endcsname.
+<recently read> \endcsname 
+                           
+l.31 ...1.7362in]{./src/figure/a07Design-img2.png}
+                                                  
+I'm ignoring this, since I wasn't doing a \csname.
+
+
+! Package keyval Error: heigh\t  undefined.
+
+See the keyval package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.31 ...1.7362in]{./src/figure/a07Design-img2.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+<./src/figure/a07Design-img2.png, id=77, 1479.5275pt x 409.53pt>
 File: ./src/figure/a07Design-img2.png Graphic file (type png)
 
 <use ./src/figure/a07Design-img2.png>
-Package pdftex.def Info: ./src/figure/a07Design-img2.png used on input line 30.
+Package pdftex.def Info: ./src/figure/a07Design-img2.png used on input line 31.
 
-(pdftex.def)             Requested size: 453.7047pt x 125.47198pt.
+(pdftex.def)             Requested size: 453.71104pt x 125.58447pt.
 
-Overfull \hbox (123.7047pt too wide) in paragraph at lines 30--31
-[][] 
+Overfull \hbox (111.48883pt too wide) in paragraph at lines 31--32
+[]\OML/cmm/m/it/10 ^^?[] 
  []
 
-[3 <./src/figure/a07Design-img1.png>]
-<./src/figure/a07Design-img3.png, id=39, 1371.1225pt x 770.88pt>
+[6 <./src/figure/a07Design-img1.png>]
+
+! LaTeX Error: Command \textquotedbl unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.35 ...ockups we tried a couple of {\textquotedbl
+                                                  }out
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Command \textquotedbl unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.36 of the box{\textquotedbl
+                             } approaches to our designs, but none of them
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Undefined control sequence.
+l.47 because ge\tting
+                      used to a new website can take time, so keeping the
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \unhbox 
+l.71 ...3.2602in]{./src/figure/a07Design-img3.png}
+                                                  
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Extra \endcsname.
+<argument> ...text@encoding \@curr@enc \endcsname 
+                                                  
+l.71 ...3.2602in]{./src/figure/a07Design-img3.png}
+                                                  
+I'm ignoring this, since I wasn't doing a \csname.
+
+! Extra \endcsname.
+<recently read> \endcsname 
+                           
+l.71 ...3.2602in]{./src/figure/a07Design-img3.png}
+                                                  
+I'm ignoring this, since I wasn't doing a \csname.
+
+
+! Package keyval Error: heigh\t  undefined.
+
+See the keyval package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.71 ...3.2602in]{./src/figure/a07Design-img3.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+<./src/figure/a07Design-img3.png, id=86, 1371.1225pt x 770.88pt>
 File: ./src/figure/a07Design-img3.png Graphic file (type png)
 
 <use ./src/figure/a07Design-img3.png>
-Package pdftex.def Info: ./src/figure/a07Design-img3.png used on input line 76.
+Package pdftex.def Info: ./src/figure/a07Design-img3.png used on input line 71.
 
-(pdftex.def)             Requested size: 464.50175pt x 235.6062pt.
+(pdftex.def)             Requested size: 464.49376pt x 261.15472pt.
 
-Overfull \hbox (119.50175pt too wide) in paragraph at lines 76--77
-[][] 
+Overfull \hbox (122.27155pt too wide) in paragraph at lines 71--72
+[]\OML/cmm/m/it/10 ^^?[] 
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[4 <./src/figure/a07Design-img2.png>] [5 <./src/figure/a07Design-img3.png>]
-! Too many }'s.
-l.98 User interface}
-                    
-You've closed more groups than you opened.
-Such booboos are generally harmless, so keep going.
+[7 <./src/figure/a07Design-img2.png>]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 100.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 100.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 100.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 100.
 
-! Too many }'s.
-l.109 \ }
-         
-You've closed more groups than you opened.
-Such booboos are generally harmless, so keep going.
-
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 117.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 117.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 117.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 117.
-
-Underfull \hbox (badness 10000) in paragraph at lines 117--117
+Underfull \hbox (badness 10000) in paragraph at lines 100--100
 [][][] \OT1/cmr/m/n/8 http://research.microsoft.com/en-us/um/people/cutrell/chi
 09-buschercutrellmorris-
  []
 
+[8 <./src/figure/a07Design-img3.png>]
+! Undefined control sequence.
+l.114 ...ors. This is consistent with the ge\stalt
+                                                   law of
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
-Underfull \hbox (badness 10000) in paragraph at lines 139--139
-[][][] \OT1/cmr/m/n/8 http://www.clevelandconsultinggroup.com/articles/emergenc
-e-gestalt-approach-to-
- []
+! Missing \endcsname inserted.
+<to be read again> 
+                   \unhbox 
+l.121 ....5972in]{./src/figure/a07Design-img4.png}
+                                                  
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
 
-<./src/figure/a07Design-img4.png, id=53, 209.78375pt x 57.21375pt>
+! Extra \endcsname.
+<argument> ...text@encoding \@curr@enc \endcsname 
+                                                  
+l.121 ....5972in]{./src/figure/a07Design-img4.png}
+                                                  
+I'm ignoring this, since I wasn't doing a \csname.
+
+! Extra \endcsname.
+<recently read> \endcsname 
+                           
+l.121 ....5972in]{./src/figure/a07Design-img4.png}
+                                                  
+I'm ignoring this, since I wasn't doing a \csname.
+
+
+! Package keyval Error: heigh\t  undefined.
+
+See the keyval package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.121 ....5972in]{./src/figure/a07Design-img4.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+<./src/figure/a07Design-img4.png, id=105, 209.78375pt x 57.21375pt>
 File: ./src/figure/a07Design-img4.png Graphic file (type png)
 
 <use ./src/figure/a07Design-img4.png>
-Package pdftex.def Info: ./src/figure/a07Design-img4.png used on input line 147
+Package pdftex.def Info: ./src/figure/a07Design-img4.png used on input line 121
 .
-(pdftex.def)             Requested size: 157.59988pt x 43.16074pt.
+(pdftex.def)             Requested size: 157.59879pt x 42.98178pt.
 
-<./src/figure/a07Design-img5.png, id=54, 65.24374pt x 31.11626pt>
+! Missing \endcsname inserted.
+<to be read again> 
+                   \unhbox 
+l.125 ...t=0.5in]{./src/figure/a07Design-img5.png}
+                                                  
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Extra \endcsname.
+<argument> ...text@encoding \@curr@enc \endcsname 
+                                                  
+l.125 ...t=0.5in]{./src/figure/a07Design-img5.png}
+                                                  
+I'm ignoring this, since I wasn't doing a \csname.
+
+! Extra \endcsname.
+<recently read> \endcsname 
+                           
+l.125 ...t=0.5in]{./src/figure/a07Design-img5.png}
+                                                  
+I'm ignoring this, since I wasn't doing a \csname.
+
+
+! Package keyval Error: heigh\t  undefined.
+
+See the keyval package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.125 ...t=0.5in]{./src/figure/a07Design-img5.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+<./src/figure/a07Design-img5.png, id=106, 65.24374pt x 31.11626pt>
 File: ./src/figure/a07Design-img5.png Graphic file (type png)
 
 <use ./src/figure/a07Design-img5.png>
-Package pdftex.def Info: ./src/figure/a07Design-img5.png used on input line 148
+Package pdftex.def Info: ./src/figure/a07Design-img5.png used on input line 125
 .
-(pdftex.def)             Requested size: 77.27962pt x 36.13806pt.
+(pdftex.def)             Requested size: 77.2787pt x 36.85643pt.
 
-<./src/figure/a07Design-img6.png, id=55, 90.3375pt x 31.11626pt>
+! Missing \endcsname inserted.
+<to be read again> 
+                   \unhbox 
+l.129 ....4028in]{./src/figure/a07Design-img6.png}
+                                                  
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Extra \endcsname.
+<argument> ...text@encoding \@curr@enc \endcsname 
+                                                  
+l.129 ....4028in]{./src/figure/a07Design-img6.png}
+                                                  
+I'm ignoring this, since I wasn't doing a \csname.
+
+! Extra \endcsname.
+<recently read> \endcsname 
+                           
+l.129 ....4028in]{./src/figure/a07Design-img6.png}
+                                                  
+I'm ignoring this, since I wasn't doing a \csname.
+
+
+! Package keyval Error: heigh\t  undefined.
+
+See the keyval package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.129 ....4028in]{./src/figure/a07Design-img6.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+<./src/figure/a07Design-img6.png, id=107, 90.3375pt x 31.11626pt>
 File: ./src/figure/a07Design-img6.png Graphic file (type png)
 
 <use ./src/figure/a07Design-img6.png>
-Package pdftex.def Info: ./src/figure/a07Design-img6.png used on input line 149
+Package pdftex.def Info: ./src/figure/a07Design-img6.png used on input line 129
 .
-(pdftex.def)             Requested size: 83.31412pt x 29.1111pt.
+(pdftex.def)             Requested size: 83.31296pt x 28.69708pt.
 
-! Undefined control sequence.
-l.160 first of Shneiderman{\textquotesingle
-                                           }s eight golden rules of interface
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+! Missing \endcsname inserted.
+<to be read again> 
+                   \unhbox 
+l.147 ....5417in]{./src/figure/a07Design-img7.png}
+                                                  
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
 
-! Undefined control sequence.
-l.167 Schneiderman{\textquotesingle
-                                   }s fifth and sixth rule, for easy reversal
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+! Extra \endcsname.
+<argument> ...text@encoding \@curr@enc \endcsname 
+                                                  
+l.147 ....5417in]{./src/figure/a07Design-img7.png}
+                                                  
+I'm ignoring this, since I wasn't doing a \csname.
 
-<./src/figure/a07Design-img7.png, id=57, 699.61375pt x 274.02374pt>
+! Extra \endcsname.
+<recently read> \endcsname 
+                           
+l.147 ....5417in]{./src/figure/a07Design-img7.png}
+                                                  
+I'm ignoring this, since I wasn't doing a \csname.
+
+
+! Package keyval Error: heigh\t  undefined.
+
+See the keyval package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.147 ....5417in]{./src/figure/a07Design-img7.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+<./src/figure/a07Design-img7.png, id=109, 699.61375pt x 274.02374pt>
 File: ./src/figure/a07Design-img7.png Graphic file (type png)
 
 <use ./src/figure/a07Design-img7.png>
-Package pdftex.def Info: ./src/figure/a07Design-img7.png used on input line 172
+Package pdftex.def Info: ./src/figure/a07Design-img7.png used on input line 147
 .
-(pdftex.def)             Requested size: 469.76361pt x 183.69112pt.
+(pdftex.def)             Requested size: 469.75499pt x 183.99635pt.
 
-Overfull \hbox (139.76361pt too wide) in paragraph at lines 172--173
-[][] 
+Overfull \hbox (127.53278pt too wide) in paragraph at lines 147--148
+[]\OML/cmm/m/it/10 ^^?[] 
  []
 
-[6
 
- <./src/figure/a07Design-img4.png> <./src/figure/a07Design-img5.png> <./src/fig
-ure/a07Design-img6.png>]
-! Undefined control sequence.
-l.194 Shneiderman{\textquotesingle
-                                  }s eight rule, because they will have
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<./src/figure/a07Design-img8.png, id=71, 1336.995pt x 629.35126pt>
+
+! LaTeX Error: Command \ng unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.155 ...ep in a website. It could be challengi\ng
+                                                   to balance
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[9 <./src/figure/a07Design-img4.png> <./src/figure/a07Design-img5.png> <./src/f
+igure/a07Design-img6.png>]
+! Missing \endcsname inserted.
+<to be read again> 
+                   \unhbox 
+l.170 ....0555in]{./src/figure/a07Design-img8.png}
+                                                  
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Extra \endcsname.
+<argument> ...text@encoding \@curr@enc \endcsname 
+                                                  
+l.170 ....0555in]{./src/figure/a07Design-img8.png}
+                                                  
+I'm ignoring this, since I wasn't doing a \csname.
+
+! Extra \endcsname.
+<recently read> \endcsname 
+                           
+l.170 ....0555in]{./src/figure/a07Design-img8.png}
+                                                  
+I'm ignoring this, since I wasn't doing a \csname.
+
+
+! Package keyval Error: heigh\t  undefined.
+
+See the keyval package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.170 ....0555in]{./src/figure/a07Design-img8.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+<./src/figure/a07Design-img8.png, id=121, 1336.995pt x 629.35126pt>
 File: ./src/figure/a07Design-img8.png Graphic file (type png)
 
 <use ./src/figure/a07Design-img8.png>
-Package pdftex.def Info: ./src/figure/a07Design-img8.png used on input line 206
+Package pdftex.def Info: ./src/figure/a07Design-img8.png used on input line 170
 .
-(pdftex.def)             Requested size: 469.75053pt x 220.81401pt.
+(pdftex.def)             Requested size: 469.75499pt x 221.1213pt.
 
-Overfull \hbox (139.75053pt too wide) in paragraph at lines 206--207
-[][] 
+Overfull \hbox (127.53278pt too wide) in paragraph at lines 170--171
+[]\OML/cmm/m/it/10 ^^?[] 
  []
 
-[7 <./src/figure/a07Design-img7.png>]
-! Too many }'s.
-l.224 ..., drag {\textquoteleft}n drop and more. }
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[10 <./src/figure/a07Design-img7.png>]
+! Missing \endcsname inserted.
+<to be read again> 
+                   \unhbox 
+l.207 ....0417in]{./src/figure/a07Design-img9.png}
                                                   
-You've closed more groups than you opened.
-Such booboos are generally harmless, so keep going.
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Extra \endcsname.
+<argument> ...text@encoding \@curr@enc \endcsname 
+                                                  
+l.207 ....0417in]{./src/figure/a07Design-img9.png}
+                                                  
+I'm ignoring this, since I wasn't doing a \csname.
+
+! Extra \endcsname.
+<recently read> \endcsname 
+                           
+l.207 ....0417in]{./src/figure/a07Design-img9.png}
+                                                  
+I'm ignoring this, since I wasn't doing a \csname.
+
+
+! Package keyval Error: heigh\t  undefined.
+
+See the keyval package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.207 ....0417in]{./src/figure/a07Design-img9.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+<./src/figure/a07Design-img9.png, id=128, 1342.01375pt x 629.35126pt>
+File: ./src/figure/a07Design-img9.png Graphic file (type png)
+
+<use ./src/figure/a07Design-img9.png>
+Package pdftex.def Info: ./src/figure/a07Design-img9.png used on input line 207
+.
+(pdftex.def)             Requested size: 469.75499pt x 220.29544pt.
+
+Overfull \hbox (127.53278pt too wide) in paragraph at lines 207--208
+[]\OML/cmm/m/it/10 ^^?[] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 ! Undefined control sequence.
-l.235 Shneiderman{\textquotesingle
-                                  }s eight rule
+l.222 statistics on each problem for the gi\ven
+                                                contest. This was added so
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-! Too many }'s.
-l.252 ...with the other parts of the admin site. }
+! Missing \endcsname inserted.
+<to be read again> 
+                   \unhbox 
+l.232 ...8752in]{./src/figure/a07Design-img10.png}
                                                   
-You've closed more groups than you opened.
-Such booboos are generally harmless, so keep going.
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
 
-<./src/figure/a07Design-img9.png, id=78, 1342.01375pt x 629.35126pt>
-File: ./src/figure/a07Design-img9.png Graphic file (type png)
+! Extra \endcsname.
+<argument> ...text@encoding \@curr@enc \endcsname 
+                                                  
+l.232 ...8752in]{./src/figure/a07Design-img10.png}
+                                                  
+I'm ignoring this, since I wasn't doing a \csname.
 
-<use ./src/figure/a07Design-img9.png>
-Package pdftex.def Info: ./src/figure/a07Design-img9.png used on input line 263
-.
-(pdftex.def)             Requested size: 469.7528pt x 219.82489pt.
+! Extra \endcsname.
+<recently read> \endcsname 
+                           
+l.232 ...8752in]{./src/figure/a07Design-img10.png}
+                                                  
+I'm ignoring this, since I wasn't doing a \csname.
 
-Overfull \hbox (139.7528pt too wide) in paragraph at lines 263--264
-[][] 
- []
 
-[8 <./src/figure/a07Design-img8.png>]
-! Too many }'s.
-l.278 that team. }
-                  
-You've closed more groups than you opened.
-Such booboos are generally harmless, so keep going.
+! Package keyval Error: heigh\t  undefined.
 
-! Too many }'s.
-l.294 pages. }
-              
-You've closed more groups than you opened.
-Such booboos are generally harmless, so keep going.
+See the keyval package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.232 ...8752in]{./src/figure/a07Design-img10.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
 
-<./src/figure/a07Design-img10.png, id=84, 1334.9875pt x 589.20125pt>
+<./src/figure/a07Design-img10.png, id=129, 1334.9875pt x 589.20125pt>
 File: ./src/figure/a07Design-img10.png Graphic file (type png)
 
 <use ./src/figure/a07Design-img10.png>
-Package pdftex.def Info: ./src/figure/a07Design-img10.png used on input line 29
-9.
-(pdftex.def)             Requested size: 469.75818pt x 207.78786pt.
+Package pdftex.def Info: ./src/figure/a07Design-img10.png used on input line 23
+2.
+(pdftex.def)             Requested size: 469.75499pt x 207.32935pt.
 
-Overfull \hbox (139.75818pt too wide) in paragraph at lines 299--300
-[][] 
+Overfull \hbox (127.53278pt too wide) in paragraph at lines 232--233
+[]\OML/cmm/m/it/10 ^^?[] 
  []
 
-[9 <./src/figure/a07Design-img9.png>]
-! Too many }'s.
-l.323 Kilde:}
-             
-You've closed more groups than you opened.
-Such booboos are generally harmless, so keep going.
 
-! Too many }'s.
-l.326 ...nce-gestalt-approach-to-change.php}{php}}
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[11 <./src/figure/a07Design-img8.png>]
+! Undefined control sequence.
+<argument> ...ultinggroup.com/articles/emerge\nce 
+                                                  -ge\stalt -approach-to-cha...
+l.247 ...erge\nce-ge\stalt-approach-to-change.php}
                                                   
-You've closed more groups than you opened.
-Such booboos are generally harmless, so keep going.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> ...p.com/articles/emerge\nce -ge\stalt 
+                                                  -approach-to-change.php
+l.247 ...erge\nce-ge\stalt-approach-to-change.php}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
 
-Overfull \hbox (28.61182pt too wide) in paragraph at lines 326--327
-[]\OT1/cmr/m/n/10 1.[]http[][]://[][]www[][].[][]clevelandconsultinggroup[][].[
-][]com[][]/[][]articles[][]/[][]emergence[][]-[][]gestalt[][]-[][]approach[][]-
+Package hyperref Warning: Suppressing link with empty target on input line 248.
 
- []
 
-! Too many }'s.
-l.333 }
-       
-You've closed more groups than you opened.
-Such booboos are generally harmless, so keep going.
-
-) [10 <./src/figure/a07Design-img10.png>] (./build/report.bbl)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 24.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 24.
-
-(./build/report.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 24.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 24.
+) [12 <./src/figure/a07Design-img9.png> <./src/figure/a07Design-img10.png>]
+[13] (./build/report.bbl)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 26.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 26.
+ (./build/report.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 26.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 26.
 Package rerunfilecheck Info: File `./build/report.out' has not changed.
-(rerunfilecheck)             Checksum: E45F093B13F5BA78014A915AF9973E32;189.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 24.
+(rerunfilecheck)             Checksum: 0EC7DBD161966957D9401DFC18834B71;683.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 26.
  ) 
 Here is how much of TeX's memory you used:
- 5142 strings out of 493069
- 76731 string characters out of 6139707
- 159276 words of memory out of 5000000
- 8536 multiletter control sequences out of 15000+600000
- 7019 words of font info for 25 fonts, out of 8000000 for 9000
+ 5200 strings out of 493069
+ 77492 string characters out of 6139707
+ 160276 words of memory out of 5000000
+ 8566 multiletter control sequences out of 15000+600000
+ 7327 words of font info for 26 fonts, out of 8000000 for 9000
  1173 hyphenation exceptions out of 8191
- 29i,8n,28p,2212b,331s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/font
-s/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.
-pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on ./build/report.pdf (10 pages, 553016 bytes).
+ 29i,8n,28p,239b,382s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mr6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/sh
+are/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on ./build/report.pdf (13 pages, 594014 bytes).
 PDF statistics:
- 163 PDF objects out of 1000 (max. 8388607)
- 124 compressed objects within 2 object streams
- 19 named destinations out of 1000 (max. 500000)
- 83 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 190 PDF objects out of 1000 (max. 8388607)
+ 146 compressed objects within 2 object streams
+ 38 named destinations out of 1000 (max. 500000)
+ 147 words of extra memory for PDF output out of 10000 (max. 10000000)
 
