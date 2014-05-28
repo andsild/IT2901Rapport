@@ -32,6 +32,7 @@ s/\.}$/\./g
 # Fix images
 s/\\includegraphics\(.*\)$/\\begin{figure}\[h!\]\n\t&\n\t\\caption{FIGURECAPTION}\n\\end{figure}/
 s/ \\begin{figure}/\\begin{figure}/g
+s/\\includegraphics.*{/&\.\/src\/figure\//g
 
 # Delete pre-amble
 1,/\\begin/d
