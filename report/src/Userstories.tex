@@ -1,0 +1,192 @@
+\chapter{User stories}
+
+Admin
+
+\begin{flushleft}
+\tablehead{}
+\begin{supertabular}{|p{0.1\textwidth}|p{0.1\textwidth}|p{0.8\textwidth}|}
+\hline
+ID: &
+Priority &
+Story\\\hline
+SA{}-01 &
+HIGH &
+Will be able to create a new contest. When doing so a new web page
+should be created, but whether the site should be immediately published
+or not is optional. The content of the new site follows a strict
+template, but adding a custom css{}-file will be possible. Each contest
+has got its own settings, containing a list of supported compiler
+profiles, compiler flags, penalty system, maximum number of
+contestants, maximum number of contestants per team, and of course a
+date and a name. When creating a contest the admin needs to provide a
+name and a date, the other settings may be skipped and default settings
+will be used.\\\hline
+SA{}-02 &
+HIGH &
+Users are organized in user groups(admin being one of them). By default
+three usergroups are provided, admin, judge, contestant and
+functionary. The entire solution is based on independent modules of
+functionality and each user group has got access to a subset of these
+modules. The admin is the only non{}-modifiable user group, admins have
+access to all modules. The admins can modify all other user groups,
+change permissions of a group and remove/add member to a group, this
+includes promoting new admins. The admins are also able to deactivate
+users, and even remove them from the database.
+
+~
+\\\hline
+SA{}-03 &
+MED &
+The system is able to gather a large variety of statistics, what data is
+to be collected is decided by the admins.\\\hline
+SA{}-04 &
+HIGH &
+The system uses a collection of nodes(computers) for assessing
+submissions. The admins can add a node by providing an IP address and
+the username and password of a privileged user on that node. These
+nodes can also be removed by the admins. The nodes can also be managed
+in terms of compiler profile support.\\\hline
+SA{}-05 &
+HIGH &
+The web page associated with a contest consists of a set of news items,
+these can be added by the admin. As with the entire contest web page
+the publishing of the news item can be set to a certain date and time.
+The news items can also be removed or modified later on.\\\hline
+\end{supertabular}
+\end{flushleft}
+
+\bigskip
+
+
+\bigskip
+
+Role: Judge
+
+\begin{flushleft}
+\tablehead{}
+\begin{supertabular}{|p{0.1\textwidth}|p{0.1\textwidth}|p{0.8\textwidth}|}
+\hline
+ID: &
+Priority &
+Story\\\hline
+SJ{}-01 &
+MED &
+A judge can submit a problem, where he/she will be able to upload cases
+with input/output. He/she can give every case a name. For each problem
+the judge can set a resource limit (time + memory) for each compiler
+profiles. He/she can upload different solutions that gives the right
+output, timeout and the wrong answer. All the solutions should be
+run{}-able and produce an output about the expected result, and if the
+execution time is inside the given boundaries. He/she should also be
+able to check that all problems have associated solutions that give
+right and wrong answer, and timeout.
+
+~
+\\\hline
+SJ{}-02 &
+MED &
+A clarification system will be available to judges, where they can
+receive and respond to messages from contestants. When receiving a
+message, the judge will get a notification (possible in in the bottom
+right corner of the website, [Design choice]) . A judge can choose to
+either send a global message or a message to a contestant or a team. A
+global message will be sent to every contestant in the
+competition.\\\hline
+\end{supertabular}
+\end{flushleft}
+
+\bigskip
+
+
+\bigskip
+
+Role: Contestant
+
+\begin{flushleft}
+\tablehead{}
+\begin{supertabular}{|p{0.1\textwidth}|p{0.1\textwidth}|p{0.8\textwidth}|}
+\hline
+ID: &
+Priority &
+Story\\\hline
+SC{}-01 &
+HIGH &
+A contestant should be registered with an email, name, gender, and study
+programme and level. When registered, he/she should receive a
+confirmation email. After confirming the account, a contestant should
+be able to log in.\\\hline
+SC{}-02 &
+HIGH &
+When a contestant is logged in he/she will have access to account
+information and which teams he/she are invited to, as well as earlier
+contests and teams they have participated in. The contestant should be
+able to edit account information\\\hline
+SC{}-03 &
+MED &
+A clarification system will be available to contestants, where they can
+ask questions to the judges. They will also have access to answers the
+judges have marked as global.\\\hline
+\end{supertabular}
+\end{flushleft}
+
+\bigskip
+
+Role: Functionary
+
+
+\bigskip
+
+\begin{flushleft}
+\tablehead{}
+\begin{supertabular}{|p{0.1\textwidth}|p{0.1\textwidth}|p{0.8\textwidth}|}
+\hline
+ID: &
+Priority &
+Story\\\hline
+SF{}-01 &
+LOW &
+When a team completes a problem, a table containing the group name and
+location should be updated to include this. Each problem has a
+corresponding balloon colour. A balloon functionary should be able to
+register a balloon colour to each problem.\\\hline
+\end{supertabular}
+\end{flushleft}
+
+\bigskip
+
+
+\bigskip
+
+Role: Teams
+
+\begin{flushleft}
+\tablehead{}
+\begin{supertabular}{|p{0.1\textwidth}|p{0.1\textwidth}|p{0.8\textwidth}|}
+\hline
+ID: &
+Priority &
+Story\\\hline
+ST{}-01 &
+HIGH &
+A contestant must [18.02] be able to register a team, upon registration
+he/she is required to input team name, whether or not the team is
+onsite, a team password, and a email for the team leader.\\\hline
+ST{}-02 &
+HIGH &
+The team leader should be able to edit the team information, invite new
+members, and delete the team before the competition. To invite new
+members you input their email, and they receive a registration link,
+where he/she inputs name, gender and nickname. If the contestant
+[changed from email 20.02] is already in the database from a previous
+competition, the email they receive contains a confirmation link. Every
+contestant can manage the team they are a member of. All informations
+is editable in the team overview which can be reached from a
+contestants login. A confirmation email is sent to the edited
+user.\\\hline
+ST{}-03 &
+MED &
+A team should be able to deliver submissions to problems, and get a
+response from the system. The response should be whether the submission
+is right, wrong, or gives timeout.\\\hline
+\end{supertabular}
+\end{flushleft}
