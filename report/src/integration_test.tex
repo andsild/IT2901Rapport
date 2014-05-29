@@ -1,0 +1,183 @@
+\section{Integration tests}
+
+\begin{center}
+\begin{tabular}{|l|p{.5\textwidth}|}
+\hline
+ID & IT-01\\\hline
+Interface name & Add sponsor\\\hline
+Pre-condtion & Contest is created\\\hline
+Post-condition & Sponsor and image\\\hline
+Input & Image, URL\\\hline
+Output & sponsor in contest\\\hline
+\end{tabular}
+\end{center}
+
+\begin{center}
+\begin{tabular}{|l|p{.5\textwidth}|}
+\hline
+ID & IT-02\\\hline
+Interface name & Publish contest\\\hline
+Pre-condtion & Working database, website\\\hline
+Post-condition & Contest entity with unique ID, which has own subdomain with an
+    interface for
+individual CMS\\\hline Input &
+Image, URL\\\hline Output &
+contest available from webroot\\\hline
+\end{tabular}
+\end{center}
+
+\begin{center}
+\begin{tabular}{|l|p{.5\textwidth}|}
+\hline
+ID & IT-03\\\hline
+Interface name & Set layout\\\hline
+Pre-condtion & Contest is created\\\hline
+Post-condition & Contest-subdomain stylized with given stylesheetfile\\\hline
+Input & Image, URL\\\hline
+Output & Contest in database, modifiable\\\hline
+\end{tabular}
+\end{center}
+
+\begin{center}
+\begin{tabular}{|l|p{.5\textwidth}|}
+\hline
+ID & IT-04\\\hline
+Interface name & Provide information\\\hline
+Pre-condtion & Contest is created\\\hline
+Post-condition & Information pages\\\hline
+Input & Image, URL\\\hline
+Output & Availablee articles\\\hline
+\end{tabular}
+\end{center}
+
+\begin{center}
+\begin{tabular}{|l|p{.5\textwidth}|}
+\hline
+ID & IT-05\\\hline
+Interface name & Create contest\\\hline
+Pre-condtion & Working database\\\hline
+Post-condition & Contest is created\\\hline
+Input & Name, URL, dates, links\\\hline
+Output & A contest in the database that can be publishedand insert
+content\\\hline
+\end{tabular}
+\end{center}
+
+
+\subsection{Article}
+
+\begin{center}
+\begin{tabular}{|l|p{.5	\textwidth}|}
+\hline
+ID & IT-06\\\hline
+Interface name & Create article\\\hline
+Pre-condtion & Contest is created\\\hline
+Post-condition & Article created\\\hline
+Input & Text, URL, date, images(optional)\\\hline
+Output & Article in database\\\hline
+\end{tabular}
+\end{center}
+
+\begin{center}
+\begin{tabular}{|l|p{.5	\textwidth}|}
+\hline
+ID & IT-07\\\hline
+Interface name & Edit article\\\hline
+Pre-condtion & Article is created\\\hline
+Post-condition & Article changed\\\hline
+Input & Text, URL, images(optional)\\\hline
+Output & an interface to edit the content of
+articles\\\hline
+\end{tabular}
+\end{center}
+
+\begin{center}
+\begin{tabular}{|l|p{.5	\textwidth}|}
+\hline
+ID & IT-08\\\hline
+Interface name & Publish article\\\hline
+Pre-condtion & Article is created\\\hline
+Post-condition & Article published\\\hline
+Input & date\\\hline
+Test-method & Manual inspection\\\hline
+Comment & An article available to end-users\\\hline
+\end{tabular}
+\end{center}
+
+\subsection{Userregistration}
+
+\begin{center}
+\begin{tabular}{|l|p{.5	\textwidth}|}
+\hline
+ID & IT-09\\\hline
+Interface name & Create user\\\hline
+Pre-condtion & Working database\\\hline
+Post-condition & User created\\\hline
+Input & email, name, gender(optional), study level\\\hline
+Output & A contestant in the database\\\hline
+\end{tabular}
+\end{center}
+
+\begin{center}
+\begin{tabular}{|l|p{.5	\textwidth}|}
+\hline
+ID & IT-10\\\hline
+Interface name & Edit userdata\\\hline
+Pre-condtion & User created\\\hline
+Post-condition & Userdata changed\\\hline
+Input & User, data for user-attributes\\\hline
+Output & A modified user-entry in the database\\\hline
+\end{tabular}
+\end{center}
+
+\begin{center}
+\begin{tabular}{|l|p{.5	\textwidth}|}
+\hline
+ID & IT-11\\\hline
+Interface name & Activate user\\\hline
+Pre-condtion & User is registered\\\hline
+Post-condition & User is registered as active\\\hline
+Input & User\\\hline
+Output & Ensure that user can log in and is labeled as activated
+account\\\hline
+\end{tabular}
+\end{center}
+
+\subsection{Team Registration}
+\begin{center}
+\begin{tabular}{|l|p{.5	\textwidth}|}
+\hline
+ID & IT-12\\\hline
+Interface name & Invite to team\\\hline
+Pre-condtion & Team is created\\\hline
+Post-condition & Contestant invited to team\\\hline
+Input & email\\\hline
+Test-method & A contestant receives an invite to a team\\\hline
+\end{tabular}
+\end{center}
+
+\begin{center}
+\begin{tabular}{|l|p{.5	\textwidth}|}
+\hline
+ID & IT-13\\\hline
+Interface name & Create team\\\hline
+Pre-condtion & Contest is created, user is created\\\hline
+Post-condition & Team is created\\\hline
+Input & Name, onsite,\\\hline
+Output & A team in the database, that can be used in a
+contest\\\hline
+\end{tabular}
+\end{center}
+
+\begin{center}
+\begin{tabular}{|l|p{.5	\textwidth}|}
+\hline
+ID & IT-14\\\hline
+Interface name & Edit team data\\\hline
+Pre-condtion & Team is created\\\hline
+Post-condition & Team-data is modified, and modified attributesare reflected in
+other views\\\hline
+Input & Team, data, attributes\\\hline
+Output & A modified team entry in the database\\\hline
+\end{tabular}
+\end{center}
