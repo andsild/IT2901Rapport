@@ -1,9 +1,10 @@
-\section{Design}
+\chapter{Design}
 This document contains the choices made regarding the process of
 designing the front-end of the application, for a more technical
 approach see \textit{System Architecture chapter 6}.
 
-Design process
+\section{Design process}
+\label{sec:designProcess}
 
 The user interface provided by the previous IDI Open system consisted of
 a simple web interface for reading news items, registering teams for
@@ -16,7 +17,8 @@ interface design, or creating our own design from scratch.
 
 \begin{figure}[h!]
 	\includegraphics[width=6.278in,height=3.7638in]{a07Design-img1.png} 
-	\caption{FIGURECAPTION}
+	\caption{User Interface of the old system}
+	\label{fig:oldSystem}
 \end{figure}
 Fig 7.1
 We chose to create our own design from scratch, while still trying to
@@ -29,7 +31,8 @@ the old web interface.
 
 \begin{figure}[h!]
 	\includegraphics[width=6.278in,height=1.7362in]{a07Design-img2.png} 
-	\caption{FIGURECAPTION}
+	\caption{Initial mockups}
+	\label{fig:mockup}
 \end{figure}
 
 Beyond our three initial mockups we tried a couple of ``out
@@ -43,11 +46,11 @@ scope of the project. Our customers wasn't very focused
 on the design aspect, but one demand they had was that they wanted the
 new site to have the same structure as the old one. One example of what
 this means is that the customer wanted us to keep the menu on the
-left-side as you can see that the old system has in Fig 7.1. We agreed,
+left-side as you can see that the old system has in Fig~\ref{fig:oldSystem}. We agreed,
 because getting used to a new website can take time, so keeping the
 structure similar would ease the transition for our users. With this in
 mind we decided to go for one of our initial mockups, the rightmost one
-in Fig 7.2, because it had the same structure as the old page, and we
+in Fig~\ref{fig:mockup}, because it had the same structure as the old page, and we
 personally favoured that design. As a result, most of the elements
 found in the old interface can be found in the new one, and the
 transition between using the two is reduced to a minimum.
@@ -69,7 +72,8 @@ automatically.
 The final page looked like this:
  \begin{figure}[h!]
 	\includegraphics[width=6.4272in,height=3.2602in]{a07Design-img3.png} 
-	\caption{FIGURECAPTION}
+	\caption{Final page}
+	\label{fig:finalUI}
 \end{figure}
 
 The ``black'' frame was in our
@@ -81,11 +85,12 @@ and give every contest its own theme. The change on IDI OPEN 14, from
 blue to black, was done as a consequence of a logo change by Richard
 Eide, one of IDI Open's facilitators. The old color
 scheme can be viewed in appendix [insert which appendix]. By comparing
-fig 7.1 and fig 7.3, you can see that we kept the same structure, but
+fig~\ref{fig:oldSystem} and fig~\ref{fig:finalUI}, you can see that we kept the same structure, but
 still made some significant changes to the design.
 
 
-User interface
+\section{User interface}
+
 The user interface is designed by using a base template. The template is
 the same for every part of the webpage, and contains a content block
 that changes while you navigate through the different parts. This makes
@@ -104,7 +109,7 @@ to show in the menu, except for \textit{Register user} and
 ``hardcoded'' on request from the
 customer. This was highly prioritized by our customers, they wanted to
 be able to make changes without having to change the code. As mentioned
-in Design process 7.1, we designed the user interface after a principle
+in Design process ~\ref{sec:designProcess}, we designed the user interface after a principle
 of versatility. Admins can also change the logo, the sponsor images and
 the contact information in the footer.
 
@@ -145,11 +150,11 @@ initially, but we noticed while testing the system that without a
 prompt, it could be possible to leave your team by mistake.
  \begin{figure}[h!]
 	\includegraphics[width=6.5in,height=2.5417in]{a07Design-img7.png} 
-	\caption{FIGURECAPTION}
+	\caption{Contest page}
+	\label{fig:contestPage}
 \end{figure}
-fig 7.5
 
-For the contest page, fig 7.5, we wanted to give the contestant a good
+For the contest page, fig~\ref{fig:contestPage}, we wanted to give the contestant a good
 overview of all the problems, their submissions to them, last feedback,
 if they solved the problem and the score. It is important to not bury
 information to deep in a website. It could be challenging to balance
@@ -165,10 +170,12 @@ Shneiderman's eight rule, because they will have
 everything accessible on the same page.
 
 
-Admin interface
+\section{Admin interface}
+
  \begin{figure}[h!]
 	\includegraphics[width=6.5in,height=3.0555in]{a07Design-img8.png} 
-	\caption{FIGURECAPTION}
+	\caption{Admin Interface}
+	\label{fig:adminInterface}
 \end{figure}
 
 The admin interface is developed as an extension
@@ -204,9 +211,9 @@ of the admin site.
 
  \begin{figure}[h!]
 	\includegraphics[width=6.5in,height=3.0417in]{a07Design-img9.png} 
-	\caption{FIGURECAPTION}
+	\caption{Judge overview}
+	\label{fig:judge}
 \end{figure}
-fig 7.7
 
 The judge overview was made primarily for judges, but could also be used
 by the admins. The motivation behind making this view, is that it gives
@@ -229,11 +236,12 @@ pages.
 
  \begin{figure}[h!]
 	\includegraphics[width=6.5in,height=2.8752in]{a07Design-img10.png} 
-	\caption{FIGURECAPTION}
+	\caption{Judge overview for team}
+	\label{fig:judgeTeam}
 \end{figure}
-Figure \ [Judge\_overview for Team]
 
-Figure \ [Judge\_overview for Team] shows the judge overview after
+
+Figure~\ref{fig:judgeTeam} shows the judge overview after
 selecting the team ``GentleCoding''.
 It is possible to expand each submission by clicking on it. The third
 submission has been clicked on, so we can now choose to expand

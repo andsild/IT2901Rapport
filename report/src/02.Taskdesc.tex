@@ -1,6 +1,7 @@
-\chapter{Task Description}
+\chapter{Task Description and Overview}
 
 \section{Task Description and Overview}
+\label{sec:taskdesc}
 
 %Sushi mente hun ikke forsto hensikt med kap 2. Skal vi skrive om ingressen her? Syntes selv den egentlig er grei nok
 The first step in our development process was to get a brief overview of
@@ -9,10 +10,9 @@ of designing UML use cases together with a textual description. From
 reading this chapter, the reader should be able to understand how our
 end product works. Also, reading this chapter will be important to
 understand the other chapters in this report. The assumptions and
-constraints that affected our process are also discussed in section
-X.X. 
+constraints that affected our process are also discussed in section~\ref{sec:assumtions}. 
 
-\subsection{Assignment}
+\section{Assignment}
 According to our customers, ``IDI Open'''s previous solution was
 cumbersome to use. Our assignment was to create a replacement system
 that would be easier to administer.
@@ -34,7 +34,7 @@ wherever we wanted. However, it was important that we did this in an
 uncluttered way, such that other developers could easily understand the
 new solution.
 
-\subsection{Branding our Product}
+\section{Branding our Product}
 
 Since we were delivering an end product to a real customer, we wanted to
 present ourselves as a real company. We chose the name
@@ -52,15 +52,19 @@ Since we were developing a new system, we also wanted to brand our
 product. We wanted to keep it logical and simple, so we decided on
 ``GentleIDI''. Consequently,
 GentleIDI will be used to refer to our end product throughout the rest of the report.
-\subsection{Assumptions and Constraints}
+
+
+\section{Assumptions and Constraints}
+\label{sec:assumtions}
 
 
 To define what is satisfactory, we have made some assumptions and
-defined some constraints. Table X.X should make it easier to understand
+defined some constraints. Table~\ref{table:assumtions} should make it easier to understand
 how we have reasoned our system design. 
 
 \begin{table}
 \caption{Caption}
+\label{table:assumtions}
 \tablehead{}
 \begin{supertabular}{|p{0.33\textwidth}|p{0.33\textwidth}|p{0.33\textwidth}|}
 \hline
@@ -108,25 +112,27 @@ Speed up development\\\hline
 \end{supertabular}
 \end{table}
 
-Do note that the implications in table X.X were not necessarily upheld.
+Do note that the implications in table~\ref{table:assumtions} were not necessarily upheld.
 Rather, they were used as initial bounds to permit leeway. For example,
 imposing that third party plugins will speed up development does not
 mean that we would alway prioritize software re-use.
 
-Roles and Their Definitions
-Usergroups
+\section{Roles and Their Definitions}
+\subsection{Usergroups}
 Within the application-domain of
 ``gentleidi'' there are different
 groups of users. Each group has different levels of access control, and
 once a user is made a member of that group, they inherit those rights.
 A user may have membership in all groups. A privileged user is someone
-who is manually given elevated permissions. Table X.X shows the
+who is manually given elevated permissions. Table~\ref{table:usegroup} shows the
 different roles and their available actions. Further elaborations on
-each group will also be given in later sections, but table X.X should
+each group will also be given in later sections, but table~\ref{table:usegroup} should
 suffice for an overview.
 
 \begin{table}
 \tablehead{}
+\caption{Usergroup overview}
+\label{table:usegroup}
 \begin{supertabular}{|m{0.2\textwidth}|m{0.8\textwidth}|}
 \hline
 Role &
@@ -151,17 +157,17 @@ A contestant has an account on the system and has the possibility to
 enter and compete in a contest. \\\hline
 \end{supertabular}
 \end{table}
-Table X.X: Usergroup overview
 
-Service-providing Units
+\subsection{Service-providing Units}
 
-Another way of viewing the task description in section X.X, is to say
+Another way of viewing the task description in section~\ref{sec:taskdesc}, is to say
 that our solution needs to do three actions: serve web-content, store
 data and execute user-submitted code. Since each of these operates with
 different protocols, we will think to our solution as composed of three
 different systems. These are described in figure X.X.
 \begin{table}
-\caption{CAPTION}
+\caption{Service-providing Units}
+\label{table:serviceUnits}
 \tablehead{}
 \begin{supertabular}{|m{0.2\textwidth}|m{0.6\textwidth}|m{0.2\textwidth}|}
 \hline
@@ -189,22 +195,25 @@ SQL\\\hline
 The only entity that end-users interact with is the webserver. This is
 done through HTTP messages, which, if necessary, are relayed to the
 execution nodes and/or database. 
-UML Use Cases
+
+
+\section{UML Use Cases}
 We need one page each for privileged, registered, and non-registered
 users. That is, one interface for administrative users, one for
 contestants, and one for non-registered viewers. From each of these
 three, we defined use case scenarios. Figure X.X and X.X models the
-available workflows and actions for each category of users. Table X.X
+available workflows and actions for each category of users. Table~\ref{table:uml-notation}
 describes the semantics of objects used in the diagram, which should be
 equivalent to the UML 2.0 standard.
 \begin{table}
-\caption{CAPTION}
+\caption{UML Notation}
+\label{table:uml-notation}
 \tablehead{}
-\begin{supertabular}{|m{0.33\textwidth}|m{0.66\textwidth}|}
+\begin{supertabular}{|m{0.15\textwidth}|m{0.85\textwidth}|}
 \hline
-	\includegraphics[width=0.7035in,height=0.698in]{chapter2-img1.jpg}  &
+	\includegraphics[width=0.15\textwidth]{chapter2-img1.jpg}  &
 Use case actor. Represents a user group\\\hline
-	\includegraphics[width=0.4535in,height=0.9138in]{chapter2-img2.png}  &
+	\includegraphics[width=0.15\textwidth]{chapter2-img2.png}  &
 UML generalization arrow. Used to indicate inheritance. The
 arrow's source, i.e. tail, represents the entity that
 inherits from where the arrow points to.\\\hline
@@ -229,8 +238,9 @@ were trying to accomplish.
 \begin{figure}[h!]
 	\includegraphics[width=0.8\textwidth]{chapter2-img3.jpg} 
 	\caption{FIGURECAPTION}
+	\label{figure:usecase}
 \end{figure}
-As seen in figure X.X, admins has privileges to perform the actions of
+As seen in figure~\ref{figure:usecase}, admins has privileges to perform the actions of
 any other group, in addition to their own set of actions. Thus,
 membership in the admin group gives a user complete control in the
 application domain. Furtherly, it can be noted that all usergroups have

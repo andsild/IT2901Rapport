@@ -90,7 +90,10 @@ The benefits from doing these are as follows:
 Table X.X shows the work breakdown structure created. These high-level
 packages were later broken down into activities, which are in the
 product backlog, see appendix 
-\begin{framed}
+
+    \begingroup
+    \fontsize{8pt}{5pt}\selectfont
+\begin{mdframed}
     \begin{enumerate}
         \item Project management
         \begin{enumerate}
@@ -178,7 +181,8 @@ product backlog, see appendix
         \end{enumerate}
     \end{enumerate}
     \end{enumerate}
-\end{framed}
+\end{mdframed}
+\endgroup
 
 We also created a gantt chart. Here, each package was assigned an
 estimated time period, over how long time we expected to use. For ease
@@ -188,7 +192,7 @@ gantt chart is shown in figure~\ref{gantt}
 \begin{table}
 \caption{Gantt chart}
 \label{gantt}
-\begin{tabular}{|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|}
+\begin{tabular}[h]{|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|}
 \hline
 \textbf{WP Name} & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 & 12 & 13 & 14 & 15 \\
 \hline
@@ -240,11 +244,7 @@ System test&&&&&&&&&\cellcolor{Melon}&\cellcolor{Melon}&\cellcolor{Melon}&\cellc
 \hline
 Post-implementation&&&&&&&&&&&&&&&\cellcolor{Plum} \\
 \hline
-<<<<<<< HEAD
 \end{tabular}
-=======
-\end{tabular}\label{gantt}
->>>>>>> bdaef2b843cb82a586e75b8ecfd7a77bc553527b
 \end{table}
 
 The gantt chart was revised several times during the first 4 sprints,
@@ -370,8 +370,11 @@ prepared for more work as we approached the deadline. This estimate was
 later scaled up to a minimum of 25/30 to weeks before easter, During
 easter, the amount of hours per week scaled up higher.
 Planned work 
-Table X.X shows our first initial draft of sprints. 
+Table~\ref{table:sprintoverview} shows our first initial draft of sprints. 
 
+\begin{table}
+\caption{Initial sprint overview}
+\label{table:sprintoverview}
 \begin{tabular}{|l|l|l|l|}
 \hline
  Sprint & Range (week) & Days &
@@ -394,11 +397,15 @@ Table X.X shows our first initial draft of sprints.
  After & 19 - 22 & 21 & 35\\\hline
  Total:  & & 91 & 353\\\hline
 \end{tabular}
+\end{table}
 
 
 \subsubsection{Actual work}
-Table X.X shows the actual sprints and work done. The hours are for each
+Table~\ref{table:actualWork} shows the actual sprints and work done. The hours are for each
 person, during that sprint.
+\begin{table}
+\caption{Actual work}
+\label{table:actualWork}
 \begin{tabular}{|l|l|l|l|}
 \hline
  Sprint & Week & Days & Hours \\\hline
@@ -417,4 +424,5 @@ person, during that sprint.
  After & 19.22 & 21 & 45\\\hline
  Total & & 100 & 433\\\hline
 \end{tabular}
+\end{table}
 

@@ -9,15 +9,15 @@ developing the system.
 
 
 
-The main parts of the system is shown in Figure x.x. Clients sends
+The main parts of the system is shown in Figure~\ref{fig:systemOverview}. Clients sends
 requests to the web server and receives the processed results. The
 execution nodes process user submissions, and updates the results to
 the database. 
 \begin{figure}[t]
  	\includegraphics[width=0.8\textwidth]{chapter06-img1.png} 
  	\caption{System overview}
+ 	\label{fig:systemOverview}
 \end{figure}
-Figure X.X
 
 \section{Views}
 
@@ -74,7 +74,7 @@ the solution will execute on according to availability and load.
 
 We will now show examples for two important parts of the application.
 First is the action of successfully registering a user and creating a
-team. See figure 6.2.
+team. See figure~\ref{fig:actRegister}.
 \begin{figure}[h]
 	\includegraphics[width=0.8\textwidth]{chapter06-img3.png} 
 	\caption{Symbology}
@@ -83,15 +83,16 @@ team. See figure 6.2.
 \begin{figure}[h]
 	\includegraphics[width=0.8\textwidth]{chapter06-img4.png} 
 	\caption{Activity Diagram for registering a user and a team}
+	\label{fig:actRegister}
 \end{figure}
 
 
 
-Second is submitting a solution to a programming problem. See figure
-6.3.
+Second is submitting a solution to a programming problem. See figure~\ref{fig:actSubmit}.
 \begin{figure}[h]
 	\includegraphics[width=0.8\textwidth]{chapter06-img5.png}
 	\caption{Activity Diagram for submittion a solution}
+	\label{fig:actSubmit}
 \end{figure}
 
 
@@ -99,7 +100,7 @@ Second is submitting a solution to a programming problem. See figure
 
 \subsection{Development View}
 
-Purpose:
+\subsubsection{Purpose}
 
 The developer view is intended for the developers. It should ease
 development, and focus on software module organization by packaging the
@@ -116,8 +117,9 @@ Clarification, Admin, and Article. These packages are described in
 detail in chapter 8 Implementation. 
 
 \subsection{Physical View}
+\label{sec:physicalView}
 
-Purpose: \newline
+\subsubsection{Purpose}
 The physical view shows the interaction between the physical components
 of the system.
 
@@ -266,7 +268,7 @@ amount of data.
 
 \subsection{Multi-tier}
 
-See: 6.1.4 Physical View.
+See: ~\ref{sec:physicalView} Physical View.
 
 
 
