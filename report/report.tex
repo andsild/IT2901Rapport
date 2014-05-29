@@ -1,24 +1,28 @@
-\newcount\draft\draft=0 % set to 0 for "publication"
-\nonstopmode % ignore compiler errors
+%\newcount\draft\draft=0 % set to 0 for "publication"
+%\nonstopmode % ignore compiler errors
 
-\documentclass{article}
+\documentclass{report}
 
 \usepackage{graphicx}
 \usepackage{hyperref}
+\usepackage{supertabular}
+\usepackage{array}
 
-\ifnum\draft=1
-% include the revision number in a footer
-\usepackage{draftfooter}
-\fi
 
+\graphicspath{ {src/figure/} }
 \begin{document}
 
-\input{src/00.Preamble} 
-\pagebreak
-\input{src/01.Introduction} 
-\pagebreak
-\input{src/07.Design}
-\pagebreak
+\include{src/00.Preamble} 
+\include{src/01.Introduction}
+\include{src/chapter2}
+\include{src/chapter06}
+\include{src/07.Design}
+\include{src/08.Implementation}
+\include{src/09.Development}
+\appendix
+\include{src/appendix-sprints}
+\include{src/Userstories}
+\include{src/Installationguide}
 
 % \bibliographystyle{abbrv}
 \bibliography{./src/bib/examplebib} % this comment will be ignored
