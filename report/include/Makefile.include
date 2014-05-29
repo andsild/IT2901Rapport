@@ -23,7 +23,7 @@ force:
 .PHONY: clean force all
 
 view:
-	xdg-open ${BUILD_DIR}${MAIN}.pdf
+	xdg-open ${BUILD_DIR}${MAIN}.pdf &
 
 clean:
 	$(LATEXMK) -C $(MAIN).tex -outdir=${BUILD_DIR}

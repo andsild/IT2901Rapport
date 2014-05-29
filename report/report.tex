@@ -3,6 +3,7 @@
 
 \documentclass{article}
 
+\usepackage{geometry}
 \usepackage{graphicx}
 \usepackage{hyperref}
 \usepackage{enumitem}
@@ -11,6 +12,7 @@
 \usepackage[usenames,dvipsnames]{color}
 \usepackage{colortbl}
 \usepackage[table]{xcolor}
+\usepackage{lscape}
 
 
 \ifnum\draft=1
@@ -28,9 +30,13 @@
 \pagebreak
 \input{src/07.Design}
 \pagebreak
+\input{src/10.Test}
+\pagebreak
 \input{src/11.Risk}
 \pagebreak
-\input{src/tables/product_backlog.tex}
+\input{src/tables/risk_list}
+\pagebreak
+\input{src/tables/product_backlog}
 \pagebreak
 
 
