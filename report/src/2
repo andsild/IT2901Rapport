@@ -7,7 +7,7 @@ including week 4. The outcome from this three week process was heavily used in
 order to establish agreement between us and the customer. This chapter
 presents the result from this process. 
 
-\subsection{Purpose and Scope of this Specification}
+\subsection{Purpose and scope of this specification}
 The purpose of the requirement specification document is to specify the
 objectives for our end product. Requirements are written at different
 levels of detail. This is to make it easy to communicate the requirements to
@@ -73,14 +73,15 @@ for our solution.
     \item Incorrect data
 \end{itemize}
 \begin{itemize}
-    \item User submission system
-    \item Response types
+\item User submission system
+\item
+Response types
 \end{itemize}
  &
 \begin{itemize}
-    \item Irresponsive interfaces
-    \item Node failures
-    \item Incorrect data
+\item Irresponsive interfaces
+\item Node failures
+\item Incorrect data
 \end{itemize}
 
 \begin{itemize}
@@ -118,32 +119,36 @@ and information
 \hline
 \end{tabular}
 
-It can be seen in table X.X that the most prominent trait of our users is that
-they have a background in computer science. As a consequence, it is assumed a
-higher level of technical competence from our users. The user profiles also
-highlight that some features were more important than others, e.g.\
-responsiveness over aesthetics.
+The most prominent trait of our users is that the majority of the end
+users have a background in computer science. Thus, we could assume a
+higher level of technological competence from our users. The user
+profiles also highlighted that some features were more important than
+others, for example we would prioritize responsiveness higher than
+aesthetics.
 
 \subsection{Requirements}
-Stories can be ambiguous and open for misinterpretation.
-we felt that a natural language specification of requirements would make it
-easier to understand our application domain. To reduce miscommunication we made
-sure to give each specification as short, succinct sentences. The stories were
-used as a way to communicate with the customer about requirements without them
-having to read through the table of requirements.
+The stories can be viewed in appendix,\ref{appendix:userstories}. While
+stories can be ambiguous and open for misinterpretation, we felt that a
+natural language specification of requirements would make it easier to
+understand our application domain. To reduce miscommunication we made
+sure to give each specification as short, succinct sentences. The
+stories were used as a way to communicate with the customer about
+requirements without them having to read through the table of
+requirements.
 
 \subsubsection{Functional}
-The functional requirements are broken down in different categories.
-Each category corresponds to a user group. The categories are Admin, Judge,
-Contestant, Functionary, Teams, and Other. Each category has an ID, priority
-and story. 
+We decided to break the functional requirements in different categories.
+Each category corresponds to a user group. The categories are Admin,
+Judge, Contestant, Functionary, Teams, and Other. Each category has an ID, priority and story. The ID consists of a letter
+corresponding to the category, and a number that specifies which
+requirement it is in the category. 
 
-There are three different states for priorities, HIGH, MED and LOW.\
-This ensured strict priorities.
-Using more states would make it hard to differentiate between the priorities we
-gave the requirements.
+We decided to have three different states for the priority. We used
+high, med and low because we wanted to have very strict priorities.
+If we had used numbers ranging from 1-6, it would be hard to
+differentiate between the priorities we give the requirements.
 
-The following definitions make out the guideline for
+The following definitions make out the intended guideline for
 prioritizing the requirements:
 \begin{itemize}
     \item HIGH: The requirement is a ``must have''. We need this requirement to
