@@ -54,8 +54,8 @@ most prone to error, and most important to test. The following were our
 software assurance objectives:
 \liststyleLSii
 \begin{itemize}
-Ensure that the system can be used by many users
-Ensure that the contest can be held without any error that would
+    \item Ensure that the system can be used by many users
+    \item Ensure that the contest can be held without any error that would
 critically impact the contest
 \end{itemize}
 
@@ -83,18 +83,16 @@ usergroups.
 
 Since we were developing a website that would feature many users,
 developer testing alone could never simulate peak values for system
-demand. Therefore we have relied on load testing. Here, we ga\ve our web
+demand. Therefore we have relied on load testing. Here, we gave our web
 server a fixed amount of HTTP requests per second, hereafter RPS.\ What
 pages were used in the simulation was determined by us. Thus, our
 testing also extends to cover simulated peak values for high loads.
 
 
-
-
 Our lacking experience in web development meant that it was hard for us
 to understand what components could go cause errors. Wikipedia holds a
 large list of categories that could be
-tested\footnote{\ http://en.wikipedia.org/wiki/Non-functional\_requirement},
+tested\footnote{http://en.wikipedia.org/wiki/Non-functional\_requirement},
 but we avoided many of them, as it would take to long for us to gain a
 structural way to test these areas, combined with the lacking
 experience. 
@@ -161,7 +159,6 @@ Input & Image, URL\\\hline
 Output & sponsor in contest\\\hline
 \end{tabular}
 
-
 In section X.X[12. Evaluation of testing methods] we explained why our
 coverage by integration testing was not extensive. The written
 integration tests are from our M-03 milestone, and do only cover the
@@ -175,39 +172,23 @@ replaced them with the equivalent UML stereotype. The explanations are
 given in table 8.1. The tables in figure 8.3 are based upon the
 interfaces defined in figure 8.2. 
 
-\begin{tabular}{|m{1.1087599in}|m{1.1712599in}|m{3.3483598in}|}
-\hline
-UML notation &
-UML stereotype &
-Function\\\hline
-\begin{figure}[h!]
-	\includegraphics[width=0.5417in,heigh\t=0.2083in]{a10Testplan-img1.png}
-	\caption{FIGURECAPTION}
-\end{figure}
- &
-provides &
-\sffamily\color{black} The component delivers the given functionality
-\\\hline
-\begin{figure}[h!]
-	\includegraphics[width=0.5555in,heigh\t=0.5693in]{a10Testplan-img2.jpg}
-	\caption{FIGURECAPTION}
-\end{figure}
-&
-requires&
-For the component to work, the \\\hline
-\end{tabular}
+\begin{tabular}{|l|l|}
+    \hline
+    \textbf{UML stereotype} & \textbf{Function}\\
+    \hline
 
-\begin{tabular}{|m{6.42126in}|}
-\hline
-\begin{figure}[h!]
-	\includegraphics[width=6.2709in,heigh\t=4.139in]{a10Testplan-img3.png}
-	\caption{FIGURECAPTION}
+    $<<$provides$>>$ & The component delivers the given functionality \\
+    \hline
+
+    $<<$requires$>>$& For the component to work, the interface must have the given interface\\
+        \hline
+    \end{tabular}
+
+    \begin{figure}[h!]
+        \includegraphics[width=6.2709in,heigh\t=4.139in]{src/figure/UML_component.png}
+        \caption{Diagram from milestone M-03. Each interface connection, especially
+        ``createContest'' has been tested}
 \end{figure}
-\\\hline
-diagram from milestone M-03. Each interface connection, especially
-``createContest'' has been
-tested.\\\hline
-\end{tabular}
 
 \subsection{System Test}
 Our system tests cover all the functional requirements. All tests are
@@ -216,18 +197,19 @@ scenarios for how the system should respond when a user performs an
 error or another external fault occurs. The complete listing is in
 table X.X.
 
-
-\begin{tabular}{|m{0.5566598in}|m{1.2441599in}|m{1.7059599in}|m{1.2163599in}|m{0.9663598in}|m{0.33795986in}|}
+\begin{tabular}{|l|p{3cm}|p{3cm}|p{3cm}|p{1.1cm}|l|}
 \hline
-ID & Function & Action/Input & Result & Requirement & Pass/Fail\\\hline
+ID & Function & Action/Input & Result & Req & Pass/Fail\\\hline
 
 TF-01 & Create a contest, and publish an article to thatcontest. Edit
 article.Then, delete the contest. & Contest name, article text & Contest and
-article is no longer publicly    available & FA-16, & PASS\\\hline
+article is no longer publicly    available & FA-16, & PASS\\
+\hline
+
 TF-02 & As a contestant, create a team and invite contestants. Go to profile
-page and see which team the contestant is amember of. Then, delete the team &
-Team, contestants, contest & First contestant in team, then contestant not in
-team & PASS\\
+page and see which team the contestant is amember of. Then, delete the team
+& Team, contestants, contest & First contestant in team, then contestant not in
+team & FE-01, FE-02, FE-04, FE-06, FC-04& PASS\\
 \hline
 
 TF-03 & Add custom css, specify custom settings, & Existing contest, css,
@@ -239,7 +221,8 @@ PASS\\
 TF-04 & Log in as admin, and enable all judges to createa contest. Then remove
 and add a judge, by escalating and de-escalating privileges from contestant. &
 Admin account, contestant account & Zero changes to system. &
-FA-09, & PASS\\\hline
+FA-09, & PASS\\
+\hline
 
 TF-05 & Log in as judge, create a problem and upload cases. Upload different
 solutions; one correct, one erroneous, and one that loops forever. After that,
@@ -249,6 +232,7 @@ Only the correct solution should give points. &
 FJ-01, FJ-02, FJ-03, FJ-04, FJ-05, FJ-06, FJ-07&
 PASS\\
 \hline
+
 TF-06 & Add two execution nodes with different compiler supports. Change both
 nodes, such that they take each other's \ compiler setting. Then remove both
 nodes. &
@@ -262,6 +246,7 @@ Contestant, contest, question, answer &
 All contestants should be able to see message, successful communication between
 judge and contestant & FJ-08 & PASS\\
 \hline
+
 TF-08 & Create a contestant account. Activate the account via email, and change
 the email. Ask for lost password on the new  email. &
 Contest-data, emails & Activation data received on the email, and all links
@@ -289,73 +274,41 @@ are executed, and the table only covers the first 12 non-functional
 requirements. The documented tests do, however, ensure some
 requirements coverage.
 
-\begin{tabular}{|m{1.7650598in}|m{0.95255977in}|m{0.6608598in}|m{1.9212599in}|m{0.8066598in}|}
+\begin{tabular}{|p{4.3cm}|p{2.0cm}|l|p{3.8cm}|l|}
 \hline
-Case &
-Input &
-ID &
-Expected result &
-Pass/Fail\\\hline
-Adding 500 contestants &
-500 users &
-NF-04 &
-Ability to add yet another &
-PASS\\\hline
-Adding 200 teams &
-200 teams &
-NF-05 &
-Ability to add yet another &
-PASS\\\hline
-Adding 20 judges &
-20 judges &
-NF-06 &
-Ability to add yet another &
-PASS\\\hline
+Case & Input & ID & Expected result & Pass/Fail\\
+\hline
+Adding 500 contestants & 500 users & NF-04 & Ability to add yet another & PASS\\
+\hline
+Adding 200 teams & 200 teams & NF-05 & Ability to add yet another & PASS\\
+\hline
+Adding 20 judges & 20 judges & NF-06 & Ability to add yet another &
+PASS\\
+\hline
 Adding more than one admin &
-{\textgreater}1 admin &
-NF-07 &
-Ability to add yet another &
-PASS\\\hline
-Upload a solution which is less than 50kB &
-Solution {\textless}50kB &
-NF-08 &
-Successful delivery &
-PASS\\\hline
-Upload a solution which is greater than 50kB &
-Solution {\textgreater}50kB &
-NF-08 &
-Error message &
-PASS\\\hline
-Gather some test persons not familiar with the
-system and have them use the system as a contestant &
-System &
-NF-09 &
-They should be familiar with the system after 5
-minutes &
-FAILED\\\hline
-Gather some test persons not familiar with the
-system and have them use the system as a judge &
-System &
-NF-11 &
-They should be familiar with the system after 10
-minutes &
-PASS\\\hline
-Gather some test persons not familiar with the
-system and have them use the system as an admin &
-System &
-NF-10 &
-They should be familiar with the system after 15 minutes &
-PASS\\\hline
-Page responsiveness with at least 5 RPS &
-HTTP GET and POST to all pages &
-NF-01 &
-Response-time {\textless} 100 ms &
-FAIL\\\hline
-Page responsiveness with at least 10 RPS &
-HTTP GET and POST to all pages &
-NF-01 &
-Response-time {\textless} 200 ms &
-FAIL\\
+$>$ 1 admin & NF-07 & Ability to add yet another & PASS\\
+\hline
+Upload a solution which is less than 50kB & Solution $>$ 50kB & NF-08 & Successful delivery & PASS\\
+\hline
+Upload a solution which is greater than 50kB & Solution $>$ 50kB & NF-08 & Error message & PASS\\
+\hline
+Gather some test persons not familiar with the system and have them use the
+system as a contestant & System & NF-09 & They should be familiar with the
+system after 5 minutes & FAILED\\
+\hline
+Gather some test persons not familiar with the system and have them use the
+system as a judge & System & NF-11 & They should be familiar with the system
+after 10 minutes & PASS\\
+\hline
+Gather some test persons not familiar with the system and have them use the
+system as an admin & System & NF-10 & They should be familiar with the system
+after 15 minutes & PASS\\
+\hline
+Page responsiveness with at least 5 RPS & HTTP GET and POST to all pages &
+NF-01 & Response-time {\textless} 100 ms & FAIL\\
+\hline
+Page responsiveness with at least 10 RPS & HTTP GET and POST to all pages &
+NF-01 & Response-time {\textless} 200 ms & FAIL\\
 \hline
 \end{tabular}
 
