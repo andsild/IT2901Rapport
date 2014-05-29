@@ -3,26 +3,40 @@
 
 \documentclass{report}
 
+\usepackage{geometry}
 \usepackage{graphicx}
 \usepackage{hyperref}
 \usepackage{supertabular}
 \usepackage{array}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage{framed}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{colortbl}
+\usepackage[table]{xcolor}
+\usepackage{lscape}
 
 
 \graphicspath{ {src/figure/} }
 \begin{document}
 
+
 \include{src/00.Preamble} 
 \include{src/01.Introduction}
 \include{src/chapter2}
+\include{src/03.Projectmanagement}
 \include{src/chapter06}
 \include{src/07.Design}
 \include{src/08.Implementation}
 \include{src/09.Development}
+\include{src/10.Test}
+\include{src/11.Risk}
 \appendix
 \include{src/appendix-sprints}
 \include{src/Userstories}
 \include{src/Installationguide}
+\include{src/tables/risk_list}
+\include{src/tables/product_backlog}
 
 % \bibliographystyle{abbrv}
 \bibliography{./src/bib/examplebib} % this comment will be ignored
