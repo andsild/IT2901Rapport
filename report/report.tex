@@ -18,6 +18,9 @@
 \usepackage{listings}
 \usepackage{mdframed}
 \usepackage{float}
+
+\newcommand*{\Package}[1]{\texttt{#1}}%
+
 \graphicspath{{src/figure/} }
 \begin{document}
 
@@ -44,6 +47,7 @@
 \include{src/tables/risk_list}
 \include{src/tables/product_backlog}
 \include{src/tables/end_of_sprint_structure}
+\include{src/integration_test}
 
 % \bibliographystyle{abbrv}
 \bibliography{./src/bib/examplebib} % this comment will be ignored

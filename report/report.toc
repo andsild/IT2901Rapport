@@ -118,17 +118,22 @@
 \contentsline {chapter}{\numberline {C}Installation guide}{70}{appendix.C}
 \contentsline {section}{\numberline {C.1}Creating your users}{70}{section.C.1}
 \contentsline {section}{\numberline {C.2}Setting up the environment}{71}{section.C.2}
-\contentsline {section}{\numberline {C.3}Installing required packages}{71}{section.C.3}
+\contentsline {section}{\numberline {C.3}Installing required packages}{72}{section.C.3}
 \contentsline {section}{\numberline {C.4}Database}{72}{section.C.4}
 \contentsline {section}{\numberline {C.5}Gunicorn}{73}{section.C.5}
-\contentsline {section}{\numberline {C.6}Supervisor}{75}{section.C.6}
-\contentsline {section}{\numberline {C.7}Multiple execution nodes}{75}{section.C.7}
-\contentsline {chapter}{\numberline {D}Risk List}{77}{appendix.D}
-\contentsline {subsection}{\numberline {D.0.1}People Management}{78}{subsection.D.0.1}
-\contentsline {subsection}{\numberline {D.0.2}Budget}{79}{subsection.D.0.2}
-\contentsline {subsection}{\numberline {D.0.3}Schedule}{80}{subsection.D.0.3}
-\contentsline {subsection}{\numberline {D.0.4}Organizational}{81}{subsection.D.0.4}
-\contentsline {subsection}{\numberline {D.0.5}Tools and tools; product}{83}{subsection.D.0.5}
-\contentsline {subsection}{\numberline {D.0.6}Requirements}{84}{subsection.D.0.6}
-\contentsline {chapter}{\numberline {E}Product Backlog}{85}{appendix.E}
-\contentsline {section}{\numberline {E.1}End of Sprint Structure}{88}{section.E.1}
+\contentsline {subsection}{\numberline {C.5.1}nginx}{74}{subsection.C.5.1}
+\contentsline {section}{\numberline {C.6}Supervisor}{76}{section.C.6}
+\contentsline {section}{\numberline {C.7}Multiple execution nodes}{76}{section.C.7}
+\contentsline {chapter}{\numberline {D}Risk List}{78}{appendix.D}
+\contentsline {subsection}{\numberline {D.0.1}People Management}{79}{subsection.D.0.1}
+\contentsline {subsection}{\numberline {D.0.2}Budget}{80}{subsection.D.0.2}
+\contentsline {subsection}{\numberline {D.0.3}Schedule}{81}{subsection.D.0.3}
+\contentsline {subsection}{\numberline {D.0.4}Organizational}{82}{subsection.D.0.4}
+\contentsline {subsection}{\numberline {D.0.5}Tools and tools; product}{84}{subsection.D.0.5}
+\contentsline {subsection}{\numberline {D.0.6}Requirements}{85}{subsection.D.0.6}
+\contentsline {chapter}{\numberline {E}Product Backlog}{86}{appendix.E}
+\contentsline {section}{\numberline {E.1}End of Sprint Structure}{89}{section.E.1}
+\contentsline {section}{\numberline {E.2}Integration tests}{91}{section.E.2}
+\contentsline {subsection}{\numberline {E.2.1}Article}{92}{subsection.E.2.1}
+\contentsline {subsection}{\numberline {E.2.2}Userregistration}{92}{subsection.E.2.2}
+\contentsline {subsection}{\numberline {E.2.3}Team Registration}{93}{subsection.E.2.3}
