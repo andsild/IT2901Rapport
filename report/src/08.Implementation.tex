@@ -1,12 +1,11 @@
 \chapter{Implementation}\label{chapter:implementation}
-
-This chapter goes into the details of our implementation. As mentioned
-in section X.X, Django follows the MVC pattern in a quite strict
+This chapter goes into the details of our implementation. 
+Django follows the MVC pattern in a quite strict
 manner, and as a consequence so does our project. In addition to MVC
 our project is divided into several Django apps, which are separate
-modules containing their own models, views and controllers. The apps
-are intended to serve a specific purpose and provide a certain level of
-modularity. However, some apps are dependent on others.
+modules containing their own models, views and controllers. 
+Each app serve a specific purpose and provide a certain level of
+modularity. 
 
 \begin{figure}
 	\includegraphics[width=0.8\textwidth]{a07Implementation-img1.png}
@@ -14,12 +13,9 @@ modularity. However, some apps are dependent on others.
 	\label{fig:appOverview}
 \end{figure}
 
-
-\bigskip
-
 Figure~\ref{fig:appOverview} shows the directory structure to one of our apps,
 all apps follow this structure. An app's root folder contains four files worth
-taking a closer look at, models.py, views.py, forms.py, and admin.py. 
+taking a closer look at:
 
 \begin{itemize}
     \item models.py contains the app's models i.e.\ our database entities. Due
@@ -50,14 +46,12 @@ taking a closer look at, models.py, views.py, forms.py, and admin.py.
     \item The apps also contain a templates directory. The templates are in
     essence HTML files extended by Django's template language, making them
     easily processed/modified by Django. These templates corresponds to the MVC
-    Views.  When a Django view sends a response it is usually by inserting
+    Views. When a Django view sends a response it is usually by inserting
     dynamic content into a template and then serving the final HTML file as an
     HTTP response. Though not visible in the figure, most of our templates are
     extensions of a global base template, this way redundancy is reduced and
     our user interface stays consistent.
 \end{itemize}
-
-\bigskip
 
 \section{contest}
 The contest app contains the most fundamental functionality and models for the system,
@@ -67,10 +61,7 @@ for storing information directly related to a contest, such as sponsor
 information, support contact information etc. Just about every
 other model in the project is related to the contest models in some way.
 A complete overview of the models defined in the contest app can be
-found in [reference contest ER]
-
-
-\bigskip
+found in Appenix~\ref{appendix:ER}.
 
 \section{article}
 The article app provides basic functionality for posting news articles.
@@ -100,10 +91,8 @@ set to limit the resources available to the submissions, for example
 the number of subprocesses, memory allocated etc.
 
 
-\bigskip
-
 The models defined in teamsubmission and execution can be found in the
-[reference submission ER]
+Appendix~\ref{appendix:ER}.
 
 
 \section{node\_manage}

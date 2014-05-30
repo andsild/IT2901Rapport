@@ -1,4 +1,4 @@
-\chapter{Task Description and Overview}
+\chapter{Task Description and Overview}\label{chapter:task}
 
 \section{Task Description and Overview}
 \label{sec:taskdesc}
@@ -7,10 +7,10 @@ The first step in our development process was to get a brief overview of
 our complete system. To do this, we have followed a conventional style
 of designing UML use cases together with a textual description. From
 reading this chapter, the reader should be able to understand how our
-end product works. The assumptions and constraints that affected our 
-process are also discussed in section~\ref{sec:assumtions}. 
+end product works. The assumptions and constraints that affected our
+process are also discussed in section~\ref{sec:assumtions}.
 Reading this chapter will be important to
-understand the rest of this report.  
+understand the rest of this report.
 
 \section{Assignment}
 According to our customer, IDI Open's previous solution was
@@ -49,25 +49,19 @@ wanted to keep it logical and simple, so we decided on ``GentleIDI''.
 Consequently, GentleIDI may be used to refer to our end product throughout the
 rest of the report.
 
-
+\pagebreak
 \section{Assumptions and Constraints}
 \label{sec:assumtions}
 To define what is satisfactory, we have made some assumptions and
 defined some constraints. Table~\ref{table:assumtions} should make it easier to
-understand how we have reasoned our system design. 
+understand how we have reasoned our system design.
 
-% \begin{table}
-% \caption{Assumtions and constraints}
-% \label{table:assumtions}
-% \tablehead{}
-% \begin{supertabular}{|p{0.33\textwidth}|p{0.33\textwidth}|p{0.33\textwidth}|}
-% \hline
 \begin{longtable}{|p{.33\textwidth}|p{.33\textwidth}|p{.33\textwidth}|}
 \caption[test]{Assumtions and constraints}\label{table:assumtions} \\
 \hline \multicolumn{1}{|c|}{\textbf{Assumption/Constraint}} &
 \multicolumn{1}{c|}{\textbf{Why}} &
 \multicolumn{1}{c|}{\textbf{Implication}} \\
-\hline 
+\hline
 \endfirsthead
 
 \multicolumn{3}{c}%
@@ -75,7 +69,7 @@ understand how we have reasoned our system design.
 \hline \multicolumn{1}{|c|}{\textbf{Assumption/Constraint}} &
 \multicolumn{1}{c|}{\textbf{Why}} &
 \multicolumn{1}{c|}{\textbf{Implication}} \\
-\hline 
+\hline
 \endhead
 The system will be maintained
 by people who have experience with computers. & People that are involved with
@@ -161,15 +155,15 @@ team per contest, and need a team in order to compete. \\\hline
 
 \end{longtable}
 
+\pagebreak
 \subsection{Service-providing Units}
 
 Another way of viewing the task description in section~\ref{sec:taskdesc}, is to say
 that our solution needs to do three actions: serve web-content, store
 data and execute user-submitted code. Since each of these operates with
 different protocols, we will think to our solution as composed of three
-different systems. These are described in figure X.X. 
+different systems. These are described in table~\ref{table:serviceUnits}.
 
-\pagebreak
 \begin{longtable}{|l|m{0.5\textwidth}|m{0.2\textwidth}|}
 \caption{Service-providing Units} \label{table:serviceUnits} \\
 \hline \multicolumn{1}{|c|}{\textbf{Entity}} &
@@ -187,20 +181,18 @@ the webserver. & AMQP\\\hline
 Database & The storage unit for all user{}-data and logs. & SQL\\\hline
 \end{longtable}
 
-
-
 \section{UML Use Cases}
 We need one page each for privileged, registered, and non-registered
 users. That is, one interface for administrative users, one for
 contestants, and one for non-registered viewers. From each of these
-three, we defined use case scenarios. Figure X.X and X.X models the
+three, we defined use case scenarios. Figures~\cref{figure:usecasepriv,figure:hei} models the
 available workflows and actions for each category of users.
 Table~\ref{table:uml-notation} describes the semantics of objects used in the
 diagram, which should be equivalent to the UML 2.0 standard.
 \begin{longtable}{|m{0.15\textwidth}|m{0.7\textwidth}|}
 \caption{UML Notation} \label{table:uml-notation} \\
 \hline
-	\includegraphics[width=0.15\textwidth]{chapter2-img1.jpg}  &
+	\includegraphics[height=.070\textwidth]{chapter2-img1.jpg}  &
 Use case actor. Represents a user group\\\hline
 	\includegraphics[width=0.15\textwidth]{chapter2-img2.png}  &
 UML generalization arrow. Used to indicate inheritance. The
@@ -224,20 +216,22 @@ requirements specification and to communicate what we
 were trying to accomplish.
 
 \begin{figure}[h!]
-    \includegraphics[width=0.8\textwidth]{UML_use_privileged}
+    \centering
+    \includegraphics[height=.9\textheight]{UML_use_privileged}
     \caption{UML use case for priviliged users} \label{figure:usecasepriv}
 \end{figure}
 
 \begin{figure}[h!]
-    \includegraphics[width=0.8\textwidth]{UML_use_contestant}
-    \caption{UML use case for non-privileged users} \label{figure:usecasenonpriv}
+    \centering
+    \includegraphics[trim = 0 0 160 0, width=0.6\textwidth]{UML_use_contestant}
+    \caption{UML use case for non-privileged users} \label{figure:hei}
 \end{figure}
-As seen in figures~\cref{figure:usecasepriv, figure:usecasenonpriv}, admins
+As seen in figures~\cref{figure:usecasepriv,figure:hei}, admins
 has privileges to perform the actions of any other group, in addition to
 their own set of actions. Thus, membership in the admin group gives a user
 complete control in the application domain. Furtherly, it can be noted that
 all usergroups have the opportunity to act as a contestant to review the
-website.  Privileged users will are still restricted from appearing in the
+website. Privileged users will are still restricted from appearing in the
 official high score tables to prevent them from assuming a competing role.
 This was to avoid the chance of any person with access to the solutions to
 compete.

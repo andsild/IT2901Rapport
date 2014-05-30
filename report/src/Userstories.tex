@@ -1,101 +1,7 @@
 \chapter{User stories}\label{appendix:userstories}
 
-\subsubsection{Role: Admin}
-
-\begin{longtable}{|p{0.1\textwidth}|l|p{0.8\textwidth}|}
-\hline \multicolumn{1}{|c|}{\textbf{ID}} &
-\multicolumn{1}{c|}{\textbf{Priority}} &
-\multicolumn{1}{c|}{\textbf{Story}}  \\
-\hline 
-\endfirsthead
-
-\multicolumn{3}{c}%
-{{\bfseries \tablename\ \thetable -- continued from previous page}} \\
-\hline \multicolumn{1}{|c|}{\textbf{ID}} &
-\multicolumn{1}{c|}{\textbf{Priority}} &
-\multicolumn{1}{c|}{\textbf{Story}} \\
-\hline 
-\endhead
-
-SA-01 & HIGH & Will be able to create a new contest. When doing so a new web
-page should be created, but whether the site should be immediately published or
-not is optional. The content of the new site follows a strict template, but
-adding a custom css-file will be possible. Each contest has got its own
-settings, containing a list of supported compiler profiles, compiler flags,
-penalty system, maximum number of contestants, maximum number of contestants
-per team, and of course a date and a name. When creating a contest the admin
-needs to provide a name and a date, the other settings may be skipped and
-default settings will be used.\\ \hline
-
-SA-02 & HIGH & Users are organized in user groups(admin being one of them).
-By default three usergroups are provided, admin, judge, contestant and
-functionary. The entire solution is based on independent modules of
-functionality and each user group has got access to a subset of these modules.
-The admin is the only non-modifiable user group, admins have access to all
-modules. The admins can modify all other user groups, change permissions of a
-group and remove/add member to a group, this includes promoting new admins. The
-admins are also able to deactivate users, and even remove them from the
-database.  \\ \hline
-
-SA-03 & MED & The system is able to gather a large variety of statistics,
-what data is to be collected is decided by the admins.\\ \hline
-
-
-SA-04 & HIGH & The system uses a collection of nodes(computers) for assessing
-submissions. The admins can add a node by providing an IP address and the
-username and password of a privileged user on that node. These nodes can also
-be removed by the admins. The nodes can also be managed in terms of compiler
-profile support.\\ \hline
-
- SA-05 & HIGH & The web page associated with a contest consists of a set of
-news items, these can be added by the admin. As with the entire contest web
-page the publishing of the news item can be set to a certain date and time.
-The news items can also be removed or modified later on.\\ \hline
-
- 
-\end{longtable}
-
-\subsubsection{Role: Judge}
-
-
-\begin{longtable}{|p{0.1\textwidth}|l|p{0.8\textwidth}|}
-\hline \multicolumn{1}{|c|}{\textbf{ID}} &
-\multicolumn{1}{c|}{\textbf{Priority}} &
-\multicolumn{1}{c|}{\textbf{Story}}  \\
-\hline 
-\endfirsthead
-
-\multicolumn{3}{c}%
-{{\bfseries \tablename\ \thetable -- continued from previous page}} \\
-\hline \multicolumn{1}{|c|}{\textbf{ID}} &
-\multicolumn{1}{c|}{\textbf{Priority}} &
-\multicolumn{1}{c|}{\textbf{Story}} \\
-\hline 
-\endhead
-
-SJ-01 & MED & A judge can submit a problem, where he/she will be able to upload
-cases with input/output. He/she can give every case a name. For each problem
-the judge can set a resource limit (time + memory) for each compiler profiles.
-He/she can upload different solutions that gives the right output, timeout and
-the wrong answer. All the solutions should be run-able and produce an output
-about the expected result, and if the execution time is inside the given
-boundaries. He/she should also be able to check that all problems have
-associated solutions that give right and wrong answer, and timeout. \\ 
-\hline
-
-SJ-02 & MED & A clarification system will be available to judges, where they
-can receive and respond to messages from contestants. When receiving a message,
-the judge will get a notification (possible in in the bottom right corner of
-the website, [Design choice]). A judge can choose to either send a global
-message or a message to a contestant or a team. A global message will be sent
-to every contestant in the competition.\\
-\hline
-\end{longtable}
-
 
 \subsubsection{Role: Contestant}
-
-
 \begin{longtable}{|p{0.1\textwidth}|l|p{0.8\textwidth}|}
 \hline \multicolumn{1}{|c|}{\textbf{ID}} &
 \multicolumn{1}{c|}{\textbf{Priority}} &
@@ -130,36 +36,9 @@ marked as global.\\
 
  \end{longtable}
 
-\subsubsection{Role: Functionary}
-
-
-
-\begin{longtable}{|p{0.1\textwidth}|l|p{0.8\textwidth}|}
-\hline \multicolumn{1}{|c|}{\textbf{ID}} &
-\multicolumn{1}{c|}{\textbf{Priority}} &
-\multicolumn{1}{c|}{\textbf{Story}}  \\
-\hline 
-\endfirsthead
-
-\multicolumn{3}{c}%
-{{\bfseries \tablename\ \thetable -- continued from previous page}} \\
-\hline \multicolumn{1}{|c|}{\textbf{ID}} &
-\multicolumn{1}{c|}{\textbf{Priority}} &
-\multicolumn{1}{c|}{\textbf{Story}} \\
-\hline 
-\endhead
-
-
-SF-01 & LOW & When a team completes a problem, a table containing the group
-name and location should be updated to include this. Each problem has a
-corresponding balloon colour. A balloon functionary should be able to register
-a balloon colour to each problem.\\
-\hline 
-\end{longtable}
-
-
+\pagebreak
 \subsubsection{Role: Teams}
-\begin{longtable}{|p{0.1\textwidth}|l|p{0.8\textwidth}|}
+\begin{longtable}{|l|l|p{0.8\textwidth}|}
 \hline \multicolumn{1}{|c|}{\textbf{ID}} &
 \multicolumn{1}{c|}{\textbf{Priority}} &
 \multicolumn{1}{c|}{\textbf{Story}}  \\
@@ -200,3 +79,120 @@ the submission is right, wrong, or gives timeout.\\
 
 \end{longtable}
 
+\subsubsection{Role: Functionary}
+
+\begin{longtable}{|l|l|p{0.8\textwidth}|}
+\hline \multicolumn{1}{|c|}{\textbf{ID}} &
+\multicolumn{1}{c|}{\textbf{Priority}} &
+\multicolumn{1}{c|}{\textbf{Story}}  \\
+\hline 
+\endfirsthead
+
+\multicolumn{3}{c}%
+{{\bfseries \tablename\ \thetable -- continued from previous page}} \\
+\hline \multicolumn{1}{|c|}{\textbf{ID}} &
+\multicolumn{1}{c|}{\textbf{Priority}} &
+\multicolumn{1}{c|}{\textbf{Story}} \\
+\hline 
+\endhead
+
+
+SF-01 & LOW & When a team completes a problem, a table containing the group
+name and location should be updated to include this. Each problem has a
+corresponding balloon colour. A balloon functionary should be able to register
+a balloon colour to each problem.\\
+\hline 
+\end{longtable}
+
+\pagebreak
+\subsubsection{Role: Judge}
+
+\begin{longtable}{|l|l|p{0.8\textwidth}|}
+\hline \multicolumn{1}{|c|}{\textbf{ID}} &
+\multicolumn{1}{c|}{\textbf{Priority}} &
+\multicolumn{1}{c|}{\textbf{Story}}  \\
+\hline 
+\endfirsthead
+
+\multicolumn{3}{c}%
+{{\bfseries \tablename\ \thetable -- continued from previous page}} \\
+\hline \multicolumn{1}{|c|}{\textbf{ID}} &
+\multicolumn{1}{c|}{\textbf{Priority}} &
+\multicolumn{1}{c|}{\textbf{Story}} \\
+\hline 
+\endhead
+
+SJ-01 & MED & A judge can submit a problem, where he/she will be able to upload
+cases with input/output. He/she can give every case a name. For each problem
+the judge can set a resource limit (time + memory) for each compiler profiles.
+He/she can upload different solutions that gives the right output, timeout and
+the wrong answer. All the solutions should be run-able and produce an output
+about the expected result, and if the execution time is inside the given
+boundaries. He/she should also be able to check that all problems have
+associated solutions that give right and wrong answer, and timeout. \\ 
+\hline
+
+SJ-02 & MED & A clarification system will be available to judges, where they
+can receive and respond to messages from contestants. When receiving a message,
+the judge will get a notification (possible in in the bottom right corner of
+the website, [Design choice]). A judge can choose to either send a global
+message or a message to a contestant or a team. A global message will be sent
+to every contestant in the competition.\\
+\hline
+\end{longtable}
+
+\pagebreak
+\subsubsection{Role: Admin}
+
+\begin{longtable}{|l|l|p{0.8\textwidth}|}
+\hline \multicolumn{1}{|c|}{\textbf{ID}} &
+\multicolumn{1}{c|}{\textbf{Priority}} &
+\multicolumn{1}{c|}{\textbf{Story}}  \\
+\hline 
+\endfirsthead
+
+\multicolumn{3}{c}%
+{{\bfseries \tablename\ \thetable -- continued from previous page}} \\
+\hline \multicolumn{1}{|c|}{\textbf{ID}} &
+\multicolumn{1}{c|}{\textbf{Priority}} &
+\multicolumn{1}{c|}{\textbf{Story}} \\
+\hline 
+\endhead
+
+SA-01 & HIGH & Will be able to create a new contest. When doing so a new web
+page should be created, but whether the site should be immediately published or
+not is optional. The content of the new site follows a strict template, but
+adding a custom css-file will be possible. Each contest has got its own
+settings, containing a list of supported compiler profiles, compiler flags,
+penalty system, maximum number of contestants, maximum number of contestants
+per team, and of course a date and a name. When creating a contest the admin
+needs to provide a name and a date, the other settings may be skipped and
+default settings will be used.\\ \hline
+
+SA-02 & HIGH & Users are organized in user groups(admin being one of them).
+By default three usergroups are provided, admin, judge, contestant and
+functionary. The entire solution is based on independent modules of
+functionality and each user group has got access to a subset of these modules.
+The admin is the only non-modifiable user group, admins have access to all
+modules. The admins can modify all other user groups, change permissions of a
+group and remove/add member to a group, this includes promoting new admins. The
+admins are also able to deactivate users, and even remove them from the
+database. \\ \hline
+
+SA-03 & MED & The system is able to gather a large variety of statistics,
+what data is to be collected is decided by the admins.\\ \hline
+
+
+SA-04 & HIGH & The system uses a collection of nodes(computers) for assessing
+submissions. The admins can add a node by providing an IP address and the
+username and password of a privileged user on that node. These nodes can also
+be removed by the admins. The nodes can also be managed in terms of compiler
+profile support.\\ \hline
+
+ SA-05 & HIGH & The web page associated with a contest consists of a set of
+news items, these can be added by the admin. As with the entire contest web
+page the publishing of the news item can be set to a certain date and time.
+The news items can also be removed or modified later on.\\ \hline
+
+ 
+\end{longtable}
