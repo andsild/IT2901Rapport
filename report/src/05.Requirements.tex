@@ -349,12 +349,15 @@ highscore list. & FO-04 & ST-03 &
 \end{supertabular}
 
 \subsection{Non-functional}
-The nonfunctional requirements defines, what objectives our end product
-needs to meet. The qualitative measures make it easier to agree on
-whether the requirement is fulfilled or not. Table can be interpreted in the following way:
+The nonfunctional requirements defines what objectives our end product needs to
+meet. Measure make it easy to agree on whether the requirement is fulfilled or
+not. Tables X.X % FLERE TABLES
+can be interpreted in the following way: 
 \begin{itemize}
-    \item In ID the NF stands for Non-Functional
-    \item Measure describes how/what the property should measure.
+    \item NF in the ID stands for non-functional
+    \item Measure describe what the requirement holds
+    \item Value is a quantitive measure 
+    \item 
 \end{itemize}
 
 \subsubsection{Speed}
@@ -363,14 +366,13 @@ whether the requirement is fulfilled or not. Table can be interpreted in the fol
 \textbf{ID:} & \textbf{Measure:} & \textbf{Value:} & \textbf{Priority:} & \textbf{Comment:}\\
 \hline
 
-NF-01 & Response from action & {\textless} 1.5 sec & MED & \\
+NF-01 & Response from action & {\textless} 1.5 sec & MED & E.g.\ clicking a click\\
 \hline
 
 NF-02 & Posting news & {\textless} 5 sec & MED & \\
 \hline
 
-NF-03 & Edit user & {\textless} 1 min & MED & Time from submission until the
-whole system is updated\\
+NF-03 & Edit user & {\textless} 1 min & MED & E.g.\ change email, password \\
 \hline
 \end{supertabular}
 
@@ -379,38 +381,20 @@ whole system is updated\\
 \hline
 \textbf{ID:} & \textbf{Measure:} & \textbf{Value:} & \textbf{Priority:} & \textbf{Comment:}\\
 \hline
-NF-04 &
-Number of contestants &
-500 &
-HIGH &
+NF-04 & Number of contestants & 500 & HIGH &
 \\\hline
 
-NF-05 &
-Number of teams &
-200 &
-HIGH &
+NF-05 & Number of teams & 200 & HIGH & \\
+\hline
 
-\\\hline
+NF-06 & Number of judges & 20 & HIGH & \\
+\hline
 
-NF-06 &
-Number of judges &
-20 &
-HIGH &
+NF-07 & Number of admins & {\textgreater} 1 & HIGH & \\
+\hline
 
-\\\hline
-
-NF-07 &
-Number of admins &
-{\textgreater} 1 &
-HIGH &
-
-\\\hline
-
-NF-08 &
-Limitation of solution size &
-50kB &
-
-\\\hline
+NF-08 & Limitation of submission size & 50kB & HIGH \\
+\hline
 \end{supertabular}
 
 \subsubsection{Ease of Use}
@@ -440,45 +424,37 @@ MED &
 \textbf{ID:} & \textbf{Measure:} & \textbf{Value:} & \textbf{Priority:} & \textbf{Comment:}\\
 \hline
 
-NF-12 & Mean time to failure &
-{\textgreater} 1 week & HIGH & The program should NOT be down during a
-contest\\
+NF-12 & Mean time to failure & {\textgreater} 1 week & HIGH & The system should
+not be down during a contest\\
 \hline
 
-NF-13 &
-Availability &
-{\textgreater} 99.9\% &
-HIGH &
-How much is the software up and running.\\
+NF-13 & Availability & {\textgreater} 99.9\% & MED & Downtime is not critical
+after or before a contest \\
 \hline
-
-
 \end{supertabular}
+
 \subsubsection{Robustness}
+
 \begin{supertabular}{|l|p{5cm}|p{1.8cm}|l|p{4.4cm}|}
 \hline
 \textbf{ID:} & \textbf{Measure:} & \textbf{Value:} & \textbf{Priority:} & \textbf{Comment:}\\
 \hline
 
-NF-14 & Time to restart after failure &
-{\textless} 10 min &
-HIGH &
+NF-14 & Time to restart after failure & {\textless} 10 min & HIGH &
 \\\hline
 
-NF-15 &
-Probability of data corruption on failure &
-{\textless} 1\% &
-MED & What kind of data\\
+NF-15 & Probability of data corruption on failure & {\textless} 1\% & MED &
+This is determined by backup coverage\\
 \hline
 
-NF-16 & Expected living time & 10-15 years & HIGH & \\
+NF-16 & Expected living time & {\textgreater} 10 years & HIGH & \\
 \hline
 
 NF-17 & Execution node & = 1  & HIGH &\\
 \hline
 
 NF-18 & Execution nodes & {\textgreater} 1 & MED & It should be possible to
-implement more\\
+utilize addition nodes\\
 \hline
 \end{supertabular}
 
@@ -489,8 +465,7 @@ implement more\\
 \textbf{ID:} & \textbf{Measure:} & \textbf{Value:} & \textbf{Priority:} & \textbf{Comment:}\\
 \hline
 
-NF-19 & Extensibility && HIGH & adding features, and carry-forward of
-customizations at next major version upgrade\\
+NF-19 & Extensibility && HIGH & Adding features should be easy\\
 \hline
 
 NF-20 & Module-based code && HIGH & The code should be easy to maintain\\
@@ -503,25 +478,21 @@ NF-20 & Module-based code && HIGH & The code should be easy to maintain\\
 \textbf{ID:} & \textbf{Measure:} & \textbf{Value:} & \textbf{Priority:} & \textbf{Comment:}\\
 \hline
 
-NF-21 & Accessibility & Internal \ and external & HIGH & slightly more
-important than external \\
+NF-21 & Accessibility & & HIGH & \\
 \hline
 
-NF-22 & Emotional factors & FUN & HIGH & It should be fun\\
-\hline
-
-NF-23 & Open-source & GPL & LOW & \\
+NF-22 & Open-source & GPL & MED & \\
 \hline
 \end{supertabular}
 
 \subsection{Security}
 While security requirements are non-functional, we decided to do the
-security requirements engineering as a separate process. Table X.X
-shows the listing.
-Table can be interpreted in the following way:
+security requirements engineering as a separate process. 
+Table % TODO MORE
+can be interpreted in the following way:
 \begin{itemize}
-    \item In ID the first two letters stands for the property of the requirement.
-    \item Measure describes how/what the property should measure.
+    \item In the ID, S is for security
+    \item Measure describes 
 \end{itemize}
 
 \subsubsection{Authentication and Authorization}
@@ -535,30 +506,29 @@ outside of the definition of the requirements & MED & \\
 \hline
 
 S-02 & An authenticated user shall not be able to perform any operation,
-asanother user & & \\ 
+as another user & HIGH & \\ 
 \hline
 
 S-03 & After an authenticated user performs an action to be logged out,
-thatuser will need to log in to re-authenticate & & E.g. \ session-cookies
+that user will need to log in to re-authenticate & MED & E.g. \ session-cookies
 should not remain such that you can still re-login\\ 
 \hline
 
 S-04 & No user shall gain administrative rights without manual approval
-ofcurrent administrators & & Ensure no user is registered as admin by mistake,
-no scripts thatautomatically escalates privileges to administrator when
-conditions aremet\\ 
+of current admins & & Ensure no user is registered as admin by mistake,
+no scripts that automatically escalates privileges to administrator when
+conditions are met\\ 
 \hline
 
-S-05 & aprovided interface and provide mandatory credentials. & &
-Sometimesusers a identified by session ID's\\ 
+S-05 & Correct authorization must be required for respective content. & HIGH &\\ 
 \hline
 
 S-06 & To authorize, you will either need to provide mandatory usercredentials
-through an interface, or have a valid session ID. & & \\ 
+through an interface, or have a valid session ID. & HIGH & \\ 
 \hline
 
-S-07 & Session tokens shall be unique to one computer only & & Not possible to
-simply acquire a session ID and use it on other computers toauthenticate\\
+S-07 & Session tokens shall be unique to one computer only & MED & Not possible to
+simply acquire a session ID and use it on other computers to authenticate\\
 \hline
 
 \end{supertabular}
@@ -568,30 +538,28 @@ simply acquire a session ID and use it on other computers toauthenticate\\
 \hline
 \textbf{ID} & \textbf{Measure} & \textbf{Priority} & \textbf{Comment} \\ 
 \hline
-S-08 & No front-end exposed input-fields shall besusceptible to injection
-attacks & & \\ 
+S-08 & No input-field shall be susceptible to injection attacks & HIGH& \\ 
 \hline
 
-S-09 & All data that passes the trust zone shall be in plaintext, andvalidated
-for injection attacks & & \\ 
+S-09 & All data that passes the trust zone shall be in plaintext, and validated
+against code & HIGH & \\ 
 \hline
 
-S-10 & Except from contest program submissions, data from non-developers
-canonly be directed/saved in databases. & & E.g.\ you shall not be able to
-create files in the source directory.\\ 
+S-10 & Data from non-developers
+can only be directed saved in databases. & MED & \\ 
 \hline
 
-S-11 & Uploaded file scripts shall not write to any file & & \\ 
+S-11 & Uploaded submissions shall not write to any file & HIGH & \\ 
 \hline
 
-S-12 & Uploaded file scripts shall not read from any other file than stdin && \\ 
+S-12 & Uploaded submissions shall not read from any other file than stdin &HIGH & \\ 
 \hline
 
-S-13 & Uploaded file scripts shall not access network, threading, or anyother
-external service not needed to solve a problem.  & & \\ 
+S-13 & Uploaded submissions shall not access network or any other
+external service not needed to solve a problem.  & HIGH & \\ 
 \hline
 
-S-14 & Data from a user shall not be modified & & \\ 
+S-14 & Data from a user shall not be modified by non-users & MED & \\ 
 \hline
 \end{supertabular}
 
@@ -601,18 +569,18 @@ S-14 & Data from a user shall not be modified & & \\
 \hline
 \textbf{ID} & \textbf{Measure} & \textbf{Priority} & \textbf{Comment} \\ 
 \hline
-S-15 & All modifications of data shall be logged & &\\ 
+S-15 & All modifications of data shall be logged & MED &\\ 
 \hline
 
-S-16 & All log entries shall contain username(s) and a timestamp with dayand
-current hour & & \\ 
+S-16 & All log entries shall contain username(s) and a timestamp with day and
+current hour & LOW & \\ 
 \hline
 
-S-17 & Logs will be backed up & & \\
+S-17 & Logs will be backed up & LOW & \\
 \hline
 
-S-18 & A team's score shall not be affected by anything other thanwhat is given
-in the contest rules & & \\ 
+S-18 & A team's score shall not be affected by anything other than what is given
+in the contest rules & HIGH & \\ 
 \hline
 \end{supertabular}
 
@@ -623,19 +591,19 @@ in the contest rules & & \\
 \textbf{ID} & \textbf{Measure} & \textbf{Priority} & \textbf{Comment} \\ 
 \hline
 
-S-19 & Sensitive user data shall not be stored in plaintext  & & \\ 
+S-19 & Sensitive user data shall not be stored in plaintext  & HIGH & E.g.\ password, gender \\ 
 \hline
 
-S-20 & Every user-field that is stored shall be justified in therequirements
-specification & & \\ 
+S-20 & Every user-field that is stored shall be justified in the requirements
+specification & & This requirement does no longer apply \\ 
 \hline
 
-S-21 & No sensitive data shall be exposed publicly, even if it is encrypted& &
-\\ 
+S-21 & No sensitive data shall be exposed publicly, even if it is encrypted&MED
+& \\ 
 \hline
 
 S-22 & User-data for a given user shall not be modified without that user's
-consent.  & & \\ 
+consent.  & LOW & \\ 
 \hline
 \end{supertabular}
 
@@ -646,36 +614,32 @@ consent.  & & \\
 \hline
 
 S-23 & Database shall be manually/automatically checked/verified for
-inconsistency or errors before an event. & & \\
+inconsistency or errors before an event. & MED & \\
 \hline
 
-S-24 & Password that are used in development shall not bepublicly available
-& &\\
+S-24 & Password that are used in development shall not be publicly available
+& HIGH  &\\
 \hline
 \end{supertabular}
 
 \subsection{Requirements Not Met}
-We met most of the requirements in time to their respective milestone,
-but there were some minor requirements we had to drop because of time
+Most of the requirements on time.
+There were some minor requirements not fulfilled mainly due to time
 constraints. All of them were priority LOW.\ Here are the requirements
 we did not complete:
 
 \begin{supertabular}{|m{5.0566597in}|m{1.2858598in}|}
 \hline
-A judge shall get a notification when received a
-question &
-FJ-09\\\hline
-A functionary shall be able to register a balloon
-colour to each task/problem &
+A judge shall get a notification when received a question & FJ-09\\\hline
+A functionary shall be able to register a balloon colour to each task/problem &
 FF-01\\\hline
-The system shall be able to gather a large
-variety of statistic specified by the admin &
-FO-02\\\hline
+The system shall be able to gather a large variety of statistic specified by
+the admin & FO-02\\\hline
 \end{supertabular}
 
 The reason they were not completed was due to the their low priority and
-time constraint. In addition to the unfinished requirements we also ended up with some
-requirements that we technically did meet, but not in an ideal way.
+time constraint. In addition to the unfinished requirements there were also 
+requirements that were not met in an ideal way.
 This was in agreement with the customer. These are the partially met
 requirements:
 
@@ -687,17 +651,16 @@ requirements:
     \hline
     An admin can manage a node.  & FA-12 \\
     \hline
-    An admin can add more than one node & FA-13 \\
-    \hline
     Response from action & NF-01 \\
     \hline
     Logs will be backed up & NR-03 \\
     \hline
 \end{supertabular}
 
-Unfortunately an admin can only manage the execution nodes through the
+Unfortunately, an admin can only manage the execution nodes through the
 code. This is planned to be fixed before the next contest. The response
 time did unfortunately exceed 1.5 seconds during the contest. This was
-due to a bad implementation choice, described in~\ref{implementation}. NR-03
-had to be overruled during the contest.  This is discussed in detail in section
+due to a bad implementation of the high score list, detailed
+in~\ref{reflection}. NR-03 had to be overruled during the contest. This is
+discussed in detail in chapter TODO
 \textit{development}.
