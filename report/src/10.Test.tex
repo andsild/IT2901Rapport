@@ -171,7 +171,7 @@ replaced them with the equivalent UML stereotype. The explanations are
 given in table 8.1. The tables in figure 8.3 are based upon the
 interfaces defined in figure 8.2. 
 
-\begin{tabular}{|l|l|}
+\begin{longtable}{|l|p{.6\textwidth}|}
     \hline
     \textbf{UML stereotype} & \textbf{Function}\\
     \hline
@@ -181,7 +181,7 @@ interfaces defined in figure 8.2.
 
     $<<$requires$>>$& For the component to work, the interface must have the given interface\\
         \hline
-    \end{tabular}
+    \end{longtable}
 
     \begin{figure}[h!]
         \includegraphics[scale=0.3]{UML_component.png}
@@ -196,9 +196,30 @@ scenarios for how the system should respond when a user performs an
 error or another external fault occurs. The complete listing is in
 table X.X.
 
-\begin{supertabular}{|l|p{3cm}|p{3cm}|p{3cm}|p{1.1cm}|l|}
+\begin{longtable}{|l|p{3cm}|p{3cm}|p{3cm}|p{1.1cm}|l|}
+\caption[table:systest]{System test} \label{table:systest}\\
 \hline
-ID & Function & Action/Input & Result & Req & Pass/Fail\\\hline
+\multicolumn{1}{|c|}{\textbf{ID}} &
+\multicolumn{1}{c|}{\textbf{Function}} &
+\multicolumn{1}{c|}{\textbf{Action/Input}} &
+\multicolumn{1}{c|}{\textbf{Result}} &
+\multicolumn{1}{c|}{\textbf{Req}} & 
+\multicolumn{1}{c|}{\textbf{Pass/Fail}} \\
+\hline 
+\endfirsthead
+
+\multicolumn{3}{c}%
+{{\bfseries \tablename\ \thetable{} -- continued from previous page}} \\
+\hline 
+\multicolumn{1}{|c|}{\textbf{ID}} &
+\multicolumn{1}{c|}{\textbf{Function}} &
+\multicolumn{1}{c|}{\textbf{Action/Input}} &
+\multicolumn{1}{c|}{\textbf{Result}} &
+\multicolumn{1}{c|}{\textbf{Req}} & 
+\multicolumn{1}{c|}{\textbf{Pass/Fail}} \\
+\hline 
+\hline 
+\endhead
 
 TF-01 & Create a contest, and publish an article to thatcontest. Edit
 article.Then, delete the contest. & Contest name, article text & Contest and
@@ -208,19 +229,19 @@ article is no longer publicly    available & FA-16, & PASS\\
 TF-02 & As a contestant, create a team and invite contestants. Go to profile
 page and see which team the contestant is amember of. Then, delete the team
 & Team, contestants, contest & First contestant in team, then contestant not in
-team & FE-01, FE-02, FE-04, FE-06, FC-04& PASS\\
+team & FE-01 FE-02 FE-04 FE-06 FC-04& PASS\\
 \hline
 
 TF-03 & Add custom css, specify custom settings, & Existing contest, css,
 compiler flags, penaltysystem, maximum numbers of contestant, maximum number of
-contestant per team & Contest with custom css and settings & FA-05, &
+contestant per team & Contest with custom css and settings & FA-05 &
 PASS\\
 \hline 
 
 TF-04 & Log in as admin, and enable all judges to createa contest. Then remove
 and add a judge, by escalating and de-escalating privileges from contestant. &
 Admin account, contestant account & Zero changes to system. &
-FA-09, & PASS\\
+FA-09 & PASS\\
 \hline
 
 TF-05 & Log in as judge, create a problem and upload cases. Upload different
@@ -228,7 +249,7 @@ solutions; one correct, one erroneous, and one that loops forever. After that,
 modify the problem before deleting it.
 & Problem, solutions, erroneous code, judge account &
 Only the correct solution should give points. &
-FJ-01, FJ-02, FJ-03, FJ-04, FJ-05, FJ-06, FJ-07&
+FJ-01 FJ-02 FJ-03 FJ-04 FJ-05 FJ-06 FJ-07&
 PASS\\
 \hline
 
@@ -236,7 +257,7 @@ TF-06 & Add two execution nodes with different compiler supports. Change both
 nodes, such that they take each other's \ compiler setting. Then remove both
 nodes. &
 Compiler profiles, available nodes, production server, administrator account &
-zero added nodes, no errors in execution & FA-12, FA-13 & PASS\\
+zero added nodes, no errors in execution & FA-12 FA-13 & PASS\\
 \hline 
 
 TF-07 & As a contestant, submit a question to the judge. As a judge, receive a
@@ -249,9 +270,9 @@ judge and contestant & FJ-08 & PASS\\
 TF-08 & Create a contestant account. Activate the account via email, and change
 the email. Ask for lost password on the new  email. &
 Contest-data, emails & Activation data received on the email, and all links
-word & FC-01, FC-02, & PASS\\
+word & FC-01 FC-02 & PASS\\
 \hline
-\end{supertabular}
+\end{longtable}
 
 
 \subsection{Non-functional testing}
@@ -273,10 +294,25 @@ are executed, and the table only covers the first 12 non-functional
 requirements. The documented tests do, however, ensure some
 requirements coverage.
 
-\begin{tabular}{|p{4.3cm}|p{2.0cm}|l|p{3.8cm}|l|}
-\hline
-Case & Input & ID & Expected result & Pass/Fail\\
-\hline
+\begin{longtable}{|p{4.3cm}|p{2.0cm}|l|p{3.8cm}|l|}
+\hline \multicolumn{1}{|c|}{\textbf{Case}} &
+\multicolumn{1}{c|}{\textbf{Input}} &
+\multicolumn{1}{c|}{\textbf{ID}} &
+\multicolumn{1}{c|}{\textbf{Expected Result}} &
+\multicolumn{1}{c|}{\textbf{Pass/Fail}} \\
+\hline 
+\endfirsthead
+
+\multicolumn{3}{c}%
+{{\bfseries \tablename\ \thetable{} -- continued from previous page}} \\
+\hline \multicolumn{1}{|c|}{\textbf{Case}} &
+\multicolumn{1}{c|}{\textbf{Input}} &
+\multicolumn{1}{c|}{\textbf{ID}} &
+\multicolumn{1}{c|}{\textbf{Expected Result}} &
+\multicolumn{1}{c|}{\textbf{Pass/Fail}} \\
+\hline 
+\endhead
+
 Adding 500 contestants & 500 users & NF-04 & Ability to add yet another & PASS\\
 \hline
 Adding 200 teams & 200 teams & NF-05 & Ability to add yet another & PASS\\
@@ -309,7 +345,7 @@ NF-01 & Response-time {\textless} 100 ms & FAIL\\
 Page responsiveness with at least 10 RPS & HTTP GET and POST to all pages &
 NF-01 & Response-time {\textless} 200 ms & FAIL\\
 \hline
-\end{tabular}
+\end{longtable}
 
 
 In table X.X it can be seen that not all the tests passed. This is
