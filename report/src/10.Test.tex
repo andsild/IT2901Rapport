@@ -146,11 +146,11 @@ In section X.X[12. Evaluation of testing methods] we explained why our coverage
 by integration testing was not extensive. The written integration tests are
 from our M-03 milestone, and do only cover the requirements that was necessary
 for that milestone. As such, we have chosen to move all the integration tests
-to appendix D.
+to appendix~\ref{appendix:integrationTest}.
 
 We formally agreed on what modules our system was made out of and their
 interfaces. Figure~\ref{fig:componentDiagram} shows our view on the system as
-per milestone M-03. In figure~\ref{fig:fig:componentDiagram}, we have replaced
+per milestone M-03. In figure~\ref{fig:componentDiagram}, we have replaced
 some default UML symbols and replaced them with the equivalent UML stereotype.
 The explanations are given in table~\ref{table:component}. The integration
 tests we did make are given in appendix~\ref{appendix:integrationTest}.
@@ -169,6 +169,7 @@ tests we did make are given in appendix~\ref{appendix:integrationTest}.
 \end{longtable}
 
 \begin{figure}[h!]
+    \centering
     \includegraphics[scale=0.3]{UML_component.png} 
     \caption{Diagram from milestone M-03. Each interface connection,
             especially ``createContest'' has been tested}
@@ -203,7 +204,6 @@ table~\ref{table:systest}.
 \multicolumn{1}{c|}{\textbf{Result}} &
 \multicolumn{1}{c|}{\textbf{Req}} & 
 \multicolumn{1}{c|}{\textbf{Pass/Fail}} \\
-\hline 
 \hline 
 \endhead
 
