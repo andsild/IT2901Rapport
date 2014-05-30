@@ -1,24 +1,24 @@
 \contentsline {chapter}{\numberline {1}Introduction}{2}{chapter.1}
 \contentsline {section}{\numberline {1.1}The Course}{2}{section.1.1}
 \contentsline {section}{\numberline {1.2}The Group}{2}{section.1.2}
-\contentsline {subsubsection}{Eirik Fosse}{3}{section*.5}
-\contentsline {subsubsection}{Filip Fjuk Egge}{3}{section*.6}
-\contentsline {subsubsection}{Haakon Konrad William Aaseb\IeC {\o }}{3}{section*.7}
-\contentsline {subsubsection}{H\IeC {\r a}kon Gimnes Kaurel}{3}{section*.8}
-\contentsline {subsubsection}{Tino Lazreg}{3}{section*.9}
+\contentsline {subsubsection}{Eirik Fosse}{3}{section*.6}
+\contentsline {subsubsection}{Filip Fjuk Egge}{3}{section*.7}
+\contentsline {subsubsection}{Haakon Konrad William Aaseb\IeC {\o }}{3}{section*.8}
+\contentsline {subsubsection}{H\IeC {\r a}kon Gimnes Kaurel}{3}{section*.9}
+\contentsline {subsubsection}{Tino Lazreg}{3}{section*.10}
 \contentsline {section}{\numberline {1.3}The Customer}{3}{section.1.3}
 \contentsline {section}{\numberline {1.4}The Contest}{4}{section.1.4}
 \contentsline {section}{\numberline {1.5}Stakeholders}{4}{section.1.5}
 \contentsline {subsection}{\numberline {1.5.1}Course}{4}{subsection.1.5.1}
-\contentsline {subsubsection}{Supervisor}{4}{section*.10}
-\contentsline {subsubsection}{Examiner}{4}{section*.11}
+\contentsline {subsubsection}{Supervisor}{4}{section*.11}
+\contentsline {subsubsection}{Examiner}{4}{section*.12}
 \contentsline {subsection}{\numberline {1.5.2}Product and Competition}{4}{subsection.1.5.2}
-\contentsline {subsubsection}{IDI Open}{4}{section*.12}
-\contentsline {subsubsection}{Judges}{5}{section*.13}
-\contentsline {subsubsection}{Developers}{5}{section*.14}
-\contentsline {subsubsection}{Maintainers}{5}{section*.15}
-\contentsline {subsubsection}{Sponsors}{5}{section*.16}
-\contentsline {subsubsection}{Contestants}{5}{section*.17}
+\contentsline {subsubsection}{IDI Open}{4}{section*.13}
+\contentsline {subsubsection}{Judges}{5}{section*.14}
+\contentsline {subsubsection}{Developers}{5}{section*.15}
+\contentsline {subsubsection}{Maintainers}{5}{section*.16}
+\contentsline {subsubsection}{Sponsors}{5}{section*.17}
+\contentsline {subsubsection}{Contestants}{5}{section*.18}
 \contentsline {section}{\numberline {1.6}Goals}{5}{section.1.6}
 \contentsline {chapter}{\numberline {2}Task Description and Overview}{6}{chapter.2}
 \contentsline {section}{\numberline {2.1}Task Description and Overview}{6}{section.2.1}
@@ -37,12 +37,12 @@
 \contentsline {subsection}{\numberline {3.4.1}Work Breakdown Structure}{14}{subsection.3.4.1}
 \contentsline {subsection}{\numberline {3.4.2}Milestones}{17}{subsection.3.4.2}
 \contentsline {subsection}{\numberline {3.4.3}Meetings}{18}{subsection.3.4.3}
-\contentsline {subsubsection}{Internal Meetings}{18}{section*.18}
-\contentsline {subsubsection}{Supervisor Meeting}{18}{section*.19}
-\contentsline {subsubsection}{Customer Meeting}{18}{section*.20}
+\contentsline {subsubsection}{Internal Meetings}{18}{section*.19}
+\contentsline {subsubsection}{Supervisor Meeting}{18}{section*.20}
+\contentsline {subsubsection}{Customer Meeting}{18}{section*.21}
 \contentsline {subsection}{\numberline {3.4.4}Resources}{19}{subsection.3.4.4}
-\contentsline {subsubsection}{Planned Work}{19}{section*.21}
-\contentsline {subsubsection}{Actual Work}{20}{section*.22}
+\contentsline {subsubsection}{Planned Work}{19}{section*.22}
+\contentsline {subsubsection}{Actual Work}{20}{section*.23}
 \contentsline {chapter}{\numberline {4}Prestudy}{21}{chapter.4}
 \contentsline {section}{\numberline {4.1}Learning Tools/Framework}{21}{section.4.1}
 \contentsline {section}{\numberline {4.2}Researching the Old System}{22}{section.4.2}
@@ -92,12 +92,12 @@
 \contentsline {subsection}{\numberline {6.1.1}Logic View}{42}{subsection.6.1.1}
 \contentsline {subsection}{\numberline {6.1.2}Process View}{43}{subsection.6.1.2}
 \contentsline {subsection}{\numberline {6.1.3}Development View}{44}{subsection.6.1.3}
-\contentsline {subsubsection}{Purpose}{44}{section*.23}
-\contentsline {subsection}{\numberline {6.1.4}Physical View}{44}{subsection.6.1.4}
 \contentsline {subsubsection}{Purpose}{44}{section*.24}
-\contentsline {subsubsection}{Presentation tier}{45}{section*.25}
-\contentsline {subsubsection}{Application tier}{45}{section*.26}
-\contentsline {subsubsection}{Data tier}{46}{section*.27}
+\contentsline {subsection}{\numberline {6.1.4}Physical View}{44}{subsection.6.1.4}
+\contentsline {subsubsection}{Purpose}{44}{section*.25}
+\contentsline {subsubsection}{Presentation tier}{45}{section*.26}
+\contentsline {subsubsection}{Application tier}{45}{section*.27}
+\contentsline {subsubsection}{Data tier}{46}{section*.28}
 \contentsline {section}{\numberline {6.2}Quality attributes}{47}{section.6.2}
 \contentsline {subsection}{\numberline {6.2.1}Availability}{47}{subsection.6.2.1}
 \contentsline {subsection}{\numberline {6.2.2}Modifiability}{47}{subsection.6.2.2}
@@ -135,7 +135,7 @@
 \contentsline {subsection}{\numberline {9.1.6}Milestone M-06 - IDI Open Test Event}{62}{subsection.9.1.6}
 \contentsline {subsection}{\numberline {9.1.7}Milestone M-07 - IDI Open}{63}{subsection.9.1.7}
 \contentsline {subsection}{\numberline {9.1.8}Milestone M-08 - Final report}{64}{subsection.9.1.8}
-\contentsline {subsubsection}{Sprint by sprint}{64}{section*.28}
+\contentsline {subsubsection}{Sprint by sprint}{64}{section*.29}
 \contentsline {chapter}{\numberline {10}Testplan}{65}{chapter.10}
 \contentsline {section}{\numberline {10.1}Testing Strategy Overview}{65}{section.10.1}
 \contentsline {subsection}{\numberline {10.1.1}Unit Testing}{65}{subsection.10.1.1}
@@ -158,89 +158,89 @@
 \contentsline {section}{\numberline {11.3}Risk Identification}{74}{section.11.3}
 \contentsline {section}{\numberline {11.4}Risk Monitoring}{75}{section.11.4}
 \contentsline {section}{\numberline {11.5}Complete List of Risks}{75}{section.11.5}
-\contentsline {chapter}{\numberline {A}Sprints}{76}{appendix.A}
-\contentsline {section}{\numberline {A.1}Template}{76}{section.A.1}
-\contentsline {section}{\numberline {A.2}Sprint 0}{77}{section.A.2}
-\contentsline {section}{\numberline {A.3}Sprint 1}{78}{section.A.3}
-\contentsline {section}{\numberline {A.4}Sprint 1}{79}{section.A.4}
-\contentsline {section}{\numberline {A.5}Sprint 2}{80}{section.A.5}
-\contentsline {section}{\numberline {A.6}Sprint 3}{81}{section.A.6}
-\contentsline {section}{\numberline {A.7}Sprint 4}{82}{section.A.7}
-\contentsline {section}{\numberline {A.8}Sprint 5}{83}{section.A.8}
-\contentsline {section}{\numberline {A.9}Sprint 6}{84}{section.A.9}
-\contentsline {section}{\numberline {A.10}Sprint 7}{85}{section.A.10}
-\contentsline {section}{\numberline {A.11}Sprint 8}{86}{section.A.11}
-\contentsline {section}{\numberline {A.12}Sprint 9}{87}{section.A.12}
-\contentsline {section}{\numberline {A.13}Sprint 10}{88}{section.A.13}
-\contentsline {section}{\numberline {A.14}Sprint 11}{89}{section.A.14}
-\contentsline {section}{\numberline {A.15}Sprint 12}{90}{section.A.15}
-\contentsline {section}{\numberline {A.16}Sprint After}{91}{section.A.16}
-\contentsline {chapter}{\numberline {B}User stories}{92}{appendix.B}
-\contentsline {subsubsection}{Role: Contestant}{92}{section*.29}
-\contentsline {subsubsection}{Role: Teams}{93}{section*.30}
-\contentsline {subsubsection}{Role: Functionary}{93}{section*.31}
-\contentsline {subsubsection}{Role: Judge}{94}{section*.32}
-\contentsline {subsubsection}{Role: Admin}{95}{section*.33}
-\contentsline {chapter}{\numberline {C}Installation Guide}{96}{appendix.C}
-\contentsline {section}{\numberline {C.1}Creating Your Users}{96}{section.C.1}
-\contentsline {section}{\numberline {C.2}Setting Up the Environment}{97}{section.C.2}
-\contentsline {section}{\numberline {C.3}Installing Required Packages}{98}{section.C.3}
-\contentsline {section}{\numberline {C.4}Database}{98}{section.C.4}
-\contentsline {section}{\numberline {C.5}Gunicorn}{99}{section.C.5}
-\contentsline {subsection}{\numberline {C.5.1}Nginx}{100}{subsection.C.5.1}
-\contentsline {section}{\numberline {C.6}Supervisor}{102}{section.C.6}
-\contentsline {section}{\numberline {C.7}Multiple Execution Nodes}{103}{section.C.7}
-\contentsline {chapter}{\numberline {D}Risk List}{104}{appendix.D}
-\contentsline {section}{\numberline {D.1}People Management}{105}{section.D.1}
-\contentsline {section}{\numberline {D.2}Budget}{106}{section.D.2}
-\contentsline {section}{\numberline {D.3}Schedule}{106}{section.D.3}
-\contentsline {section}{\numberline {D.4}Organizational}{107}{section.D.4}
-\contentsline {section}{\numberline {D.5}Tools and Frameworks; Product}{108}{section.D.5}
-\contentsline {section}{\numberline {D.6}Requirements}{109}{section.D.6}
-\contentsline {chapter}{\numberline {E}Product Backlog}{110}{appendix.E}
-\contentsline {chapter}{\numberline {F}End of Sprint Structure}{112}{appendix.F}
-\contentsline {chapter}{\numberline {G}Integration Tests}{114}{appendix.G}
-\contentsline {section}{\numberline {G.1}Article}{115}{section.G.1}
-\contentsline {section}{\numberline {G.2}Userregistration}{116}{section.G.2}
-\contentsline {section}{\numberline {G.3}Team Registration}{116}{section.G.3}
-\contentsline {chapter}{\numberline {H}User Manual}{118}{appendix.H}
-\contentsline {section}{\numberline {H.1}Admin}{118}{section.H.1}
-\contentsline {subsection}{\numberline {H.1.1}Basic Usage}{118}{subsection.H.1.1}
-\contentsline {subsubsection}{Creating Objects}{118}{section*.34}
-\contentsline {subsubsection}{Editing Objects}{118}{section*.35}
-\contentsline {subsubsection}{Deleting Objects}{120}{section*.36}
-\contentsline {subsection}{\numberline {H.1.2}Creating a Contest}{120}{subsection.H.1.2}
-\contentsline {subsubsection}{Create Links}{120}{section*.37}
-\contentsline {subsubsection}{Create Sponsor}{122}{section*.38}
-\contentsline {subsubsection}{Create Compiler Profile}{122}{section*.39}
-\contentsline {subsubsection}{Create Problems}{123}{section*.40}
-\contentsline {subsubsection}{Create Test Case}{123}{section*.41}
-\contentsline {subsubsection}{Resource}{125}{section*.42}
-\contentsline {subsection}{\numberline {H.1.3}Creating Articles}{125}{subsection.H.1.3}
-\contentsline {subsection}{\numberline {H.1.4}Create User}{126}{subsection.H.1.4}
-\contentsline {subsubsection}{Create Contestant}{126}{section*.43}
-\contentsline {subsubsection}{Create Admin User}{126}{section*.44}
-\contentsline {subsubsection}{Promote Contestant to Admin}{128}{section*.45}
-\contentsline {subsection}{\numberline {H.1.5}Balloon View}{128}{subsection.H.1.5}
-\contentsline {subsection}{\numberline {H.1.6}Judge View}{129}{subsection.H.1.6}
-\contentsline {section}{\numberline {H.2}Contestant}{131}{section.H.2}
-\contentsline {subsection}{\numberline {H.2.1}Register User}{131}{subsection.H.2.1}
-\contentsline {subsection}{\numberline {H.2.2}Edit User}{131}{subsection.H.2.2}
-\contentsline {subsection}{\numberline {H.2.3}Create Team}{131}{subsection.H.2.3}
-\contentsline {subsection}{\numberline {H.2.4}Edit Team}{135}{subsection.H.2.4}
-\contentsline {subsubsection}{Edit Basic Information}{135}{section*.46}
-\contentsline {subsubsection}{Invite User to Team/Join Team}{136}{section*.47}
-\contentsline {subsubsection}{Remove User from Team}{136}{section*.48}
-\contentsline {subsection}{\numberline {H.2.5}Solve Problems}{137}{subsection.H.2.5}
-\contentsline {subsection}{\numberline {H.2.6}Clarification}{139}{subsection.H.2.6}
-\contentsline {subsubsection}{Post a Question}{139}{section*.49}
-\contentsline {subsubsection}{Review Replies}{139}{section*.50}
-\contentsline {subsection}{\numberline {H.2.7}Highscore List}{139}{subsection.H.2.7}
-\contentsline {subsubsection}{Top Five}{139}{section*.51}
-\contentsline {subsubsection}{Full Highscore}{139}{section*.52}
-\contentsline {chapter}{\numberline {I}ER-Diagram}{143}{appendix.I}
-\contentsline {chapter}{\numberline {J}Website views}{147}{appendix.J}
-\contentsline {chapter}{\numberline {K}Sprint Burndowns}{149}{appendix.K}
-\contentsline {section}{\numberline {K.1}Inital Activity Lists}{149}{section.K.1}
-\contentsline {section}{\numberline {K.2}Activity Lists}{150}{section.K.2}
-\contentsline {chapter}{\numberline {L}Transcript Template for Supervisor Meeting}{161}{appendix.L}
+\contentsline {chapter}{\numberline {A}Sprints}{77}{appendix.A}
+\contentsline {section}{\numberline {A.1}Template}{77}{section.A.1}
+\contentsline {section}{\numberline {A.2}Sprint 0}{78}{section.A.2}
+\contentsline {section}{\numberline {A.3}Sprint 1}{79}{section.A.3}
+\contentsline {section}{\numberline {A.4}Sprint 1}{80}{section.A.4}
+\contentsline {section}{\numberline {A.5}Sprint 2}{81}{section.A.5}
+\contentsline {section}{\numberline {A.6}Sprint 3}{82}{section.A.6}
+\contentsline {section}{\numberline {A.7}Sprint 4}{83}{section.A.7}
+\contentsline {section}{\numberline {A.8}Sprint 5}{84}{section.A.8}
+\contentsline {section}{\numberline {A.9}Sprint 6}{85}{section.A.9}
+\contentsline {section}{\numberline {A.10}Sprint 7}{86}{section.A.10}
+\contentsline {section}{\numberline {A.11}Sprint 8}{87}{section.A.11}
+\contentsline {section}{\numberline {A.12}Sprint 9}{88}{section.A.12}
+\contentsline {section}{\numberline {A.13}Sprint 10}{89}{section.A.13}
+\contentsline {section}{\numberline {A.14}Sprint 11}{90}{section.A.14}
+\contentsline {section}{\numberline {A.15}Sprint 12}{91}{section.A.15}
+\contentsline {section}{\numberline {A.16}Sprint After}{92}{section.A.16}
+\contentsline {chapter}{\numberline {B}User stories}{93}{appendix.B}
+\contentsline {subsubsection}{Role: Contestant}{93}{section*.31}
+\contentsline {subsubsection}{Role: Teams}{94}{section*.32}
+\contentsline {subsubsection}{Role: Functionary}{94}{section*.33}
+\contentsline {subsubsection}{Role: Judge}{95}{section*.34}
+\contentsline {subsubsection}{Role: Admin}{96}{section*.35}
+\contentsline {chapter}{\numberline {C}Installation Guide}{97}{appendix.C}
+\contentsline {section}{\numberline {C.1}Creating Your Users}{97}{section.C.1}
+\contentsline {section}{\numberline {C.2}Setting Up the Environment}{98}{section.C.2}
+\contentsline {section}{\numberline {C.3}Installing Required Packages}{99}{section.C.3}
+\contentsline {section}{\numberline {C.4}Database}{99}{section.C.4}
+\contentsline {section}{\numberline {C.5}Gunicorn}{100}{section.C.5}
+\contentsline {subsection}{\numberline {C.5.1}Nginx}{101}{subsection.C.5.1}
+\contentsline {section}{\numberline {C.6}Supervisor}{103}{section.C.6}
+\contentsline {section}{\numberline {C.7}Multiple Execution Nodes}{104}{section.C.7}
+\contentsline {chapter}{\numberline {D}Risk List}{105}{appendix.D}
+\contentsline {section}{\numberline {D.1}People Management}{106}{section.D.1}
+\contentsline {section}{\numberline {D.2}Budget}{107}{section.D.2}
+\contentsline {section}{\numberline {D.3}Schedule}{107}{section.D.3}
+\contentsline {section}{\numberline {D.4}Organizational}{108}{section.D.4}
+\contentsline {section}{\numberline {D.5}Tools and Frameworks; Product}{109}{section.D.5}
+\contentsline {section}{\numberline {D.6}Requirements}{110}{section.D.6}
+\contentsline {chapter}{\numberline {E}Product Backlog}{111}{appendix.E}
+\contentsline {chapter}{\numberline {F}End of Sprint Structure}{113}{appendix.F}
+\contentsline {chapter}{\numberline {G}Integration Tests}{115}{appendix.G}
+\contentsline {section}{\numberline {G.1}Article}{116}{section.G.1}
+\contentsline {section}{\numberline {G.2}Userregistration}{117}{section.G.2}
+\contentsline {section}{\numberline {G.3}Team Registration}{117}{section.G.3}
+\contentsline {chapter}{\numberline {H}User Manual}{119}{appendix.H}
+\contentsline {section}{\numberline {H.1}Admin}{119}{section.H.1}
+\contentsline {subsection}{\numberline {H.1.1}Basic Usage}{119}{subsection.H.1.1}
+\contentsline {subsubsection}{Creating Objects}{119}{section*.36}
+\contentsline {subsubsection}{Editing Objects}{119}{section*.37}
+\contentsline {subsubsection}{Deleting Objects}{121}{section*.38}
+\contentsline {subsection}{\numberline {H.1.2}Creating a Contest}{121}{subsection.H.1.2}
+\contentsline {subsubsection}{Create Links}{121}{section*.39}
+\contentsline {subsubsection}{Create Sponsor}{123}{section*.40}
+\contentsline {subsubsection}{Create Compiler Profile}{123}{section*.41}
+\contentsline {subsubsection}{Create Problems}{124}{section*.42}
+\contentsline {subsubsection}{Create Test Case}{124}{section*.43}
+\contentsline {subsubsection}{Resource}{126}{section*.44}
+\contentsline {subsection}{\numberline {H.1.3}Creating Articles}{126}{subsection.H.1.3}
+\contentsline {subsection}{\numberline {H.1.4}Create User}{127}{subsection.H.1.4}
+\contentsline {subsubsection}{Create Contestant}{127}{section*.45}
+\contentsline {subsubsection}{Create Admin User}{127}{section*.46}
+\contentsline {subsubsection}{Promote Contestant to Admin}{129}{section*.47}
+\contentsline {subsection}{\numberline {H.1.5}Balloon View}{129}{subsection.H.1.5}
+\contentsline {subsection}{\numberline {H.1.6}Judge View}{130}{subsection.H.1.6}
+\contentsline {section}{\numberline {H.2}Contestant}{132}{section.H.2}
+\contentsline {subsection}{\numberline {H.2.1}Register User}{132}{subsection.H.2.1}
+\contentsline {subsection}{\numberline {H.2.2}Edit User}{132}{subsection.H.2.2}
+\contentsline {subsection}{\numberline {H.2.3}Create Team}{132}{subsection.H.2.3}
+\contentsline {subsection}{\numberline {H.2.4}Edit Team}{136}{subsection.H.2.4}
+\contentsline {subsubsection}{Edit Basic Information}{136}{section*.48}
+\contentsline {subsubsection}{Invite User to Team/Join Team}{137}{section*.49}
+\contentsline {subsubsection}{Remove User from Team}{137}{section*.50}
+\contentsline {subsection}{\numberline {H.2.5}Solve Problems}{138}{subsection.H.2.5}
+\contentsline {subsection}{\numberline {H.2.6}Clarification}{140}{subsection.H.2.6}
+\contentsline {subsubsection}{Post a Question}{140}{section*.51}
+\contentsline {subsubsection}{Review Replies}{140}{section*.52}
+\contentsline {subsection}{\numberline {H.2.7}Highscore List}{140}{subsection.H.2.7}
+\contentsline {subsubsection}{Top Five}{140}{section*.53}
+\contentsline {subsubsection}{Full Highscore}{140}{section*.54}
+\contentsline {chapter}{\numberline {I}ER-Diagram}{144}{appendix.I}
+\contentsline {chapter}{\numberline {J}Website views}{148}{appendix.J}
+\contentsline {chapter}{\numberline {K}Sprint Burndowns}{150}{appendix.K}
+\contentsline {section}{\numberline {K.1}Inital Activity Lists}{150}{section.K.1}
+\contentsline {section}{\numberline {K.2}Activity Lists}{151}{section.K.2}
+\contentsline {chapter}{\numberline {L}Transcript Template for Supervisor Meeting}{162}{appendix.L}
