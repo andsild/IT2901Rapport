@@ -169,6 +169,7 @@ data and execute user-submitted code. Since each of these operates with
 different protocols, we will think to our solution as composed of three
 different systems. These are described in figure X.X. 
 
+\pagebreak
 \begin{longtable}{|l|m{0.5\textwidth}|m{0.2\textwidth}|}
 \caption{Service-providing Units} \label{table:serviceUnits} \\
 \hline
@@ -224,14 +225,20 @@ requirements specification and to communicate what we
 were trying to accomplish.
 
 \begin{figure}[h!]
-    \includegraphics[width=0.8\textwidth]{chapter2-img3.jpg}
-    \caption{FIGURECAPTION} \label{figure:usecase}
+    \includegraphics[width=0.8\textwidth]{UML_use_privileged}
+    \caption{UML use case for priviliged users} \label{figure:usecasepriv}
 \end{figure}
-As seen in figure~\ref{figure:usecase}, admins has privileges to perform the
-actions of any other group, in addition to their own set of actions. Thus,
-membership in the admin group gives a user complete control in the application
-domain. Furtherly, it can be noted that all usergroups have the opportunity to
-act as a contestant to review the website.  Privileged users will are still
-restricted from appearing in the official high score tables to prevent them
-from assuming a competing role. This was to avoid the chance of any person with
-access to the solutions to compete.
+
+\begin{figure}[h!]
+    \includegraphics[width=0.8\textwidth]{UML_use_contestant}
+    \caption{UML use case for non-privileged users} \label{figure:usecasenonpriv}
+\end{figure}
+As seen in figures~\cref{figure:usecasepriv, figure:usecasenonpriv}, admins
+has privileges to perform the actions of any other group, in addition to
+their own set of actions. Thus, membership in the admin group gives a user
+complete control in the application domain. Furtherly, it can be noted that
+all usergroups have the opportunity to act as a contestant to review the
+website.  Privileged users will are still restricted from appearing in the
+official high score tables to prevent them from assuming a competing role.
+This was to avoid the chance of any person with access to the solutions to
+compete.
