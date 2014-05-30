@@ -8,39 +8,37 @@ The first step in our development process was to get a brief overview of
 our complete system. To do this, we have followed a conventional style
 of designing UML use cases together with a textual description. From
 reading this chapter, the reader should be able to understand how our
-end product works. Also, reading this chapter will be important to
-understand the other chapters in this report. The assumptions and
-constraints that affected our process are also discussed in section~\ref{sec:assumtions}. 
+end product works. The assumptions and constraints that affected our 
+process are also discussed in section~\ref{sec:assumtions}. 
+Reading this chapter will be important to
+understand the rest of this report.  
 
 \section{Assignment}
-According to our customers, ``IDI Open'''s previous solution was
+According to our customer, IDI Open's previous solution was
 cumbersome to use. Our assignment was to create a replacement system
 that would be easier to administer.
-This included replacing both front and back-end systems. In replacing
-the old solution, we did not need to implement features that were not
-available from the old system. 
+This included replacing both front and back-end systems.
 
-The features of the old solution, in a nutshell, are given below. A more
-detailed overview will be given in section X.X.
+The features of the old solution, in a nutshell, are given below.
 \begin{itemize}
-\item Website to inform about the contest to the public
+\item Website containing information about the contest
 \item Team-registration and scoring
-\item Ability for users to upload code, that would be compiled and executed by the server
+\item Ability for users to upload code to be compiled and executed
 \end{itemize}
 
 We were given access to the code for the old solution. The customers
 felt that this code was cluttered, but we could re-use components
 wherever we wanted. However, it was important that we did this in an
-uncluttered way, such that other developers could easily understand the
+structured manner, such that other developers could easily understand the
 new solution.
 
-\section{Branding our Product}
+\section{GentleIDI}
 
 Since we were delivering an end product to a real customer, we wanted to
 present ourselves as a real company. We chose the name
 ``GentleCoding'' as our
 representative name. This was used to name our repositories, email
-lists and other medium communicated with external parties.
+lists and other media communicated with external parties.
 
 The term ``Gentle'' is supposed to
 represent our calm approach to problems. It is also similar to
@@ -51,7 +49,7 @@ remember.
 Since we were developing a new system, we also wanted to brand our
 product. We wanted to keep it logical and simple, so we decided on
 ``GentleIDI''. Consequently,
-GentleIDI will be used to refer to our end product throughout the rest of the report.
+GentleIDI may be used to refer to our end product throughout the rest of the report.
 
 
 \section{Assumptions and Constraints}
@@ -63,7 +61,7 @@ defined some constraints. Table~\ref{table:assumtions} should make it easier to 
 how we have reasoned our system design. 
 
 \begin{table}
-\caption{Caption}
+\caption{Assumtions and constraints}
 \label{table:assumtions}
 \tablehead{}
 \begin{supertabular}{|p{0.33\textwidth}|p{0.33\textwidth}|p{0.33\textwidth}|}
@@ -72,43 +70,46 @@ Assumption/Constraint &
 Why &
 Implication\\\hline
 The system will be maintained by people who have experience with
-computers &
+computers. &
 People that are involved with any programming contest are typically
 programmers themselves. &
 User design, words and definitions can be made more technical. Error
 messages can be explained using computer lingo. \\\hline
+
 The system will be used and maintained for {\textgreater} 5 years &
 Customer{}-constraint: they do not want to spend too much time
 developing new products, so maintenance is preferred. &
 \ The code should be written in a modular, extensible way with clear
 documentation.\\\hline
-The customers, IDI Open, are students near/at Gl{\o}shaugen &
+
+The customer is based at Gl{\o}shaugen. &
 ~
  &
 High availability for customer meetings and reviews.\\\hline
+
 The developers will maintain a 20 hour a week work ethic throughout the
-project{}-duration of 20 weeks[TODO: update] &
-To finish the product (on{}-time) &
+project{}-duration of 20 weeks[TODO: update]. &
+To finish the product on time. &
 The set of requirements should not require more than 20 hours of work
 per week per developer, in order to complete.\\\hline
 Our system should be user{}-friendly &
 Our solution features a web interface available to everyone. Ideally,
-any person should be be comfortable with the user interface. &
-~
+any person should be comfortable with the user interface. &
+Should have a user{}-friendly interface.
 \\\hline
-Our end product will be open sourced &
+Our end product will be open sourced. &
 To ensure quality, and let other volunteers contribute to the code
-repository &
+repository. &
 No proprietary third party modules can be used. \ We cannot copyright
 our own material. \\\hline
-The final solution must run on Linux{}-computer &
+The final product must run on Linux{}-computers. &
 This is the choice of OS by NTNU, which is responsible for technical
-support and server access &
-Linux{}-compliant solution\\\hline
+support and server access. &
+Linux{}-compliant solution.\\\hline
 We are allowed to use whatever third party plugin we want, as long as it
-is free and has no copyright{}-conflict &
-Speed up development &
-Speed up development\\\hline
+is free and has no copyright{}-conflict. &
+Speed up development. &
+Speed up development.\\\hline
 \end{supertabular}
 \end{table}
 
@@ -120,11 +121,11 @@ mean that we would alway prioritize software re-use.
 \section{Roles and Their Definitions}
 \subsection{Usergroups}
 Within the application-domain of
-``gentleidi'' there are different
+GentleIDI there are different
 groups of users. Each group has different levels of access control, and
 once a user is made a member of that group, they inherit those rights.
 A user may have membership in all groups. A privileged user is someone
-who is manually given elevated permissions. Table~\ref{table:usegroup} shows the
+who is given elevated permissions. Table~\ref{table:usegroup} shows the
 different roles and their available actions. Further elaborations on
 each group will also be given in later sections, but table~\ref{table:usegroup} should
 suffice for an overview.
@@ -142,19 +143,20 @@ Privileged. An admin can modify all the available settings of the
 system\\\hline
 Judge &
 Privileged. Similar to an admin account, but with a limited set of
-actions: answering questions (clarification system), upload tasks to be
-solved, solutions to those tasks, upload incorrect answers (eg. answers
+actions: answering questions (clarification system), upload problem to be
+solved, solutions to those problems, and incorrect answers (eg. answers
 that will provide penalty).\\\hline
 Functionary &
 Privileged. Functionaries hand out balloons when a team has solved a
-task. To determine what team will be given a balloon, the functionaries
+problem. To determine what team will be given a balloon, the functionaries
 have their own interface with a team overview.\\\hline
-Team &
-A group of one to three contestants. A contestant is only part of one
-team per contest. \\\hline
 Contestants &
 A contestant has an account on the system and has the possibility to
 enter and compete in a contest. \\\hline
+Team &
+A group of one to three contestants. A contestant is only part of one
+team per contest, and need a team in order to compete. \\\hline
+
 \end{supertabular}
 \end{table}
 
@@ -164,7 +166,8 @@ Another way of viewing the task description in section~\ref{sec:taskdesc}, is to
 that our solution needs to do three actions: serve web-content, store
 data and execute user-submitted code. Since each of these operates with
 different protocols, we will think to our solution as composed of three
-different systems. These are described in figure X.X.
+different systems. These are described in figure X.X. 
+
 \begin{table}
 \caption{Service-providing Units}
 \label{table:serviceUnits}
@@ -175,7 +178,7 @@ Entity &
 Features &
 Protocol\\\hline
 Webserver &
-Processes requests from contestants and teams. Also acts as a web gate
+Processes requests from contestants and teams. Also acts as an
 interface to the execution node, both receiving and transmitting data
 to other execution nodes on the behalf of users. &
 HTTP\\\hline
@@ -183,18 +186,13 @@ Execution node &
 A service, often on a dedicated platform, that offers the ability to
 compile and execute code. The execution node returns output data to the
 webserver. &
-RPC\\\hline
+AMQP\\\hline
 Database &
-The storage unit for all user{}-data and logs. Also the execution node
-writes data to the database, and  &
+The storage unit for all user{}-data and logs. &
 SQL\\\hline
 \end{supertabular}
 \end{table}
 
-
-The only entity that end-users interact with is the webserver. This is
-done through HTTP messages, which, if necessary, are relayed to the
-execution nodes and/or database. 
 
 
 \section{UML Use Cases}
@@ -215,11 +213,11 @@ equivalent to the UML 2.0 standard.
 Use case actor. Represents a user group\\\hline
 	\includegraphics[width=0.15\textwidth]{chapter2-img2.png}  &
 UML generalization arrow. Used to indicate inheritance. The
-arrow's source, i.e. tail, represents the entity that
+arrow's tail represents the entity that
 inherits from where the arrow points to.\\\hline
 {\textless}{\textless}include{\textgreater}{\textgreater} &
 UML stereotype to represent a mandatory extension to a
-work{}-flow.\\\hline
+workflow.\\\hline
 {\textless}{\textless}extend{\textgreater}{\textgreater} &
 UML stereotype to indicate that if certain conditions are met in a flow,
 the entity to which this arrow points to can extend the
@@ -232,7 +230,7 @@ users shall be able to accomplish from our system. Furthermore, use
 case diagrams are easier to communicate to external parties, such that
 it is easier to agree on the system's properties. The
 use case diagrams were used early in development to agree on the
-requirements specification and to communicate to the supervisor what we
+requirements specification and to communicate what we
 were trying to accomplish.
 
 \begin{figure}[h!]
