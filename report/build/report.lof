@@ -1,97 +1,97 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces UML use case for priviliged users}}{12}{figure.2.1}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces UML use case for non-privileged users}}{13}{figure.2.2}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces UML use case for priviliged users}}{13}{figure.2.1}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces UML use case for non-privileged users}}{14}{figure.2.2}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces System overview}}{44}{figure.6.1}
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Top level class diagram}}{44}{figure.6.2}
-\contentsline {figure}{\numberline {6.3}{\ignorespaces Symbology}}{45}{figure.6.3}
-\contentsline {figure}{\numberline {6.4}{\ignorespaces Activity Diagram for registering a user and a team}}{46}{figure.6.4}
-\contentsline {figure}{\numberline {6.5}{\ignorespaces Activity Diagram for submittion a solution}}{46}{figure.6.5}
-\contentsline {figure}{\numberline {6.6}{\ignorespaces Multitier architecture}}{47}{figure.6.6}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces System overview}}{45}{figure.6.1}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Top level class diagram}}{45}{figure.6.2}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Symbology}}{46}{figure.6.3}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Activity Diagram for registering a user and a team}}{47}{figure.6.4}
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Activity Diagram for submittion a solution}}{47}{figure.6.5}
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Multitier architecture}}{48}{figure.6.6}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {7.1}{\ignorespaces User Interface of the old system}}{51}{figure.7.1}
-\contentsline {figure}{\numberline {7.2}{\ignorespaces Initial mockups}}{51}{figure.7.2}
-\contentsline {figure}{\numberline {7.3}{\ignorespaces Final page}}{52}{figure.7.3}
-\contentsline {figure}{\numberline {7.4}{\ignorespaces Various buttons used on our website. From left to right: the button to go to the contest page, the button to see a user profile, the button to leave a team}}{53}{figure.7.4}
-\contentsline {figure}{\numberline {7.5}{\ignorespaces Contest page}}{54}{figure.7.5}
-\contentsline {figure}{\numberline {7.6}{\ignorespaces Admin Interface}}{55}{figure.7.6}
-\contentsline {figure}{\numberline {7.7}{\ignorespaces Judge views}}{56}{figure.7.7}
-\contentsline {figure}{\numberline {7.8}{\ignorespaces Judge views for team}}{56}{figure.7.8}
+\contentsline {figure}{\numberline {7.1}{\ignorespaces User Interface of the old system}}{52}{figure.7.1}
+\contentsline {figure}{\numberline {7.2}{\ignorespaces Initial mockups}}{52}{figure.7.2}
+\contentsline {figure}{\numberline {7.3}{\ignorespaces Final page}}{53}{figure.7.3}
+\contentsline {figure}{\numberline {7.4}{\ignorespaces Various buttons used on our website}}{54}{figure.7.4}
+\contentsline {figure}{\numberline {7.5}{\ignorespaces Contest page}}{55}{figure.7.5}
+\contentsline {figure}{\numberline {7.6}{\ignorespaces Admin Interface}}{56}{figure.7.6}
+\contentsline {figure}{\numberline {7.7}{\ignorespaces Judge views}}{57}{figure.7.7}
+\contentsline {figure}{\numberline {7.8}{\ignorespaces Judge views for team}}{57}{figure.7.8}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {8.1}{\ignorespaces App overview}}{58}{figure.8.1}
-\addvspace {10\p@ }
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {10.1}{\ignorespaces Diagram from milestone M-03. Each interface connection, especially ``createContest'' has been tested}}{70}{figure.10.1}
+\contentsline {figure}{\numberline {8.1}{\ignorespaces App overview}}{59}{figure.8.1}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\addvspace {10\p@ }
-\addvspace {10\p@ }
-\addvspace {10\p@ }
+\contentsline {figure}{\numberline {10.1}{\ignorespaces Diagram from milestone M-03. Each interface connection, especially ``createContest'' has been tested}}{72}{figure.10.1}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {H.1}{\ignorespaces Admin overview}}{131}{figure.H.1}
-\contentsline {figure}{\numberline {H.2}{\ignorespaces Create contest}}{132}{figure.H.2}
-\contentsline {figure}{\numberline {H.3}{\ignorespaces Contest create form}}{133}{figure.H.3}
-\contentsline {figure}{\numberline {H.4}{\ignorespaces Create link}}{133}{figure.H.4}
-\contentsline {figure}{\numberline {H.5}{\ignorespaces Links selection and ordering}}{134}{figure.H.5}
-\contentsline {figure}{\numberline {H.6}{\ignorespaces Create sponsor}}{134}{figure.H.6}
-\contentsline {figure}{\numberline {H.7}{\ignorespaces Sponsor select and image upload}}{135}{figure.H.7}
-\contentsline {figure}{\numberline {H.8}{\ignorespaces Compiler profile}}{136}{figure.H.8}
-\contentsline {figure}{\numberline {H.9}{\ignorespaces Create problem}}{136}{figure.H.9}
-\contentsline {figure}{\numberline {H.10}{\ignorespaces Test case}}{137}{figure.H.10}
-\contentsline {figure}{\numberline {H.11}{\ignorespaces Resource}}{138}{figure.H.11}
-\contentsline {figure}{\numberline {H.12}{\ignorespaces Add article}}{139}{figure.H.12}
-\contentsline {figure}{\numberline {H.13}{\ignorespaces Create contestant}}{139}{figure.H.13}
-\contentsline {figure}{\numberline {H.14}{\ignorespaces Admin account}}{139}{figure.H.14}
-\contentsline {figure}{\numberline {H.15}{\ignorespaces Promote user}}{140}{figure.H.15}
-\contentsline {figure}{\numberline {H.16}{\ignorespaces Balloon view}}{140}{figure.H.16}
-\contentsline {figure}{\numberline {H.17}{\ignorespaces Judge view}}{141}{figure.H.17}
-\contentsline {figure}{\numberline {H.18}{\ignorespaces Judge view for a team}}{142}{figure.H.18}
-\contentsline {figure}{\numberline {H.19}{\ignorespaces User registration}}{144}{figure.H.19}
-\contentsline {figure}{\numberline {H.20}{\ignorespaces Edit user}}{145}{figure.H.20}
-\contentsline {figure}{\numberline {H.21}{\ignorespaces Create team}}{146}{figure.H.21}
-\contentsline {figure}{\numberline {H.22}{\ignorespaces Edit team information}}{147}{figure.H.22}
-\contentsline {figure}{\numberline {H.23}{\ignorespaces Invite team members}}{148}{figure.H.23}
-\contentsline {figure}{\numberline {H.24}{\ignorespaces Remove user from team}}{149}{figure.H.24}
-\contentsline {figure}{\numberline {H.25}{\ignorespaces Problem overview}}{149}{figure.H.25}
-\contentsline {figure}{\numberline {H.26}{\ignorespaces Submit problems}}{150}{figure.H.26}
-\contentsline {figure}{\numberline {H.27}{\ignorespaces Post a question}}{152}{figure.H.27}
-\contentsline {figure}{\numberline {H.28}{\ignorespaces Clarification response}}{153}{figure.H.28}
-\contentsline {figure}{\numberline {H.29}{\ignorespaces Full highscore}}{153}{figure.H.29}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {I.1}{\ignorespaces Complete ER-diagram. The un-folded classes are the main components of the system}}{156}{figure.I.1}
-\contentsline {figure}{\numberline {I.2}{\ignorespaces ER-diagram for the models used for the contest.}}{157}{figure.I.2}
-\contentsline {figure}{\numberline {I.3}{\ignorespaces ER-diagram for the models used for the user registration.}}{157}{figure.I.3}
-\contentsline {figure}{\numberline {I.4}{\ignorespaces ER-diagram for the models used for the submission.}}{158}{figure.I.4}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {J.1}{\ignorespaces Our initial website design}}{159}{figure.J.1}
-\contentsline {figure}{\numberline {J.2}{\ignorespaces The website seen from a mobile device}}{160}{figure.J.2}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {K.1}{\ignorespaces Initial activity chart for sprint 1}}{161}{figure.K.1}
-\contentsline {figure}{\numberline {K.2}{\ignorespaces Initial activity chart for sprint 2}}{162}{figure.K.2}
-\contentsline {figure}{\numberline {K.3}{\ignorespaces Initial activity chart for sprint 2, continued}}{162}{figure.K.3}
-\contentsline {figure}{\numberline {K.4}{\ignorespaces Initial activity chart for sprint 3}}{163}{figure.K.4}
-\contentsline {figure}{\numberline {K.5}{\ignorespaces Initial activity chart for sprint 4}}{163}{figure.K.5}
-\contentsline {figure}{\numberline {K.6}{\ignorespaces Burndown chartsss}}{164}{figure.K.6}
-\contentsline {figure}{\numberline {K.7}{\ignorespaces Sprint backlog, sprint 5}}{165}{figure.K.7}
-\contentsline {figure}{\numberline {K.8}{\ignorespaces Sprint backlog, sprint 6}}{166}{figure.K.8}
-\contentsline {figure}{\numberline {K.9}{\ignorespaces Sprint backlog, sprint 6}}{166}{figure.K.9}
-\contentsline {figure}{\numberline {K.10}{\ignorespaces Sprint backlog, sprint 7}}{167}{figure.K.10}
-\contentsline {figure}{\numberline {K.11}{\ignorespaces Sprint backlog, sprint 7, continued}}{167}{figure.K.11}
-\contentsline {figure}{\numberline {K.12}{\ignorespaces Sprint backlog, sprint 8}}{168}{figure.K.12}
-\contentsline {figure}{\numberline {K.13}{\ignorespaces Sprint backlog, sprint 9}}{169}{figure.K.13}
-\contentsline {figure}{\numberline {K.14}{\ignorespaces Sprint backlog, sprint 9, continued}}{169}{figure.K.14}
-\contentsline {figure}{\numberline {K.15}{\ignorespaces Sprint backlog, sprint 10}}{170}{figure.K.15}
-\contentsline {figure}{\numberline {K.16}{\ignorespaces Sprint backlog, sprint 10, continued}}{170}{figure.K.16}
-\contentsline {figure}{\numberline {K.17}{\ignorespaces Sprint backlog, sprint 11}}{171}{figure.K.17}
-\contentsline {figure}{\numberline {K.18}{\ignorespaces Sprint backlog, sprint 11, continued}}{172}{figure.K.18}
-\contentsline {figure}{\numberline {K.19}{\ignorespaces Sprint backlog, sprint 12}}{173}{figure.K.19}
-\contentsline {figure}{\numberline {K.20}{\ignorespaces Sprint backlog, sprint 12, continued}}{173}{figure.K.20}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {H.1}{\ignorespaces Admin overview}}{134}{figure.H.1}
+\contentsline {figure}{\numberline {H.2}{\ignorespaces Create contest}}{135}{figure.H.2}
+\contentsline {figure}{\numberline {H.3}{\ignorespaces Contest create form}}{136}{figure.H.3}
+\contentsline {figure}{\numberline {H.4}{\ignorespaces Create link}}{136}{figure.H.4}
+\contentsline {figure}{\numberline {H.5}{\ignorespaces Links selection and ordering}}{137}{figure.H.5}
+\contentsline {figure}{\numberline {H.6}{\ignorespaces Create sponsor}}{137}{figure.H.6}
+\contentsline {figure}{\numberline {H.7}{\ignorespaces Sponsor select and image upload}}{138}{figure.H.7}
+\contentsline {figure}{\numberline {H.8}{\ignorespaces Compiler profile}}{139}{figure.H.8}
+\contentsline {figure}{\numberline {H.9}{\ignorespaces Create problem}}{139}{figure.H.9}
+\contentsline {figure}{\numberline {H.10}{\ignorespaces Test case}}{140}{figure.H.10}
+\contentsline {figure}{\numberline {H.11}{\ignorespaces Resource}}{141}{figure.H.11}
+\contentsline {figure}{\numberline {H.12}{\ignorespaces Add article}}{142}{figure.H.12}
+\contentsline {figure}{\numberline {H.13}{\ignorespaces Create contestant}}{142}{figure.H.13}
+\contentsline {figure}{\numberline {H.14}{\ignorespaces Admin account}}{142}{figure.H.14}
+\contentsline {figure}{\numberline {H.15}{\ignorespaces Promote user}}{143}{figure.H.15}
+\contentsline {figure}{\numberline {H.16}{\ignorespaces Balloon view}}{143}{figure.H.16}
+\contentsline {figure}{\numberline {H.17}{\ignorespaces Judge view}}{144}{figure.H.17}
+\contentsline {figure}{\numberline {H.18}{\ignorespaces Judge view for a team}}{145}{figure.H.18}
+\contentsline {figure}{\numberline {H.19}{\ignorespaces User registration}}{147}{figure.H.19}
+\contentsline {figure}{\numberline {H.20}{\ignorespaces Edit user}}{148}{figure.H.20}
+\contentsline {figure}{\numberline {H.21}{\ignorespaces Create team}}{149}{figure.H.21}
+\contentsline {figure}{\numberline {H.22}{\ignorespaces Edit team information}}{150}{figure.H.22}
+\contentsline {figure}{\numberline {H.23}{\ignorespaces Invite team members}}{151}{figure.H.23}
+\contentsline {figure}{\numberline {H.24}{\ignorespaces Remove user from team}}{152}{figure.H.24}
+\contentsline {figure}{\numberline {H.25}{\ignorespaces Problem overview}}{152}{figure.H.25}
+\contentsline {figure}{\numberline {H.26}{\ignorespaces Submit problems}}{153}{figure.H.26}
+\contentsline {figure}{\numberline {H.27}{\ignorespaces Post a question}}{155}{figure.H.27}
+\contentsline {figure}{\numberline {H.28}{\ignorespaces Clarification response}}{156}{figure.H.28}
+\contentsline {figure}{\numberline {H.29}{\ignorespaces Full highscore}}{156}{figure.H.29}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {I.1}{\ignorespaces Complete ER-diagram.}}{159}{figure.I.1}
+\contentsline {figure}{\numberline {I.2}{\ignorespaces ER-diagram for the models used for the contest.}}{160}{figure.I.2}
+\contentsline {figure}{\numberline {I.3}{\ignorespaces ER-diagram for the models used for the user registration.}}{160}{figure.I.3}
+\contentsline {figure}{\numberline {I.4}{\ignorespaces ER-diagram for the models used for the submission.}}{161}{figure.I.4}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {J.1}{\ignorespaces Our initial website design}}{162}{figure.J.1}
+\contentsline {figure}{\numberline {J.2}{\ignorespaces The website seen from a mobile device}}{163}{figure.J.2}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {K.1}{\ignorespaces Initial activity chart for sprint 1}}{164}{figure.K.1}
+\contentsline {figure}{\numberline {K.2}{\ignorespaces Initial activity chart for sprint 2}}{165}{figure.K.2}
+\contentsline {figure}{\numberline {K.3}{\ignorespaces Initial activity chart for sprint 2, continued}}{165}{figure.K.3}
+\contentsline {figure}{\numberline {K.4}{\ignorespaces Initial activity chart for sprint 3}}{166}{figure.K.4}
+\contentsline {figure}{\numberline {K.5}{\ignorespaces Initial activity chart for sprint 4}}{166}{figure.K.5}
+\contentsline {figure}{\numberline {K.6}{\ignorespaces Burndown chartsss}}{167}{figure.K.6}
+\contentsline {figure}{\numberline {K.7}{\ignorespaces Sprint backlog, sprint 5}}{168}{figure.K.7}
+\contentsline {figure}{\numberline {K.8}{\ignorespaces Sprint backlog, sprint 6}}{169}{figure.K.8}
+\contentsline {figure}{\numberline {K.9}{\ignorespaces Sprint backlog, sprint 6}}{169}{figure.K.9}
+\contentsline {figure}{\numberline {K.10}{\ignorespaces Sprint backlog, sprint 7}}{170}{figure.K.10}
+\contentsline {figure}{\numberline {K.11}{\ignorespaces Sprint backlog, sprint 7, continued}}{170}{figure.K.11}
+\contentsline {figure}{\numberline {K.12}{\ignorespaces Sprint backlog, sprint 8}}{171}{figure.K.12}
+\contentsline {figure}{\numberline {K.13}{\ignorespaces Sprint backlog, sprint 9}}{172}{figure.K.13}
+\contentsline {figure}{\numberline {K.14}{\ignorespaces Sprint backlog, sprint 9, continued}}{172}{figure.K.14}
+\contentsline {figure}{\numberline {K.15}{\ignorespaces Sprint backlog, sprint 10}}{173}{figure.K.15}
+\contentsline {figure}{\numberline {K.16}{\ignorespaces Sprint backlog, sprint 10, continued}}{173}{figure.K.16}
+\contentsline {figure}{\numberline {K.17}{\ignorespaces Sprint backlog, sprint 11}}{174}{figure.K.17}
+\contentsline {figure}{\numberline {K.18}{\ignorespaces Sprint backlog, sprint 11, continued}}{175}{figure.K.18}
+\contentsline {figure}{\numberline {K.19}{\ignorespaces Sprint backlog, sprint 12}}{176}{figure.K.19}
+\contentsline {figure}{\numberline {K.20}{\ignorespaces Sprint backlog, sprint 12, continued}}{176}{figure.K.20}
 \addvspace {10\p@ }
