@@ -12,7 +12,7 @@
 \contentsline {subsection}{\numberline {1.5.1}Course}{4}{subsection.1.5.1}
 \contentsline {subsection}{\numberline {1.5.2}Product and Competition}{4}{subsection.1.5.2}
 \contentsline {section}{\numberline {1.6}Goals}{5}{section.1.6}
-\contentsline {chapter}{\numberline {2}Task Description and Overview}{6}{chapter.2}
+\contentsline {chapter}{\numberline {2}Task DDDDDDescription and Overview}{6}{chapter.2}
 \contentsline {section}{\numberline {2.1}Task Description and Overview}{6}{section.2.1}
 \contentsline {section}{\numberline {2.2}Assignment}{6}{section.2.2}
 \contentsline {section}{\numberline {2.3}GentleIDI}{6}{section.2.3}
