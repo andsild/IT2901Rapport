@@ -1,0 +1,569 @@
+\chapter{Evaluation}
+
+This chapter contains the group's evaluation regarding
+different aspect mentioned throughout this report. It will also reflect
+on the decision we made, what worked well, \ what we regretted, and
+what we would have done differently. 
+
+\section{Project Management}
+
+We chose Scrum since all team members have had previous experience with
+it, and we felt Scrum would be easy to adapt to our project. Scrum
+focuses on having finished version of the system after each iteration.
+This was considered to be an advantage in the work towards our
+milestones, and, combined with an agile development plan makes Scrum
+quite different from e.g. the waterfall model. We believe that our use
+of Scrum contributed to the project's success
+especially regarding the sprint backlog. We were therefore capable of
+adapting easily to new customer requirements. 
+
+The activity charts were not descriptive enough for facilitating the
+development process. We wanted to be able to see how many hours were
+left on a work package as each day passed by, and which packages people
+spent time on a given day. The way we solved this was to change the
+activity chart template, with another more descriptive template, sprint
+backlog. 
+
+Scrum gave us structure to our meetings and development process. Three
+meetings a week worked well for us, even though Scrum specifies a daily
+meeting. The project group had other courses that required work-hours,
+and therefore were not able to work on the project every day. What we
+did, that worked well for us, was to increase the meeting frequency
+when we were close to a milestone, or had a sprint with a large amount
+of planned work hours. 
+
+We decided to do most of our work in pairs. At the start, this was
+challenging considering the pace at which the work had to be performed.
+The work was also sometimes split between more than two persons.
+Examples of this was during bug hunting and bug fixing. Delegating
+tasks in this manner would let the pair distribute minor tasks without
+interference from the other team members. Some tasks, however, was
+delegated to one person. With varying results. If the tasks turned out
+to be bigger than first expected, a group member could spend to much
+time on it. That combined with a poor result could contribute to even
+more wasted time. An example of such a task would be the implementation
+of the highscore. 
+
+Another important feature we incorporated in the process was to switch
+tasks. The intention was that all group members should have experience
+in different areas. Initially, this contributed to prolonging the work
+process, but in the long run, increased the understanding of the
+totality of the project. A different approach would be to split the
+tasks between group members, e.g. letting one part focus on the backend
+and the other on the fronted. Heading towards the final event we
+developed more well defined roles. Such a change was introduced based
+on an estimate of how much time we had left. The implementation of
+execution nodes is a good example of this. It was done and completed by
+two of our group members. This was not something we wanted, but the
+time constraints forced us to take this risk. 
+
+The tools we used are described in tools and frameworks. We were not
+familiar with all of the tools before we started on this project, hence
+the prestudy phase. We spent time learning Django, which was a large
+part of the project. Django comes with an integrated admin interface,
+that we took advantage of. It took some time to learn Django, and we
+definitely had some setbacks in the beginning just figuring out how to
+use the framework. Django was a good choice, the admin interface was a
+huge time saver, and worked well for the intended purposes. It can be a
+bit hard to get used to the admin interface, but we had an extensive
+user manual. This can be found in user manual.
+
+Jenkins and AppArmor are tools we spent time on learning without
+actually using them for our product. It is easy in retrospect to
+consider this as wasted time. Jenkins was in our prestudy phase because
+we wanted to have a large testing coverage, helping facilitate our unit
+tests. We did not have the amount of unit tests required for Jenkins to
+be useful. We intend to use AppArmor to help with the security on the
+back end, but decided that we did not have sufficient time. The choice
+of back end security is reflected upon in preestudy chapter
+
+Another time consuming tool was Google Drive. Originally we decided on
+writing the report using Drive, but discovered that it did not perform
+optimal. The NTNU mailing list was used to communicate with the
+customer and judges, which went well. IRC for internal communication
+was used to a lesser degree as the process went forward. A reason might
+have been the more cooperative working environment developed towards
+the end. \ 
+
+There were several different frameworks and programming languages
+available for us to use. In programming languages such as Java and PHP
+the user have to implement most of the features themselves. We did not
+choose those because we had limited time and therefore wanted a
+framework that provided the necessary functionality. Among the options
+available we choose Django, rejecting frameworks like Ruby on rails,
+Flask and Symphony. 
+
+The breakdown structure of the work was used more often in the beginning
+of the project than at the end. We felt it was helpful to get an
+overview of the work to be done, time at hand and deadlines to come. At
+the end, however, the focus had to be on the product- and sprint
+backlog. As a consequence the Gantt chart in fig 3.2 is not completely
+\ correct. Instead we picked, from the product backlog, a set of
+packages we knew we had to complete before the next milestone. 
+
+Our biggest challenge in project management was prioritizing between the
+report and the product. As can be seen in, \ [kap 3, Milestones], three
+of our milestones were report submissions. It put significant pressure
+on us to have the course deadlines in addition to the deadlines for the
+product. The way we tackled this challenge was to increase the planned
+work hours. We did not want the product, or the report, to be
+down-prioritized, since we deemed them both important. However, we were
+all aware that the end product was important, and we had a lot of
+people relying on the product working as intended on IDI Open. The
+amount of documentation created always took a hit during high workload
+weeks, since we simply did not have the time to document everything.
+
+\section{Evaluation of prestudy (Chapter 04)}
+
+During the initial prestudy phase most of our time was spent learning
+the fundamental concepts of Django. Our decision to use a programming
+language and framework previously unknown to us, might have had a
+negative impact on our initial productivity. However, as we progressed
+we became more comfortable with Django, and as a result our
+productivity increased.
+
+Our research into the old system gave us a better understanding of the
+requirement specification, and a better overview of possible pitfalls.
+We hoped to find some reusable code, which could have saved us a lot of
+work, however, this was not the case. Arguably we might have spent less
+time inspecting the old system. We felt that in order to avoid
+misunderstandings regarding the requirements, inspecting the old system
+was a priority.
+
+We probably could have spent less time and reached the same goals.
+However we did reach the primary goals of our prestudy, and ended up
+feeling comfortable with the tools we chose, the product we were
+replacing, and the process ahead of us. The mixture of documenting and
+learning tools and framework was not ideal. Presenting a more clear
+separation between those two could have improved the work and the
+prestudy. E.g by dividing the two into different sprints.
+
+\section{Evaluation of Requirement Specification}
+
+After getting assigned IDI Open as our project, the customer was quick
+with emailing us the first draft for requirements. We made a list of
+functional and non-functional requirements based on the draft, and
+presented it to the customer. During the development process there
+surfaced some requirements not included in the requirement
+specification. This was due to new functionality requested by the
+customer. 
+
+After finishing the development we had met most of the requirements.
+Although some LOW prioritized requirements were left unimplemented. See
+[Chapter 5 Requirements] for specific requirements not met. These
+requirements were initially proposed by the customer as additional
+features. In the end we were not able to implement all of them. Our
+product is open-source 
+
+When the contest was finished, the customer emailed us some additional
+requirements. These were mainly proposed by the judges who had used the
+system. Since GentleIDI will be open source, the implementation of
+these features will not necessarily be implemented by us. We will add a
+list with all known requested improvements to the Git repository. 
+
+\section{Evaluation of User Interface}
+
+We were initially concerned about making many changes to the interface,
+because our customer did not express a desire to change much about it.
+We took this into consideration while making the interface, and made
+sure that we kept all the functionality from the old site. We received
+helpful continuous \ feedback from several different stakeholders, most
+importantly our customer. That helped us become more confident with the
+direction we were taking. 
+
+We had a test event the 26. April. This gave us a unique opportunity to
+receive feedback from all contest stakeholders. The most valuable
+feedback was received from the judges.
+
+They wanted to make it easier to filter what type of information
+displayed in the overview. We made the changes they wanted, the result
+can be viewed in Figure 7.8. 
+
+All members of the project group has completed the course TDT4180,
+human-machine interaction. We drew upon our experiences gathered from
+that course, and followed Shneiderman{\textquoteright}s eight golden
+rules of interface
+design\footnote{\ https://www.cs.umd.edu/users/ben/goldenrules.html}.
+Our main focus has been on consistency, feedback and prevention of
+errors. Errors made by the contestants should not affect the whole
+system. The system provides feedback to the user after each action, and
+the feedback is colour coded with green, red and orange. Green means
+that the action went well, red that the action failed, and orange when
+the action did not work because of other factors
+
+We used the tools Bootstrap and Grappelli to make it easier to create a
+consistent design. We think we saved time by using these tools. In
+retrospect we should have focused more on universal usability,
+Shneiderman's second rule, to accommodate contestants
+with impaired vision. Additionally the site is not optimized for mobile
+devices, as seen in, appendix C. We did not prioritize mobile devices,
+because the contestants would use computer during the competition. 
+
+We received positive comments regarding our user interface, and the
+customer was satisfied with the end result. The structure of the old
+design is preserved, and the design of the new functionality will
+increase the usability during the contest. It is easy to customize
+because we focused on modularity and extendability. In conclusion the
+new design is easier to maintain, \ looks more modern, and has extended
+functionality. \ 
+
+\pagebreak
+\section{Evaluation of Implementation (Chapter 8)}
+
+In general we are quite satisfied with the code as it is. Most of the
+code is easy to understand and follows the conventions of Django.
+However, there are some aspects that could be improved. For instance
+there are some apps that probably should have been merged together and
+others that could have been split into two separate apps. E.g the
+contest app could have been split into two different apps, named team
+and contest. As it is today, some of our apps are tightly linked and
+will not function properly without each other. An example of this the
+apps changeemail and userregistration. This cripples the modularity
+that Django apps are intended to provide. We could have avoided this by
+creating all the apps in advance. This would have required us to have a
+more comprehensive understanding of Django. Resulting in a longer
+prestudy phase. As mentioned, the solution would be to merge some of
+the apps and split some of the larger ones, however, we have not found
+the time to do this. These are not to be considered major flaws, but
+rather minor imperfections. 
+
+Aside from the mentioned flaws, our implementation is both functioning
+properly and well-written. Our Celery cluster provides powerful
+scalability which enables us to meet enormous loads, given access to
+additional hardware. Both Django and the database servers also scale
+well. This means that we have little to no part of our system that is
+unable to scale properly. Making sure that our system will not stand in
+the way of any plans to expand IDI Open was one of our main goals.
+
+There are aspects of our system that proved troublesome during the
+event, most notable of which is the highscore list. The highscore list
+performs many of calculations on a lot of data, which results in a high
+load on the Web server. Views in django can be cached in such a way
+that it does not have to give newly updated info at all times. This
+would save the server a lot of work, however, we were unable to get
+this in place in time. 
+
+\section{Evaluation of Development}
+
+The first challenge the group faced was the introduction of milestone
+M-03, first release. 
+
+This milestone was presented to us after we had created the WBS and
+Gantt chart. As a consequence of this we had to update the diagrams.
+The customer wanted the contestants to have the opportunity to register
+early. In our opinion, we felt that the milestone could have been set a
+couple of weeks later, without affecting the end product or the number
+of contestants registered. This is because most of the contestants did
+not register prior to two weeks of the contest. It did, however, force
+us to start the implementation earlier, which might have had a positive
+effect.
+
+The amount of milestones felt overwhelming at times. Some of the
+milestones 
+
+presented by the course, M-01, M-02 and M-04, did not fit well with our
+plan. As a response to this, we created an earlier deadline for the
+mid-semester report, M-02, than given by the course. Our own deadline
+gave us more time to focus on the implementation. 
+
+Milestone M-05, beta release, was set by the group. We wanted to meet as
+many requirements as possible. Requirements and tasks we had not yet
+started on, risked to receive low priority before the next milestone.
+This was because we feared a limited time left before the event.
+
+Our Gantt chart suggested that the implementation of execution node(s)
+should have been started on earlier. However, this functionality was
+implemented during easter, working towards the test event, M-07, which
+was later than planned. We were aware of this delay early, and we
+worked it into our plan. In general, working toward the test event and
+shortening our easter vacation, was a good experience. During this
+period we learned a lot and it might have been the most instructive of
+our phases. 
+
+The weeks after the event felt easier on the group, with the exception
+of CSV and PDF implementation, FO-02. During the past week the group
+had grown confident about the system. After the event was completed, we
+focused on writing a report that reflected the end product in the best
+possible way. There were some challenges regarding the length and
+content. Due to the complexity of our system we had a lot of
+functionality that had to be more thoroughly documented. This made it
+harder for us to constrict the length of our report
+
+A lesson we learned during the development phase is the power of good
+planning. It is important to have an open discussion on all topics in
+the process. Doing this helped us to successfully adapt our plan to a
+changing reality. The workload may have been better distributed over
+the sprints. We believe that a broader prestudy phase with clearer
+goals could have helped us in the process. The fact that we were
+prepared for increased workload towards the end of the project helped.
+
+\section{Evaluation of Testing Methods}
+
+Our initial testing plans included a large coverage of unit- and
+integration tests. We did not have time to gain the coverage intended.
+It can be argued that this was wasted time, since we ended up relying
+more on other forms of testing. However, the unit tests covered some of
+the important parts of the system, and we discovered a few new bugs
+through running them. The shortage of unit and integrations tests came
+from the time constraints.
+
+The majority of our testing has been inspection-based. This has been
+considered time efficient for us. As we have developed the entire
+system from scratch, and worked with it over a long time period, we
+have had good knowledge of the system. Thus, inspection-based testing
+has been largely effective. The problem is that there is no way to
+formally agree on which components have been tested, or to what extent.
+Additionally, future maintainers are much more likely to make errors as
+they do not know what components are connected, or what kind of tests
+should be executed.
+
+All code was reviewed by at least two persons. We believe this improved
+the quality of our code. We also had the advantage of having customers
+and judges that had access to our source code. \ \ 
+
+The test event was of value. There was discovered some bugs.
+Additionally, receiving acceptance from the judges was important. The
+meetings we had with the customer, was mostly to make sure we were
+implementing the requirements in a satisfactory way. The customer did
+not test the system thoroughly on the meetings. Instead, the system was
+available for them through the website, and they could test the system
+when they had time. Whenever they found bugs, they reported them to us
+by email, and we fixed them promptly.This gave us more time to focus on
+implementation and bug fixing.
+
+Not all the non-functional tests passed. We now know that we should have
+performed these tests earlier in the process, especially load-testing.
+This could have made us more aware of load problems. As it happened we
+discovered the failures regarding responsiveness too late. We had other
+tasks that had a higher priority, and the customer deemed the the
+current responsiveness good enough. The reason for not testing earlier
+was that we relied on the test event to discover the load problems. The
+test event did not have as many contestants as we expected on the real
+event, so we realized that we had to execute a load test before the
+real event.
+
+Our goal for the test event was to be finished with all the
+requirements, so the customer and the judges could test everything
+thoroughly before IDI Open. The test event lasted for a couple of
+hours, and was meant to simulate IDI Open. About thirty people
+participated on the test event, including judges, our customer and
+contestants. We received feedback on bugs and minor issues. We took
+them into consideration, and discussed a plan with our customer for the
+last week. The test event helped us a lot, because we had more people
+than before that was testing the system simultaneously. 
+
+\section{Customer Interaction}
+
+We had biweekly meetings with the customer. Our customer was
+technologically adept, which coloured how we interacted with them. The
+meetings had an informal structure with a predefined agenda, as
+requested by the customer. Our customer was located at NTNU, so we had
+the opportunity to meet them several times during the course of the
+project. We were satisfied with the meetings, and felt that we had a
+mutual understanding with the customer. There were some
+miscommunications regarding the requirements, however, they got cleared
+up fast. E.g. We were under the impression that the teams were unique
+to a contest. The customer, however, wished for teams to be reusable.
+It did not cause major arguments.
+
+The email list was used frequently, and the customer always responded
+with an answer within a day. This made it easy for us to communicate,
+and also as a consequence the need for meeting decreased. 
+
+H{\aa}kon had the role of communicating with the customer through emails.
+After the first two weeks, we felt that this did not work well and it
+was easier if everyone sent and answered emails. However, the problem
+with allowing everyone to answer emails, is that it is easy to read an
+email, and think that someone else will answer it. The way we handled
+this problem was by discussing the emails at meetings, and with good
+internal communication. 
+
+The primary reason for meetings with the customer was to show them newly
+implemented features, and including them in the development as much as
+possible. They already had access to our source code, however, we
+wanted as much feedback as possible. The meetings gave us reassurance
+that we had understood the requirements, and were moving in the right
+direction. 
+
+\pagebreak
+\section{Supervisor Interaction}
+
+We had meetings with our supervisor biweekly. Prior to each meeting we
+sent a status report, our sprint backlog and an agenda for the meeting.
+The templated used for agendas can be viewed in appendix X.X. In the
+first couple of meetings we had trouble communicating the amount of
+work done. This changed after we started using the sprint backlog
+instead of the activity chart. Sprint backlogs can be viewed in X.X. At
+the beginning of each meeting, we would go through meeting minutes with
+our supervisor. The meeting minutes had conclusions we agreed on in the
+last meeting, and made sure that our group and the supervisor had the
+same understanding. \ 
+
+The feedback we received from the supervisor helped us greatly in
+improving how we documented our progress. She gave feedback on status
+reports and sprint backlogs we delivered, regarding how we documented
+the last two weeks. The supervisor gave us feedback on the report,
+which made writing the report easier since we had guidelines to follow.
+It was also helpful to have someone outside of our group that we could
+talk with, and discuss the issues we were facing.
+
+\section{Group Dynamics}
+
+Our group consisted of six people. The majority had worked with each
+other on previous projects. These previous experiences could be
+utilized in a creative manner. We created a private Facebook group to
+easily communicate meeting times and other project related topics.
+Phone numbers were exchanged. The communication in the group was
+outstanding and it was easy to get a hold of another group member if
+you had any questions. We think this can be attributed to frequently
+meetings and using social media, i.e. Facebook and IRC.
+
+The fact that we knew each other had an impact on the project. There was
+a lower threshold for disagreeing, which enabled the creative process.
+We believe that having discussions often brings forth the best
+solutions. We had a vote system, where the Scrum Master had the
+deciding vote in case of a tie. This helped to conclude discussions
+that took too long, or got to the point where we could not agree. We
+think this was a good mechanism to make decisions fast, when necessary.
+
+
+One of our biggest successes with Scrum was the end meetings, where we
+reviewed the previous sprint. These meetings gave us a unique ability
+to discuss how the project was proceeding. We used the reflections to
+improve the project process, as well as in the planning of the
+following sprints. We found it helpful to have a determined time each
+week designed for expressing opinions freely. All of the group members
+had to list up three good and bad aspects of the previous sprint, this
+was mandatory and proved helpful, because it made us aware of problems
+encountered each week. 
+
+In the first meetings, we spent a lot of time discussing how we would
+plan the development. We had different views on what we should start
+with first, and how we should prioritise. We solved the conflicts with
+reviewing the options we had with the customer or supervisor. Some of
+the discussions could have been addressed later in the project, when
+they were more relevant. E.g. during sprint 2 we spent time discussing
+the implementation of the execution node(s); feature that was not
+implemented before sprint 10/11. Also, the result from the discussion
+in week 2 was not used in the final product. \ 
+
+In order to avoid late comings the person arriving late had to bring a
+cake to next meeting. We think this contributed to fewer late comings,
+and a better mood.
+
+We worked in pairs and tried to change the pairs for each sprint. This
+worked well, and allowed us to work in an environment with different
+perspectives. It gave us an opportunity to draw upon each others
+experiences. As the project progressed it became difficult to change
+the pairs, due to the growing complexity of the system. It was time
+consuming to include everyone in every aspect. We decided to have a
+stricter division of roles. Our focus moved away from changing the
+pairs each sprint, to keeping the same people working on the same
+components until they were done. This speeded up the implementation,
+but is regarded as a risk. The tasks implemented could, in worst case,
+not meet our standards and be something different than what we had in
+mind. 
+
+In future projects, if we know we are going to be working in a small
+team, we would reconsider making a long risk list for reviewals.
+Instead, maybe a list with up to five items could be drafted. This list
+could then hold an agreement on how to deal with people being late or
+not delivering on time, and other similar items. These are risks where
+a pre-defined action can avoid that the leader will have to be
+``bossy'' or
+``mean'' to penalize the members of
+the group. We have found these entries in the risk register to be
+especially effective. 
+
+We organized social events, e.g. code nights, that was meant to improve
+the moral of the group. We finished the project as friends, and we grew
+closer to each other.
+
+
+
+\section{End Product}
+
+The end product, GentleIDI, was used during IDI Open 2014. After the
+event we received several emails from the customer and contestants with
+positive feedback. The emails were in Norwegian, and can be seen in
+their entirety in appendix F. Here is a translation of the email from
+the customer.
+
+\begin{quotation}
+You have exceeded every expectation with your work.
+Your efforts and skills has been top from day one. You understood the
+specifications easily, and you tackled our (at times strange and maybe
+impractical) requests very well. There were many priorities and some
+hard decisions at times, which is something that is a part of every
+project with a deadline. With the time you had at your disposal, was I
+and everyone I talked with after the contest very impressed with what
+you managed to achieve.
+
+The old system was used for 11 years, and I think your system will be
+used for longer than that. With your system becoming open source, it
+might be used to arrange contests other places as well. You can write
+proudly on your CV that you have developed something that is used by
+IDI to arrange one of their biggest social arrangements, that for many
+is the highlight of the year.
+
+What role you want to play in the future development of the new system
+is up to you. Your experience will be worth a lot if you wish to fiddle
+with the system on a quiet Sunday. I hope you decide to participate on
+IDI Open 2015.
+
+If you ever need a recommendation letter for a job, exchange, etc., you
+have my email address.
+
+Your rating: 10/10. (also known as: ``would hire to
+replace an old system again'').
+
+\hfill--- \textit{Christian Neverdal Jonassen}
+\end{quotation}
+
+One goal with the product was that it should be open source, so that
+other developers could develop it further. The customer agreed to make
+the product open source, and it will be added to a public repository
+containing the source code. Appendix [refere til installation guide i
+appendix] contains an installation guide, which we made to help future
+developers. We felt that the customer appreciated the work we did, and
+that they will continue to use, and develop, our system for the
+following IDI Open events.
+
+The system worked perfectly, and managed to run all the submissions in
+the contest. At the end of the contest, we had over 1000 submissions
+that were successfully run. 
+
+However, not all the feedback was positive. Some of the judges were
+dissatisfied with the clarification system. The problem being that you
+could not send a message directly to a team, all messages were globally
+shown on the website. We had previously discussed this with our
+customer, and reached an agreement that we would down-prioritize the
+clarification system, and focus on other parts of the system. We could
+have made a more adequate clarification, if we were given more time, or
+had prioritized differently. 
+
+The Judge supervisor, [Chapter 7 admin interface], was an enormous
+success with the judges. It was constantly used to gain an overview
+over the contest. What they seemed to enjoy the most, was that you
+could see the source code for each submission, and in that way they
+could help teams that were doing poorly. The balloon functionaries also
+seemed satisfied with the balloon system, making their job easier. \ 
+
+\section{Future Work}
+
+After the main event, we discovered that some parts of the system could
+be improved. The clarification system should give the judges a choice
+to send a clarification directly to a specific team. The teams need to
+receive a notification when they receive a clarification. Also the
+highscore list is not cached, which could improve its efficiency.
+
+We would also like to do some additional work on the execution nodes.
+This was uncharted territory for us, and part of it took longer than
+anticipated. In the event that we had more time, we would like to
+increase the security around user uploaded programs. As discussed in
+the prestudy chapter, security could be improved significantly by
+getting mechanisms like AppArmor in place.
+
+The full list of requirements not implemented, and new additional
+proposed functionality is located in 5.5 and 5.6. 
+

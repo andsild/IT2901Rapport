@@ -1,0 +1,77 @@
+%\newcount\draft\draft=0 % set to 0 for "publication"
+%\nonstopmode % ignore compiler errors
+
+\documentclass{report}
+
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{supertabular}
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage{framed}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{colortbl}
+\usepackage[table]{xcolor}
+\usepackage{lscape}
+\usepackage{listings}
+\usepackage{mdframed}
+\usepackage{float}
+\usepackage{alltt}
+\usepackage{cleveref}
+\usepackage[parfill]{parskip}
+\usepackage{longtable}
+
+\usepackage{supertabular}
+
+\usepackage[utf8]{inputenc}
+
+\newcommand*{\Package}[1]{\texttt{#1}}%
+
+\graphicspath{{src/figure/} }
+\begin{document}
+
+\include{src/front} % This is the titlepage
+\setcounter{page}{0}
+\pagenumbering{roman}
+\include{src/00.Preamble}
+\tableofcontents
+\listoffigures
+\setcounter{page}{0}
+\pagenumbering{arabic}
+
+\include{src/01.Introduction}
+\include{src/02.Taskdesc}
+\include{src/03.Projectmanagement}
+\include{src/04.Prestudy}
+\include{src/05.Requirements}
+\include{src/06.Architecture}
+\include{src/07.Design}
+\include{src/08.Implementation}
+\include{src/09.Development}
+\include{src/10.Test}
+\include{src/11.Risk}
+<<<<<<< HEAD
+\include{src/sources}
+=======
+\include{src/12.Evaluation}
+>>>>>>> 85fef92bc45a8b13dd07c38c83f9636d653ea802
+\appendix
+\include{src/appendix-sprints}
+\include{src/Userstories}
+\include{src/Installationguide}
+\include{src/tables/risk_list}
+\include{src/tables/product_backlog}
+\include{src/tables/end_of_sprint_structure}
+\include{src/integration_test}
+\include{src/Usermanual}
+\include{src/ER_diagram}
+\include{src/appendix_design}
+\include{src/appendix_burndown}
+\include{src/supervisor_agenda}
+
+\bibliographystyle{abbrv}
+% \bibliography{./src/bib/examplebib} 
+% \bibliography{commented}
+\end{document}
