@@ -1,4 +1,4 @@
-\chapter{Design}
+\chapter{UI Design}
 This chapter contains the choices made regarding the process of
 designing the front-end of the application, for a more technical
 approach see \textit{System Architecture chapter 6}.
@@ -104,32 +104,45 @@ We designed the menu to be versatile, this was highly prioritized by our custome
 Admins can choose what they want to show in the menu, except for \textit{Register user} and
 \textit{Register team} that are ``hardcoded'' on request from the
 customer. As mentioned
-in Design process ~\ref{sec:designProcess}, we designed the user interface after a principle
-of versatility. Admins can also change the logo, the sponsor images and
-the contact information in the footer.
+in Design process~\ref{sec:designProcess}, we designed the user interface after
+a principle of versatility. Admins can also change the logo, the sponsor images
+and the contact information in the footer.
 
-Buttons, images and icons were surrounded with boxes, to show that they are different
-elements. There is also one big box surrounding a group of elements,
-for example the sponsors. This is consistent with the gestalt law of
-proximity, that constitutes that humans will naturally group objects
-that are close to each other, and view them as distinct.
-This helps the user quickly understand the user interface.
+Buttons, images and icons were surrounded with boxes, to show that they are
+different elements. There is also one big box surrounding a group of elements,
+for example the sponsors. This is consistent with the gestalt law of proximity,
+that constitutes that humans will naturally group objects that are close to
+each other, and view them as distinct.  This helps the user quickly understand
+the user interface.
 
 
- \begin{figure}[h!]
-	\includegraphics[width=2.1807in,height=0.5972in]{a07Design-img4.png} 
-	\caption{FIGURECAPTION}
-	\label{fig:buttons}
+\begin{figure}
+    \begin{longtable}{|l l l|}
+        \hline
+        \includegraphics[width=2.1807in,height=0.5972in]{btn_contestpage.png} &
+        \includegraphics[width=1.0693in,height=0.5in]{btn_profile.png} &
+        \includegraphics[width=1.1528in,height=0.4028in]{btn_leaveteam.png}  \\
+        \hline
+    \end{longtable}
+    \caption{Various buttons used on our website. From left to right: the button
+        to go to the contest page, the button to see a user profile, the button
+    to leave a team} \label{fig:buttons}
 \end{figure}
-\begin{figure}[h!]
-	\includegraphics[width=1.0693in,height=0.5in]{a07Design-img5.png} 
-	\caption{FIGURECAPTION}
-\end{figure}
-\begin{figure}[h!]
-	\includegraphics[width=1.1528in,height=0.4028in]{a07Design-img6.png} 
-	\caption{FIGURECAPTION}
-\end{figure}
 
+% 
+% \begin{figure}
+%     \includegraphics[width=2.1807in,height=0.5972in]{btn_contestpage.png} 
+%     \caption{The button to go to a contest page}
+% \end{figure}
+% \begin{figure}
+%     \includegraphics[width=1.0693in,height=0.5in]{btn_profile.png} 
+%     \caption{The button to view a user's profile}
+% \end{figure}
+% \begin{figure}
+%     \includegraphics[width=1.1528in,height=0.4028in]{btn_leaveteam.png} 
+%     \caption{The button to leave a team} 
+% \end{figure}
+% 
 ``To strive for consistency'' is the
 first of Shneiderman's eight golden rules of interface
 design\footnote{\ https://www.cs.umd.edu/users/ben/goldenrules.html},
@@ -144,7 +157,7 @@ initially, but we noticed while testing the system that without a
 prompt, it could be possible to leave your team by mistake.
  
 \begin{figure}[h!]
-	\includegraphics[width=6.5in,height=2.5417in]{a07Design-img7.png} 
+	\includegraphics[width=6.5in,height=2.5417in]{contest_page.png} 
 	\caption{Contest page}
 	\label{fig:contestPage}
 \end{figure}
@@ -221,15 +234,14 @@ pages. The judge view can be seen in Fig~\ref{fig:judge}.
 \end{figure}
 
 
-Fig~\ref{fig:judgeTeam} shows the judge views after
-selecting the team ``GentleCoding''.
+Fig~\ref{fig:judgeTeam} shows the judge views after selecting the team
+``GentleCoding''.
 It is possible to expand each submission by clicking on it. The third
 submission has been clicked on, so we can now choose to expand
 different categories. For example if a judge wants to see the source
-code for that submission, he/she can click on ``Source
-code'' and it will expand. Submissions that
-haven't been compiled are shown in red, and the other
-are white.
+code for that submission, he/she can click on ``Source code'' and it will
+expand. Submissions that
+haven't been compiled are shown in red, and the other are white.
 
 \href{http://www.clevelandconsultinggroup.com/articles/emergence-gestalt-approach-to-change.php}
 \href{https://www.cs.umd.edu/users/ben/goldenrules.html}
