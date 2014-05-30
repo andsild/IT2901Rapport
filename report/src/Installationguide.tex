@@ -1,6 +1,6 @@
-\chapter{Installation guide}
-This is the complete install guide for GentleIDI.\ The guide will assume
-that the reader is has got some basic linux skills. You should be
+\chapter{Installation Guide}
+This is the complete installation guide for GentleIDI.\ The guide will assume
+that the reader has got some basic Linux skills. You should be
 capable of installing packages by means of a package-manager like apt,
 yum etc.
 
@@ -9,25 +9,25 @@ this guide assumes that you're using Ubuntu Server
 14.04. This is the only distro on which the system has been tested
 thoroughly at the time of writing.
 
-GentleIDI is in many ways a straightforward django-based website, and
+GentleIDI is in many ways a straightforward Django-based website, and
 hence there are a lot of possible setups to choose from. This guide is
-inspired by a guide written by Michal Karzynski, and will guide you
+inspired by a guide written by Michal Karzynski\footnote{\url{http://michal.karzynski.pl/blog/2013/06/09/django-nginx-gunicorn-virtualenv-supervisor/}}, and will guide you
 through the steps of setting up the system using a combination of
-gunicorn and nginx.
+Gunicorn and Nginx.
 
-\section{Creating your users}
+\section{Creating Your Users}
 Running a website as a user with root privileges or anything of the sort
-is far from recommended. Therefore you are recommended to create a new
+is far from recommended. Therefore you are advised to create a new
 user and a new usergroup. The names of both the group and the user can
 be chosen as you please, but the rest of the guide will stick to using
 a user called gentleidi and a group named webapps.
 
-\begin{lstlisting}[language=bash]
+\begin{verbatim}
 sudo mkdir -p /webapps/gentleidi
 sudo groupadd --system webapps
 sudo useradd --system --gid webapps --home /webapps/gentleidi gentleidi
 sudo chown gentleidi:webapps /webapps/gentleidi/
-\end{lstlisting}
+\end{verbatim}
 
 Now you have a user named gentleidi which is a member of the usergroup
 webapps, and whose home directory is /webapps/gentleidi.
@@ -37,45 +37,47 @@ specifically used to run the untrusted software submitted by the
 contestants. GentleIDI assumes that this user is named gentlemember.
 However, changing this value in the source is no complicated matter.
 
-\begin{lstlisting}[language=bash]
+\begin{verbatim}
 sudo useradd --system gentlemember
-\end{lstlisting}
+\end{verbatim}
 
 The system needs to be able to execute commands both as gentleidi and
-gentlemember. As the web server runs as gentleidi we need to make sure
+gentlemember. As the Web server runs as gentleidi we need to make sure
 that gentleidi can execute commands as gentlemember. Add the following
 line to your sudoers file.\
 
+\begin{verbatim}
 gentleidi ALL=(gentlemember) NOPASSWD:ALL
+\end{verbatim}
 
 If you don't know how to edit your sudoers, to open the
 sudoers file in a text editor simply type the following command:
 
-\begin{lstlisting}[language=bash]
+\begin{verbatim}
 sudo visudo
-\end{lstlisting}
+\end{verbatim}
 
 Now we've got two users, one capable of executing
 commands as the other. What we want to do now is to ensure that
 gentlemember is unable to communicate via network. This is done by
 applying two rather straightforward iptable rules.
 
-\begin{lstlisting}[language=bash]
+\begin{verbatim}
 sudo iptables -A OUTPUT -m owner --uid-owner gentlemember -j LOG
 sudo iptables -A OUTPUT -m owner --uid-owner gentlemember -j REJECT
-\end{lstlisting}
+\end{verbatim}
 
 Though this will restrict the user's network access, be
 aware of software installed on your system which is capable of
 switching to another user.
 
-\section{Setting up the environment}
+\section{Setting Up the Environment}
 
-Due to a lot of strict changes made in python versions, a lot of
-libraries do not work across different versions of python. This leaves
-python in a situation where program A might need python to be version X
-and program B might need python to be version Y. So, what do you do?
-You setup a virtual environment.
+Due to a lot of strict changes made in Python versions, a lot of
+libraries do not work across different versions of Python. This leaves
+Python in a situation where program A might need Python to be version X
+and program B might need python to be version Y. To solve this problem 
+you can set up a virtual environment.
 
 Virtual environments is a way of setting up separate python setups for
 different sets of programs.
@@ -83,42 +85,43 @@ different sets of programs.
 What we want to do is to turn the home directory of the gentleidi user
 into a virtual environment.
 
-\begin{lstlisting}[language=bash]
+\begin{verbatim}
 sudo apt-get install python-virtualenv
 sudo su gentleidi
-virtualenv ~/env
-\end{lstlisting}
+virtualenv /webapps/gentleidi/env
+\end{verbatim}
 
 Now that you've got a virtual environment you can start
 filling it with something useful, like the content of the
-project's git repo.
+project's Git repository.
 
-\begin{lstlisting}[language=bash]
+\begin{verbatim}
 cp -r /path/to/repo/IDIOpen/ /webapps/gentleidi/
-\end{lstlisting}
+\end{verbatim}
 
-Please note that you only need the wsgi folder from the repo, however,
+Please note that you only need the wsgi folder from the repository, however,
 updating is a lot easier when all you've got to do is
-pull the latest version directly using git. The downside is that you
+pull the latest version directly using Git. The downside is that you
 could possibly end up committing your production system configuration
-files etc to the repo. However, we're going to assume
+files etc. to the repo. However, we're going to assume
 that you will not be developing directly in your production system, and
 thereby avoid the hazard.
 
 Before leaving this step, ensure that the files in /webapps/gentleidi
 has got the correct file permissions.
 
-\begin{lstlisting}
+\begin{verbatim}
 sudo chown -R gentleidi:webapps /webapps/gentleidi
-\end{lstlisting}
+\end{verbatim}
 
-\section{Installing required packages}
+\section{Installing Required Packages}
+
 Now it's time to start making sure that
 you've got the packages you need to run GentleIDI.
 
-\begin{lstlisting}[language=bash]
+\begin{verbatim}
 sudo apt-get install git nginx libmysqlclient-dev python-dev
-\end{lstlisting}
+\end{verbatim}
 
 You might already have most of these packages, however, better safe than
 sorry.
@@ -126,56 +129,51 @@ sorry.
 The next thing you need to do before continuing is to log in as
 gentleidi and activate your newly created virtual environment.
 
-\begin{lstlisting}[language=bash]
+\begin{verbatim}
 sudo su gentleidi
-source ~/env/bin/activate
-\end{lstlisting}
+source /webapps/gentleidi/env/bin/activate
+\end{verbatim}
 
-Installing the required python packages via pip is easily done. In the
+Installing the required Python packages via PyPI is easily done. In the
 project root directory there's a file named
 requirements.txt. This file is simply a list of required packages, to
 install them simply execute the following:
 
-\begin{lstlisting}[language=bash]
+\begin{verbatim}
 pip install -r requirements.txt
-\end{lstlisting}
+\end{verbatim}
 
 \section{Database}
 GentleIDI needs a database to store its data. This guide will show you
-how to setup GentleIDI with a mysql database server, however, if you
-feel like using mariaDB, postgresql, or even SQLite, then please do.
+how to setup GentleIDI with a MySQL database server, however, if you
+feel like using PostgreSQL, or even SQLite, then please do.
 Any database server supported by Django is supported by GentleIDI.
 
 Naturally you don't need to install the database server
-on the same host as the web server, that's what
+on the same host as the Web server, that's what
 we'll do for now.
 
-\begin{lstlisting}
+\begin{verbatim}
 sudo apt-get install mysql-server
-\end{lstlisting}
+\end{verbatim}
 
-Now what we need to do is to create a database and a mysql user that
+Now what we need to do is to create a database and a MySQL user that
 GentleIDI can use. During the install process you were required to set
-a root password for the mysql-server. Login as root and perform the
+a root password for the MySQL-server. Login as root and perform the
 following commands:
 
-\begin{lstlisting}[language=SQL]
-CREATE USER
-gentledb'@'localhost'
-IDENTIFIED BY 'password';
-GRANT ALL PRIVILEGES ON * \@. * TO
-'newuser'@'localhost';
-
+\begin{verbatim}
+CREATE USER gentledb'@'localhost' IDENTIFIED BY 'password';
+GRANT ALL PRIVILEGES ON * \@. * TO 'newuser'@'localhost';
 FLUSH PRIVILEGES;
-
 CREATE DATABASE gentleidi CHARACTER SET uft8 COLLATE utf8_general_ci;
-\end{lstlisting}
+\end{verbatim}
 
 Remember to replace ``gentledb'' and ``password'' with a suitable username and
 password. Now you need to ensure that GentleIDI uses your newly created
 database.  Edit the DATABASES entry in IDIOpen/wsgi/openshift/settings.py
 
-\begin{lstlisting}[language=Python]
+\begin{verbatim}
 if MYSQL:
      DATABASES = {
           'default': {
@@ -185,33 +183,33 @@ if MYSQL:
               'PASSWORD' : 'password',
               'HOST'     : 'localhost',
               'PORT'     : '3306',
-\end{lstlisting}
+\end{verbatim}
 
-In order to make sure that the database is working properly, login as
+In order to make sure that the database is working properly, log in as
 gentleidi, activate your environment and synchronize
 GentleIDI's database.
 
-\begin{lstlisting}[language=bash]
+\begin{verbatim}
 sudo su gentleidi
-source \~/env/bin/activate
-python \~/IDIOpen/wsgi/manage.py syncdb
-python \~/IDIOpen/wsgi/manage.py migrate
-\end{lstlisting}
+source /webapps/gentleidi/env/bin/activate
+python /webapps/gentleidi/IDIOpen/wsgi/manage.py syncdb
+python /webapps/gentleidi/IDIOpen/wsgi/manage.py migrate
+\end{verbatim}
 
 If this command terminates properly, then your database should be good
 to go. In fact you should be able to run GentleIDI on a development
-server at this point. But first, you need to create a admin account.To
+server at this point. But first, you need to create an admin account. To
 do so, simply execute the following:
 
-\begin{lstlisting}[language=bash]
-python ~/IDIOpen/wsgi/openshift/manage.py createsuperuser
-\end{lstlisting}
+\begin{verbatim}
+python /webapps/gentleidi/IDIOpen/wsgi/openshift/manage.py createsuperuser
+\end{verbatim}
 
 To start the development server run:
 
-\begin{lstlisting}[language=bash]
-python \~/IDIOpen/wsgi/openshift/manage.py runserver
-\end{lstlisting}
+\begin{verbatim}
+python /webapps/gentleidi/IDIOpen/wsgi/openshift/manage.py runserver
+\end{verbatim}
 
 You should now have a working website running on port 8000. However, you
 have no execution nodes available to evaluate submissions, and
@@ -220,14 +218,16 @@ server, which scales horribly.
 
 \section{Gunicorn}
 Now it's time to install replace the Django development
-server with a proper application server, gunicorn. Member to be logged
-in as gentleidi, and to activate your environment before doing this.
+server with a proper application server, Gunicorn. Remember to be logged
+in as gentleidi, and to activate your environment before proceeding.
 
-\begin{lstlisting}[language=bash]
+\begin{verbatim}
 pip install gunicorn
-\end{lstlisting}
-Now we need a script that launches gunicorn and GentleIDI appropriately.
-\begin{lstlisting}[language=bash]
+\end{verbatim}
+
+Now we need a script that launches Gunicorn and GentleIDI appropriately.
+
+\begin{verbatim}
 #!/bin/bash
 # Name of the application
 NAME=GentleIDI
@@ -262,7 +262,7 @@ exec /webapps/gentleidi/env/bin/gunicorn ${DJANGO_WSGI_MODULE}:application \
  --user=$USER --group=$GROUP 
  --log-level=debug {textbackslash}
  --bind=unix:$SOCKFILE
-\end{lstlisting}
+\end{verbatim}
 
 Place the contents of the previous page in the following file:
 \begin{verbatim}
@@ -271,24 +271,25 @@ Place the contents of the previous page in the following file:
 
 Make sure that the script is executable:
 
-\begin{lstlisting}[language=bash]
+\begin{verbatim}
 sudo chmod u+x /webapps/gentleidi/env/bin/gunicorn_start
-\end{lstlisting}
+\end{verbatim}
 
-\subsection{nginx}
-As mentioned previously this setup relies on a combination of gunicorn
-and nginx. At this point gunicorn should be working properly, and
-it's time to setup nginx.
+\subsection{Nginx}
+As mentioned previously this setup relies on a combination of Gunicorn
+and Nginx. At this point gunicorn should be working properly, and
+it's time to setup Nginx.
 
 If you have not already installed nginx, do so now:
 
-\begin{lstlisting}[language=bash]
+\begin{verbatim}
 sudo apt-get install nginx
-\end{lstlisting}
+\end{verbatim}
 
-Now you need to create an nginx configuration file for gentelidi.
+Now you need to create an nginx configuration file for your Web site, 
+in this case the file is called ``gentleidi''.
 
-Store the content found below in the following file:
+Store the content found below in the following file: 
 \begin{verbatim}
 /etc/nginx/sites-available/gentleidi
 \end{verbatim}
@@ -329,30 +330,30 @@ error_page 500 502 503 504 /500.html;
 #EOF
 \end{verbatim}
 
-In this configuration nginx is set to log all accesses and errors. These
-files need to be created by the following commands:
+In this configuration Nginx is configured to log all accesses and errors. These
+log files need to be created with the following commands:
 
-\begin{lstlisting}[language=bash]
+\begin{verbatim}
 sudo su gentleidi
-mkdir ~/logs
-touch ~/logs/nginx-access.log
-touch logs/nginx-error
+mkdir /webapps/gentleidi/logs
+touch /webapps/gentleidi/logs/nginx-access.log
+touch /webapps/gentleidi/logs/nginx-error
 exit
-\end{lstlisting}
+\end{verbatim}
 
-All you need to do at this point is to enable the nginx site. This is
+All you need to do at this point is to enable the Nginx site. This is
 done simply by creating a symbolic link from the configuration file in
 sites-available to sites-enabled.
 
-\begin{lstlisting}[language=bash]
+\begin{verbatim}
 sudo ln -s /etc/nginx/sites-available/gentleidi
 /etc/nginx/sites-enabled/
 sudo rm /etc/nginx/sites-enabled/default
 sudo service nginx restart
-\end{lstlisting}
+\end{verbatim}
 
-You should now have a working website. All that's left
-is making management a little easier and adding some execution nodes.
+You should now have a working website. All that is left
+is making management a little easier, and adding some execution nodes.
 
 \section{Supervisor}
 Supervisor is a utility for defining and managing jobs. In this case
@@ -398,22 +399,22 @@ sudo supervisorctl update
 sudo supervisorctl restart all
 \end{lstlisting}
 
-\section{Multiple execution nodes}
+\section{Multiple Execution Nodes}
 The easiest way of setting up multiple execution nodes is to clone the
-setup on your web server to other machines and then making minor
+setup on your Web server to other machines and then making minor
 changes.
 When setting up multiple execution nodes there are two changes that need to be
 made. The directory \begin{verbatim}/webapps/gentleidi/IDIOpen/wsgi/private/submissions\end{verbatim}
 needs to be shared between all the execution nodes. How you decide to make this
-happen is up to you. However, sshfs is possibly the easiest solution. Whatever
+happen is up to you. However, SSHFS is possibly the easiest solution. Whatever
 way you decide to mount the directory on your execution nodes, make sure that
 multiple users are allowed to access it, e.g.\ the ``allow\_other''
-option for sshfs.
+option for SSHFS.
 You also need to make sure that all your execution nodes have access to the
 same database. Make sure that the settings.py is not set to localhost, but
 rather points to whatever host you decide to use as a database server. Some
 configuration of your database server might be needed in order for it to accept
 remote connections. MySQL servers need to change the bind-address property in
 the /etc/mysql/my.cnf to their actual IP, not localhost(127.0.0.1).
-You also need to change the grants for the mysql user in such a way that it is
+You also need to change the grants for the MySQL user in such a way that it is
 allowed to connect remotely to the database.
