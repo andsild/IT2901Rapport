@@ -44,10 +44,11 @@ The reader should note that some members of our group has competed earlier,
 which has given us helpful empirical insight.
 
 \subsection{Expected Physical Environment}
-Our solution is used in different contexts. Table X.X has the different
-application and user-domains.
+Our solution is used in different contexts. Table~\ref{table:userChar} has the
+different application and user-domains.
 
-\begin{tabular}{|m{3.1712599in}|m{3.1712599in}|}
+\begin{longtable}{|m{3.1712599in}|m{3.1712599in}|}
+    \caption{Users and their expected stereotypical properties} \label{table:userChar} \\
 \hline
 IDI Open is hosted in P15, Høgskoleringen 3, on
 Gløshaugen campus every year. Every team participating in the
@@ -59,66 +60,81 @@ server(MySQL, PostgreSQL), Python with PyPi package manager.
  &
 Linux kernel with ssh enabled, supplemented with a root user.
 \\\hline
-\end{tabular}
+\end{longtable}
 
 \subsection{User Characteristics}
-Table X.X show different stereotypes of expected typical users. While open to
-deviations from the stereotypes, they highlight important properties required
-for our solution.
+Table~\ref{table:users} show different stereotypes of expected typical users.
+While open to deviations from the stereotypes, they highlight important
+properties required for our solution.
 
-\begin{tabular}{|m{2.9837599in}|m{3.1087599in}|}
+\begin{longtable}{|m{2.9837599in}|m{3.1087599in}|}
+    \caption{Users and their expected stereotypes} \label{table:users} \\
 \hline
-\begin{itemize}
+\multicolumn{1}{|c|}{\textbf{Judge}} & 
+\multicolumn{1}{c|}{\textbf{Admin}}  \\
+Education: Computer Science \newline
+Age: 20-25 \newline
+Responsibility: review assignments \newline
+Frustrations:
+\begin{itemize}[nosep]
     \item Irresponsive interfaces
     \item Incorrect data
-\end{itemize}
-\begin{itemize}
     \item User submission system
     \item Response types
 \end{itemize}
  &
-\begin{itemize}
+Education: Computer Science \newline
+Age: 20-27 \newline
+Responsibility: review assignments \newline
+Frustrations:
+\begin{itemize}[nosep]
     \item Irresponsive interfaces
     \item Node failures
     \item Incorrect data
+    \item Backend system
+    \item Dataflow
 \end{itemize}
+\\\hline
 
-\begin{itemize}
-\item Backend system\item 
-Dataflow
-\end{itemize}
-\\\hline
-keep track of score
-\begin{itemize}
-\item Irresponsive interfaces
-\item
-Lack of overview
-\end{itemize}
-\begin{itemize}
-\item Backend system
-\item 
-Dataflow
+
+\multicolumn{1}{|c|}{\textbf{Contestant}} & 
+\multicolumn{1}{c|}{\textbf{Sponsor}}  \\
+Education: Computer Science \newline 
+Age: 20-25 \newline 
+Responsibility: Submit and upload assignments, keep track of score \newline
+Frustrations:
+\begin{itemize}[nosep]
+    \item Irresponsive interfaces
+    \item Lack of overview
+    \item Backend system
+    \item Dataflow
 \end{itemize}
  &
-\begin{itemize}
-\item Dissatisfied contestants\item
-No overview\end{itemize}
-\begin{itemize}
-\item Nothing special\end{itemize}
+Education: Computer Science \newline
+Age: 27-40 \newline
+Responsibility: Advertize company \newline
+Frustrations:
+\begin{itemize}[nosep]
+    \item Dissatisfied contestants
+    \item No overview
+    \item Nothing special
+\end{itemize}
 \\\hline
-and information
-\begin{itemize}
-\item Mis-information
+
+\multicolumn{1}{|c|}{\textbf{Balloon-functionary}} \\
+Education: Computer Science \newline
+Age: 20-25 \newline
+Responsibility: Review scores, hand out balloons and information \newline
+Frustrations:
+\begin{itemize}[nosep]
+    \item Mis-information
+    \item Scoreboards, about competition
 \end{itemize}
-\begin{itemize}
-\item Scoreboards, about competition
-\end{itemize}
- &
 \\
 \hline
-\end{tabular}
+\end{longtable}
 
-It can be seen in table X.X that the most prominent trait of our users is that
+It can be seen in table~\ref{table:users} that the most prominent trait of our users is that
 they have a background in computer science. As a consequence, it is assumed a
 higher level of technical competence from our users. The user profiles also
 highlight that some features were more important than others, e.g.\
@@ -374,13 +390,13 @@ MED & M-06 \\
 
 \subsection{Functional requirements for Functionary}
 
-\begin{tabular}{|m{1.1191599in}|m{0.33795986in}|m{0.33795986in}|m{1.2580599in}|m{0.5045598in}|m{1.1191599in}|m{1.0775598in}|}
+\begin{longtable}{|m{1.1191599in}|m{0.33795986in}|m{0.33795986in}|m{1.2580599in}|m{0.5045598in}|m{1.1191599in}|m{1.0775598in}|}
 \hline A functionary shall be able to register a balloon colour to each
 task/problem & FF-01 & SF-1 &
  & LOW & M-06 & TF-12\\\hline A functionary shall have access to information
 about newly completed problems & FF-02 & SF-1 &
  & MED & M-06 & TF-12\\\hline
-\end{tabular}
+\end{longtable}
 
 \subsection{Functional requirements for Teams}
 \begin{longtable}{|p{4cm}|l|l|p{4cm}|l|l|}
