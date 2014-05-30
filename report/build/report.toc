@@ -196,3 +196,6 @@
 \contentsline {section}{\numberline {G.3}Team Registration}{110}{section.G.3}
 \contentsline {chapter}{\numberline {H}ER-Diagram}{112}{appendix.H}
 \contentsline {chapter}{\numberline {I}Website views}{116}{appendix.I}
+\contentsline {chapter}{\numberline {J}Sprint Burndowns}{118}{appendix.J}
+\contentsline {section}{\numberline {J.1}Inital activity lists}{118}{section.J.1}
+\contentsline {section}{\numberline {J.2}Activity lists}{119}{section.J.2}
