@@ -1,5 +1,5 @@
 \chapter{Design}
-This document contains the choices made regarding the process of
+This chapter contains the choices made regarding the process of
 designing the front-end of the application, for a more technical
 approach see \textit{System Architecture chapter 6}.
 
@@ -10,8 +10,8 @@ The user interface provided by the previous IDI Open system consisted of
 a simple web interface for reading news items, registering teams for
 contests, and delivering submissions. GentleIDI is intended to provide
 more functionality through its web interface, including but not limited
-to change email(requirement FC-02), \ supervisor(requirement FJ-11) and
-user management (requirements FC-01, FC-03 and FC-04). As a consequence
+to judge supervision(requirement FJ-11) and user management 
+(requirements FC-01, FC-03 and FC-04). As a consequence
 we had two options available: reusing and extending the existing
 interface design, or creating our own design from scratch.
 
@@ -20,9 +20,9 @@ interface design, or creating our own design from scratch.
 	\caption{User Interface of the old system}
 	\label{fig:oldSystem}
 \end{figure}
-Fig 7.1
+
 We chose to create our own design from scratch, while still trying to
-keep a similar placement of elements from the previous design.The
+keep a similar placement of elements from the previous design. The
 customer expressed concern regarding how contestants would react to the
 transition from the old interface to the new one. With this in mind we
 started to create mockups modelling core elements of the website. Our
@@ -39,14 +39,14 @@ Beyond our three initial mockups we tried a couple of ``out
 of the box'' approaches to our designs, but none of them
 met our standard and was rejected for either being too time-consuming
 to implement or too far from what our customer wanted. We had a meeting
-with our customer, where we showed our mockups, and what are thoughts
-on design had been so far. We wanted to make sure that the customers
+with our customer, where we showed our mockups, and what our thoughts
+on design had been so far. We wanted to make sure that the customer
 was on the same page as us, and that we were not moving beyond the
-scope of the project. Our customers wasn't very focused
+scope of the project. Our customer was not very focused
 on the design aspect, but one demand they had was that they wanted the
 new site to have the same structure as the old one. One example of what
 this means is that the customer wanted us to keep the menu on the
-left-side as you can see that the old system has in Fig~\ref{fig:oldSystem}. We agreed,
+left side as you can see that the old system has in Fig~\ref{fig:oldSystem}. We agreed,
 because getting used to a new website can take time, so keeping the
 structure similar would ease the transition for our users. With this in
 mind we decided to go for one of our initial mockups, the rightmost one
@@ -58,34 +58,31 @@ transition between using the two is reduced to a minimum.
 The task had to be completed in time for milestone M-03, so our main
 concern was designing for the functionality needed for that particular
 milestone. However, we also had mockups for functionality outside of
-this milestone. After milestone M-03 was done, we introduced new design
+this milestone. After milestone M-03 was met, we introduced new designs
 for new functionality through continuous work on top of a template.
 
 The majority of the front end is stylized using bootstrap[Link til
 kilde] as a framework, enabling us to create a site which is both
 highly maintainable and aesthetically pleasing at the same time. The
-admin interface was created using django-admin-interface with Grappelli
-as a skin to give it a modern look. This worked more or less
-automatically.
+admin interface was created using django-admin-interface. Grappelli
+was used as a skin to give it a modern look. The look of the final page
+can be viewed in Fig~\ref{fig:finalUI}.
 
 
-The final page looked like this:
  \begin{figure}[h!]
 	\includegraphics[width=6.4272in,height=3.2602in]{a07Design-img3.png} 
 	\caption{Final page}
 	\label{fig:finalUI}
 \end{figure}
 
-The ``black'' frame was in our
-initial page coloured blue, but was changed one week before M-07,
-idiopen [ REMARK: may be altered ].This illustrates the strongest
+The grey header was in our
+initial design coloured blue, but was changed one week before M-07.
+This illustrates the strongest
 functionality of the design, namely customization. It is possible, by
 only uploading a new CSS file, to change the whole feel of the website
-and give every contest its own theme. The change on IDI OPEN 14, from
-blue to black, was done as a consequence of a logo change by Richard
-Eide, one of IDI Open's facilitators. The old color
-scheme can be viewed in appendix [insert which appendix]. By comparing
-fig~\ref{fig:oldSystem} and fig~\ref{fig:finalUI}, you can see that we kept the same structure, but
+and give every contest its own theme. The change from blue to grey was made
+as a consequence of IDI Open changing to a new logo. By comparing
+Fig~\ref{fig:oldSystem} and Fig~\ref{fig:finalUI}, you can see that we kept the same structure, but
 still made some significant changes to the design.
 
 
@@ -96,35 +93,33 @@ the same for every part of the webpage, and contains a content block
 that changes while you navigate through the different parts. This makes
 it easier to add new content to the user interface, because you already
 have the base, and don't need to worry about the
-header, footer or the menu. We wanted to make it easy for future
+header, footer, or the menu. We wanted to make it easy for future
 developers to take over GentleIDI after us, and therefore we focused on
 a versatile user interface, in case they want to add new functionality.
 
 The menu is placed to the left, coping with the western norm stating
 that eye placement is natural to the
 left\footnote{\ http://research.microsoft.com/en-us/um/people/cutrell/chi09-buschercutrellmorris-eyetrackingforwebsalience.pdf}.
-We designed the menu to be versatile. Admins can choose what they want
-to show in the menu, except for \textit{Register user} and
-\textit{Register team }that are
-``hardcoded'' on request from the
-customer. This was highly prioritized by our customers, they wanted to
-be able to make changes without having to change the code. As mentioned
+We designed the menu to be versatile, this was highly prioritized by our customers.
+Admins can choose what they want to show in the menu, except for \textit{Register user} and
+\textit{Register team} that are ``hardcoded'' on request from the
+customer. As mentioned
 in Design process ~\ref{sec:designProcess}, we designed the user interface after a principle
 of versatility. Admins can also change the logo, the sponsor images and
 the contact information in the footer.
 
-Buttons, images and icons were surrounded with boxes, for example the
-sponsors and the menu buttons, to show that they are different
-elements.. There is also one big box surrounding a group of elements,
+Buttons, images and icons were surrounded with boxes, to show that they are different
+elements. There is also one big box surrounding a group of elements,
 for example the sponsors. This is consistent with the gestalt law of
 proximity, that constitutes that humans will naturally group objects
-that are close to each other, and view them as a distinct.
+that are close to each other, and view them as distinct.
 This helps the user quickly understand the user interface.
 
 
  \begin{figure}[h!]
 	\includegraphics[width=2.1807in,height=0.5972in]{a07Design-img4.png} 
 	\caption{FIGURECAPTION}
+	\label{fig:buttons}
 \end{figure}
 \begin{figure}[h!]
 	\includegraphics[width=1.0693in,height=0.5in]{a07Design-img5.png} 
@@ -134,13 +129,12 @@ This helps the user quickly understand the user interface.
 	\includegraphics[width=1.1528in,height=0.4028in]{a07Design-img6.png} 
 	\caption{FIGURECAPTION}
 \end{figure}
-fig 7.4
 
 ``To strive for consistency'' is the
 first of Shneiderman's eight golden rules of interface
 design\footnote{\ https://www.cs.umd.edu/users/ben/goldenrules.html},
 and we tried to follow this while making design decisions. As can be
-seen in fig 7.4, we decided to use colours that represents the action
+seen in Fig~\ref{fig:buttons}, we decided to use colours that represents the action
 each button is connected to. The red button marks that pressing this
 will have permanent consequences. We added a textbox prompt that the
 user has to answer after pressing a red button, that constitutes to
@@ -148,21 +142,22 @@ Schneiderman's fifth and sixth rule, for easy reversal
 of actions and error handling. This wasn't added
 initially, but we noticed while testing the system that without a
 prompt, it could be possible to leave your team by mistake.
- \begin{figure}[h!]
+ 
+\begin{figure}[h!]
 	\includegraphics[width=6.5in,height=2.5417in]{a07Design-img7.png} 
 	\caption{Contest page}
 	\label{fig:contestPage}
 \end{figure}
 
-For the contest page, fig~\ref{fig:contestPage}, we wanted to give the contestant a good
-overview of all the problems, their submissions to them, last feedback,
+For the contest page, Fig~\ref{fig:contestPage}, we wanted to give the contestant a good
+overview of all the problems, their submissions to them, feedback,
 if they solved the problem and the score. It is important to not bury
 information to deep in a website. It could be challenging to balance
 this while trying not to overload the page with too much information.
 We had this in mind when designing this page. We got valuable feedback
 from the customer concerning what they wanted to be present on the
 contest page. They wanted it to be easy for the contestants to access
-everything they need, during the competition, through the contest page.
+everything they need during the competition, through the contest page.
 After feedback from the customer, we added links to the clarification
 page and highscore table on the contest page. This lowers the
 short-term memory load on the contestants, which is consistent with
@@ -178,12 +173,11 @@ everything accessible on the same page.
 	\label{fig:adminInterface}
 \end{figure}
 
-The admin interface is developed as an extension
-Django's admin interface. Django comes with an
+Django comes with an
 extensive admin interface, that provides functionality for adding,
-removing and changing parts of the system. The admin interface consists
+removing and changing parts of the system. The interface consists
 of everything we as developers want the admins to be able to change.
-For a complete listing, see figure X.X[kap 2]. We decided to use
+We decided to use
 Grappelli, an app for the django admin interface that also provided us
 with more adequate functionality, e.g.\ auto-completion, rich text
 editors, drag'n drop and more.
@@ -197,13 +191,9 @@ Shneiderman's eight rule.
 
 Originally all the names of the elements were the same as our model
 names. We decided to change this to more intuitively understandable
-expressions after a request from the customer. Django's
-admin interface couldn't give us all the functionality
-we wanted, so we had to extend the interface with out own custom views.
-We created two views, ``Balloon overview'' and ``Judge overview''. 
-To avoid having to create a similar interface as the rest of admin site,
-just with different functionality, we decided to extend the interface 
-templates used for the django admin interface. This allowed us to change 
+expressions after a request from the customer.
+We extended the interface with our own custom views, ``Balloon overview'' and ``Judge views''. 
+This allowed us to change 
 what we wanted, while it still kept its consistency with the other parts 
 of the admin site.
 
@@ -211,37 +201,27 @@ of the admin site.
 
  \begin{figure}[h!]
 	\includegraphics[width=6.5in,height=3.0417in]{a07Design-img9.png} 
-	\caption{Judge overview}
+	\caption{Judge views}
 	\label{fig:judge}
 \end{figure}
 
-The judge overview was made primarily for judges, but could also be used
+The judge views was made primarily for judges, but could also be used
 by the admins. The motivation behind making this view, is that it gives
-the judges an easier overlook over the competition and how the progress
+the judges a better overview of the competition and how the progress
 is going for the different teams. We were initially told that the
 judges wanted a way to see if a team was struggling, so they could help
-that team.
-
-The view consists of four different tables, with the same layout as the
-balloon tables. The first two tables depicts how many failed attempts
-an onsite or offsite team has. The Problem Overview table provides
-statistics on each problem for the given contest. This was added so
-that the judges can see which problem has the most failed or successful
-attempts, and if necessary make changes. To make it easy for the judges
-to choose a specific team, independent of submissions, we made a
-dropdown menu with all the teams. The last table is the highscore list.
-We wanted everything to be on one page for the judges, so they
+that team. We wanted everything to be on one page for the judges, so they
 wouldn't have to constantly switch between different
-pages.
+pages. The judge view can be seen in Fig~\ref{fig:judge}.  
 
  \begin{figure}[h!]
 	\includegraphics[width=6.5in,height=2.8752in]{a07Design-img10.png} 
-	\caption{Judge overview for team}
+	\caption{Judge views for team}
 	\label{fig:judgeTeam}
 \end{figure}
 
 
-Figure~\ref{fig:judgeTeam} shows the judge overview after
+Fig~\ref{fig:judgeTeam} shows the judge views after
 selecting the team ``GentleCoding''.
 It is possible to expand each submission by clicking on it. The third
 submission has been clicked on, so we can now choose to expand
