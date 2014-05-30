@@ -23,7 +23,7 @@ the database.
 \section{Views}
 
 We have chosen to depict the architecture using Philippe
-Kruchten's 4+1 view model. [1] This is a method of
+Kruchten's 4+1 view model\footnote{\url{http://www.cs.ubc.ca/~gregor/teaching/papers/4+1view-architecture.pdf}}. This is a method of
 describing the architecture for software-intensive systems from the
 viewpoint of different stakeholder by using multiple, concurrent views.
 We chose this model because it gives a good overview and is widely
@@ -82,7 +82,6 @@ Second is submitting a solution to a programming problem. See figure~\ref{fig:ac
 \end{figure}
 
 \subsection{Development View}
-\subsubsection{Purpose}
 
 The developer view is intended for the developers. It should ease
 development, and focus on software module organization by packaging the
@@ -93,12 +92,11 @@ and change specific parts of the system without changing everything.
 The structure of the system can therefore be divided into the following
 main packages: Contest, Registration, Submission, Execution, Balloon,
 Clarification, Admin, and Article. These packages are described in
-detail in chapter 8 Implementation. 
+detail in chapter~\ref{chapter:implementation} Implementation. 
 
 \subsection{Physical View}
 \label{sec:physicalView}
 
-\subsubsection{Purpose}
 The physical view shows the interaction between the physical components
 of the system.
 
@@ -154,7 +152,7 @@ Figure~\ref{fig:systemOverview}. This database links to the file storage on the 
 server. However, the execution nodes requires some files to be shared
 across multiple nodes. Like explained earlier in
 section~\ref{section:applicationTier}, this is implemented with SSHFS.\ For
-more specific details see~\ref{chapter:implementation} and~\ref{appendix:ER}.
+more specific details see chapter~\ref{chapter:implementation} and Appendix~\ref{appendix:ER}.
 
 
 \section{Quality attributes}
@@ -237,10 +235,6 @@ database server that scales with the number of execution nodes and the
 amount of data. 
 
 \subsection{Multi-tier}
-
 See:~\ref{sec:physicalView} Physical View.
-References:
 
-[1] Architectural Views -
-% http://www.cs.ubc.ca/\~{}gregor/teaching/papers/4+1view-architecture.pdf
 

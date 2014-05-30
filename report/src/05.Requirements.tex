@@ -1,5 +1,5 @@
 \chapter{Requirements Specification}
-According to the gantt chart (Fig 4.1) the team were supposed to update the
+According to the Gantt chart (Table~\ref{gantt}) the team were supposed to update the
 requirement specification starting from week 2 and continuing up until week
 10. For us it was still the case that there were a clearly identifiable
 requirement specifications phase. This was primarily from week 2 up to and
@@ -177,7 +177,7 @@ The ID system can be interpreted in the following way
 The milestone show when each requirement needs to be met.
 
 \pagebreak
-\subsection{Functional Requirements for Admin}
+\subsubsection{Functional Requirements for Admin}
 % \begin{longtable}{|p{2cm}|l|m{0.33795986in}|m{1.2684599in}|m{0.5254598in}|m{1.0983598in}|m{1.0566599in}|}
 \begin{longtable}{|p{4cm}|l|l|p{4cm}|l|l|}
 \caption{Functional requirements for admin} \label{grid_mlmmh} \\
@@ -259,7 +259,7 @@ An admin can modify news item & FA-16 & SA-5 & & MED & M-03 \\
 \hline 
 \end{longtable}
 
-\subsection{Functional requirements for Judge}
+\subsubsection{Functional Requirements for Judge}
 \begin{longtable}{|p{4cm}|l|l|p{4cm}|l|l|}
 \caption{Functional requirements for judge} \label{grid_mlmmh} \\
 
@@ -327,7 +327,7 @@ A judge shall be able supervise all submissions & FJ-11 & & & MED & \\
 \end{longtable}
 
 \pagebreak
-\subsection{Functional requirements for Contestant}
+\subsubsection{Functional Requirements for Contestant}
 
 \begin{longtable}{|p{4cm}|l|l|p{4cm}|l|l|}
 \caption{Functional requirements for contestant} \label{grid_mlmmh} \\
@@ -385,7 +385,7 @@ MED & M-06 \\
 \end{longtable}
 
 \pagebreak
-\subsection{Functional requirements for Functionary}
+\subsubsection{Functional Requirements for Functionary}
 
 \begin{longtable}{|p{4cm}|l|l|p{4cm}|l|l|}
     \caption{Functional requirements for functionaries} \\
@@ -417,7 +417,7 @@ about newly completed problems & FF-02 & SF-1 &
  & MED & M-06 \\\hline
 \end{longtable}
 
-\subsection{Functional requirements for Teams}
+\subsubsection{Functional Requirements for Teams}
 \begin{longtable}{|p{4cm}|l|l|p{4cm}|l|l|}
 \caption{Functional requirements for teams} \label{grid_mlmmh} \\
 
@@ -491,7 +491,7 @@ This is specified by a judge & HIGH & M-06\\
 
 \end{longtable}
 
-\subsection{Other requirements}
+\subsubsection{Other Functional Requirements}
 \begin{longtable}{|p{4cm}|l|l|p{4cm}|l|l|}
 \caption{Other functional requirements} \label{grid_mlmmh} \\
 
@@ -535,7 +535,7 @@ The contest results are to be visible in the form of a highscore list. & FO-04
 \end{longtable}
 
 \pagebreak
-\section{Non-functional}
+\subsection{Non-functional}
 The nonfunctional requirements defines what objectives our end product needs to
 meet. Measure make it easy to agree on whether the requirement is fulfilled or
 not. The tables in this section can be interpreted in the following way: 
@@ -545,8 +545,9 @@ not. The tables in this section can be interpreted in the following way:
     \item Value is a quantitive measure 
 \end{itemize}
 
-\subsection{Speed}
+\subsubsection{Speed}
 \begin{longtable}{|l|p{5cm}|p{1.8cm}|l|p{4.4cm}|}
+\caption{Non-Functional requirement for speed} \label{table:nfSpeed} \\
 \hline \multicolumn{1}{|c|}{\textbf{ID}} &
 \multicolumn{1}{c|}{\textbf{Measure}} &
 \multicolumn{1}{c|}{\textbf{Value}} &
@@ -575,8 +576,9 @@ NF-03 & Edit user & {\textless} 1 min & MED & E.g.\ change email, password \\
 \hline
 \end{longtable}
 
-\subsection{Size}
+\subsubsection{Size}
 \begin{longtable}{|l|p{5cm}|p{1.8cm}|l|p{4.4cm}|}
+\caption{Non-Functional requirement for size} \label{table:nfSize} \\
 \hline \multicolumn{1}{|c|}{\textbf{ID}} &
 \multicolumn{1}{c|}{\textbf{Measure}} &
 \multicolumn{1}{c|}{\textbf{Value}} &
@@ -611,9 +613,10 @@ NF-08 & Limitation of submission size & 50kB & HIGH & \\
 \hline
 \end{longtable}
 
-\subsection{Ease of Use}
+\subsubsection{Ease of Use}
 
 \begin{longtable}{|l|p{5cm}|p{1.8cm}|l|p{4.4cm}|}
+\caption{Non-Functional requirement for ease of Use} \label{table:nfEase} \\
 \hline \multicolumn{1}{|c|}{\textbf{ID}} &
 \multicolumn{1}{c|}{\textbf{Measure}} &
 \multicolumn{1}{c|}{\textbf{Value}} &
@@ -648,8 +651,9 @@ MED &
 \end{longtable}
 
 \pagebreak
-\subsection{Reliability}
+\subsubsection{Reliability}
 \begin{longtable}{|l|p{5cm}|p{1.8cm}|l|p{4.4cm}|}
+\caption{Non-Functional requirement for reliability} \label{table:nfReliability} \\
 \hline
 \textbf{ID:} & \textbf{Measure:} & \textbf{Value:} & \textbf{Priority:} & \textbf{Comment:}\\
 \hline
@@ -663,9 +667,10 @@ after or before a contest \\
 \hline
 \end{longtable}
 
-\subsection{Robustness}
+\subsubsection{Robustness}
 
 \begin{longtable}{|l|p{5cm}|p{1.8cm}|l|p{4.4cm}|}
+\caption{Non-Functional requirement for robustness} \label{table:nfRobustness} \\
 \hline \multicolumn{1}{|c|}{\textbf{ID}} &
 \multicolumn{1}{c|}{\textbf{Measure}} &
 \multicolumn{1}{c|}{\textbf{Value}} &
@@ -702,9 +707,10 @@ utilize addition nodes\\
 \hline
 \end{longtable}
 
-\subsection{Portability/Scalability}
+\subsubsection{Portability/Scalability}
 
 \begin{longtable}{|l|p{5cm}|p{1.8cm}|l|p{4.4cm}|}
+\caption{Non-Functional requirement for portability/scalability} \label{table:nfPortScale} \\
 \hline \multicolumn{1}{|c|}{\textbf{ID}} &
 \multicolumn{1}{c|}{\textbf{Measure}} &
 \multicolumn{1}{c|}{\textbf{Value}} &
@@ -730,8 +736,9 @@ NF-20 & Module-based code && HIGH & The code should be easy to maintain\\
 \hline
 \end{longtable}
 
-\subsection{Other}
+\subsubsection{Other Non-Functional}
 \begin{longtable}{|l|p{5cm}|p{1.8cm}|l|p{4.4cm}|}
+\caption{Other non-functional} \label{table:nfOther} \\
 \hline \multicolumn{1}{|c|}{\textbf{ID}} &
 \multicolumn{1}{c|}{\textbf{Measure}} &
 \multicolumn{1}{c|}{\textbf{Value}} &
@@ -758,7 +765,7 @@ NF-22 & Open-source & GPL & MED & \\
 \end{longtable}
 
 \pagebreak
-\section{Security}
+\subsection{Security}
 While security requirements are non-functional, we decided to do the
 security requirements engineering as a separate process. 
 Table % TODO MORE
@@ -768,7 +775,7 @@ can be interpreted in the following way:
     \item Measure describes 
 \end{itemize}
 
-\subsection{Authentication and Authorization}
+\subsubsection{Authentication and Authorization}
 \begin{longtable}{|l|p{7cm}|l|p{5cm}|}
 \caption{Security requirements for authentication and authorization} 
 \label{table:nfaa} \\
@@ -820,7 +827,7 @@ simply acquire a session ID and use it on other computers to authenticate\\
 
 \end{longtable}
 
-\subsection{Immunity}
+\subsubsection{Immunity}
 \begin{longtable}{|l|p{7cm}|l|p{5cm}|}
 \caption{Security requirements for immunity} 
 \label{table:nfii} \\
@@ -866,7 +873,7 @@ simply acquire a session ID and use it on other computers to authenticate\\
 \end{longtable}
 
 
-\subsection{Non-repudiation}
+\subsubsection{Non-repudiation}
 \begin{longtable}{|l|p{7cm}|l|p{5cm}|}
 \caption{Security requirements for non-repudiation} 
 \label{table:nfnr} \\
@@ -901,7 +908,7 @@ in the contest rules & HIGH & \\
 \end{longtable}
 
 \newpage
-\subsection{Privacy}
+\subsubsection{Privacy}
 \begin{longtable}{|l|p{7cm}|l|p{5cm}|}
 \caption{Security requirements for privacy} 
 \label{table:nfp} \\
@@ -937,8 +944,10 @@ consent & LOW & \\
 \hline
 \end{longtable}
 
-\subsection{Auditing}
+\subsubsection{Auditing}
 \begin{longtable}{|l|p{7cm}|l|p{5cm}|}
+\caption{Security requirements for auditing} 
+\label{table:nfaud} \\
 \hline \multicolumn{1}{|c|}{\textbf{ID}} &
 \multicolumn{1}{c|}{\textbf{Measure}} &
 \multicolumn{1}{c|}{\textbf{Priority}} &
@@ -971,13 +980,15 @@ constraints. All of them were priority LOW.\ Here are the requirements
 we did not complete:
 
 \begin{center}
-\begin{longtable}{|p{5cm}|l|}
-\hline
-A judge shall get a notification when received a question & FJ-09\\\hline
-A functionary shall be able to register a balloon colour to each task/problem &
-FF-01\\\hline
-The system shall be able to gather a large variety of statistic specified by
-the admin & FO-02\\\hline
+\begin{longtable}{|l|p{5cm}|}
+\caption{Requirements not met}\label{table:reqNotMet} \\
+\hline {\textbf{ID}} &
+{\textbf{Requirement}} \\ 
+\hline 
+FJ-09 & A judge shall get a notification when received a question \\\hline
+FF-01 &A functionary shall be able to register a balloon colour to each task/problem \\\hline
+FO-02 & The system shall be able to gather a large variety of statistic specified by
+the admin \\\hline
 \end{longtable}
 \end{center}
 
@@ -988,16 +999,19 @@ This was in agreement with the customer. These are the partially met
 requirements:
 
 \begin{longtable}{|l|l|}
+    \caption{Requirements partially met}\label{table:reqPartMet} \\
+    \hline {\textbf{ID}} &
+    {\textbf{Requirement}} \\ 
+    \hline 
+    FA-10 & An admin can add a node \\
     \hline
-    An admin can add a node & FA-10 \\
+    FA-11 & An admin can remove a node \\
     \hline
-    An admin can remove a node & FA-11 \\
+    FA-12 & An admin can manage a node\\
     \hline
-    An admin can manage a node & FA-12 \\
+    NF-01 & Response from action\\
     \hline
-    Response from action & NF-01 \\
-    \hline
-    Logs will be backed up & NR-03 \\
+    NR-03 & Logs will be backed up \\
     \hline
 \end{longtable}
 

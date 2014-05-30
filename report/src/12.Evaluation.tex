@@ -76,7 +76,7 @@ we wanted to have a large testing coverage, helping facilitate our unit
 tests. We did not have the amount of unit tests required for Jenkins to
 be useful. We intend to use AppArmor to help with the security on the
 back end, but decided that we did not have sufficient time. The choice
-of back end security is reflected upon in preestudy chapter
+of back end security is reflected upon in prestudy chapter
 
 Another time consuming tool was Google Drive. Originally we decided on
 writing the report using Drive, but discovered that it did not perform
@@ -103,7 +103,7 @@ backlog. As a consequence the Gantt chart in fig 3.2 is not completely
 packages we knew we had to complete before the next milestone. 
 
 Our biggest challenge in project management was prioritizing between the
-report and the product. As can be seen in, \ [kap 3, Milestones], three
+report and the product. As can be seen in section~\ref{sec:milestones}, three
 of our milestones were report submissions. It put significant pressure
 on us to have the course deadlines in addition to the deadlines for the
 product. The way we tackled this challenge was to increase the planned
@@ -114,7 +114,7 @@ people relying on the product working as intended on IDI Open. The
 amount of documentation created always took a hit during high workload
 weeks, since we simply did not have the time to document everything.
 
-\section{Evaluation of prestudy (Chapter 04)}
+\section{Prestudy}
 
 During the initial prestudy phase most of our time was spent learning
 the fundamental concepts of Django. Our decision to use a programming
@@ -139,7 +139,7 @@ learning tools and framework was not ideal. Presenting a more clear
 separation between those two could have improved the work and the
 prestudy. E.g by dividing the two into different sprints.
 
-\section{Evaluation of Requirement Specification}
+\section{Requirement Specification}
 
 After getting assigned IDI Open as our project, the customer was quick
 with emailing us the first draft for requirements. We made a list of
@@ -151,7 +151,7 @@ customer.
 
 After finishing the development we had met most of the requirements.
 Although some LOW prioritized requirements were left unimplemented. See
-[Chapter 5 Requirements] for specific requirements not met. These
+section~\ref{section:reqNotMet} for specific requirements not met. These
 requirements were initially proposed by the customer as additional
 features. In the end we were not able to implement all of them. Our
 product is open-source 
@@ -162,7 +162,7 @@ system. Since GentleIDI will be open source, the implementation of
 these features will not necessarily be implemented by us. We will add a
 list with all known requested improvements to the Git repository. 
 
-\section{Evaluation of User Interface}
+\section{User Interface}
 
 We were initially concerned about making many changes to the interface,
 because our customer did not express a desire to change much about it.
@@ -177,12 +177,11 @@ receive feedback from all contest stakeholders. The most valuable
 feedback was received from the judges.
 
 They wanted to make it easier to filter what type of information
-displayed in the overview. We made the changes they wanted, the result
-can be viewed in Figure 7.8. 
+displayed in the overview, and we implemented the changes they wanted. 
 
 All members of the project group has completed the course TDT4180,
 human-machine interaction. We drew upon our experiences gathered from
-that course, and followed Shneiderman{\textquoteright}s eight golden
+that course, and followed Shneiderman's eight golden
 rules of interface
 design\footnote{\ https://www.cs.umd.edu/users/ben/goldenrules.html}.
 Our main focus has been on consistency, feedback and prevention of
@@ -209,7 +208,7 @@ new design is easier to maintain, \ looks more modern, and has extended
 functionality. \ 
 
 \pagebreak
-\section{Evaluation of Implementation (Chapter 8)}
+\section{Implementation}
 
 In general we are quite satisfied with the code as it is. Most of the
 code is easy to understand and follows the conventions of Django.
@@ -244,7 +243,7 @@ that it does not have to give newly updated info at all times. This
 would save the server a lot of work, however, we were unable to get
 this in place in time. 
 
-\section{Evaluation of Development}
+\section{Development}
 
 The first challenge the group faced was the introduction of milestone
 M-03, first release. 
@@ -298,7 +297,7 @@ the sprints. We believe that a broader prestudy phase with clearer
 goals could have helped us in the process. The fact that we were
 prepared for increased workload towards the end of the project helped.
 
-\section{Evaluation of Testing Methods}
+\section{Testing Methods}
 
 Our initial testing plans included a large coverage of unit- and
 integration tests. We did not have time to gain the coverage intended.
@@ -352,6 +351,94 @@ contestants. We received feedback on bugs and minor issues. We took
 them into consideration, and discussed a plan with our customer for the
 last week. The test event helped us a lot, because we had more people
 than before that was testing the system simultaneously. 
+
+\section{End Product}
+
+The end product, GentleIDI, was used during IDI Open 2014. After the
+event we received several emails from the customer and contestants with
+positive feedback. Here is a translation of the email from
+the customer.
+
+\begin{quotation}
+You have exceeded every expectation with your work.
+Your efforts and skills has been top from day one. You understood the
+specifications easily, and you tackled our (at times strange and maybe
+impractical) requests very well. There were many priorities and some
+hard decisions at times, which is something that is a part of every
+project with a deadline. With the time you had at your disposal, was I
+and everyone I talked with after the contest very impressed with what
+you managed to achieve.
+
+The old system was used for 11 years, and I think your system will be
+used for longer than that. With your system becoming open source, it
+might be used to arrange contests other places as well. You can write
+proudly on your CV that you have developed something that is used by
+IDI to arrange one of their biggest social arrangements, that for many
+is the highlight of the year.
+
+What role you want to play in the future development of the new system
+is up to you. Your experience will be worth a lot if you wish to fiddle
+with the system on a quiet Sunday. I hope you decide to participate on
+IDI Open 2015.
+
+If you ever need a recommendation letter for a job, exchange, etc., you
+have my email address.
+
+Your rating: 10/10. (also known as: ``would hire to
+replace an old system again'').
+
+\hfill- \textit{Christian Neverdal Jonassen}
+\end{quotation}
+
+One goal with the product was that it should be open source, so that
+other developers could develop it further. The customer agreed to make
+the product open source, and it will be added to a public repository
+containing the source code. Appendix~\ref{appendix:install} contains an installation guide, which we made to help future
+developers. We felt that the customer appreciated the work we did, and
+that they will continue to use, and develop, our system for the
+following IDI Open events.
+
+The system worked perfectly, and managed to run all the submissions in
+the contest. At the end of the contest, we had over 1000 submissions
+that were successfully run. 
+
+However, not all the feedback was positive. Some of the judges were
+dissatisfied with the clarification system. The problem being that you
+could not send a message directly to a team, all messages were globally
+shown on the website. We had previously discussed this with our
+customer, and reached an agreement that we would down-prioritize the
+clarification system, and focus on other parts of the system. We could
+have made a more adequate clarification, if we were given more time, or
+had prioritized differently. 
+
+The Judge supervisor was an enormous
+success with the judges. It was constantly used to gain an overview
+over the contest. What they seemed to enjoy the most, was that you
+could see the source code for each submission, and in that way they
+could help teams that were doing poorly. The balloon functionaries also
+seemed satisfied with the balloon system, making their job easier. \ 
+
+
+\section{Future Work}
+
+After the main event, we discovered that some parts of the system could
+be improved. The clarification system should give the judges a choice
+to send a clarification directly to a specific team. The teams need to
+receive a notification when they receive a clarification. Also the
+highscore list is not cached, which could improve its efficiency.
+
+We would also like to do some additional work on the execution nodes.
+This was uncharted territory for us, and part of it took longer than
+anticipated. In the event that we had more time, we would like to
+increase the security around user uploaded programs. As discussed in
+the prestudy chapter, security could be improved significantly by
+getting mechanisms like AppArmor in place.
+
+The full list of requirements not implemented, and new additional
+proposed functionality is located in section~\ref{section:reqNotMet}.
+
+
+
 
 \section{Customer Interaction}
 
@@ -471,98 +558,10 @@ Instead, maybe a list with up to five items could be drafted. This list
 could then hold an agreement on how to deal with people being late or
 not delivering on time, and other similar items. These are risks where
 a pre-defined action can avoid that the leader will have to be
-``bossy'' or
-``mean'' to penalize the members of
+``bossy'' or ``mean'' to penalize the members of
 the group. We have found these entries in the risk register to be
 especially effective. 
 
 We organized social events, e.g. code nights, that was meant to improve
 the moral of the group. We finished the project as friends, and we grew
 closer to each other.
-
-
-
-\section{End Product}
-
-The end product, GentleIDI, was used during IDI Open 2014. After the
-event we received several emails from the customer and contestants with
-positive feedback. Here is a translation of the email from
-the customer.
-
-\begin{quotation}
-You have exceeded every expectation with your work.
-Your efforts and skills has been top from day one. You understood the
-specifications easily, and you tackled our (at times strange and maybe
-impractical) requests very well. There were many priorities and some
-hard decisions at times, which is something that is a part of every
-project with a deadline. With the time you had at your disposal, was I
-and everyone I talked with after the contest very impressed with what
-you managed to achieve.
-
-The old system was used for 11 years, and I think your system will be
-used for longer than that. With your system becoming open source, it
-might be used to arrange contests other places as well. You can write
-proudly on your CV that you have developed something that is used by
-IDI to arrange one of their biggest social arrangements, that for many
-is the highlight of the year.
-
-What role you want to play in the future development of the new system
-is up to you. Your experience will be worth a lot if you wish to fiddle
-with the system on a quiet Sunday. I hope you decide to participate on
-IDI Open 2015.
-
-If you ever need a recommendation letter for a job, exchange, etc., you
-have my email address.
-
-Your rating: 10/10. (also known as: ``would hire to
-replace an old system again'').
-
-\hfill--- \textit{Christian Neverdal Jonassen}
-\end{quotation}
-
-One goal with the product was that it should be open source, so that
-other developers could develop it further. The customer agreed to make
-the product open source, and it will be added to a public repository
-containing the source code. Appendix~\ref{appendix:install} contains an installation guide, which we made to help future
-developers. We felt that the customer appreciated the work we did, and
-that they will continue to use, and develop, our system for the
-following IDI Open events.
-
-The system worked perfectly, and managed to run all the submissions in
-the contest. At the end of the contest, we had over 1000 submissions
-that were successfully run. 
-
-However, not all the feedback was positive. Some of the judges were
-dissatisfied with the clarification system. The problem being that you
-could not send a message directly to a team, all messages were globally
-shown on the website. We had previously discussed this with our
-customer, and reached an agreement that we would down-prioritize the
-clarification system, and focus on other parts of the system. We could
-have made a more adequate clarification, if we were given more time, or
-had prioritized differently. 
-
-The Judge supervisor, [Chapter 7 admin interface], was an enormous
-success with the judges. It was constantly used to gain an overview
-over the contest. What they seemed to enjoy the most, was that you
-could see the source code for each submission, and in that way they
-could help teams that were doing poorly. The balloon functionaries also
-seemed satisfied with the balloon system, making their job easier. \ 
-
-\section{Future Work}
-
-After the main event, we discovered that some parts of the system could
-be improved. The clarification system should give the judges a choice
-to send a clarification directly to a specific team. The teams need to
-receive a notification when they receive a clarification. Also the
-highscore list is not cached, which could improve its efficiency.
-
-We would also like to do some additional work on the execution nodes.
-This was uncharted territory for us, and part of it took longer than
-anticipated. In the event that we had more time, we would like to
-increase the security around user uploaded programs. As discussed in
-the prestudy chapter, security could be improved significantly by
-getting mechanisms like AppArmor in place.
-
-The full list of requirements not implemented, and new additional
-proposed functionality is located in 5.5 and 5.6. 
-
