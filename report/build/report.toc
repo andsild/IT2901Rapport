@@ -1,29 +1,236 @@
-\contentsline {chapter}{\numberline {1}Requirements Specification}{2}{chapter.1}
-\contentsline {section}{\numberline {1.1}Purpose and Scope of this Specification}{2}{section.1.1}
-\contentsline {section}{\numberline {1.2}Process of the Requirement Specification}{2}{section.1.2}
-\contentsline {section}{\numberline {1.3}Product/service Description}{3}{section.1.3}
-\contentsline {subsection}{\numberline {1.3.1}Expected Physical Environment}{3}{subsection.1.3.1}
-\contentsline {subsection}{\numberline {1.3.2}User Characteristics}{3}{subsection.1.3.2}
-\contentsline {section}{\numberline {1.4}Requirements}{4}{section.1.4}
-\contentsline {subsection}{\numberline {1.4.1}Functional}{5}{subsection.1.4.1}
-\contentsline {subsection}{\numberline {1.4.2}Functional requirements for Admin}{5}{subsection.1.4.2}
-\contentsline {subsection}{\numberline {1.4.3}Functional requirements for Judge}{6}{subsection.1.4.3}
-\contentsline {subsection}{\numberline {1.4.4}Functional requirements for Contestant}{7}{subsection.1.4.4}
-\contentsline {subsection}{\numberline {1.4.5}Functional requirements for Functionary}{7}{subsection.1.4.5}
-\contentsline {subsection}{\numberline {1.4.6}Functional requirements for Teams}{8}{subsection.1.4.6}
-\contentsline {subsection}{\numberline {1.4.7}Other requirements}{9}{subsection.1.4.7}
-\contentsline {section}{\numberline {1.5}Non-functional}{9}{section.1.5}
-\contentsline {subsection}{\numberline {1.5.1}Speed}{9}{subsection.1.5.1}
-\contentsline {subsection}{\numberline {1.5.2}Size}{9}{subsection.1.5.2}
-\contentsline {subsection}{\numberline {1.5.3}Ease of Use}{10}{subsection.1.5.3}
-\contentsline {subsection}{\numberline {1.5.4}Reliability}{10}{subsection.1.5.4}
-\contentsline {subsection}{\numberline {1.5.5}Robustness}{10}{subsection.1.5.5}
-\contentsline {subsection}{\numberline {1.5.6}Portability/Scalability}{10}{subsection.1.5.6}
-\contentsline {subsection}{\numberline {1.5.7}Other}{11}{subsection.1.5.7}
-\contentsline {section}{\numberline {1.6}Security}{11}{section.1.6}
-\contentsline {subsection}{\numberline {1.6.1}Authentication and Authorization}{11}{subsection.1.6.1}
-\contentsline {subsection}{\numberline {1.6.2}Immunity}{11}{subsection.1.6.2}
-\contentsline {subsection}{\numberline {1.6.3}Non-repudiation}{12}{subsection.1.6.3}
-\contentsline {subsection}{\numberline {1.6.4}Privacy}{13}{subsection.1.6.4}
-\contentsline {subsection}{\numberline {1.6.5}Auditing}{13}{subsection.1.6.5}
-\contentsline {section}{\numberline {1.7}Requirements Not Met}{13}{section.1.7}
+\contentsline {chapter}{\numberline {1}Introduction}{2}{chapter.1}
+\contentsline {section}{\numberline {1.1}The Course}{2}{section.1.1}
+\contentsline {section}{\numberline {1.2}The Group}{2}{section.1.2}
+\contentsline {subsubsection}{Eirik Fosse}{3}{section*.5}
+\contentsline {subsubsection}{Filip Fjuk Egge}{3}{section*.6}
+\contentsline {subsubsection}{Haakon Konrad William Aaseb\IeC {\o }}{3}{section*.7}
+\contentsline {subsubsection}{H\IeC {\r a}kon Gimnes Kaurel}{3}{section*.8}
+\contentsline {subsubsection}{Tino Lazreg}{3}{section*.9}
+\contentsline {section}{\numberline {1.3}The Customer}{3}{section.1.3}
+\contentsline {section}{\numberline {1.4}The Contest}{3}{section.1.4}
+\contentsline {section}{\numberline {1.5}Stakeholders}{4}{section.1.5}
+\contentsline {subsection}{\numberline {1.5.1}Course}{4}{subsection.1.5.1}
+\contentsline {subsection}{\numberline {1.5.2}Product and Competition}{4}{subsection.1.5.2}
+\contentsline {section}{\numberline {1.6}Goals}{5}{section.1.6}
+\contentsline {chapter}{\numberline {2}Task Description and Overview}{6}{chapter.2}
+\contentsline {section}{\numberline {2.1}Task Description and Overview}{6}{section.2.1}
+\contentsline {section}{\numberline {2.2}Assignment}{6}{section.2.2}
+\contentsline {section}{\numberline {2.3}GentleIDI}{6}{section.2.3}
+\contentsline {section}{\numberline {2.4}Assumptions and Constraints}{7}{section.2.4}
+\contentsline {section}{\numberline {2.5}Roles and Their Definitions}{8}{section.2.5}
+\contentsline {subsection}{\numberline {2.5.1}Usergroups}{8}{subsection.2.5.1}
+\contentsline {subsection}{\numberline {2.5.2}Service-providing Units}{8}{subsection.2.5.2}
+\contentsline {section}{\numberline {2.6}UML Use Cases}{9}{section.2.6}
+\contentsline {chapter}{\numberline {3}Project Management}{12}{chapter.3}
+\contentsline {section}{\numberline {3.1}Project Roles}{12}{section.3.1}
+\contentsline {section}{\numberline {3.2}Development Method (Scrum)}{12}{section.3.2}
+\contentsline {section}{\numberline {3.3}Tools/Framework}{13}{section.3.3}
+\contentsline {section}{\numberline {3.4}Project-Level Planning}{13}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Work Breakdown Structure}{13}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}Milestones}{15}{subsection.3.4.2}
+\contentsline {subsection}{\numberline {3.4.3}Meetings}{16}{subsection.3.4.3}
+\contentsline {subsubsection}{Internal meetings}{17}{section*.10}
+\contentsline {subsubsection}{Supervisor meeting}{17}{section*.11}
+\contentsline {subsubsection}{Customer meeting}{17}{section*.12}
+\contentsline {subsection}{\numberline {3.4.4}Resources}{17}{subsection.3.4.4}
+\contentsline {subsubsection}{Planned work}{18}{section*.13}
+\contentsline {subsubsection}{Actual work}{19}{section*.14}
+\contentsline {chapter}{\numberline {4}Prestudy}{20}{chapter.4}
+\contentsline {section}{\numberline {4.1}Learning Tools/Framework}{20}{section.4.1}
+\contentsline {section}{\numberline {4.2}Researching the Old System}{21}{section.4.2}
+\contentsline {section}{\numberline {4.3}Similar Software}{21}{section.4.3}
+\contentsline {section}{\numberline {4.4}Desired Solution}{21}{section.4.4}
+\contentsline {section}{\numberline {4.5}Study Result}{22}{section.4.5}
+\contentsline {section}{\numberline {4.6}Technology}{22}{section.4.6}
+\contentsline {subsection}{\numberline {4.6.1}Django}{22}{subsection.4.6.1}
+\contentsline {subsection}{\numberline {4.6.2}Flask}{22}{subsection.4.6.2}
+\contentsline {subsection}{\numberline {4.6.3}JSP}{22}{subsection.4.6.3}
+\contentsline {subsection}{\numberline {4.6.4}Backend Technology}{23}{subsection.4.6.4}
+\contentsline {subsection}{\numberline {4.6.5}AppArmor}{23}{subsection.4.6.5}
+\contentsline {subsection}{\numberline {4.6.6}Our Alternative to AppArmor}{23}{subsection.4.6.6}
+\contentsline {section}{\numberline {4.7}Development Method}{23}{section.4.7}
+\contentsline {chapter}{\numberline {5}Requirements Specification}{25}{chapter.5}
+\contentsline {section}{\numberline {5.1}Purpose and Scope of this Specification}{25}{section.5.1}
+\contentsline {section}{\numberline {5.2}Process of the Requirement Specification}{25}{section.5.2}
+\contentsline {section}{\numberline {5.3}Product/service Description}{26}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}Expected Physical Environment}{26}{subsection.5.3.1}
+\contentsline {subsection}{\numberline {5.3.2}User Characteristics}{26}{subsection.5.3.2}
+\contentsline {section}{\numberline {5.4}Requirements}{27}{section.5.4}
+\contentsline {subsection}{\numberline {5.4.1}Functional}{28}{subsection.5.4.1}
+\contentsline {subsection}{\numberline {5.4.2}Functional requirements for Admin}{28}{subsection.5.4.2}
+\contentsline {subsection}{\numberline {5.4.3}Functional requirements for Judge}{29}{subsection.5.4.3}
+\contentsline {subsection}{\numberline {5.4.4}Functional requirements for Contestant}{30}{subsection.5.4.4}
+\contentsline {subsection}{\numberline {5.4.5}Functional requirements for Functionary}{30}{subsection.5.4.5}
+\contentsline {subsection}{\numberline {5.4.6}Functional requirements for Teams}{31}{subsection.5.4.6}
+\contentsline {subsection}{\numberline {5.4.7}Other requirements}{32}{subsection.5.4.7}
+\contentsline {section}{\numberline {5.5}Non-functional}{32}{section.5.5}
+\contentsline {subsection}{\numberline {5.5.1}Speed}{32}{subsection.5.5.1}
+\contentsline {subsection}{\numberline {5.5.2}Size}{32}{subsection.5.5.2}
+\contentsline {subsection}{\numberline {5.5.3}Ease of Use}{33}{subsection.5.5.3}
+\contentsline {subsection}{\numberline {5.5.4}Reliability}{33}{subsection.5.5.4}
+\contentsline {subsection}{\numberline {5.5.5}Robustness}{33}{subsection.5.5.5}
+\contentsline {subsection}{\numberline {5.5.6}Portability/Scalability}{33}{subsection.5.5.6}
+\contentsline {subsection}{\numberline {5.5.7}Other}{34}{subsection.5.5.7}
+\contentsline {section}{\numberline {5.6}Security}{34}{section.5.6}
+\contentsline {subsection}{\numberline {5.6.1}Authentication and Authorization}{34}{subsection.5.6.1}
+\contentsline {subsection}{\numberline {5.6.2}Immunity}{34}{subsection.5.6.2}
+\contentsline {subsection}{\numberline {5.6.3}Non-repudiation}{35}{subsection.5.6.3}
+\contentsline {subsection}{\numberline {5.6.4}Privacy}{36}{subsection.5.6.4}
+\contentsline {subsection}{\numberline {5.6.5}Auditing}{36}{subsection.5.6.5}
+\contentsline {section}{\numberline {5.7}Requirements Not Met}{36}{section.5.7}
+\contentsline {chapter}{\numberline {6}Architecture}{38}{chapter.6}
+\contentsline {section}{\numberline {6.1}Views}{38}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}Logic View}{38}{subsection.6.1.1}
+\contentsline {subsection}{\numberline {6.1.2}Process View}{38}{subsection.6.1.2}
+\contentsline {subsection}{\numberline {6.1.3}Development View}{39}{subsection.6.1.3}
+\contentsline {subsubsection}{Purpose}{39}{section*.15}
+\contentsline {subsection}{\numberline {6.1.4}Physical View}{40}{subsection.6.1.4}
+\contentsline {subsubsection}{Purpose}{40}{section*.16}
+\contentsline {subsubsection}{Presentation tier}{40}{section*.17}
+\contentsline {subsubsection}{Application tier}{40}{section*.18}
+\contentsline {subsubsection}{Data tier}{42}{section*.19}
+\contentsline {section}{\numberline {6.2}Quality attributes}{42}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Availability}{42}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}Modifiability}{42}{subsection.6.2.2}
+\contentsline {subsection}{\numberline {6.2.3}Performance}{43}{subsection.6.2.3}
+\contentsline {subsection}{\numberline {6.2.4}Security}{43}{subsection.6.2.4}
+\contentsline {subsection}{\numberline {6.2.5}Testability}{43}{subsection.6.2.5}
+\contentsline {subsection}{\numberline {6.2.6}Usability}{43}{subsection.6.2.6}
+\contentsline {section}{\numberline {6.3}Patterns}{43}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}Client-Server}{43}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {6.3.2}MVC(model-view-controller)}{43}{subsection.6.3.2}
+\contentsline {subsection}{\numberline {6.3.3}Shared-Data}{44}{subsection.6.3.3}
+\contentsline {subsection}{\numberline {6.3.4}Multi-tier}{44}{subsection.6.3.4}
+\contentsline {chapter}{\numberline {7}UI Design}{45}{chapter.7}
+\contentsline {section}{\numberline {7.1}Design Process}{45}{section.7.1}
+\contentsline {section}{\numberline {7.2}User Interface}{47}{section.7.2}
+\contentsline {section}{\numberline {7.3}Admin Interface}{48}{section.7.3}
+\contentsline {chapter}{\numberline {8}Implementation}{52}{chapter.8}
+\contentsline {section}{\numberline {8.1}contest}{54}{section.8.1}
+\contentsline {section}{\numberline {8.2}article}{54}{section.8.2}
+\contentsline {section}{\numberline {8.3}userregistration}{54}{section.8.3}
+\contentsline {section}{\numberline {8.4}teamsubmission}{54}{section.8.4}
+\contentsline {section}{\numberline {8.5}execution}{54}{section.8.5}
+\contentsline {section}{\numberline {8.6}node\_manage}{55}{section.8.6}
+\contentsline {section}{\numberline {8.7}balloon}{55}{section.8.7}
+\contentsline {section}{\numberline {8.8}changeemail}{55}{section.8.8}
+\contentsline {section}{\numberline {8.9}judge\_supervise}{55}{section.8.9}
+\contentsline {section}{\numberline {8.10}clarification}{55}{section.8.10}
+\contentsline {chapter}{\numberline {9}Development}{56}{chapter.9}
+\contentsline {section}{\numberline {9.1}Working Towards the Milestones}{56}{section.9.1}
+\contentsline {subsection}{\numberline {9.1.1}Milestone M-01 - Preliminary Report}{56}{subsection.9.1.1}
+\contentsline {subsection}{\numberline {9.1.2}Milstone M-02 - Mid-semester Report}{56}{subsection.9.1.2}
+\contentsline {subsection}{\numberline {9.1.3}Milestone M-03 - First Release}{57}{subsection.9.1.3}
+\contentsline {subsection}{\numberline {9.1.4}Milestone M.04 - Presentation}{57}{subsection.9.1.4}
+\contentsline {subsection}{\numberline {9.1.5}Milestone M-05 - Beta Release}{57}{subsection.9.1.5}
+\contentsline {subsection}{\numberline {9.1.6}Milestone M-06 - IDI Open Test Event}{58}{subsection.9.1.6}
+\contentsline {subsection}{\numberline {9.1.7}Milestone M-07 - IDI Open}{58}{subsection.9.1.7}
+\contentsline {subsection}{\numberline {9.1.8}Milestone M-08 - Final report}{59}{subsection.9.1.8}
+\contentsline {subsubsection}{Sprint by sprint}{59}{section*.20}
+\contentsline {chapter}{\numberline {10}Testplan}{60}{chapter.10}
+\contentsline {section}{\numberline {10.1}Testing Strategy Overview}{60}{section.10.1}
+\contentsline {subsection}{\numberline {10.1.1}Unit Testing}{60}{subsection.10.1.1}
+\contentsline {subsection}{\numberline {10.1.2}Integration Testing}{60}{subsection.10.1.2}
+\contentsline {subsection}{\numberline {10.1.3}System Testing}{61}{subsection.10.1.3}
+\contentsline {subsection}{\numberline {10.1.4}Acceptance Testing}{61}{subsection.10.1.4}
+\contentsline {subsection}{\numberline {10.1.5}Testing Coverage}{61}{subsection.10.1.5}
+\contentsline {section}{\numberline {10.2}Our Approach to Testing}{61}{section.10.2}
+\contentsline {subsection}{\numberline {10.2.1}Unit Testing}{62}{subsection.10.2.1}
+\contentsline {subsection}{\numberline {10.2.2}Integration Testing}{62}{subsection.10.2.2}
+\contentsline {subsection}{\numberline {10.2.3}System Testing}{62}{subsection.10.2.3}
+\contentsline {subsection}{\numberline {10.2.4}Acceptance Testing}{62}{subsection.10.2.4}
+\contentsline {section}{\numberline {10.3}Testing Results}{62}{section.10.3}
+\contentsline {subsection}{\numberline {10.3.1}Integration Test}{62}{subsection.10.3.1}
+\contentsline {section}{\numberline {10.4}System Test}{64}{section.10.4}
+\contentsline {section}{\numberline {10.5}Non-functional testing}{65}{section.10.5}
+\contentsline {chapter}{\numberline {11}Risk Management Framework}{67}{chapter.11}
+\contentsline {section}{\numberline {11.1}Terminology and Categories}{67}{section.11.1}
+\contentsline {section}{\numberline {11.2}Scope of Risk Assessment}{68}{section.11.2}
+\contentsline {section}{\numberline {11.3}Risk Identification}{68}{section.11.3}
+\contentsline {section}{\numberline {11.4}Risk Monitoring}{68}{section.11.4}
+\contentsline {section}{\numberline {11.5}Complete List of Risks}{69}{section.11.5}
+\contentsline {chapter}{\numberline {A}Sprints}{70}{appendix.A}
+\contentsline {section}{\numberline {A.1}Template}{70}{section.A.1}
+\contentsline {section}{\numberline {A.2}Sprint 0}{71}{section.A.2}
+\contentsline {section}{\numberline {A.3}Sprint 1}{72}{section.A.3}
+\contentsline {section}{\numberline {A.4}Sprint 1}{73}{section.A.4}
+\contentsline {section}{\numberline {A.5}Sprint 2}{74}{section.A.5}
+\contentsline {section}{\numberline {A.6}Sprint 3}{75}{section.A.6}
+\contentsline {section}{\numberline {A.7}Sprint 4}{76}{section.A.7}
+\contentsline {section}{\numberline {A.8}Sprint 5}{77}{section.A.8}
+\contentsline {section}{\numberline {A.9}Sprint 6}{78}{section.A.9}
+\contentsline {section}{\numberline {A.10}Sprint 7}{79}{section.A.10}
+\contentsline {section}{\numberline {A.11}Sprint 8}{80}{section.A.11}
+\contentsline {section}{\numberline {A.12}Sprint 9}{81}{section.A.12}
+\contentsline {section}{\numberline {A.13}Sprint 10}{82}{section.A.13}
+\contentsline {section}{\numberline {A.14}Sprint 11}{83}{section.A.14}
+\contentsline {section}{\numberline {A.15}Sprint 12}{84}{section.A.15}
+\contentsline {section}{\numberline {A.16}Sprint After}{85}{section.A.16}
+\contentsline {chapter}{\numberline {B}User stories}{86}{appendix.B}
+\contentsline {subsubsection}{Role: Admin}{86}{section*.21}
+\contentsline {subsubsection}{Role: Judge}{87}{section*.22}
+\contentsline {subsubsection}{Role: Contestant}{87}{section*.23}
+\contentsline {subsubsection}{Role: Functionary}{87}{section*.24}
+\contentsline {subsubsection}{Role: Teams}{87}{section*.25}
+\contentsline {chapter}{\numberline {C}Installation Guide}{89}{appendix.C}
+\contentsline {section}{\numberline {C.1}Creating Your Users}{89}{section.C.1}
+\contentsline {section}{\numberline {C.2}Setting Up the Environment}{90}{section.C.2}
+\contentsline {section}{\numberline {C.3}Installing Required Packages}{91}{section.C.3}
+\contentsline {section}{\numberline {C.4}Database}{91}{section.C.4}
+\contentsline {section}{\numberline {C.5}Gunicorn}{92}{section.C.5}
+\contentsline {subsection}{\numberline {C.5.1}Nginx}{93}{subsection.C.5.1}
+\contentsline {section}{\numberline {C.6}Supervisor}{95}{section.C.6}
+\contentsline {section}{\numberline {C.7}Multiple Execution Nodes}{95}{section.C.7}
+\contentsline {chapter}{\numberline {D}Risk List}{97}{appendix.D}
+\contentsline {section}{\numberline {D.1}People Management}{98}{section.D.1}
+\contentsline {section}{\numberline {D.2}Budget}{99}{section.D.2}
+\contentsline {section}{\numberline {D.3}Schedule}{99}{section.D.3}
+\contentsline {section}{\numberline {D.4}Organizational}{100}{section.D.4}
+\contentsline {section}{\numberline {D.5}Tools and Frameworks; Product}{101}{section.D.5}
+\contentsline {section}{\numberline {D.6}Requirements}{102}{section.D.6}
+\contentsline {chapter}{\numberline {E}Product Backlog}{103}{appendix.E}
+\contentsline {chapter}{\numberline {F}End of Sprint Structure}{105}{appendix.F}
+\contentsline {chapter}{\numberline {G}Integration Tests}{107}{appendix.G}
+\contentsline {section}{\numberline {G.1}Article}{108}{section.G.1}
+\contentsline {section}{\numberline {G.2}Userregistration}{109}{section.G.2}
+\contentsline {section}{\numberline {G.3}Team Registration}{109}{section.G.3}
+\contentsline {chapter}{\numberline {H}User manual}{111}{appendix.H}
+\contentsline {section}{\numberline {H.1}Admin}{111}{section.H.1}
+\contentsline {subsection}{\numberline {H.1.1}Basic usage}{111}{subsection.H.1.1}
+\contentsline {subsubsection}{Creating objects}{111}{section*.26}
+\contentsline {subsubsection}{Editing objects}{111}{section*.27}
+\contentsline {subsubsection}{Deleting objects}{111}{section*.28}
+\contentsline {subsection}{\numberline {H.1.2}Creating a contest}{113}{subsection.H.1.2}
+\contentsline {subsubsection}{Create links}{114}{section*.29}
+\contentsline {subsubsection}{Create sponsor}{114}{section*.30}
+\contentsline {subsubsection}{Create compiler profile}{115}{section*.31}
+\contentsline {subsubsection}{Create problems}{115}{section*.32}
+\contentsline {subsubsection}{Create test case}{116}{section*.33}
+\contentsline {subsubsection}{Resource}{116}{section*.34}
+\contentsline {subsection}{\numberline {H.1.3}Creating articles}{118}{subsection.H.1.3}
+\contentsline {subsection}{\numberline {H.1.4}Create user}{118}{subsection.H.1.4}
+\contentsline {subsubsection}{Create contestant}{118}{section*.35}
+\contentsline {subsubsection}{Create admin user}{118}{section*.36}
+\contentsline {subsubsection}{Promote contestant to admin}{120}{section*.37}
+\contentsline {subsection}{\numberline {H.1.5}Balloon view}{120}{subsection.H.1.5}
+\contentsline {subsection}{\numberline {H.1.6}Judge view}{121}{subsection.H.1.6}
+\contentsline {section}{\numberline {H.2}Contestant}{123}{section.H.2}
+\contentsline {subsection}{\numberline {H.2.1}Register user}{123}{subsection.H.2.1}
+\contentsline {subsection}{\numberline {H.2.2}Edit user}{123}{subsection.H.2.2}
+\contentsline {subsection}{\numberline {H.2.3}Create team}{126}{subsection.H.2.3}
+\contentsline {subsection}{\numberline {H.2.4}Edit team}{127}{subsection.H.2.4}
+\contentsline {subsubsection}{Edit basic information}{127}{section*.38}
+\contentsline {subsubsection}{Invite user to team/join team}{127}{section*.39}
+\contentsline {subsubsection}{Remove user from team}{129}{section*.40}
+\contentsline {subsection}{\numberline {H.2.5}Solve problems}{129}{subsection.H.2.5}
+\contentsline {subsection}{\numberline {H.2.6}Clarification}{131}{subsection.H.2.6}
+\contentsline {subsubsection}{Post a question}{131}{section*.41}
+\contentsline {subsubsection}{Review replies}{131}{section*.42}
+\contentsline {subsection}{\numberline {H.2.7}Highscore list}{131}{subsection.H.2.7}
+\contentsline {subsubsection}{Top five}{131}{section*.43}
+\contentsline {subsubsection}{Full highscore}{131}{section*.44}
+\contentsline {chapter}{\numberline {I}ER-Diagram}{134}{appendix.I}
+\contentsline {chapter}{\numberline {J}Website views}{138}{appendix.J}
+\contentsline {chapter}{\numberline {K}Sprint Burndowns}{140}{appendix.K}
+\contentsline {section}{\numberline {K.1}Inital Activity Lists}{140}{section.K.1}
+\contentsline {section}{\numberline {K.2}Activity Lists}{141}{section.K.2}
