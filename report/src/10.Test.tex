@@ -129,6 +129,7 @@ executing the tasks in the system test. It was
 approved when the customer was satisfied with how we implemented the
 requirements.
 
+\pagebreak
 \section{Testing Results}
 The results from our testing is presented in this section.
 
@@ -151,7 +152,7 @@ In section X.X[12. Evaluation of testing methods] we explained why our
 coverage by integration testing was not extensive. The written
 integration tests are from our milestone M-03, First release, and only cover the
 requirements that was necessary for that milestone. As such, we have
-chosen to move all the integration tests to appendix D.
+chosen to move all the integration tests to Appendix~\ref{appendix:integrationTest}
 
 We formally agreed on what modules our system was made out of and their
 interfaces. Figure~\ref{fig:componentDiagram} shows our view on the system as
@@ -173,13 +174,16 @@ tests we did make are given in appendix~\ref{appendix:integrationTest}.
         \hline
 \end{longtable}
 
-    \begin{figure}[h!]
-        \includegraphics[scale=0.3]{UML_component.png}
-        \caption{Diagram from milestone M-03. Each interface connection, especially
-        ``createContest'' has been tested}
-        \label{fig:componentDiagram}
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=.95\textwidth, height=.85\textheight]{UML_component.png}
+    \caption{Diagram from milestone M-03. Each interface connection, especially
+    ``createContest'' has been tested}
+    \label{fig:componentDiagram}
 \end{figure}
 
+\pagebreak
+\newpage
 \section{System Test}
 Our system tests cover all the functional requirements. All tests are
 written as successive cases. This means that the tests do not cover
@@ -264,28 +268,28 @@ word & FC-01 FC-02 & PASS\\
 \hline
 \end{longtable}
 
-
+\pagebreak
 \section{Non-functional testing}
-Our non-functional tests ensures non-functional requirements coverage
-and scenario correctness. Additionally, it defines acceptance criteria
-related to the performance of our solution.
+% Our non-functional tests ensures non-functional requirements coverage
+% and scenario correctness. Additionally, it defines acceptance criteria
+% related to the performance of our solution.
 
 The tests related to performance usually comes in pairs, a value and the
 double of that value. This applies to the input and expected result.
 This is to ensure that system performance does not scale down in a
-non-linear way. E.g. if ``X''
+non-linear way. E.g.\ if ``X''
 transactions are processed and the server begins using swap memory
 instead of RAM, this would mean that a high load would cause an
 exponentially slower load rate for a high number of transactions.
 
-Often, as mentioned in section X.X[TODO: REFER evaluatin of testing], we did
-inspection tests. Thus, table X.X does not contain all tests that
+Often, as mentioned in section X.X, we did
+inspection tests. Thus, table~\ref{table:not} does not contain all tests that
 are executed, and the table only covers the first 12 non-functional
 requirements. The documented tests do, however, ensure some
 requirements coverage.
 
 \begin{longtable}{|p{4.3cm}|p{2.0cm}|l|p{3.8cm}|l|}
-    \caption{System tests} \label{table:systest} \\
+    \caption{System tests} \label{table:not} \\
 \hline \multicolumn{1}{|c|}{\textbf{Case}} &
 \multicolumn{1}{c|}{\textbf{Input}} &
 \multicolumn{1}{c|}{\textbf{ID}} &
