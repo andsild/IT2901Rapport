@@ -1,29 +1,9 @@
-\contentsline {section}{\numberline {0.1}Requirements Specification}{2}{section.0.1}
-\contentsline {subsection}{\numberline {0.1.1}Purpose and Scope of this Specification}{2}{subsection.0.1.1}
-\contentsline {subsection}{\numberline {0.1.2}Process of the Requirement Specification}{2}{subsection.0.1.2}
-\contentsline {subsection}{\numberline {0.1.3}Product/service description}{2}{subsection.0.1.3}
-\contentsline {subsubsection}{Expected Physical Environment}{2}{section*.4}
-\contentsline {subsubsection}{User Characteristics}{3}{section*.5}
-\contentsline {subsection}{\numberline {0.1.4}Requirements}{3}{subsection.0.1.4}
-\contentsline {subsubsection}{Functional}{4}{section*.6}
-\contentsline {subsubsection}{Functional requirements for Admin}{4}{section*.7}
-\contentsline {subsubsection}{Functional requirements for Judge}{5}{section*.8}
-\contentsline {subsubsection}{Functional requirements for Contestant}{6}{section*.9}
-\contentsline {subsubsection}{Functional requirements for Functionary}{7}{section*.10}
-\contentsline {subsubsection}{Functional requirements for Teams}{7}{section*.11}
-\contentsline {subsubsection}{Other requirements}{8}{section*.12}
-\contentsline {subsection}{\numberline {0.1.5}Non-functional}{8}{subsection.0.1.5}
-\contentsline {subsubsection}{Speed}{9}{section*.13}
-\contentsline {subsubsection}{Size}{9}{section*.14}
-\contentsline {subsubsection}{Ease of Use}{9}{section*.15}
-\contentsline {subsubsection}{Reliability}{9}{section*.16}
-\contentsline {subsubsection}{Robustness}{9}{section*.17}
-\contentsline {subsubsection}{Portability/Scalability}{10}{section*.18}
-\contentsline {subsubsection}{Other}{10}{section*.19}
-\contentsline {subsection}{\numberline {0.1.6}Security}{10}{subsection.0.1.6}
-\contentsline {subsubsection}{Authentication and Authorization}{10}{section*.20}
-\contentsline {subsubsection}{Immunity}{11}{section*.21}
-\contentsline {subsubsection}{Non-repudiation}{11}{section*.22}
-\contentsline {subsubsection}{Privacy}{12}{section*.23}
-\contentsline {subsubsection}{Auditing}{12}{section*.24}
-\contentsline {subsection}{\numberline {0.1.7}Requirements Not Met}{12}{subsection.0.1.7}
+\contentsline {chapter}{\numberline {1}Task Description and Overview}{2}{chapter.1}
+\contentsline {section}{\numberline {1.1}Task Description and Overview}{2}{section.1.1}
+\contentsline {section}{\numberline {1.2}Assignment}{2}{section.1.2}
+\contentsline {section}{\numberline {1.3}GentleIDI}{2}{section.1.3}
+\contentsline {section}{\numberline {1.4}Assumptions and Constraints}{3}{section.1.4}
+\contentsline {section}{\numberline {1.5}Roles and Their Definitions}{4}{section.1.5}
+\contentsline {subsection}{\numberline {1.5.1}Usergroups}{4}{subsection.1.5.1}
+\contentsline {subsection}{\numberline {1.5.2}Service-providing Units}{4}{subsection.1.5.2}
+\contentsline {section}{\numberline {1.6}UML Use Cases}{5}{section.1.6}
