@@ -2,7 +2,7 @@
 This chapter will go through the different project roles we deemed
 important. We will explain our development method, which tools we use
 and give an overview of how we planned the project. Furthermore, in
-section X.X. We also provide a structured overview of how we organized
+section~\ref{section:WBS}. We also provide a structured overview of how we organized
 our time. 
 
 \section{Project Roles}
@@ -71,7 +71,7 @@ enough time to complete the requirements, and to avoid unforeseen
 risks. This section will present the various components we introduced
 to structurize the project.
 
-\subsection{Work Breakdown Structure}
+\subsection{Work Breakdown Structure}\label{section:WBS}
 WBS is a decomposition of the project into phases, deliverables and work
 packages. Each package was further broken down into different tasks.
 The benefits from the WBS are as follows:
@@ -83,26 +83,31 @@ The benefits from the WBS are as follows:
         understand our process
 \end{itemize}
 
-Table X.X shows the work breakdown structure created. These high-level
+Table~\ref{table:WBS} shows the work breakdown structure created. These high-level
 packages were later broken down into activities, which are in the
-product backlog, see appendix TODO
+product backlog, see appendix X
 
-    \begingroup
-    \fontsize{8pt}{5pt}\selectfont
-\begin{mdframed}
-    \begin{enumerate}
+\scriptsize
+\begin{longtable}{|p{.8\textwidth}|}
+    \caption[test]{Work breakdown structure} \label{table:WBS} \\
+\hline
+\begin{enumerate}[itemsep=0mm]
+    \itemsep0em 
         \item Project management
         \begin{enumerate}
+    \itemsep0em 
             \item Write timesheet template
             \item Look at the reflection notes
             \item Meetings
             \begin{enumerate}
+    \itemsep0em 
                 \item Internal
                 \item Customer
                 \item supervisor
             \end{enumerate}
             \item  Report
             \begin{enumerate}
+    \itemsep0em 
                 \item Preliminary version
                 \item Mid-semester version
                 \item Final version
@@ -115,14 +120,17 @@ product backlog, see appendix TODO
 
         \item Pre-study        
         \begin{enumerate}
+    \itemsep0em 
             \item Install and learn tools
             \item Learn language/framework
             \item Course
         \end{enumerate}
         \item Design
         \begin{enumerate}
+    \itemsep0em 
             \item Requirement Specification
             \begin{enumerate}
+    \itemsep0em 
                 \item Functional
                 \item Non-functional
             \end{enumerate}
@@ -130,6 +138,7 @@ product backlog, see appendix TODO
             \item Database modeling
             \item User Interface
             \begin{enumerate}
+    \itemsep0em 
                 \item Prototyping
                 \item Usability Testing
             \end{enumerate}
@@ -138,13 +147,16 @@ product backlog, see appendix TODO
 
         \item Development
         \begin{enumerate}
+    \itemsep0em 
             \item  Backend
             \begin{enumerate}
                 \item Execution-node(s)
                 \begin{enumerate}
+    \itemsep0em 
                     \item Web-page
                 \end{enumerate}
             \begin{enumerate}
+    \itemsep0em 
                 \item User
                 \item Usergroups
                 \item Team management
@@ -158,6 +170,7 @@ product backlog, see appendix TODO
 
         \item Testing
         \begin{enumerate}
+    \itemsep0em 
             \item  User-test
             \item System-test  
             \item Final test
@@ -165,6 +178,7 @@ product backlog, see appendix TODO
 
         \item Implementation
         \begin{enumerate}
+    \itemsep0em 
             \item  Deploy to production
             \item Installation
             \item Turn in to stakeholder
@@ -172,23 +186,23 @@ product backlog, see appendix TODO
 
         \item Implementation
         \begin{enumerate}
+    \itemsep0em 
             \item Verify
             \item Document
         \end{enumerate}
     \end{enumerate}
-    \end{enumerate}
-\end{mdframed}
-\endgroup
+    \end{enumerate} \\
+\hline
+\end{longtable}
+\normalsize
 
 We also created a gantt chart. Here, each package was assigned an
 estimated time period, over how long time we expected to use. For ease
 of comprehension, not every package was included from the WBS.\ The
 gantt chart is shown in figure~\ref{gantt}
 \newline
-\begin{table}
-\caption{Gantt chart}
-\label{gantt}
-\begin{tabular}[h]{|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|}
+\begin{longtable}{|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|}
+\caption{Gantt chart} \label{gantt} \\
 \hline
 \textbf{WP Name} & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 & 12 & 13 & 14 & 15 \\
 \hline
@@ -240,8 +254,7 @@ System test&&&&&&&&&\cellcolor{Melon}&\cellcolor{Melon}&\cellcolor{Melon}&\cellc
 \hline
 Post-implementation&&&&&&&&&&&&&&&\cellcolor{Plum} \\
 \hline
-\end{tabular}
-\end{table}
+\end{longtable}
 
 The gantt chart was revised several times during the first four sprints,
 mainly due to new deadlines set by the customer. 
@@ -361,10 +374,8 @@ easter, the amount of hours per week scaled up higher.
 \subsubsection{Planned work}
 Table~\ref{table:sprintoverview} shows our first initial draft of sprints. 
 
-\begin{table}
-\caption{Initial sprint overview}
-\label{table:sprintoverview}
-\begin{tabular}{|l|l|l|l|}
+\begin{longtable}{|l|l|l|l|}
+\caption{Initial sprint overview} \label{table:sprintoverview} \\
 \hline
  Sprint & Range (week) & Days &
  Hours\\\hline
@@ -385,17 +396,14 @@ Table~\ref{table:sprintoverview} shows our first initial draft of sprints.
  14 & 18 - 19 (Leading up to event) & 9 & 35\\\hline
  After & 19 - 22 & 21 & 50\\\hline
  Total: & & 91 & 368\\\hline
-\end{tabular}
-\end{table}
+\end{longtable}
 
 
 \subsubsection{Actual work}
 Table~\ref{table:actualWork} shows the actual sprints and work done. The hours
 are for each person, during that sprint.
-\begin{table}
-\caption{Actual work}
-\label{table:actualWork}
-\begin{tabular}{|l|l|l|l|}
+\begin{longtable}{|l|l|l|l|}
+\caption{Actual work} \label{table:actualWork} \\
 \hline
  Sprint & Week & Days & Hours \\\hline
  1 & 3-4 & 7 & 15\\\hline
@@ -412,5 +420,4 @@ are for each person, during that sprint.
  12 & 18-19 & 6 & 35\\\hline
  After & 19-22 & 21 & 65\\\hline
  Total & & 100 & 453\\\hline
-\end{tabular}
-\end{table}
+\end{longtable}
