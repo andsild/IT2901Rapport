@@ -87,26 +87,29 @@ Table~\ref{table:WBS} shows the work breakdown structure created. These high-lev
 packages were later broken down into activities, which are in the
 product backlog, see appendix X
 
+\pagebreak
+\renewcommand{\labelenumii}{\theenumii}
+\renewcommand{\theenumii}{\theenumi.\arabic{enumii}.}
 \scriptsize
 \begin{longtable}{|p{.8\textwidth}|}
     \caption[test]{Work breakdown structure} \label{table:WBS} \\
 \hline
-\begin{enumerate}[itemsep=0mm]
+\begin{enumerate}[nosep]
     \itemsep0em 
         \item Project management
-        \begin{enumerate}
+        \begin{enumerate}[nosep]
     \itemsep0em 
             \item Write timesheet template
             \item Look at the reflection notes
             \item Meetings
-            \begin{enumerate}
+            \begin{enumerate}[label*=\arabic*.]
     \itemsep0em 
                 \item Internal
                 \item Customer
                 \item supervisor
             \end{enumerate}
             \item  Report
-            \begin{enumerate}
+            \begin{enumerate}[label*=\arabic*.]
     \itemsep0em 
                 \item Preliminary version
                 \item Mid-semester version
@@ -119,17 +122,17 @@ product backlog, see appendix X
         \end{enumerate}
 
         \item Pre-study        
-        \begin{enumerate}
+        \begin{enumerate}[nosep]
     \itemsep0em 
             \item Install and learn tools
             \item Learn language/framework
             \item Course
         \end{enumerate}
         \item Design
-        \begin{enumerate}
+            \begin{enumerate}[nosep]
     \itemsep0em 
             \item Requirement Specification
-            \begin{enumerate}
+            \begin{enumerate}[label*=\arabic*.]
     \itemsep0em 
                 \item Functional
                 \item Non-functional
@@ -137,7 +140,7 @@ product backlog, see appendix X
             \item  System architecture
             \item Database modeling
             \item User Interface
-            \begin{enumerate}
+                \begin{enumerate}[label*=\arabic*.]
     \itemsep0em 
                 \item Prototyping
                 \item Usability Testing
@@ -146,17 +149,19 @@ product backlog, see appendix X
         \end{enumerate}
 
         \item Development
-        \begin{enumerate}
+        \begin{enumerate}[nosep]
     \itemsep0em 
             \item  Backend
-            \begin{enumerate}
+            \begin{enumerate}[label*=\arabic*.]
                 \item Execution-node(s)
-                \begin{enumerate}
-    \itemsep0em 
+                    \begin{enumerate}[label*=\arabic*.]
+                    \itemsep0em 
                     \item Web-page
                 \end{enumerate}
-            \begin{enumerate}
-    \itemsep0em 
+            \end{enumerate}
+            \item User management
+            \begin{enumerate}[label*=\arabic*.]
+                \itemsep0em 
                 \item User
                 \item Usergroups
                 \item Team management
@@ -169,7 +174,7 @@ product backlog, see appendix X
         \end{enumerate}
 
         \item Testing
-        \begin{enumerate}
+        \begin{enumerate}[nosep]
     \itemsep0em 
             \item  User-test
             \item System-test  
@@ -177,7 +182,7 @@ product backlog, see appendix X
         \end{enumerate}
 
         \item Implementation
-        \begin{enumerate}
+        \begin{enumerate}[nosep]
     \itemsep0em 
             \item  Deploy to production
             \item Installation
@@ -185,12 +190,11 @@ product backlog, see appendix X
         \end{enumerate}
 
         \item Implementation
-        \begin{enumerate}
+        \begin{enumerate}[nosep]
     \itemsep0em 
             \item Verify
             \item Document
         \end{enumerate}
-    \end{enumerate}
     \end{enumerate} \\
 \hline
 \end{longtable}
@@ -208,7 +212,7 @@ gantt chart is shown in figure~\ref{gantt}
 \hline
 Project management & \cellcolor{ForestGreen} &\cellcolor{ForestGreen}&\cellcolor{ForestGreen}&\cellcolor{ForestGreen}&\cellcolor{ForestGreen}&\cellcolor{ForestGreen}&\cellcolor{ForestGreen}&\cellcolor{ForestGreen}&\cellcolor{ForestGreen}&\cellcolor{ForestGreen}&\cellcolor{ForestGreen}&\cellcolor{ForestGreen}&\cellcolor{ForestGreen}&\cellcolor{ForestGreen}&\cellcolor{ForestGreen} \\
 \hline
-WBS &&&&&&&&&&&&&&& \\
+WBS &\cellcolor{YellowGreen}&\cellcolor{YellowGreen}&&&&&&&&&&&&& \\
 \hline
 Pre-study
 &\cellcolor{yellow}&\cellcolor{yellow}&\cellcolor{yellow}&\cellcolor{yellow}&&&&&&&&&&&
@@ -267,7 +271,7 @@ represents events with deadlines that were given by the course stakeholders.
 These are M-01, M-02, M-04, M-08. The group used the milestones in order
 to determine if the project is on schedule and to monitor the progress.
 The reader can view what requirements that were met for each milestone
-in TODO REF MILESTONE X.X.
+in~\ref{section:functionalreq}.
 
 \begin{description}
     \item[Preliminary report M-01]

@@ -1,4 +1,4 @@
-\section{Requirements Specification}
+\chapter{Requirements Specification}
 According to the gantt chart (Fig 4.1) the team were supposed to update the
 requirement specification starting from week 2 and continuing up until week
 10. For us it was still the case that there were a clearly identifiable
@@ -7,7 +7,7 @@ including week 4. The outcome from this three week process was heavily used in
 order to establish agreement between us and the customer. This chapter
 presents the result from this process. 
 
-\subsection{Purpose and Scope of this Specification}
+\section{Purpose and Scope of this Specification}
 The purpose of the requirement specification document is to specify the
 objectives for our end product. Requirements are written at different
 levels of detail. This is to make it easy to communicate the requirements to
@@ -28,7 +28,7 @@ specification does not cover are organizational and external requirements. This
 follows from the small amount of administrative users and developers involved,
 and trust between the customer and the developers.
 
-\subsection{Process of the Requirement Specification}
+\section{Process of the Requirement Specification}
 The customer passed on an initial list of requirements to our group. After a
 classification and organization of the features, we drafted scenarios and
 internally discussed the implication to each requested feature. Therein, we saw
@@ -38,12 +38,12 @@ to the customer, before proceeding with the implementation of the end-product.
 Throughout the entire development process both we and the customer have been
 modifying the list of requirements.
 
-\subsection{Product/service description}
+\section{Product/service description}
 In this section, you will find our interpretation of the physical user-domain.
 The reader should note that some members of our group has competed earlier,
 which has given us helpful empirical insight.
 
-\subsubsection{Expected Physical Environment}
+\subsection{Expected Physical Environment}
 Our solution is used in different contexts. Table X.X has the different
 application and user-domains.
 
@@ -61,7 +61,7 @@ Linux kernel with ssh enabled, supplemented with a root user.
 \\\hline
 \end{tabular}
 
-\subsubsection{User Characteristics}
+\subsection{User Characteristics}
 Table X.X show different stereotypes of expected typical users. While open to
 deviations from the stereotypes, they highlight important properties required
 for our solution.
@@ -124,7 +124,7 @@ higher level of technical competence from our users. The user profiles also
 highlight that some features were more important than others, e.g.\
 responsiveness over aesthetics.
 
-\subsection{Requirements}
+\section{Requirements}
 Stories can be ambiguous and open for misinterpretation.\
 we felt that a natural language specification of requirements would make it
 easier to understand our application domain. To reduce miscommunication we made
@@ -148,7 +148,7 @@ prioritizing the requirements:
         not critical to the system.
 \end{itemize}
 
-\subsubsection{Functional}
+\subsection{Functional}\label{section:functionalreq}
 The functional requirements are broken down in different categories.
 Each category corresponds to a user group. The categories are Admin, Judge,
 Contestant, Functionary, Teams, and Other. Each category has an ID, priority
@@ -163,7 +163,7 @@ The ID system can be interpreted in the following way
 
 The milestone show when each requirement needs to be met.
 
-\subsubsection{Functional requirements for Admin}
+\subsection{Functional requirements for Admin}
 % \begin{longtable}{|p{2cm}|l|m{0.33795986in}|m{1.2684599in}|m{0.5254598in}|m{1.0983598in}|m{1.0566599in}|}
 \begin{longtable}{|p{4cm}|l|l|p{4cm}|l|l|}
 \caption[Feasible triples for a highly variable Grid]{Feasible triples for 
@@ -254,7 +254,7 @@ An admin can modify news item & FA-16 & SA-5 & & MED & M-03 \\
 \hline 
 \end{longtable}
 
-\subsubsection{Functional requirements for Judge}
+\subsection{Functional requirements for Judge}
 \begin{longtable}{|p{4cm}|l|l|p{4cm}|l|l|}
 \caption[Feasible triples for a highly variable Grid]{Feasible triples for 
 highly variable Grid, MLMMH.} \label{grid_mlmmh} \\
@@ -322,7 +322,7 @@ A judge shall be able supervise all submissions & FJ-11 & & & MED & \\
 \hline
 \end{longtable}
 
-\subsubsection{Functional requirements for Contestant}
+\subsection{Functional requirements for Contestant}
 
 \begin{longtable}{|p{4cm}|l|l|p{4cm}|l|l|}
 \caption[Feasible triples for a highly variable Grid]{Feasible triples for 
@@ -380,7 +380,7 @@ MED & M-06 \\
 \hline
 \end{longtable}
 
-\subsubsection{Functional requirements for Functionary}
+\subsection{Functional requirements for Functionary}
 
 \begin{tabular}{|m{1.1191599in}|m{0.33795986in}|m{0.33795986in}|m{1.2580599in}|m{0.5045598in}|m{1.1191599in}|m{1.0775598in}|}
 \hline A functionary shall be able to register a balloon colour to each
@@ -390,7 +390,7 @@ about newly completed problems & FF-02 & SF-1 &
  & MED & M-06 & TF-12\\\hline
 \end{tabular}
 
-\subsubsection{Functional requirements for Teams}
+\subsection{Functional requirements for Teams}
 \begin{longtable}{|p{4cm}|l|l|p{4cm}|l|l|}
 \caption[Feasible triples for a highly variable Grid]{Feasible triples for 
 highly variable Grid, MLMMH.} \label{grid_mlmmh} \\
@@ -465,7 +465,7 @@ This is specified by a judge.  & HIGH & M-06\\
 
 \end{longtable}
 
-\subsubsection{Other requirements}
+\subsection{Other requirements}
 \begin{longtable}{|p{4cm}|l|l|p{4cm}|l|l|}
 \caption[Feasible triples for a highly variable Grid]{Feasible triples for 
 highly variable Grid, MLMMH.} \label{grid_mlmmh} \\
@@ -509,7 +509,7 @@ The contest results are to be visible in the form of a highscore list. & FO-04
 \hline
 \end{longtable}
 
-\subsection{Non-functional}
+\section{Non-functional}
 The nonfunctional requirements defines what objectives our end product needs to
 meet. Measure make it easy to agree on whether the requirement is fulfilled or
 not. Tables X.X % FLERE TABLES
@@ -521,7 +521,7 @@ can be interpreted in the following way:
     \item 
 \end{itemize}
 
-\subsubsection{Speed}
+\subsection{Speed}
 \begin{longtable}{|l|p{5cm}|p{1.8cm}|l|p{4.4cm}|}
 \hline \multicolumn{1}{|c|}{\textbf{ID}} &
 \multicolumn{1}{c|}{\textbf{Measure}} &
@@ -551,7 +551,7 @@ NF-03 & Edit user & {\textless} 1 min & MED & E.g.\ change email, password \\
 \hline
 \end{longtable}
 
-\subsubsection{Size}
+\subsection{Size}
 \begin{longtable}{|l|p{5cm}|p{1.8cm}|l|p{4.4cm}|}
 \hline \multicolumn{1}{|c|}{\textbf{ID}} &
 \multicolumn{1}{c|}{\textbf{Measure}} &
@@ -587,7 +587,7 @@ NF-08 & Limitation of submission size & 50kB & HIGH & \\
 \hline
 \end{longtable}
 
-\subsubsection{Ease of Use}
+\subsection{Ease of Use}
 
 \begin{longtable}{|l|p{5cm}|p{1.8cm}|l|p{4.4cm}|}
 \hline \multicolumn{1}{|c|}{\textbf{ID}} &
@@ -622,7 +622,7 @@ MED &
 \\\hline
 
 \end{longtable}
-\subsubsection{Reliability}
+\subsection{Reliability}
 \begin{longtable}{|l|p{5cm}|p{1.8cm}|l|p{4.4cm}|}
 \hline
 \textbf{ID:} & \textbf{Measure:} & \textbf{Value:} & \textbf{Priority:} & \textbf{Comment:}\\
@@ -637,7 +637,7 @@ after or before a contest \\
 \hline
 \end{longtable}
 
-\subsubsection{Robustness}
+\subsection{Robustness}
 
 \begin{longtable}{|l|p{5cm}|p{1.8cm}|l|p{4.4cm}|}
 \hline \multicolumn{1}{|c|}{\textbf{ID}} &
@@ -676,7 +676,7 @@ utilize addition nodes\\
 \hline
 \end{longtable}
 
-\subsubsection{Portability/Scalability}
+\subsection{Portability/Scalability}
 
 \begin{longtable}{|l|p{5cm}|p{1.8cm}|l|p{4.4cm}|}
 \hline \multicolumn{1}{|c|}{\textbf{ID}} &
@@ -704,7 +704,7 @@ NF-20 & Module-based code && HIGH & The code should be easy to maintain\\
 \hline
 \end{longtable}
 
-\subsubsection{Other}
+\subsection{Other}
 \begin{longtable}{|l|p{5cm}|p{1.8cm}|l|p{4.4cm}|}
 \hline \multicolumn{1}{|c|}{\textbf{ID}} &
 \multicolumn{1}{c|}{\textbf{Measure}} &
@@ -731,7 +731,7 @@ NF-22 & Open-source & GPL & MED & \\
 \hline
 \end{longtable}
 
-\subsection{Security}
+\section{Security}
 While security requirements are non-functional, we decided to do the
 security requirements engineering as a separate process. 
 Table % TODO MORE
@@ -741,7 +741,7 @@ can be interpreted in the following way:
     \item Measure describes 
 \end{itemize}
 
-\subsubsection{Authentication and Authorization}
+\subsection{Authentication and Authorization}
 \begin{longtable}{|l|p{7cm}|l|p{5cm}|}
 \hline \multicolumn{1}{|c|}{\textbf{ID}} &
 \multicolumn{1}{c|}{\textbf{Measure}} &
@@ -791,7 +791,7 @@ simply acquire a session ID and use it on other computers to authenticate\\
 
 \end{longtable}
 
-\subsubsection{Immunity}
+\subsection{Immunity}
 \begin{longtable}{|l|p{7cm}|l|p{5cm}|}
 \hline \multicolumn{1}{|c|}{\textbf{ID}} &
 \multicolumn{1}{c|}{\textbf{Measure}} &
@@ -835,7 +835,7 @@ S-14 & Data from a user shall not be modified by non-users & MED & \\
 \end{longtable}
 
 
-\subsubsection{Non-repudiation}
+\subsection{Non-repudiation}
 \begin{longtable}{|l|p{7cm}|l|p{5cm}|}
 \hline \multicolumn{1}{|c|}{\textbf{ID}} &
 \multicolumn{1}{c|}{\textbf{Measure}} &
@@ -868,7 +868,7 @@ in the contest rules & HIGH & \\
 \end{longtable}
 
 \newpage
-\subsubsection{Privacy}
+\subsection{Privacy}
 \begin{longtable}{|l|p{7cm}|l|p{5cm}|}
 \hline \multicolumn{1}{|c|}{\textbf{ID}} &
 \multicolumn{1}{c|}{\textbf{Measure}} &
@@ -902,7 +902,7 @@ consent.  & LOW & \\
 \hline
 \end{longtable}
 
-\subsubsection{Auditing}
+\subsection{Auditing}
 \begin{longtable}{|l|p{7cm}|l|p{5cm}|}
 \hline \multicolumn{1}{|c|}{\textbf{ID}} &
 \multicolumn{1}{c|}{\textbf{Measure}} &
@@ -929,7 +929,7 @@ S-24 & Password that are used in development shall not be publicly available
 \hline
 \end{longtable}
 
-\subsection{Requirements Not Met}
+\section{Requirements Not Met}
 Most of the requirements on time.
 There were some minor requirements not fulfilled mainly due to time
 constraints. All of them were priority LOW.\ Here are the requirements
