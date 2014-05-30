@@ -85,7 +85,7 @@ into a virtual environment.
 
 \begin{lstlisting}[language=bash]
 sudo apt-get install python-virtualenv
-sudo su gentleidi´
+sudo su gentleidi
 virtualenv ~/env
 \end{lstlisting}
 
@@ -192,9 +192,9 @@ gentleidi, activate your environment and synchronize
 GentleIDI's database.
 
 \begin{lstlisting}[language=bash]
-sudo su gentleidi´
-source \~/env/bin/activate´
-python \~/IDIOpen/wsgi/manage.py syncdb´
+sudo su gentleidi
+source \~/env/bin/activate
+python \~/IDIOpen/wsgi/manage.py syncdb
 python \~/IDIOpen/wsgi/manage.py migrate
 \end{lstlisting}
 
@@ -210,7 +210,7 @@ python ~/IDIOpen/wsgi/openshift/manage.py createsuperuser
 To start the development server run:
 
 \begin{lstlisting}[language=bash]
-python \~/IDIOpen/wsgi/openshift/manage.py runserver´
+python \~/IDIOpen/wsgi/openshift/manage.py runserver
 \end{lstlisting}
 
 You should now have a working website running on port 8000. However, you
@@ -246,12 +246,12 @@ echo "Starting NAME as whoami"
 # Activate the virtual environment
 cd DJANGODIR
 source /webapps/gentleidi/env/bin/activate
-export DJANGO_SETTINGS_MODULE=$DJANGO_SETTINGS_MODULE´
-export PYTHONPATH=$DJANGODIR:$PYTHONPATH´
+export DJANGO_SETTINGS_MODULE=$DJANGO_SETTINGS_MODULE
+export PYTHONPATH=$DJANGODIR:$PYTHONPATH
 
 # Create the run directory if it doesn't exist
-RUNDIR=$(dirname $SOCKFILE)´
-test -d $RUNDIR {textbar}{textbar} mkdir -p $RUNDIR´
+RUNDIR=$(dirname $SOCKFILE)
+test -d $RUNDIR {textbar}{textbar} mkdir -p $RUNDIR
 # Start your Django Unicorn
 # Programs meant to be run under supervisor should not daemonize themselves 
 #(do not use --daemon)
@@ -261,7 +261,7 @@ exec /webapps/gentleidi/env/bin/gunicorn ${DJANGO_WSGI_MODULE}:application \
  --workers $NUM_WORKERS 
  --user=$USER --group=$GROUP 
  --log-level=debug {textbackslash}
- --bind=unix:$SOCKFILE´
+ --bind=unix:$SOCKFILE
 \end{lstlisting}
 
 Place the contents of the previous page in the following file:
@@ -272,7 +272,7 @@ Place the contents of the previous page in the following file:
 Make sure that the script is executable:
 
 \begin{lstlisting}[language=bash]
-sudo chmod u+x /webapps/gentleidi/env/bin/gunicorn_start´
+sudo chmod u+x /webapps/gentleidi/env/bin/gunicorn_start
 \end{lstlisting}
 
 \subsection{nginx}

@@ -1,0 +1,707 @@
+\section{Requirements Specification}
+According to the gantt chart (Fig 4.1) the team were supposed to update the
+requirement specification starting from week 2 and continuing up until week
+10. For us it was still the case that there were a clearly identifiable
+requirement specifications phase. This was primarily from week 2 up to and
+including week 4. The outcome from this three week process was heavily used in
+order to establish agreement between us and the customer. This chapter
+presents the result from this process. 
+
+\subsection{Purpose and scope of this specification}
+The purpose of the requirement specification document is to specify the
+objectives for our end product. Requirements are written at different
+levels of detail. This is to make it easy to communicate the requirements to
+both business and technical parties. We have mainly written the functional
+requirements as stories and then broken them into smaller pieces. This makes
+the requirements easy to communicate to the customer, and succinct for the
+developers. These stories can be viewed in appendix TODO.\ It is important to
+recognize that our project only lasted for a few months. Thus, late changes
+to requirements were inserted promptly and without revision control. This is
+a common practice in agile development\footnote{\ Page 91, Sommersville}.
+The advantage and reason we chose not to perform revision control, is that we
+could save time in not formally documenting all changes.
+
+The coverage of the requirements is intended to be a complete coverage
+of the product. This implies that all features available from the
+application domain is listed in our specification. What the requirements
+specification does not cover are organizational and external requirements. This
+follows from the small amount of administrative users and developers involved,
+and trust between the customer and the developers.
+
+\subsection{Process of the Requirement Specification}
+The customer passed on an initial list of requirements to our group. After a
+classification and organization of the features, we drafted scenarios and
+internally discussed the implication to each requested feature. Therein, we saw
+what features would be infeasible and additional features we would want to
+introduce to the customer. The modified list of requirements was then presented
+to the customer, before proceeding with the implementation of the end-product.
+Throughout the entire development process both we and the customer have been
+modifying the list of requirements.
+
+\subsection{Product/service description}
+In this section, you will find our interpretation of the physical user-domain.
+The reader should note that some members of our group has competed earlier,
+which has given us helpful empirical insight.
+
+\subsubsection{Expected Physical Environment}
+Our solution is used in different contexts. Table X.X has the different
+application and user-domains.
+
+\begin{tabular}{|m{3.1712599in}|m{3.1712599in}|}
+\hline
+IDI Open is hosted in P15, Høgskoleringen 3, on
+Gløshaugen campus every year. Every team participating in the
+contest get allocated their own computer. &
+For offsite contestants, javascript must be enabled.\\
+\hline
+Software is required. A web server(Apache, Nginx), database
+server(MySQL, PostgreSQL), Python with PyPi package manager.
+ &
+Linux kernel with ssh enabled, supplemented with a root user.
+\\\hline
+\end{tabular}
+
+\subsubsection{User Characteristics}
+Table X.X show different stereotypes of expected typical users. While open to
+deviations from the stereotypes, they highlight important properties required
+for our solution.
+
+\begin{tabular}{|m{2.9837599in}|m{3.1087599in}|}
+\hline
+\begin{itemize}
+    \item Irresponsive interfaces
+    \item Incorrect data
+\end{itemize}
+\begin{itemize}
+\item User submission system
+\item
+Response types
+\end{itemize}
+ &
+\begin{itemize}
+\item Irresponsive interfaces
+\item Node failures
+\item Incorrect data
+\end{itemize}
+
+\begin{itemize}
+\item Backend system\item 
+Dataflow
+\end{itemize}
+\\\hline
+keep track of score
+\begin{itemize}
+\item Irresponsive interfaces
+\item
+Lack of overview
+\end{itemize}
+\begin{itemize}
+\item Backend system
+\item 
+Dataflow
+\end{itemize}
+ &
+\begin{itemize}
+\item Dissatisfied contestants\item
+No overview\end{itemize}
+\begin{itemize}
+\item Nothing special\end{itemize}
+\\\hline
+and information
+\begin{itemize}
+\item Mis-information
+\end{itemize}
+\begin{itemize}
+\item Scoreboards, about competition
+\end{itemize}
+ &
+\\
+\hline
+\end{tabular}
+
+The most prominent trait of our users is that the majority of the end
+users have a background in computer science. Thus, we could assume a
+higher level of technological competence from our users. The user
+profiles also highlighted that some features were more important than
+others, for example we would prioritize responsiveness higher than
+aesthetics.
+
+\subsection{Requirements}
+The stories can be viewed in appendix,\ref{appendix:userstories}. While
+stories can be ambiguous and open for misinterpretation, we felt that a
+natural language specification of requirements would make it easier to
+understand our application domain. To reduce miscommunication we made
+sure to give each specification as short, succinct sentences. The
+stories were used as a way to communicate with the customer about
+requirements without them having to read through the table of
+requirements.
+
+\subsubsection{Functional}
+We decided to break the functional requirements in different categories.
+Each category corresponds to a user group. The categories are Admin,
+Judge, Contestant, Functionary, Teams, and Other. Each category has an ID, priority and story. The ID consists of a letter
+corresponding to the category, and a number that specifies which
+requirement it is in the category. 
+
+We decided to have three different states for the priority. We used
+high, med and low because we wanted to have very strict priorities.
+If we had used numbers ranging from 1-6, it would be hard to
+differentiate between the priorities we give the requirements.
+
+The following definitions make out the intended guideline for
+prioritizing the requirements:
+\begin{itemize}
+    \item HIGH: The requirement is a ``must have''. We need this requirement to
+        have a successful product.
+    \item MED: The requirement is a ``should have''. The fulfillment of the
+        requirement will be a benefit for the system
+    \item LOW: The requirement is a ``nice to have''. This may include new
+        functionality.
+\end{itemize}
+
+Table X.X shows the complete list of the requirements, while the
+corresponding stories are given in appendix\ref{appendix:userstories}
+The ID system can be interpreted in the following way
+\begin{itemize}
+    \item item The F stands for Functional
+    \item The second letter determines which category, e.g A stands for admin.
+\end{itemize}
+
+\subsubsection{Functional requirements for Admin}
+\begin{supertabular}{|p{2cm}|l|m{0.33795986in}|m{1.2684599in}|m{0.5254598in}|m{1.0983598in}|m{1.0566599in}|}
+\hline
+Requirement & ID & Story & Comments & Priority & Milestone & Test \\
+\hline
+An admin shall be able to create a new contest & FA-01 & SA-1 & A new contest
+equals a new web page & HIGH & M-03 &
+TF-01\\
+\hline
+
+An admin can choose whether the site should be published immediately or not &
+FA-02 & SA-1 & & MED & M-03 & TF-01\\
+\hline
+
+An admin can add custom CSS to the web-page & FA-03 & SA-1 & & LOW & M-03 & TF-01\\
+\hline
+
+An admin shall be able to choose settings for the contest & FA-04 & SA-1 & of
+contestants, maximum number of contestants per team, date, name.  Default
+settings will be provided & HIGH & M-06 & TF-03\\
+\hline
+
+An admin shall have access to all modules in the program & FA-05 & SA-2 & &
+HIGH & M-06 & TF-03\\ 
+\hline
+
+An admin can change permission of a usergroup & FA-06 & SA-2 & & LOW & M-06 &
+TF-04\\ 
+\hline
+
+An admin can remove/add to a user group. & FA-07 & SA-2 & This
+includes promoting new admins & LOW & M-06 & TF-04\\ 
+\hline 
+
+An admin can deactivate users & FA-08 & SA-2 & & LOW & M-06 & TF-04\\ 
+\hline
+
+An admin can remove users from the database & FA-09 & SA-2 && HIGH & M-06 & TF-04\\ 
+\hline
+
+An admin can add a node & FA-10 & SA-4 & The node must be a privileged
+user & HIGH & M-06 & TF-06\\ 
+\hline 
+
+An admin can remove a node & FA-11 & SA-4 & & HIGH & M-06 & TF-06\\ 
+\hline 
+
+An admin can manage a node. & FA-12 & SA-4 & This requirement is in terms of
+compiler profiles support & HIGH & M-06 & TF-06\\ 
+\hline 
+
+An admin can add more than one node & FA-13 & SA-4 & & MED & M-06 & TF-06\\ 
+\hline 
+
+An admin can add news items & FA-14 & SA-5 & & HIGH & M-03 & TF-01\\ 
+\hline
+
+An admin can remove new items & FA-15 & SA-5 & & MED & M-03 & TF-01\\ 
+\hline 
+
+An admin can modify news item & FA-16 & SA-5 & & MED & M-03 & TF-01\\ 
+\hline 
+\end{supertabular}
+
+\subsubsection{Functional requirements for Judge}
+\begin{supertabular}{|p{2cm}|l|m{0.33795986in}|m{1.2684599in}|m{0.5254598in}|m{1.0983598in}|m{1.0566599in}|}
+\hline
+A Judge can create a problem & FJ-01 & SJ-1 & This includes cases with input
+and output & HIGH & M-06 &
+TF-05\\\hline
+
+A judge can upload cases to a problem and name each case & FJ-02 & SJ-1 &
+ & MED & M-06 & TF-05\\\hline
+
+A judge can set a resource limit on each task & FJ-03 & SJ-1 & & LOW & M-06 &
+TF-05\\
+\hline
+
+A judge can add a solution that gives the right output & FJ-04 & SJ-1 & & HIGH
+& M-06 & TF-05\\
+\hline
+
+ A judge can add a solution that gives timeout & FJ-05 &
+SJ-1 & & MED & M-06 & TF-05\\
+\hline
+
+ A judge can add a solution that gives wrong
+answer & FJ-06 & SJ-1 & & MED & M-06 & TF-05\\
+\hline
+
+ A judge shall be able to
+view and edit all problems & FJ-07 & SJ-1 & & HIGH & & TF-05\\
+\hline
+
+ A judge
+shall be able to respond to a question from a team & FJ-08 & SJ-2 & This is
+about the clarification system. & MED & M-06 & TF-07\\
+\hline
+
+ A judge shall get
+a notification when received a question & FJ-09 & SJ-2 & & LOW & M-06 &
+TF-07\\
+\hline
+
+ A judge shall be able to respond to a question globally & FJ-10 &
+SJ-2 & By globally it is intended that the all teams can view the response and
+question & HIGH & M-06 & TF-07\\
+\hline
+
+ A judge shall be able supervise all
+submissions & FJ-11 & & & & M-06 & \\
+\hline
+
+ \end{supertabular}
+
+\subsubsection{Functional requirements for Contestant}
+
+\begin{supertabular}{|m{1.1191599in}|m{0.35875985in}|m{0.33795986in}|m{1.2580599in}|m{0.5045598in}|m{1.2476599in}|m{1.0670599in}|}
+\hline
+A contestant shall be able to edit their own information & FC-01 & SC-1 & &
+HIGH & M-03 & TF-08\\\hline When created a contestant shall receive a
+confirmation email & FC-02 & SC-1 & & HIGH & M-03 & TF-08\\\hline A contestant
+shall see which teams they are invited to & FC-03 & SC-2 & & HIGH & M-03 &
+TF-09\\\hline A contestant shall see which team they are a member of & FC-04 &
+SC-2 & & HIGH & M-03 & TF-02\\\hline A contestant shall see which teams and
+contests they have participated in earlier & FC-05 & SC-2 & & MED & M-03 &
+TF-09\\ \hline A contestant shall be able to ask a question to a judge & FC-06
+& SC-3 &
+ & MED & M-03 & TF-07\\\hline A contestant shall have access to global answers
+ from judges & FC-07 & SC-3 & & MED & M-06 & TF-07\\\hline A contestant shall
+ be able to change his/her email & FC-02 & SC-2 & & MED & & \\\hline
+\end{supertabular}
+
+\subsubsection{Functional requirements for Functionary}
+
+\begin{tabular}{|m{1.1191599in}|m{0.33795986in}|m{0.33795986in}|m{1.2580599in}|m{0.5045598in}|m{1.1191599in}|m{1.0775598in}|}
+\hline A functionary shall be able to register a balloon colour to each
+task/problem & FF-01 & SF-1 &
+ & LOW & M-06 & TF-12\\\hline A functionary shall have access to information
+about newly completed problems & FF-02 & SF-1 &
+ & MED & M-06 & TF-12\\\hline
+\end{tabular}
+
+\subsubsection{Functional requirements for Teams}
+\begin{supertabular}{|m{1.1191599in}|m{0.34835985in}|m{0.33795986in}|m{1.2684599in}|m{0.5045598in}|m{1.1087599in}|m{1.0670599in}|}
+\hline
+A user shall be able to register a team & FT-01 & ST-1 & Whether or not the
+team is onsite, a team password, and a email for the team leader & HIGH & M-06
+& TF-02\\\hline A user shall be able to register other team members for the
+team & FT-02 & ST-2 & By providing other users' email & HIGH & M-03 &
+TF-02\\\hline If the contestant is already in the system shall recognize
+personal info & FT-03 & ST-2 & Personal information like name, gender and so
+on.  & LOW & M-03 & TF-10\\\hline A team leader must be able to invite new
+members & FT-04 & ST-2 & Input: email & MED & M-03 & TF-02\\\hline A team
+leader should be able to delete the team before the competition & FT-05 & ST-2
+& & MED & M-03 & TF-10\\\hline When a team leader invites a new member the new
+member must receive a registration link & FT-06 & ST-2 & The receiver of this
+email link must fill in the data specified in: T-3 & MED & M-03 & TF-02\\\hline
+If a member's email is already in the database they will receive a confirmation
+link & FT-07 & ST-2 & The confirmation link will include automatically filled
+data. See T-4 & LOW & M-03 & TF-10\\\hline All team information is editable in
+the team overview. & FT-08 & ST-2 &
+ & LOW & M-03 & TF-10\\\hline A team must be able to deliver submissions to
+problems & FT-09 & ST-3 &
+ & HIGH & M-06 & TF-11\\\hline When a team deliver a submission they shall
+receive response from the system & FT-10 & ST-3 & system should give timeout.
+This is specified by a judge.  & HIGH & M-06 & TF-11\\\hline
+\end{supertabular}
+
+\subsubsection{Other requirements}
+\begin{supertabular}{|m{1.1191599in}|m{0.35875985in}|m{0.33795986in}|m{1.2580599in}|m{0.5045598in}|m{1.1087599in}|m{1.0670599in}|}
+\hline
+The system shall be able to gather some statistics & FO-01 & SA-3 & It is here
+implied statistics from contestants in accordance with FE-3 & HIGH & M-05 &
+\\\hline The system shall be able to gather a large variety of statistics
+specified by the admin & FO-02 & SA-3 &
+ & LOW & M-05 &
+\\\hline The system shall include a clarification system & FO-03 & SJ-2 & This
+is according to FJ-8, FJ-9, FJ-10, and FE-14, FE-15, FE-16, FE-17, FE-18 & HIGH
+& M-07 & TF-07\\\hline The contest results are to be visible in the form of a
+highscore list. & FO-04 & ST-03 &
+ & MED & M-07 &
+\\\hline
+\end{supertabular}
+
+\subsection{Non-functional}
+The nonfunctional requirements defines, what objectives our end product
+needs to meet. The qualitative measures make it easier to agree on
+whether the requirement is fulfilled or not. Table can be interpreted in the following way:
+\begin{itemize}
+    \item In ID the NF stands for Non-Functional
+    \item Measure describes how/what the property should measure.
+\end{itemize}
+
+\subsubsection{Speed}
+\begin{supertabular}{|l|p{5cm}|p{1.8cm}|l|p{4.4cm}|}
+\hline
+\textbf{ID:} & \textbf{Measure:} & \textbf{Value:} & \textbf{Priority:} & \textbf{Comment:}\\
+\hline
+
+NF-01 & Response from action & {\textless} 1.5 sec & MED & \\
+\hline
+
+NF-02 & Posting news & {\textless} 5 sec & MED & \\
+\hline
+
+NF-03 & Edit user & {\textless} 1 min & MED & Time from submission until the
+whole system is updated\\
+\hline
+\end{supertabular}
+
+\subsubsection{Size}
+\begin{supertabular}{|l|p{5cm}|p{1.8cm}|l|p{4.4cm}|}
+\hline
+\textbf{ID:} & \textbf{Measure:} & \textbf{Value:} & \textbf{Priority:} & \textbf{Comment:}\\
+\hline
+NF-04 &
+Number of contestants &
+500 &
+HIGH &
+\\\hline
+
+NF-05 &
+Number of teams &
+200 &
+HIGH &
+
+\\\hline
+
+NF-06 &
+Number of judges &
+20 &
+HIGH &
+
+\\\hline
+
+NF-07 &
+Number of admins &
+{\textgreater} 1 &
+HIGH &
+
+\\\hline
+
+NF-08 &
+Limitation of solution size &
+50kB &
+
+\\\hline
+\end{supertabular}
+
+\subsubsection{Ease of Use}
+
+\begin{supertabular}{|l|p{5cm}|p{1.8cm}|l|p{4.4cm}|}
+\hline
+\textbf{ID:} & \textbf{Measure:} & \textbf{Value:} & \textbf{Priority:} & \textbf{Comment:}\\
+\hline
+NF-09 & Learning time for contestants & {\textless} 5 min & MED & The users of
+the program should be good at computers and therefore know what they are
+doing.\\
+\hline
+
+NF-10 & Learning time for admins & {\textless} 15 min & MED &
+\\\hline
+
+NF-11 &
+Learning time for judge &
+{\textless} 10 min &
+MED &
+\\\hline
+
+\end{supertabular}
+\subsubsection{Reliability}
+\begin{supertabular}{|l|p{5cm}|p{1.8cm}|l|p{4.4cm}|}
+\hline
+\textbf{ID:} & \textbf{Measure:} & \textbf{Value:} & \textbf{Priority:} & \textbf{Comment:}\\
+\hline
+
+NF-12 & Mean time to failure &
+{\textgreater} 1 week & HIGH & The program should NOT be down during a
+contest\\
+\hline
+
+NF-13 &
+Availability &
+{\textgreater} 99.9\% &
+HIGH &
+How much is the software up and running.\\
+\hline
+
+
+\end{supertabular}
+\subsubsection{Robustness}
+\begin{supertabular}{|l|p{5cm}|p{1.8cm}|l|p{4.4cm}|}
+\hline
+\textbf{ID:} & \textbf{Measure:} & \textbf{Value:} & \textbf{Priority:} & \textbf{Comment:}\\
+\hline
+
+NF-14 & Time to restart after failure &
+{\textless} 10 min &
+HIGH &
+\\\hline
+
+NF-15 &
+Probability of data corruption on failure &
+{\textless} 1\% &
+MED & What kind of data\\
+\hline
+
+NF-16 & Expected living time & 10-15 years & HIGH & \\
+\hline
+
+NF-17 & Execution node & = 1  & HIGH &\\
+\hline
+
+NF-18 & Execution nodes & {\textgreater} 1 & MED & It should be possible to
+implement more\\
+\hline
+\end{supertabular}
+
+\subsubsection{Portability/Scalability}
+
+\begin{supertabular}{|l|p{5cm}|p{1.8cm}|l|p{4.4cm}|}
+\hline
+\textbf{ID:} & \textbf{Measure:} & \textbf{Value:} & \textbf{Priority:} & \textbf{Comment:}\\
+\hline
+
+NF-19 & Extensibility && HIGH & adding features, and carry-forward of
+customizations at next major version upgrade\\
+\hline
+
+NF-20 & Module-based code && HIGH & The code should be easy to maintain\\
+\hline
+\end{supertabular}
+
+\subsubsection{Other}
+\begin{supertabular}{|l|p{5cm}|p{1.8cm}|l|p{4.4cm}|}
+\hline
+\textbf{ID:} & \textbf{Measure:} & \textbf{Value:} & \textbf{Priority:} & \textbf{Comment:}\\
+\hline
+
+NF-21 & Accessibility & Internal \ and external & HIGH & slightly more
+important than external \\
+\hline
+
+NF-22 & Emotional factors & FUN & HIGH & It should be fun\\
+\hline
+
+NF-23 & Open-source & GPL & LOW & \\
+\hline
+\end{supertabular}
+
+\subsection{Security}
+While security requirements are non-functional, we decided to do the
+security requirements engineering as a separate process. Table X.X
+shows the listing.
+Table can be interpreted in the following way:
+\begin{itemize}
+    \item In ID the first two letters stands for the property of the requirement.
+    \item Measure describes how/what the property should measure.
+\end{itemize}
+
+\subsubsection{Authentication and Authorization}
+\begin{supertabular}{|l|p{7cm}|l|p{5cm}|}
+\hline
+\textbf{ID} & \textbf{Measure} & \textbf{Priority} & \textbf{Comment} \\ 
+\hline
+
+S-01 & No user in any given user group shall be able to perform any operation
+outside of the definition of the requirements & MED & \\ 
+\hline
+
+S-02 & An authenticated user shall not be able to perform any operation,
+asanother user & & \\ 
+\hline
+
+S-03 & After an authenticated user performs an action to be logged out,
+thatuser will need to log in to re-authenticate & & E.g. \ session-cookies
+should not remain such that you can still re-login\\ 
+\hline
+
+S-04 & No user shall gain administrative rights without manual approval
+ofcurrent administrators & & Ensure no user is registered as admin by mistake,
+no scripts thatautomatically escalates privileges to administrator when
+conditions aremet\\ 
+\hline
+
+S-05 & aprovided interface and provide mandatory credentials. & &
+Sometimesusers a identified by session ID's\\ 
+\hline
+
+S-06 & To authorize, you will either need to provide mandatory usercredentials
+through an interface, or have a valid session ID. & & \\ 
+\hline
+
+S-07 & Session tokens shall be unique to one computer only & & Not possible to
+simply acquire a session ID and use it on other computers toauthenticate\\
+\hline
+
+\end{supertabular}
+
+\subsubsection{Immunity}
+\begin{supertabular}{|l|p{7cm}|l|p{5cm}|}
+\hline
+\textbf{ID} & \textbf{Measure} & \textbf{Priority} & \textbf{Comment} \\ 
+\hline
+S-08 & No front-end exposed input-fields shall besusceptible to injection
+attacks & & \\ 
+\hline
+
+S-09 & All data that passes the trust zone shall be in plaintext, andvalidated
+for injection attacks & & \\ 
+\hline
+
+S-10 & Except from contest program submissions, data from non-developers
+canonly be directed/saved in databases. & & E.g.\ you shall not be able to
+create files in the source directory.\\ 
+\hline
+
+S-11 & Uploaded file scripts shall not write to any file & & \\ 
+\hline
+
+S-12 & Uploaded file scripts shall not read from any other file than stdin && \\ 
+\hline
+
+S-13 & Uploaded file scripts shall not access network, threading, or anyother
+external service not needed to solve a problem.  & & \\ 
+\hline
+
+S-14 & Data from a user shall not be modified & & \\ 
+\hline
+\end{supertabular}
+
+
+\subsubsection{Non-repudiation}
+\begin{supertabular}{|l|p{7cm}|l|p{5cm}|}
+\hline
+\textbf{ID} & \textbf{Measure} & \textbf{Priority} & \textbf{Comment} \\ 
+\hline
+S-15 & All modifications of data shall be logged & &\\ 
+\hline
+
+S-16 & All log entries shall contain username(s) and a timestamp with dayand
+current hour & & \\ 
+\hline
+
+S-17 & Logs will be backed up & & \\
+\hline
+
+S-18 & A team's score shall not be affected by anything other thanwhat is given
+in the contest rules & & \\ 
+\hline
+\end{supertabular}
+
+\newpage
+\subsubsection{Privacy}
+\begin{supertabular}{|l|p{7cm}|l|p{5cm}|}
+\hline
+\textbf{ID} & \textbf{Measure} & \textbf{Priority} & \textbf{Comment} \\ 
+\hline
+
+S-19 & Sensitive user data shall not be stored in plaintext  & & \\ 
+\hline
+
+S-20 & Every user-field that is stored shall be justified in therequirements
+specification & & \\ 
+\hline
+
+S-21 & No sensitive data shall be exposed publicly, even if it is encrypted& &
+\\ 
+\hline
+
+S-22 & User-data for a given user shall not be modified without that user's
+consent.  & & \\ 
+\hline
+\end{supertabular}
+
+\subsubsection{Auditing}
+\begin{supertabular}{|l|p{7cm}|l|p{5cm}|}
+\hline
+\textbf{ID} & \textbf{Measure} & \textbf{Priority} & \textbf{Comment} \\ 
+\hline
+
+S-23 & Database shall be manually/automatically checked/verified for
+inconsistency or errors before an event. & & \\
+\hline
+
+S-24 & Password that are used in development shall not bepublicly available
+& &\\
+\hline
+\end{supertabular}
+
+\subsection{Requirements Not Met}
+We met most of the requirements in time to their respective milestone,
+but there were some minor requirements we had to drop because of time
+constraints. All of them were priority LOW.\ Here are the requirements
+we did not complete:
+
+\begin{supertabular}{|m{5.0566597in}|m{1.2858598in}|}
+\hline
+A judge shall get a notification when received a
+question &
+FJ-09\\\hline
+A functionary shall be able to register a balloon
+colour to each task/problem &
+FF-01\\\hline
+The system shall be able to gather a large
+variety of statistic specified by the admin &
+FO-02\\\hline
+\end{supertabular}
+
+The reason they were not completed was due to the their low priority and
+time constraint. In addition to the unfinished requirements we also ended up with some
+requirements that we technically did meet, but not in an ideal way.
+This was in agreement with the customer. These are the partially met
+requirements:
+
+\begin{supertabular}{|l|l|}
+    \hline
+    An admin can add a node & FA-10 \\
+    \hline
+    An admin can remove a node & FA-11 \\
+    \hline
+    An admin can manage a node.  & FA-12 \\
+    \hline
+    An admin can add more than one node & FA-13 \\
+    \hline
+    Response from action & NF-01 \\
+    \hline
+    Logs will be backed up & NR-03 \\
+    \hline
+\end{supertabular}
+
+Unfortunately an admin can only manage the execution nodes through the
+code. This is planned to be fixed before the next contest. The response
+time did unfortunately exceed 1.5 seconds during the contest. This was
+due to a bad implementation choice, described in~\ref{implementation}. NR-03
+had to be overruled during the contest.  This is discussed in detail in section
+\textit{development}.

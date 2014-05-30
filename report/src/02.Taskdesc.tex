@@ -3,7 +3,6 @@
 \section{Task Description and Overview}
 \label{sec:taskdesc}
 
-%Sushi mente hun ikke forsto hensikt med kap 2. Skal vi skrive om ingressen her? Syntes selv den egentlig er grei nok
 The first step in our development process was to get a brief overview of
 our complete system. To do this, we have followed a conventional style
 of designing UML use cases together with a textual description. From
@@ -42,56 +41,60 @@ lists and other media communicated with external parties.
 
 The term ``Gentle'' is supposed to
 represent our calm approach to problems. It is also similar to
-``Gentleman'', which reminds of
-quality and good conduct . Furthermore, it is easy to interpret and
-remember.
+``Gentleman'', which reminds of quality and good conduct. Furthermore, it is
+easy to interpret and remember.
 
-Since we were developing a new system, we also wanted to brand our
-product. We wanted to keep it logical and simple, so we decided on
-``GentleIDI''. Consequently,
-GentleIDI may be used to refer to our end product throughout the rest of the report.
+Since we were developing a new system, we also wanted to brand our product. We
+wanted to keep it logical and simple, so we decided on ``GentleIDI''.
+Consequently, GentleIDI may be used to refer to our end product throughout the
+rest of the report.
 
 
 \section{Assumptions and Constraints}
 \label{sec:assumtions}
-
-
 To define what is satisfactory, we have made some assumptions and
-defined some constraints. Table~\ref{table:assumtions} should make it easier to understand
-how we have reasoned our system design. 
+defined some constraints. Table~\ref{table:assumtions} should make it easier to
+understand how we have reasoned our system design. 
 
-\begin{table}
-\caption{Assumtions and constraints}
-\label{table:assumtions}
-\tablehead{}
-\begin{supertabular}{|p{0.33\textwidth}|p{0.33\textwidth}|p{0.33\textwidth}|}
-\hline
-Assumption/Constraint &
-Why &
-Implication\\\hline
-The system will be maintained by people who have experience with
-computers. &
-People that are involved with any programming contest are typically
-programmers themselves. &
-User design, words and definitions can be made more technical. Error
-messages can be explained using computer lingo. \\\hline
+% \begin{table}
+% \caption{Assumtions and constraints}
+% \label{table:assumtions}
+% \tablehead{}
+% \begin{supertabular}{|p{0.33\textwidth}|p{0.33\textwidth}|p{0.33\textwidth}|}
+% \hline
+\begin{longtable}{|p{.33\textwidth}|p{.33\textwidth}|p{.33\textwidth}|}
+\caption[test]{Assumtions and constraints} \\
+\hline \multicolumn{1}{|c|}{\textbf{Assumption/Constraint}} &
+\multicolumn{1}{c|}{\textbf{Why}} &
+\multicolumn{1}{c|}{\textbf{Implication}} \\
+\hline 
+\endfirsthead
+
+\multicolumn{3}{c}%
+{{\bfseries \tablename\ \thetable{} -- continued from previous page}} \\
+\hline \multicolumn{1}{|c|}{\textbf{Assumption/Constraint}} &
+\multicolumn{1}{c|}{\textbf{Why}} &
+\multicolumn{1}{c|}{\textbf{Implication}} \\
+\hline 
+\endhead
+Assumption/Constraint & Why & Implication\\\hline The system will be maintained
+by people who have experience with computers. & People that are involved with
+any programming contest are typically programmers themselves. & User design,
+words and definitions can be made more technical. Error messages can be
+explained using computer lingo. \\\hline
 
 The system will be used and maintained for {\textgreater} 5 years &
-Customer{}-constraint: they do not want to spend too much time
-developing new products, so maintenance is preferred. &
-\ The code should be written in a modular, extensible way with clear
-documentation.\\\hline
+Customer-constraint: they do not want to spend too much time
+developing new products, so maintenance is preferred. & The code should be
+written in a modular, extensible way with clear documentation.\\\hline
 
-The customer is based at Gl{\o}shaugen. &
-~
- &
-High availability for customer meetings and reviews.\\\hline
+The customer is based at Gløshaugen. & & High availability for customer
+meetings and reviews.\\\hline
 
 The developers will maintain a 20 hour a week work ethic throughout the
-project{}-duration of 20 weeks[TODO: update]. &
-To finish the product on time. &
-The set of requirements should not require more than 20 hours of work
-per week per developer, in order to complete.\\\hline
+project{}-duration of 20 weeks[TODO: update]. & To finish the product on time.
+& The set of requirements should not require more than 20 hours of work per
+week per developer, in order to complete.\\\hline
 Our system should be user{}-friendly &
 Our solution features a web interface available to everyone. Ideally,
 any person should be comfortable with the user interface. &
@@ -110,8 +113,7 @@ We are allowed to use whatever third party plugin we want, as long as it
 is free and has no copyright{}-conflict. &
 Speed up development. &
 Speed up development.\\\hline
-\end{supertabular}
-\end{table}
+\end{longtable}
 
 Do note that the implications in table~\ref{table:assumtions} were not necessarily upheld.
 Rather, they were used as initial bounds to permit leeway. For example,
@@ -130,11 +132,11 @@ different roles and their available actions. Further elaborations on
 each group will also be given in later sections, but table~\ref{table:usegroup} should
 suffice for an overview.
 
-\begin{table}
-\tablehead{}
-\caption{Usergroup overview}
-\label{table:usegroup}
-\begin{supertabular}{|m{0.2\textwidth}|m{0.8\textwidth}|}
+\begin{longtable}{|p{.2\textwidth}|p{.6\textwidth}|}
+\caption{Usergroup overview} \label{table:usegroup}\\
+\hline
+\multicolumn{1}{|c|}{\textbf{ID}} &
+\multicolumn{1}{c|}{\textbf{Story}} \\
 \hline
 Role &
 Description\\\hline
@@ -144,7 +146,7 @@ system\\\hline
 Judge &
 Privileged. Similar to an admin account, but with a limited set of
 actions: answering questions (clarification system), upload problem to be
-solved, solutions to those problems, and incorrect answers (eg. answers
+solved, solutions to those problems, and incorrect answers (e.g.\ answers
 that will provide penalty).\\\hline
 Functionary &
 Privileged. Functionaries hand out balloons when a team has solved a
@@ -157,8 +159,7 @@ Team &
 A group of one to three contestants. A contestant is only part of one
 team per contest, and need a team in order to compete. \\\hline
 
-\end{supertabular}
-\end{table}
+\end{longtable}
 
 \subsection{Service-providing Units}
 
@@ -168,30 +169,23 @@ data and execute user-submitted code. Since each of these operates with
 different protocols, we will think to our solution as composed of three
 different systems. These are described in figure X.X. 
 
-\begin{table}
-\caption{Service-providing Units}
-\label{table:serviceUnits}
-\tablehead{}
-\begin{supertabular}{|m{0.2\textwidth}|m{0.6\textwidth}|m{0.2\textwidth}|}
+\begin{longtable}{|l|m{0.5\textwidth}|m{0.2\textwidth}|}
+\caption{Service-providing Units} \label{table:serviceUnits} \\
 \hline
-Entity &
-Features &
-Protocol\\\hline
-Webserver &
-Processes requests from contestants and teams. Also acts as an
+\hline \multicolumn{1}{|c|}{\textbf{Entity}} &
+\multicolumn{1}{c|}{\textbf{Features}} &
+\multicolumn{1}{c|}{\textbf{Protocol}} \\
+\hline
+Webserver & Processes requests from contestants and teams. Also acts as an
 interface to the execution node, both receiving and transmitting data
-to other execution nodes on the behalf of users. &
-HTTP\\\hline
-Execution node &
-A service, often on a dedicated platform, that offers the ability to
-compile and execute code. The execution node returns output data to the
-webserver. &
-AMQP\\\hline
-Database &
-The storage unit for all user{}-data and logs. &
-SQL\\\hline
-\end{supertabular}
-\end{table}
+to other execution nodes on the behalf of users. & HTTP\\\hline
+
+Execution node & A service, often on a dedicated platform, that offers the
+ability to compile and execute code. The execution node returns output data to
+the webserver. & AMQP\\\hline
+
+Database & The storage unit for all user{}-data and logs. & SQL\\\hline
+\end{longtable}
 
 
 
@@ -200,14 +194,11 @@ We need one page each for privileged, registered, and non-registered
 users. That is, one interface for administrative users, one for
 contestants, and one for non-registered viewers. From each of these
 three, we defined use case scenarios. Figure X.X and X.X models the
-available workflows and actions for each category of users. Table~\ref{table:uml-notation}
-describes the semantics of objects used in the diagram, which should be
-equivalent to the UML 2.0 standard.
-\begin{table}
-\caption{UML Notation}
-\label{table:uml-notation}
-\tablehead{}
-\begin{supertabular}{|m{0.15\textwidth}|m{0.85\textwidth}|}
+available workflows and actions for each category of users.
+Table~\ref{table:uml-notation} describes the semantics of objects used in the
+diagram, which should be equivalent to the UML 2.0 standard.
+\begin{longtable}{|m{0.15\textwidth}|m{0.7\textwidth}|}
+\caption{UML Notation} \label{table:uml-notation} \\
 \hline
 	\includegraphics[width=0.15\textwidth]{chapter2-img1.jpg}  &
 Use case actor. Represents a user group\\\hline
@@ -222,8 +213,7 @@ workflow.\\\hline
 UML stereotype to indicate that if certain conditions are met in a flow,
 the entity to which this arrow points to can extend the
 workflow.\\\hline
-\end{supertabular}
-\end{table}
+\end{longtable}
 
 The purpose of the use case diagrams is to give a clear overview of what
 users shall be able to accomplish from our system. Furthermore, use
@@ -234,23 +224,14 @@ requirements specification and to communicate what we
 were trying to accomplish.
 
 \begin{figure}[h!]
-	\includegraphics[width=0.8\textwidth]{chapter2-img3.jpg} 
-	\caption{FIGURECAPTION}
-	\label{figure:usecase}
+    \includegraphics[width=0.8\textwidth]{chapter2-img3.jpg}
+    \caption{FIGURECAPTION} \label{figure:usecase}
 \end{figure}
-As seen in figure~\ref{figure:usecase}, admins has privileges to perform the actions of
-any other group, in addition to their own set of actions. Thus,
-membership in the admin group gives a user complete control in the
-application domain. Furtherly, it can be noted that all usergroups have
-the opportunity to act as a contestant to review the website.
-Privileged users will are still restricted from appearing in the
-official high score tables to prevent them from assuming a competing
-role. This was to avoid the chance of any person with access to the
-solutions to compete.
-
-
-
-
-
-
-
+As seen in figure~\ref{figure:usecase}, admins has privileges to perform the
+actions of any other group, in addition to their own set of actions. Thus,
+membership in the admin group gives a user complete control in the application
+domain. Furtherly, it can be noted that all usergroups have the opportunity to
+act as a contestant to review the website.  Privileged users will are still
+restricted from appearing in the official high score tables to prevent them
+from assuming a competing role. This was to avoid the chance of any person with
+access to the solutions to compete.
