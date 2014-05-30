@@ -52,7 +52,11 @@
 \include{src/09.Development}
 \include{src/10.Test}
 \include{src/11.Risk}
+<<<<<<< HEAD
 \include{src/sources}
+=======
+\include{src/12.Evaluation}
+>>>>>>> 85fef92bc45a8b13dd07c38c83f9636d653ea802
 \appendix
 \include{src/appendix-sprints}
 \include{src/Userstories}
