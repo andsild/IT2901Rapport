@@ -125,7 +125,7 @@ highlight that some features were more important than others, e.g.\
 responsiveness over aesthetics.
 
 \subsection{Requirements}
-Stories can be ambiguous and open for misinterpretation.
+Stories can be ambiguous and open for misinterpretation.\
 we felt that a natural language specification of requirements would make it
 easier to understand our application domain. To reduce miscommunication we made
 sure to give each specification as short, succinct sentences. The stories were
@@ -164,137 +164,221 @@ The ID system can be interpreted in the following way
 The milestone show when each requirement needs to be met.
 
 \subsubsection{Functional requirements for Admin}
-\begin{supertabular}{|p{2cm}|l|m{0.33795986in}|m{1.2684599in}|m{0.5254598in}|m{1.0983598in}|m{1.0566599in}|}
-\hline
-Requirement & ID & Story & Comments & Priority & Milestone & Test \\
+% \begin{longtable}{|p{2cm}|l|m{0.33795986in}|m{1.2684599in}|m{0.5254598in}|m{1.0983598in}|m{1.0566599in}|}
+\begin{longtable}{|p{4cm}|l|l|p{4cm}|l|l|}
+\caption[Feasible triples for a highly variable Grid]{Feasible triples for 
+highly variable Grid, MLMMH.} \label{grid_mlmmh} \\
+
+\hline \multicolumn{1}{|c|}{\textbf{Requrement}} &
+\multicolumn{1}{c|}{\textbf{ID}} &
+\multicolumn{1}{c|}{\textbf{Story}} &
+\multicolumn{1}{c|}{\textbf{Comment}} &
+\multicolumn{1}{c|}{\textbf{Priority}} &
+\multicolumn{1}{c|}{\textbf{Milestone}} \\ 
+\hline 
+\endfirsthead
+
+\multicolumn{3}{c}%
+{{\bfseries \tablename\ \thetable{} -- continued from previous page}} \\
+\hline \multicolumn{1}{|c|}{\textbf{Requrement}} &
+\multicolumn{1}{c|}{\textbf{ID}} &
+\multicolumn{1}{c|}{\textbf{Story}} &
+\multicolumn{1}{c|}{\textbf{Comment}} &
+\multicolumn{1}{c|}{\textbf{Priority}} &
+\multicolumn{1}{c|}{\textbf{Milestone}} \\ 
+\hline 
+\endhead
+% 
+% \hline \multicolumn{4}{|r|}{{Continued on next page}} \\ \hline
+% \endfoot
+% 
+% \hline \hline
+% \endlastfoot
+% \hline
+% Requirement & ID & Story & Comments & Priority & Milestone & Test \\
 \hline
 An admin shall be able to create a new contest & FA-01 & SA-1 & A new contest
-equals a new web page & HIGH & M-03 &
-TF-01\\
+equals a new web page & HIGH & M-03 \\
 \hline
 
 An admin can choose whether the site should be published immediately or not &
-FA-02 & SA-1 & & MED & M-03 & TF-01\\
+FA-02 & SA-1 & & MED & M-03 \\
 \hline
 
-An admin can add custom CSS to the web-page & FA-03 & SA-1 & & LOW & M-03 & TF-01\\
+An admin can add custom CSS to the web-page & FA-03 & SA-1 & & LOW & M-03 \\
 \hline
 
 An admin shall be able to choose settings for the contest & FA-04 & SA-1 & of
 contestants, maximum number of contestants per team, date, name.  Default
-settings will be provided & HIGH & M-06 & TF-03\\
+settings will be provided & HIGH & M-06 \\
 \hline
 
 An admin shall have access to all modules in the program & FA-05 & SA-2 & &
-HIGH & M-06 & TF-03\\ 
+HIGH & M-06 \\ 
 \hline
 
-An admin can change permission of a usergroup & FA-06 & SA-2 & & LOW & M-06 &
-TF-04\\ 
+An admin can change permission of a usergroup & FA-06 & SA-2 & & LOW & M-06 \\
 \hline
 
 An admin can remove/add to a user group. & FA-07 & SA-2 & This
-includes promoting new admins & LOW & M-06 & TF-04\\ 
+includes promoting new admins & LOW & M-06 \\ 
 \hline 
 
-An admin can deactivate users & FA-08 & SA-2 & & LOW & M-06 & TF-04\\ 
+An admin can deactivate users & FA-08 & SA-2 & & LOW & M-06 \\ 
 \hline
 
-An admin can remove users from the database & FA-09 & SA-2 && HIGH & M-06 & TF-04\\ 
+An admin can remove users from the database & FA-09 & SA-2 && HIGH & M-06 \\ 
 \hline
 
 An admin can add a node & FA-10 & SA-4 & The node must be a privileged
-user & HIGH & M-06 & TF-06\\ 
+user & HIGH & M-06 \\ 
 \hline 
 
-An admin can remove a node & FA-11 & SA-4 & & HIGH & M-06 & TF-06\\ 
+An admin can remove a node & FA-11 & SA-4 & & HIGH & M-06 \\ 
 \hline 
 
 An admin can manage a node. & FA-12 & SA-4 & This requirement is in terms of
-compiler profiles support & HIGH & M-06 & TF-06\\ 
+compiler profiles support & HIGH & M-06 \\ 
 \hline 
 
-An admin can add more than one node & FA-13 & SA-4 & & MED & M-06 & TF-06\\ 
+An admin can add more than one node & FA-13 & SA-4 & & MED & M-06 \\ 
 \hline 
 
-An admin can add news items & FA-14 & SA-5 & & HIGH & M-03 & TF-01\\ 
+An admin can add news items & FA-14 & SA-5 & & HIGH & M-03 \\ 
 \hline
 
-An admin can remove new items & FA-15 & SA-5 & & MED & M-03 & TF-01\\ 
+An admin can remove new items & FA-15 & SA-5 & & MED & M-03 \\ 
 \hline 
 
-An admin can modify news item & FA-16 & SA-5 & & MED & M-03 & TF-01\\ 
+An admin can modify news item & FA-16 & SA-5 & & MED & M-03 \\ 
 \hline 
-\end{supertabular}
+\end{longtable}
 
 \subsubsection{Functional requirements for Judge}
-\begin{supertabular}{|p{2cm}|l|m{0.33795986in}|m{1.2684599in}|m{0.5254598in}|m{1.0983598in}|m{1.0566599in}|}
-\hline
+\begin{longtable}{|p{4cm}|l|l|p{4cm}|l|l|}
+\caption[Feasible triples for a highly variable Grid]{Feasible triples for 
+highly variable Grid, MLMMH.} \label{grid_mlmmh} \\
+
+\hline \multicolumn{1}{|c|}{\textbf{Requrement}} &
+\multicolumn{1}{c|}{\textbf{ID}} &
+\multicolumn{1}{c|}{\textbf{Story}} &
+\multicolumn{1}{c|}{\textbf{Comment}} &
+\multicolumn{1}{c|}{\textbf{Priority}} &
+\multicolumn{1}{c|}{\textbf{Milestone}} \\ 
+\hline 
+\endfirsthead
+
+\multicolumn{3}{c}%
+{{\bfseries \tablename\ \thetable{} -- continued from previous page}} \\
+\hline \multicolumn{1}{|c|}{\textbf{Requrement}} &
+\multicolumn{1}{c|}{\textbf{ID}} &
+\multicolumn{1}{c|}{\textbf{Story}} &
+\multicolumn{1}{c|}{\textbf{Comment}} &
+\multicolumn{1}{c|}{\textbf{Priority}} &
+\multicolumn{1}{c|}{\textbf{Milestone}} \\ 
+\hline 
+\endhead
 A Judge can create a problem & FJ-01 & SJ-1 & This includes cases with input
-and output & HIGH & M-06 &
-TF-05\\\hline
+and output & HIGH & M-06\\
+\hline
 
 A judge can upload cases to a problem and name each case & FJ-02 & SJ-1 &
- & MED & M-06 & TF-05\\\hline
+ & MED & M-06 \\\hline
 
-A judge can set a resource limit on each task & FJ-03 & SJ-1 & & LOW & M-06 &
-TF-05\\
+A judge can set a resource limit on each task & FJ-03 & SJ-1 & & LOW & M-06\\
 \hline
 
 A judge can add a solution that gives the right output & FJ-04 & SJ-1 & & HIGH
-& M-06 & TF-05\\
+& M-06 \\
 \hline
 
  A judge can add a solution that gives timeout & FJ-05 &
-SJ-1 & & MED & M-06 & TF-05\\
+SJ-1 & & MED & M-06 \\
 \hline
 
  A judge can add a solution that gives wrong
-answer & FJ-06 & SJ-1 & & MED & M-06 & TF-05\\
+answer & FJ-06 & SJ-1 & & MED & M-06 \\
 \hline
 
  A judge shall be able to
-view and edit all problems & FJ-07 & SJ-1 & & HIGH & & TF-05\\
+view and edit all problems & FJ-07 & SJ-1 & & HIGH & \\
 \hline
 
  A judge
 shall be able to respond to a question from a team & FJ-08 & SJ-2 & This is
-about the clarification system. & MED & M-06 & TF-07\\
+about the clarification system. & MED & M-06 \\
 \hline
 
  A judge shall get
-a notification when received a question & FJ-09 & SJ-2 & & LOW & M-06 &
-TF-07\\
+a notification when received a question & FJ-09 & SJ-2 & & LOW & M-06 \\
 \hline
 
- A judge shall be able to respond to a question globally & FJ-10 &
-SJ-2 & By globally it is intended that the all teams can view the response and
-question & HIGH & M-06 & TF-07\\
+ A judge shall be able to respond to a question globally & FJ-10 & SJ-2 & By
+globally it is intended that the all teams can view the response and question &
+HIGH & M-06 \\
 \hline
 
- A judge shall be able supervise all
-submissions & FJ-11 & & & & M-06 & \\
+A judge shall be able supervise all submissions & FJ-11 & & & MED & \\
 \hline
-
- \end{supertabular}
+\end{longtable}
 
 \subsubsection{Functional requirements for Contestant}
 
-\begin{supertabular}{|m{1.1191599in}|m{0.35875985in}|m{0.33795986in}|m{1.2580599in}|m{0.5045598in}|m{1.2476599in}|m{1.0670599in}|}
-\hline
+\begin{longtable}{|p{4cm}|l|l|p{4cm}|l|l|}
+\caption[Feasible triples for a highly variable Grid]{Feasible triples for 
+highly variable Grid, MLMMH.} \label{grid_mlmmh} \\
+
+\hline \multicolumn{1}{|c|}{\textbf{Requrement}} &
+\multicolumn{1}{c|}{\textbf{ID}} &
+\multicolumn{1}{c|}{\textbf{Story}} &
+\multicolumn{1}{c|}{\textbf{Comment}} &
+\multicolumn{1}{c|}{\textbf{Priority}} &
+\multicolumn{1}{c|}{\textbf{Milestone}} \\ 
+\hline 
+\endfirsthead
+
+\multicolumn{3}{c}%
+{{\bfseries \tablename\ \thetable{} -- continued from previous page}} \\
+\hline \multicolumn{1}{|c|}{\textbf{Requrement}} &
+\multicolumn{1}{c|}{\textbf{ID}} &
+\multicolumn{1}{c|}{\textbf{Story}} &
+\multicolumn{1}{c|}{\textbf{Comment}} &
+\multicolumn{1}{c|}{\textbf{Priority}} &
+\multicolumn{1}{c|}{\textbf{Milestone}} \\ 
+\hline 
+\endhead
 A contestant shall be able to edit their own information & FC-01 & SC-1 & &
-HIGH & M-03 & TF-08\\\hline When created a contestant shall receive a
-confirmation email & FC-02 & SC-1 & & HIGH & M-03 & TF-08\\\hline A contestant
-shall see which teams they are invited to & FC-03 & SC-2 & & HIGH & M-03 &
-TF-09\\\hline A contestant shall see which team they are a member of & FC-04 &
-SC-2 & & HIGH & M-03 & TF-02\\\hline A contestant shall see which teams and
-contests they have participated in earlier & FC-05 & SC-2 & & MED & M-03 &
-TF-09\\ \hline A contestant shall be able to ask a question to a judge & FC-06
-& SC-3 &
- & MED & M-03 & TF-07\\\hline A contestant shall have access to global answers
- from judges & FC-07 & SC-3 & & MED & M-06 & TF-07\\\hline A contestant shall
- be able to change his/her email & FC-02 & SC-2 & & MED & & \\\hline
-\end{supertabular}
+HIGH & M-03 \\
+\hline
+
+ When created a contestant shall receive a confirmation email & FC-02 & SC-1 &
+& HIGH & M-03 \\
+\hline
+
+ A contestant shall see which teams they are invited to & FC-03 & SC-2 & & HIGH
+& M-03 \\
+\hline
+
+ A contestant shall see which team they are a member of & FC-04 & SC-2 & & HIGH
+& M-03 \\
+\hline
+
+ A contestant shall see which teams and contests they have participated in
+ earlier & FC-05 & SC-2 & & MED & M-03\\
+\hline
+
+ A contestant shall be able to ask a question to a judge & FC-06 & SC-3 & & MED
+& M-03 \\
+\hline
+
+A contestant shall have access to global answers from judges & FC-07 & SC-3 & &
+MED & M-06 \\
+\hline
+
+ A contestant shall be able to change his/her email & FC-02 & SC-2 & & MED &
+\\
+\hline
+\end{longtable}
 
 \subsubsection{Functional requirements for Functionary}
 
@@ -307,46 +391,123 @@ about newly completed problems & FF-02 & SF-1 &
 \end{tabular}
 
 \subsubsection{Functional requirements for Teams}
-\begin{supertabular}{|m{1.1191599in}|m{0.34835985in}|m{0.33795986in}|m{1.2684599in}|m{0.5045598in}|m{1.1087599in}|m{1.0670599in}|}
-\hline
+\begin{longtable}{|p{4cm}|l|l|p{4cm}|l|l|}
+\caption[Feasible triples for a highly variable Grid]{Feasible triples for 
+highly variable Grid, MLMMH.} \label{grid_mlmmh} \\
+
+\hline \multicolumn{1}{|c|}{\textbf{Requrement}} &
+\multicolumn{1}{c|}{\textbf{ID}} &
+\multicolumn{1}{c|}{\textbf{Story}} &
+\multicolumn{1}{c|}{\textbf{Comment}} &
+\multicolumn{1}{c|}{\textbf{Priority}} &
+\multicolumn{1}{c|}{\textbf{Milestone}} \\ 
+\hline 
+\endfirsthead
+
+\multicolumn{3}{c}%
+{{\bfseries \tablename\ \thetable{} -- continued from previous page}} \\
+\hline \multicolumn{1}{|c|}{\textbf{Requrement}} &
+\multicolumn{1}{c|}{\textbf{ID}} &
+\multicolumn{1}{c|}{\textbf{Story}} &
+\multicolumn{1}{c|}{\textbf{Comment}} &
+\multicolumn{1}{c|}{\textbf{Priority}} &
+\multicolumn{1}{c|}{\textbf{Milestone}} \\ 
+\hline 
+\endhead
 A user shall be able to register a team & FT-01 & ST-1 & Whether or not the
 team is onsite, a team password, and a email for the team leader & HIGH & M-06
-& TF-02\\\hline A user shall be able to register other team members for the
-team & FT-02 & ST-2 & By providing other users' email & HIGH & M-03 &
-TF-02\\\hline If the contestant is already in the system shall recognize
+\\
+\hline
+
+ A user shall be able to register other team members for the team & FT-02 &
+ST-2 & By providing other users' email & HIGH & M-03 \\
+\hline
+
+If the contestant is already in the system shall recognize
 personal info & FT-03 & ST-2 & Personal information like name, gender and so
-on.  & LOW & M-03 & TF-10\\\hline A team leader must be able to invite new
-members & FT-04 & ST-2 & Input: email & MED & M-03 & TF-02\\\hline A team
-leader should be able to delete the team before the competition & FT-05 & ST-2
-& & MED & M-03 & TF-10\\\hline When a team leader invites a new member the new
-member must receive a registration link & FT-06 & ST-2 & The receiver of this
-email link must fill in the data specified in: T-3 & MED & M-03 & TF-02\\\hline
+on.  & LOW & M-03\\
+\hline
+
+ A team leader must be able to invite new members & FT-04 & ST-2 & Input: email
+& MED & M-03 \\
+\hline
+
+ A team leader should be able to delete the team before the competition & FT-05
+& ST-2
+& & MED & M-03\\
+\hline
+
+ When a team leader invites a new member the new member must receive a
+ registration link & FT-06 & ST-2 & The receiver of this email link must fill
+ in the data specified in: T-3 & MED & M-03 \\
+\hline
+
+
 If a member's email is already in the database they will receive a confirmation
 link & FT-07 & ST-2 & The confirmation link will include automatically filled
-data. See T-4 & LOW & M-03 & TF-10\\\hline All team information is editable in
-the team overview. & FT-08 & ST-2 &
- & LOW & M-03 & TF-10\\\hline A team must be able to deliver submissions to
+data. See T-4 & LOW & M-03 \\
+\hline
+
+ All team information is editable in the team overview. & FT-08 & ST-2 & & LOW
+& M-03\\
+\hline
+
+A team must be able to deliver submissions to
 problems & FT-09 & ST-3 &
- & HIGH & M-06 & TF-11\\\hline When a team deliver a submission they shall
+& HIGH & M-06 \\
+\hline
+
+ When a team deliver a submission they shall
 receive response from the system & FT-10 & ST-3 & system should give timeout.
-This is specified by a judge.  & HIGH & M-06 & TF-11\\\hline
-\end{supertabular}
+This is specified by a judge.  & HIGH & M-06\\
+\hline
+
+
+\end{longtable}
 
 \subsubsection{Other requirements}
-\begin{supertabular}{|m{1.1191599in}|m{0.35875985in}|m{0.33795986in}|m{1.2580599in}|m{0.5045598in}|m{1.1087599in}|m{1.0670599in}|}
-\hline
+\begin{longtable}{|p{4cm}|l|l|p{4cm}|l|l|}
+\caption[Feasible triples for a highly variable Grid]{Feasible triples for 
+highly variable Grid, MLMMH.} \label{grid_mlmmh} \\
+
+\hline \multicolumn{1}{|c|}{\textbf{Requrement}} &
+\multicolumn{1}{c|}{\textbf{ID}} &
+\multicolumn{1}{c|}{\textbf{Story}} &
+\multicolumn{1}{c|}{\textbf{Comment}} &
+\multicolumn{1}{c|}{\textbf{Priority}} &
+\multicolumn{1}{c|}{\textbf{Milestone}} \\ 
+\hline 
+\endfirsthead
+
+\multicolumn{3}{c}%
+{{\bfseries \tablename\ \thetable{} -- continued from previous page}} \\
+\hline \multicolumn{1}{|c|}{\textbf{Requrement}} &
+\multicolumn{1}{c|}{\textbf{ID}} &
+\multicolumn{1}{c|}{\textbf{Story}} &
+\multicolumn{1}{c|}{\textbf{Comment}} &
+\multicolumn{1}{c|}{\textbf{Priority}} &
+\multicolumn{1}{c|}{\textbf{Milestone}} \\ 
+\hline 
+\endhead
 The system shall be able to gather some statistics & FO-01 & SA-3 & It is here
-implied statistics from contestants in accordance with FE-3 & HIGH & M-05 &
-\\\hline The system shall be able to gather a large variety of statistics
-specified by the admin & FO-02 & SA-3 &
- & LOW & M-05 &
-\\\hline The system shall include a clarification system & FO-03 & SJ-2 & This
-is according to FJ-8, FJ-9, FJ-10, and FE-14, FE-15, FE-16, FE-17, FE-18 & HIGH
-& M-07 & TF-07\\\hline The contest results are to be visible in the form of a
-highscore list. & FO-04 & ST-03 &
- & MED & M-07 &
-\\\hline
-\end{supertabular}
+implied statistics from contestants in accordance with FE-3 & HIGH & M-05
+\\
+\hline
+
+ The system shall be able to gather a large variety of statistics
+specified by the admin & FO-02 & SA-3 & & LOW & M-05 \\
+\hline
+
+ The system
+shall include a clarification system & FO-03 & SJ-2 & This is according to
+FJ-8, FJ-9, FJ-10, and FE-14, FE-15, FE-16, FE-17, FE-18 & HIGH & M-07 \\
+\hline
+
+
+The contest results are to be visible in the form of a highscore list. & FO-04
+& ST-03 & & MED & M-07\\
+\hline
+\end{longtable}
 
 \subsection{Non-functional}
 The nonfunctional requirements defines what objectives our end product needs to
@@ -361,10 +522,24 @@ can be interpreted in the following way:
 \end{itemize}
 
 \subsubsection{Speed}
-\begin{supertabular}{|l|p{5cm}|p{1.8cm}|l|p{4.4cm}|}
-\hline
-\textbf{ID:} & \textbf{Measure:} & \textbf{Value:} & \textbf{Priority:} & \textbf{Comment:}\\
-\hline
+\begin{longtable}{|l|p{5cm}|p{1.8cm}|l|p{4.4cm}|}
+\hline \multicolumn{1}{|c|}{\textbf{ID}} &
+\multicolumn{1}{c|}{\textbf{Measure}} &
+\multicolumn{1}{c|}{\textbf{Value}} &
+\multicolumn{1}{c|}{\textbf{Priority}} &
+\multicolumn{1}{c|}{\textbf{Comment}} \\ 
+\hline 
+\endfirsthead
+
+\multicolumn{3}{c}%
+{{\bfseries \tablename\ \thetable{} -- continued from previous page}} \\
+\hline \multicolumn{1}{|c|}{\textbf{ID}} &
+\multicolumn{1}{c|}{\textbf{Measure}} &
+\multicolumn{1}{c|}{\textbf{Value}} &
+\multicolumn{1}{c|}{\textbf{Priority}} &
+\multicolumn{1}{c|}{\textbf{Comment}} \\ 
+\hline 
+\endhead
 
 NF-01 & Response from action & {\textless} 1.5 sec & MED & E.g.\ clicking a click\\
 \hline
@@ -374,13 +549,28 @@ NF-02 & Posting news & {\textless} 5 sec & MED & \\
 
 NF-03 & Edit user & {\textless} 1 min & MED & E.g.\ change email, password \\
 \hline
-\end{supertabular}
+\end{longtable}
 
 \subsubsection{Size}
-\begin{supertabular}{|l|p{5cm}|p{1.8cm}|l|p{4.4cm}|}
-\hline
-\textbf{ID:} & \textbf{Measure:} & \textbf{Value:} & \textbf{Priority:} & \textbf{Comment:}\\
-\hline
+\begin{longtable}{|l|p{5cm}|p{1.8cm}|l|p{4.4cm}|}
+\hline \multicolumn{1}{|c|}{\textbf{ID}} &
+\multicolumn{1}{c|}{\textbf{Measure}} &
+\multicolumn{1}{c|}{\textbf{Value}} &
+\multicolumn{1}{c|}{\textbf{Priority}} &
+\multicolumn{1}{c|}{\textbf{Comment}} \\ 
+\hline 
+\endfirsthead
+
+\multicolumn{3}{c}%
+{{\bfseries \tablename\ \thetable{} -- continued from previous page}} \\
+\hline \multicolumn{1}{|c|}{\textbf{ID}} &
+\multicolumn{1}{c|}{\textbf{Measure}} &
+\multicolumn{1}{c|}{\textbf{Value}} &
+\multicolumn{1}{c|}{\textbf{Priority}} &
+\multicolumn{1}{c|}{\textbf{Comment}} \\ 
+\hline 
+\endhead
+
 NF-04 & Number of contestants & 500 & HIGH &
 \\\hline
 
@@ -393,16 +583,30 @@ NF-06 & Number of judges & 20 & HIGH & \\
 NF-07 & Number of admins & {\textgreater} 1 & HIGH & \\
 \hline
 
-NF-08 & Limitation of submission size & 50kB & HIGH \\
+NF-08 & Limitation of submission size & 50kB & HIGH & \\
 \hline
-\end{supertabular}
+\end{longtable}
 
 \subsubsection{Ease of Use}
 
-\begin{supertabular}{|l|p{5cm}|p{1.8cm}|l|p{4.4cm}|}
-\hline
-\textbf{ID:} & \textbf{Measure:} & \textbf{Value:} & \textbf{Priority:} & \textbf{Comment:}\\
-\hline
+\begin{longtable}{|l|p{5cm}|p{1.8cm}|l|p{4.4cm}|}
+\hline \multicolumn{1}{|c|}{\textbf{ID}} &
+\multicolumn{1}{c|}{\textbf{Measure}} &
+\multicolumn{1}{c|}{\textbf{Value}} &
+\multicolumn{1}{c|}{\textbf{Priority}} &
+\multicolumn{1}{c|}{\textbf{Comment}} \\ 
+\hline 
+\endfirsthead
+
+\multicolumn{3}{c}%
+{{\bfseries \tablename\ \thetable{} -- continued from previous page}} \\
+\hline \multicolumn{1}{|c|}{\textbf{ID}} &
+\multicolumn{1}{c|}{\textbf{Measure}} &
+\multicolumn{1}{c|}{\textbf{Value}} &
+\multicolumn{1}{c|}{\textbf{Priority}} &
+\multicolumn{1}{c|}{\textbf{Comment}} \\ 
+\hline 
+\endhead
 NF-09 & Learning time for contestants & {\textless} 5 min & MED & The users of
 the program should be good at computers and therefore know what they are
 doing.\\
@@ -417,9 +621,9 @@ Learning time for judge &
 MED &
 \\\hline
 
-\end{supertabular}
+\end{longtable}
 \subsubsection{Reliability}
-\begin{supertabular}{|l|p{5cm}|p{1.8cm}|l|p{4.4cm}|}
+\begin{longtable}{|l|p{5cm}|p{1.8cm}|l|p{4.4cm}|}
 \hline
 \textbf{ID:} & \textbf{Measure:} & \textbf{Value:} & \textbf{Priority:} & \textbf{Comment:}\\
 \hline
@@ -431,14 +635,28 @@ not be down during a contest\\
 NF-13 & Availability & {\textgreater} 99.9\% & MED & Downtime is not critical
 after or before a contest \\
 \hline
-\end{supertabular}
+\end{longtable}
 
 \subsubsection{Robustness}
 
-\begin{supertabular}{|l|p{5cm}|p{1.8cm}|l|p{4.4cm}|}
-\hline
-\textbf{ID:} & \textbf{Measure:} & \textbf{Value:} & \textbf{Priority:} & \textbf{Comment:}\\
-\hline
+\begin{longtable}{|l|p{5cm}|p{1.8cm}|l|p{4.4cm}|}
+\hline \multicolumn{1}{|c|}{\textbf{ID}} &
+\multicolumn{1}{c|}{\textbf{Measure}} &
+\multicolumn{1}{c|}{\textbf{Value}} &
+\multicolumn{1}{c|}{\textbf{Priority}} &
+\multicolumn{1}{c|}{\textbf{Comment}} \\ 
+\hline 
+\endfirsthead
+
+\multicolumn{3}{c}%
+{{\bfseries \tablename\ \thetable{} -- continued from previous page}} \\
+\hline \multicolumn{1}{|c|}{\textbf{ID}} &
+\multicolumn{1}{c|}{\textbf{Measure}} &
+\multicolumn{1}{c|}{\textbf{Value}} &
+\multicolumn{1}{c|}{\textbf{Priority}} &
+\multicolumn{1}{c|}{\textbf{Comment}} \\ 
+\hline 
+\endhead
 
 NF-14 & Time to restart after failure & {\textless} 10 min & HIGH &
 \\\hline
@@ -456,34 +674,62 @@ NF-17 & Execution node & = 1  & HIGH &\\
 NF-18 & Execution nodes & {\textgreater} 1 & MED & It should be possible to
 utilize addition nodes\\
 \hline
-\end{supertabular}
+\end{longtable}
 
 \subsubsection{Portability/Scalability}
 
-\begin{supertabular}{|l|p{5cm}|p{1.8cm}|l|p{4.4cm}|}
-\hline
-\textbf{ID:} & \textbf{Measure:} & \textbf{Value:} & \textbf{Priority:} & \textbf{Comment:}\\
-\hline
+\begin{longtable}{|l|p{5cm}|p{1.8cm}|l|p{4.4cm}|}
+\hline \multicolumn{1}{|c|}{\textbf{ID}} &
+\multicolumn{1}{c|}{\textbf{Measure}} &
+\multicolumn{1}{c|}{\textbf{Value}} &
+\multicolumn{1}{c|}{\textbf{Priority}} &
+\multicolumn{1}{c|}{\textbf{Comment}} \\ 
+\hline 
+\endfirsthead
+
+\multicolumn{3}{c}%
+{{\bfseries \tablename\ \thetable{} -- continued from previous page}} \\
+\hline \multicolumn{1}{|c|}{\textbf{ID}} &
+\multicolumn{1}{c|}{\textbf{Measure}} &
+\multicolumn{1}{c|}{\textbf{Value}} &
+\multicolumn{1}{c|}{\textbf{Priority}} &
+\multicolumn{1}{c|}{\textbf{Comment}} \\ 
+\hline 
+\endhead
 
 NF-19 & Extensibility && HIGH & Adding features should be easy\\
 \hline
 
 NF-20 & Module-based code && HIGH & The code should be easy to maintain\\
 \hline
-\end{supertabular}
+\end{longtable}
 
 \subsubsection{Other}
-\begin{supertabular}{|l|p{5cm}|p{1.8cm}|l|p{4.4cm}|}
-\hline
-\textbf{ID:} & \textbf{Measure:} & \textbf{Value:} & \textbf{Priority:} & \textbf{Comment:}\\
-\hline
+\begin{longtable}{|l|p{5cm}|p{1.8cm}|l|p{4.4cm}|}
+\hline \multicolumn{1}{|c|}{\textbf{ID}} &
+\multicolumn{1}{c|}{\textbf{Measure}} &
+\multicolumn{1}{c|}{\textbf{Value}} &
+\multicolumn{1}{c|}{\textbf{Priority}} &
+\multicolumn{1}{c|}{\textbf{Comment}} \\ 
+\hline 
+\endfirsthead
+
+\multicolumn{3}{c}%
+{{\bfseries \tablename\ \thetable{} -- continued from previous page}} \\
+\hline \multicolumn{1}{|c|}{\textbf{ID}} &
+\multicolumn{1}{c|}{\textbf{Measure}} &
+\multicolumn{1}{c|}{\textbf{Value}} &
+\multicolumn{1}{c|}{\textbf{Priority}} &
+\multicolumn{1}{c|}{\textbf{Comment}} \\ 
+\hline 
+\endhead
 
 NF-21 & Accessibility & & HIGH & \\
 \hline
 
 NF-22 & Open-source & GPL & MED & \\
 \hline
-\end{supertabular}
+\end{longtable}
 
 \subsection{Security}
 While security requirements are non-functional, we decided to do the
@@ -496,7 +742,7 @@ can be interpreted in the following way:
 \end{itemize}
 
 \subsubsection{Authentication and Authorization}
-\begin{supertabular}{|l|p{7cm}|l|p{5cm}|}
+\begin{longtable}{|l|p{7cm}|l|p{5cm}|}
 \hline
 \textbf{ID} & \textbf{Measure} & \textbf{Priority} & \textbf{Comment} \\ 
 \hline
@@ -531,10 +777,10 @@ S-07 & Session tokens shall be unique to one computer only & MED & Not possible 
 simply acquire a session ID and use it on other computers to authenticate\\
 \hline
 
-\end{supertabular}
+\end{longtable}
 
 \subsubsection{Immunity}
-\begin{supertabular}{|l|p{7cm}|l|p{5cm}|}
+\begin{longtable}{|l|p{7cm}|l|p{5cm}|}
 \hline
 \textbf{ID} & \textbf{Measure} & \textbf{Priority} & \textbf{Comment} \\ 
 \hline
@@ -561,11 +807,11 @@ external service not needed to solve a problem.  & HIGH & \\
 
 S-14 & Data from a user shall not be modified by non-users & MED & \\ 
 \hline
-\end{supertabular}
+\end{longtable}
 
 
 \subsubsection{Non-repudiation}
-\begin{supertabular}{|l|p{7cm}|l|p{5cm}|}
+\begin{longtable}{|l|p{7cm}|l|p{5cm}|}
 \hline
 \textbf{ID} & \textbf{Measure} & \textbf{Priority} & \textbf{Comment} \\ 
 \hline
@@ -582,11 +828,11 @@ S-17 & Logs will be backed up & LOW & \\
 S-18 & A team's score shall not be affected by anything other than what is given
 in the contest rules & HIGH & \\ 
 \hline
-\end{supertabular}
+\end{longtable}
 
 \newpage
 \subsubsection{Privacy}
-\begin{supertabular}{|l|p{7cm}|l|p{5cm}|}
+\begin{longtable}{|l|p{7cm}|l|p{5cm}|}
 \hline
 \textbf{ID} & \textbf{Measure} & \textbf{Priority} & \textbf{Comment} \\ 
 \hline
@@ -605,10 +851,10 @@ S-21 & No sensitive data shall be exposed publicly, even if it is encrypted&MED
 S-22 & User-data for a given user shall not be modified without that user's
 consent.  & LOW & \\ 
 \hline
-\end{supertabular}
+\end{longtable}
 
 \subsubsection{Auditing}
-\begin{supertabular}{|l|p{7cm}|l|p{5cm}|}
+\begin{longtable}{|l|p{7cm}|l|p{5cm}|}
 \hline
 \textbf{ID} & \textbf{Measure} & \textbf{Priority} & \textbf{Comment} \\ 
 \hline
@@ -620,7 +866,7 @@ inconsistency or errors before an event. & MED & \\
 S-24 & Password that are used in development shall not be publicly available
 & HIGH  &\\
 \hline
-\end{supertabular}
+\end{longtable}
 
 \subsection{Requirements Not Met}
 Most of the requirements on time.
@@ -628,14 +874,16 @@ There were some minor requirements not fulfilled mainly due to time
 constraints. All of them were priority LOW.\ Here are the requirements
 we did not complete:
 
-\begin{supertabular}{|m{5.0566597in}|m{1.2858598in}|}
+\begin{center}
+\begin{longtable}{|p{5cm}|l|}
 \hline
 A judge shall get a notification when received a question & FJ-09\\\hline
 A functionary shall be able to register a balloon colour to each task/problem &
 FF-01\\\hline
 The system shall be able to gather a large variety of statistic specified by
 the admin & FO-02\\\hline
-\end{supertabular}
+\end{longtable}
+\end{center}
 
 The reason they were not completed was due to the their low priority and
 time constraint. In addition to the unfinished requirements there were also 
@@ -643,7 +891,7 @@ requirements that were not met in an ideal way.
 This was in agreement with the customer. These are the partially met
 requirements:
 
-\begin{supertabular}{|l|l|}
+\begin{longtable}{|l|l|}
     \hline
     An admin can add a node & FA-10 \\
     \hline
@@ -655,7 +903,7 @@ requirements:
     \hline
     Logs will be backed up & NR-03 \\
     \hline
-\end{supertabular}
+\end{longtable}
 
 Unfortunately, an admin can only manage the execution nodes through the
 code. This is planned to be fixed before the next contest. The response
