@@ -1,0 +1,268 @@
+\chapter{Prestudy}
+
+
+
+Before we started the actual development of GentleIDI, we needed to get
+an overview of what options were available to us. There are many Web
+development frameworks, and we were free to choose whichever we wanted.
+In addition, we needed to get an understanding of the problems we were
+intended to solve: what did the old system look like, what were its
+major flaws?
+
+\section{Learning Tools/Framework}
+
+The first challenge we were faced with was that of deciding which
+programming languages and frameworks we were to utilize. We were
+recommended to use the Python-based framework called Django, both from
+our customer and other developers. We decided to make a quick attempt
+at getting comfortable with Python and Django, and then later on make a
+decision on whether we were to use it or not. Most of our group had
+previous experience with Web development using JSP(JavaServer Pages),
+and JSP was our primary fallback in case we decided Django was not
+suitable for our needs. 
+
+
+\bigskip
+
+We were able to master the basics of Django quite fast and its
+advantages became apparent. It was quickly seen that Django had enough
+features for the scope of our project, and a sizable community in case
+we needed help to use the framework. In other words Django was chosen
+quite early on, and mastering it became a priority during the initial
+pre study phase. In order to make sure that everyone had a basic
+understanding of the most central components of the framework, we
+decided that every member of our group were to implement their own
+Website providing basic functionality for posting and editing news
+articles. The best article Website was chosen as the fundament for
+GentleIDI, and is part of the end product. 
+
+
+\bigskip
+
+When we first started working on the execution nodes we needed to find
+an appropriate way of sandboxing the user submissions. Running
+untrusted code with no restrictions would be an unacceptable security
+flaw, and we decided to put a lot of work into finding the best
+possible way of securing our system. As a consequence we spent a lot of
+work hours researching state-of-the-art security mechanisms in Linux,
+including cgroups, AppArmor, and Vagrant for setting up virtual
+machines. However, this effort proved unsuccessful and we ended up
+using none of it. We ended up falling back to restricting access simply
+by setting file permissions and creating dedicated users with reduced
+privileges. 
+
+
+\bigskip
+
+Throughout the entire project we used Git for revision control, thus,
+mastering Git became increasingly important as the complexity of the
+code base increased. We never dedicated work hours to learning Git,
+however, we kept a constant focus on getting better and using the
+features available to us. By the end of the project we were all at a
+level of competence where using Git saved us a lot of work and improved
+our efficiency significantly. 
+
+
+\section{Researching the Old System}
+
+The old system consisted of a Python backend for evaluating submissions
+and a PHP frontend. Though the system was in working order, a lot of
+the management had to be done by source code modification, and direct
+database manipulation. Initially we considered reusing parts of the old
+system, but those plans were dismissed when we got access to its source
+code. Hard coding, lack of modularity, and redundancy were in abundance
+in the existing source. 
+
+
+\bigskip
+
+As a consequence we mostly referred to the source in order to understand
+fine details of the system requirements. In addition to poor code
+quality, some key design decisions crippled the old
+system{\textquoteright}s scalability, such as using a SQLite database.
+SQLite is mostly intended for mobile apps and development environments,
+and unsuitable for large scale systems. Researching the old system made
+us aware of several pitfalls, and for the rest of the project we kept a
+strict focus on scalability and code quality. 
+
+\section{Similar Software}
+
+There are other systems that have functionality similar to our system.
+Notable examples include Google Code Jam, NCPC (Nordic Collegiate
+Programming Contest) and Facebook Hacker Cup. They are commonly
+referred to as Competitive programming. There are some differences from
+competition to competition, but the basis is the same. They are also
+not open-source so it was impossible to get a look at the code.
+Researching these similar systems never had any real impact on the
+solution we decided to go for, and the research never lead to changes
+in the requirements. This was mostly due to them being closed source
+and the fact that our scope was quite large from the beginning.
+
+%
+%Trenger vi denne her? Den snakker egentlig bare om det kapittell 2 gjør.
+%Istedenfor, kunne vi snakket litt om desired solution for våre \_tools og framework\_. F.eks jenkins, TDD (som skal nevnes her?)
+%
+%Vet egentlig ikke helt hvorfor den er her. Jeg stappet i grunn bare mer content paa noe som stod her. For min del kan vi gjerne fjerne hele dritten. What say you?
+%
+%Har vi desired solution et annet sted? Hvis vi fjerne hele dette delkapitlet så har vi veldig lite her i presus studius
+\section{Desired Solution}
+
+The desired solution from the customers perspective was a system that
+had the same functionality as the old system. But making it so that one
+does not have to edit the source code, or the database directly, to
+complete simple tasks. Except from the initial setup, all management
+should be done through a simple Web interface available to the admins.
+\ In addition, the customer wanted a scalable system, which could
+handle massively large contests, given the hardware. 
+
+
+\bigskip
+
+We as students and developers had certain hopes as to what the end
+product would look like. One of our greatest desires was that the end
+product would be maintained and developed further in the years to come.
+A great way of increasing the chances of that becoming a reality is
+making sure that our product is open source. With the source available
+to the public anyone can contribute to the project, making sure that it
+continues to evolve. Another advantage for us is that with an open
+source product anyone is free to inspect our work, and as such the
+product becomes a great way for us to show off our abilities. 
+
+
+\bigskip
+
+Any development project with a scope as large as our{\textquoteright}s
+is likely to reuse other people{\textquoteright}s code, incorporate
+open source products etc. Making a product dependent on an open source
+project that suddenly stops being maintained was a pitfall we
+definitely wanted to avoid. Hence, our ideal end product would be based
+on nothing but source that we were sure would be maintained for years
+to come. With this in mind our ideal end product would be open source,
+with code quality that we can feel proud sharing with others, and that
+others would want to contribute to. 
+
+
+\bigskip
+
+\section{Study Result}
+
+The prestudy lasted four weeks and our results regarding libraries and
+development tools can be viewed in Project Management and Tools and
+Frameworks. Development method chosen can also be viewed in Project
+Management. For the technical choices see System Architecture. 
+
+\section{Technology}
+
+During the prestudy phase the group considered different frameworks to
+be used. 
+
+%
+%Hva med å få med læringsaspektet? En av de viktigere grunnene til at vi var skeptiske var at vi var redde for at det ville ta for lang tid å lære.
+%
+%Derfor også flask dukker opp
+%
+%django var foretrukket av kunde. stor pullfaktor
+%Med unntak av flask så er vel dette dekket av learning tools and framework?
+\subsection{Django}
+
+Django is a free and open source Web development framework, written
+exclusively in Python. Everything from the framework itself, to the
+applications intended to run on top of it, is implemented in Python,
+even settings are written as Python scripts. Django is also based on
+the MVC architecture, which suits us fine as we are all used to work in
+an MVC context. It is structured in a way that emphasizes the DRY
+principle. The combination of Python and Django lays a good foundation
+for rapid development, and high maintainability. 
+
+
+\subsection{Flask}
+
+An alternative to Django which we did consider was the Flask
+micro-framework. Though Flask might have been a viable alternative, we
+discovered it a little too late, about a week into our Django training.
+Because we did not see any major advantages of Flask over Django, we
+decided to stick to the latter. Like Django, Flask is also written in
+Python. 
+
+
+\subsection{JSP}
+
+JSP stands for JavaServer Pages, and is a technology used to create
+dynamic Web pages. As Django, it also adheres to the MVC approach. Some
+of the group members had experience with JSP, but we decided not to use
+it. The most commonly learned programming language at NTNU is Python.
+Since JSP is based on Java we feared that the use of JSP would affect
+the maintainability of the program. It was therefore not used.
+
+
+\subsection{Backend Technology}
+
+There are some security issues regarding letting the users run their
+programs on our backend. In worst case a contestant could write harmful
+code setting the contest to a halt. We discussed different approach to
+eliminate this problem.
+
+%
+%Generelt var det ikke bare apparmor, men forskjellen på en integrert løsning vs hardkoding av regler
+%
+%Jeg ser ikke den store forskjellen. AppArmor hadde også trengt definerte rules.
+\subsection{AppArmor}
+
+Abbreviation for Application Armor. It is a Linux kernel security module
+allowing the system administrator to associate a security profile with
+each program. This would restrict the capabilities of that program. We
+think the optimal product would have used AppArmor, however we were
+unable to make it work the way we wanted. One of the major issues we
+had was that of restricting interpreted languages like Java and Python.
+Programs written in these languages require an external binary to
+execute them, and restricting this binary without breaking the rest of
+the system was hard. E.g. in order to restrict submissions written in
+Python we would end up restricting every single Python program running
+on the system. Given more time we might have been able to make this
+work, however, that was not the case. 
+
+
+
+
+\subsection{Our Alternative to AppArmor}
+
+The solution we finally decided to go for was to execute the submissions
+as a sandboxed user. We created a user, removed its network access, and
+made sure that the only relevant files it had access to was the
+submission executables. The major weakness with this solution is that
+security is dependent on file permissions per file. A single executable
+with the wrong permissions could be a threat. There are some programs
+that are capable of running subprocesses as a second user, and thereby
+bypassing the network blocking. 
+
+
+\section{Development Method}
+
+At the beginning of our project we all had some experience with Scrum,
+which made it the most obvious choice in terms of development method.
+It is quite suitable for this type of small scale project and keeps the
+planning overhead at a minimum. However, as far as we knew there could
+be other, better suited methods for our project. The major requirements
+we had to the development method was that it should be agile and
+iterative. We also wanted to work in a test driven manner, and do most
+of the programming in pairs. This made Extreme Programming a viable
+alternative. 
+
+
+
+Extreme Programming has a greater focus on pair programming and code
+reviews, than Scrum. This was in tune with the way we wanted to work,
+however, using XP would increase the amount of time needed to get
+comfortable with the development method. There are some major pitfalls
+related to using a development method you that you do not master, and
+when it came down to making a decision we played it safe. We decided to
+use Scrum and implement pair programming and test driven development in
+our own way.
+
+
+\bigskip
+
+When the development started we soon realized that we did not have the
+competence needed to do test driven development well, and this aspect
+was dropped. We ended up using Scrum with a focus on working in pairs.
+
