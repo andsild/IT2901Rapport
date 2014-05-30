@@ -55,13 +55,9 @@ Gløshaugen campus every year. Every team participating in the
 contest get allocated their own computer. &
 For offsite contestants, javascript must be enabled.\\
 \hline
-Software is required. A web server(Apache, Nginx), database
-server(MySQL, PostgreSQL), Python with PyPi package manager.
- &
-Linux kernel with ssh enabled, supplemented with a root user.
-\\\hline
 \end{longtable}
 
+\pagebreak
 \subsection{User Characteristics}
 Table~\ref{table:users} show different stereotypes of expected typical users.
 While open to deviations from the stereotypes, they highlight important
@@ -168,8 +164,9 @@ prioritizing the requirements:
 The functional requirements are broken down in different categories.
 Each category corresponds to a user group. The categories are Admin, Judge,
 Contestant, Functionary, Teams, and Other. Each category has an ID, priority
-and story. Table X.X shows the complete list of the requirements, while the
-corresponding stories are given in appendix\ref{appendix:userstories}
+and story. The tables in this section shows the complete list of the
+requirements, while the corresponding stories are given in
+appendix\ref{appendix:userstories}
 
 The ID system can be interpreted in the following way
 \begin{itemize}
@@ -179,11 +176,11 @@ The ID system can be interpreted in the following way
 
 The milestone show when each requirement needs to be met.
 
-\subsection{Functional requirements for Admin}
+\pagebreak
+\subsection{Functional Requirements for Admin}
 % \begin{longtable}{|p{2cm}|l|m{0.33795986in}|m{1.2684599in}|m{0.5254598in}|m{1.0983598in}|m{1.0566599in}|}
 \begin{longtable}{|p{4cm}|l|l|p{4cm}|l|l|}
-\caption[Feasible triples for a highly variable Grid]{Feasible triples for 
-highly variable Grid, MLMMH.} \label{grid_mlmmh} \\
+\caption{Functional requirements for admin} \label{grid_mlmmh} \\
 
 \hline \multicolumn{1}{|c|}{\textbf{Requrement}} &
 \multicolumn{1}{c|}{\textbf{ID}} &
@@ -264,8 +261,7 @@ An admin can modify news item & FA-16 & SA-5 & & MED & M-03 \\
 
 \subsection{Functional requirements for Judge}
 \begin{longtable}{|p{4cm}|l|l|p{4cm}|l|l|}
-\caption[Feasible triples for a highly variable Grid]{Feasible triples for 
-highly variable Grid, MLMMH.} \label{grid_mlmmh} \\
+\caption{Functional requirements for judge} \label{grid_mlmmh} \\
 
 \hline \multicolumn{1}{|c|}{\textbf{Requrement}} &
 \multicolumn{1}{c|}{\textbf{ID}} &
@@ -330,11 +326,11 @@ A judge shall be able supervise all submissions & FJ-11 & & & MED & \\
 \hline
 \end{longtable}
 
+\pagebreak
 \subsection{Functional requirements for Contestant}
 
 \begin{longtable}{|p{4cm}|l|l|p{4cm}|l|l|}
-\caption[Feasible triples for a highly variable Grid]{Feasible triples for 
-highly variable Grid, MLMMH.} \label{grid_mlmmh} \\
+\caption{Functional requirements for contestant} \label{grid_mlmmh} \\
 
 \hline \multicolumn{1}{|c|}{\textbf{Requrement}} &
 \multicolumn{1}{c|}{\textbf{ID}} &
@@ -388,20 +384,42 @@ MED & M-06 \\
 \hline
 \end{longtable}
 
+\pagebreak
 \subsection{Functional requirements for Functionary}
 
-\begin{longtable}{|m{1.1191599in}|m{0.33795986in}|m{0.33795986in}|m{1.2580599in}|m{0.5045598in}|m{1.1191599in}|m{1.0775598in}|}
-\hline A functionary shall be able to register a balloon colour to each
+\begin{longtable}{|p{4cm}|l|l|p{4cm}|l|l|}
+    \caption{Functional requirements for functionaries} \\
+\hline \multicolumn{1}{|c|}{\textbf{Requrement}} &
+\multicolumn{1}{c|}{\textbf{ID}} &
+\multicolumn{1}{c|}{\textbf{Story}} &
+\multicolumn{1}{c|}{\textbf{Comment}} &
+\multicolumn{1}{c|}{\textbf{Priority}} &
+\multicolumn{1}{c|}{\textbf{Milestone}} \\ 
+\hline 
+\endfirsthead
+
+\multicolumn{3}{c}%
+{{\bfseries \tablename\ \thetable{} -- continued from previous page}} \\
+\hline \multicolumn{1}{|c|}{\textbf{Requrement}} &
+\multicolumn{1}{c|}{\textbf{ID}} &
+\multicolumn{1}{c|}{\textbf{Story}} &
+\multicolumn{1}{c|}{\textbf{Comment}} &
+\multicolumn{1}{c|}{\textbf{Priority}} &
+\multicolumn{1}{c|}{\textbf{Milestone}} \\ 
+\hline 
+\endhead
+
+A functionary shall be able to register a balloon colour to each
 task/problem & FF-01 & SF-1 &
- & LOW & M-06 & TF-12\\\hline A functionary shall have access to information
+ & LOW & M-06 \\
+\hline A functionary shall have access to information
 about newly completed problems & FF-02 & SF-1 &
- & MED & M-06 & TF-12\\\hline
+ & MED & M-06 \\\hline
 \end{longtable}
 
 \subsection{Functional requirements for Teams}
 \begin{longtable}{|p{4cm}|l|l|p{4cm}|l|l|}
-\caption[Feasible triples for a highly variable Grid]{Feasible triples for 
-highly variable Grid, MLMMH.} \label{grid_mlmmh} \\
+\caption{Functional requirements for teams} \label{grid_mlmmh} \\
 
 \hline \multicolumn{1}{|c|}{\textbf{Requrement}} &
 \multicolumn{1}{c|}{\textbf{ID}} &
@@ -475,8 +493,7 @@ This is specified by a judge & HIGH & M-06\\
 
 \subsection{Other requirements}
 \begin{longtable}{|p{4cm}|l|l|p{4cm}|l|l|}
-\caption[Feasible triples for a highly variable Grid]{Feasible triples for 
-highly variable Grid, MLMMH.} \label{grid_mlmmh} \\
+\caption{Other functional requirements} \label{grid_mlmmh} \\
 
 \hline \multicolumn{1}{|c|}{\textbf{Requrement}} &
 \multicolumn{1}{c|}{\textbf{ID}} &
@@ -517,16 +534,15 @@ The contest results are to be visible in the form of a highscore list. & FO-04
 \hline
 \end{longtable}
 
+\pagebreak
 \section{Non-functional}
 The nonfunctional requirements defines what objectives our end product needs to
 meet. Measure make it easy to agree on whether the requirement is fulfilled or
-not. Tables X.X % FLERE TABLES
-can be interpreted in the following way: 
+not. Tables TODO X.X can be interpreted in the following way: 
 \begin{itemize}
     \item NF in the ID stands for non-functional
     \item Measure describe what the requirement holds
     \item Value is a quantitive measure 
-    \item 
 \end{itemize}
 
 \subsection{Speed}
@@ -630,6 +646,8 @@ MED &
 \\\hline
 
 \end{longtable}
+
+\pagebreak
 \subsection{Reliability}
 \begin{longtable}{|l|p{5cm}|p{1.8cm}|l|p{4.4cm}|}
 \hline
@@ -739,6 +757,7 @@ NF-22 & Open-source & GPL & MED & \\
 \hline
 \end{longtable}
 
+\pagebreak
 \section{Security}
 While security requirements are non-functional, we decided to do the
 security requirements engineering as a separate process. 
@@ -989,3 +1008,108 @@ due to a bad implementation of the high score list, detailed
 in~\ref{reflection}. NR-03 had to be overruled during the contest. This is
 discussed in detail in chapter TODO
 \textit{development}.
+
+\section{Additional and Possible Requirements}
+After IDI Open utilised the end product to host their programming contest, they
+emailed some additional requirements. These were mainly proposed by the judges.
+Table~\ref{table:addreqs} shows a list of the requirements.
+
+\pagebreak
+\begin{longtable}{|l|p{12.5cm}|}
+\caption{Additional requirements} \label{table:addreqs} \\
+\hline
+\multicolumn{1}{|c|}{\textbf{ID}} &
+\multicolumn{1}{c|}{\textbf{Requirement}} \\
+\hline
+
+FJ-12 & Clarifications could be sent to a single team \\
+\hline
+
+FT-11 & Teams should be notified about clarifications \\
+\hline
+
+FT-12 & Message all teams. \\
+\hline
+
+FO-05 & Highscore should be frozen, not removed.  \\
+\hline
+
+FO-06 & The freeze should remain in effect until after the prize ceremony. \\
+\hline
+
+FJ-13 & It should be possible to see which cases someone failed \\
+\hline
+
+FJ-14 & Re-run submissions.  \\
+\hline
+
+FJ-15 & Re-run all submission with separate input/output  \\
+\hline
+
+FJ-16 & View code straight from the submission view \\
+\hline
+
+FO-07 & Add library syntax highlighting.  \\
+\hline
+
+FJ-17 & Compare solution output to submission output. Highlight differences.  \\
+\hline
+
+FJ-18 & Possibility to set a letter per problem.  \\
+\hline
+
+FJ-19 & Adding several compiler profiles without needing to use them all in a contest.  \\
+\hline
+
+FJ-20 & Page describing enabled compiler profiles should be automatically updated \\
+\hline
+
+FJ-21 & Separate page for only compiling code \\
+\hline
+
+FJ-22 & is could potentially solve the following: \\
+\hline
+
+FJ-23 & Forever solve the eternal ``\#include "stdafx.h"'' and package stuff; problems in some way. \\
+\hline
+
+FJ-24 & At the absolute very least I think judges should be notified of compile errors, so that the trivial ones can be fixed in O(1) time. \\
+\hline
+
+FJ-25 & Make it possible to email all contestants. \\
+\hline
+
+FJ-26 & The clarifications system should support per-problem  \\
+\hline
+
+FJ-27 & Remove the requirement to paste the question into the clarification.  \\
+\hline
+
+FA-17 & Possible to add text to contest page.  \\
+\hline
+
+FA-18 & Announcements should be such that you have to CLOSE them to make them go away. \\
+\hline
+
+FO-08 & Hide teams from the scoreboard for which nobody has logged in since the start of the contest. \\
+\hline
+
+FJ-28 & Better filtering in judge overview \\
+\hline
+
+FJ-29 & Run all judge solutions \\
+\hline
+
+FJ-30 & Possibility of adding multiple cases for a problem. \\
+\hline
+
+FJ-31 & Script for verifying that all line endings are and not (and especially not). \\
+\hline
+
+FJ-32 & Possibility of uploading a bounds-checker for input files. \\
+\hline
+
+FJ-33 & Write judge solutions that reads input in different ways that should still be equivalent. \\
+\hline
+
+\end{longtable} 
