@@ -14,7 +14,7 @@ levels of detail. This is to make it easy to communicate the requirements to
 both business and technical parties. We have mainly written the functional
 requirements as stories and then broken them into smaller pieces. This makes
 the requirements easy to communicate to the customer, and succinct for the
-developers. These stories can be viewed in appendix TODO.\ It is important to
+developers. These stories can be viewed in appendix~\ref{appendix:userstories}. It is important to
 recognize that our project only lasted for a few months. Thus, late changes
 to requirements were inserted promptly and without revision control. This is
 a common practice in agile development\footnote{\ Page 91, Sommersville}.
@@ -38,16 +38,17 @@ to the customer, before proceeding with the implementation of the end-product.
 Throughout the entire development process both we and the customer have been
 modifying the list of requirements.
 
-\section{Product/service description}
+\section{Product/service Description}
 In this section, you will find our interpretation of the physical user-domain.
 The reader should note that some members of our group has competed earlier,
 which has given us helpful empirical insight.
 
 \subsection{Expected Physical Environment}
-Our solution is used in different contexts. Table X.X has the different
-application and user-domains.
+Our solution is used in different contexts. Table~\ref{table:userChar} has the
+different application and user-domains.
 
-\begin{tabular}{|m{3.1712599in}|m{3.1712599in}|}
+\begin{longtable}{|m{3.1712599in}|m{3.1712599in}|}
+    \caption{Users and their expected stereotypical properties} \label{table:userChar} \\
 \hline
 IDI Open is hosted in P15, Høgskoleringen 3, on
 Gløshaugen campus every year. Every team participating in the
@@ -59,66 +60,81 @@ server(MySQL, PostgreSQL), Python with PyPi package manager.
  &
 Linux kernel with ssh enabled, supplemented with a root user.
 \\\hline
-\end{tabular}
+\end{longtable}
 
 \subsection{User Characteristics}
-Table X.X show different stereotypes of expected typical users. While open to
-deviations from the stereotypes, they highlight important properties required
-for our solution.
+Table~\ref{table:users} show different stereotypes of expected typical users.
+While open to deviations from the stereotypes, they highlight important
+properties required for our solution.
 
-\begin{tabular}{|m{2.9837599in}|m{3.1087599in}|}
+\begin{longtable}{|m{2.9837599in}|m{3.1087599in}|}
+    \caption{Users and their expected stereotypes} \label{table:users} \\
 \hline
-\begin{itemize}
+\multicolumn{1}{|c|}{\textbf{Judge}} & 
+\multicolumn{1}{c|}{\textbf{Admin}}  \\
+Education: Computer Science \newline
+Age: 20-25 \newline
+Responsibility: review assignments \newline
+Frustrations:
+\begin{itemize}[nosep]
     \item Irresponsive interfaces
     \item Incorrect data
-\end{itemize}
-\begin{itemize}
     \item User submission system
     \item Response types
 \end{itemize}
  &
-\begin{itemize}
+Education: Computer Science \newline
+Age: 20-27 \newline
+Responsibility: review assignments \newline
+Frustrations:
+\begin{itemize}[nosep]
     \item Irresponsive interfaces
     \item Node failures
     \item Incorrect data
+    \item Backend system
+    \item Dataflow
 \end{itemize}
+\\\hline
 
-\begin{itemize}
-\item Backend system\item 
-Dataflow
-\end{itemize}
-\\\hline
-keep track of score
-\begin{itemize}
-\item Irresponsive interfaces
-\item
-Lack of overview
-\end{itemize}
-\begin{itemize}
-\item Backend system
-\item 
-Dataflow
+
+\multicolumn{1}{|c|}{\textbf{Contestant}} & 
+\multicolumn{1}{c|}{\textbf{Sponsor}}  \\
+Education: Computer Science \newline 
+Age: 20-25 \newline 
+Responsibility: Submit and upload assignments, keep track of score \newline
+Frustrations:
+\begin{itemize}[nosep]
+    \item Irresponsive interfaces
+    \item Lack of overview
+    \item Backend system
+    \item Dataflow
 \end{itemize}
  &
-\begin{itemize}
-\item Dissatisfied contestants\item
-No overview\end{itemize}
-\begin{itemize}
-\item Nothing special\end{itemize}
+Education: Computer Science \newline
+Age: 27-40 \newline
+Responsibility: Advertize company \newline
+Frustrations:
+\begin{itemize}[nosep]
+    \item Dissatisfied contestants
+    \item No overview
+    \item Nothing special
+\end{itemize}
 \\\hline
-and information
-\begin{itemize}
-\item Mis-information
+
+\multicolumn{1}{|c|}{\textbf{Balloon-functionary}} \\
+Education: Computer Science \newline
+Age: 20-25 \newline
+Responsibility: Review scores, hand out balloons and information \newline
+Frustrations:
+\begin{itemize}[nosep]
+    \item Mis-information
+    \item Scoreboards, about competition
 \end{itemize}
-\begin{itemize}
-\item Scoreboards, about competition
-\end{itemize}
- &
 \\
 \hline
-\end{tabular}
+\end{longtable}
 
-It can be seen in table X.X that the most prominent trait of our users is that
+It can be seen in table~\ref{table:users} that the most prominent trait of our users is that
 they have a background in computer science. As a consequence, it is assumed a
 higher level of technical competence from our users. The user profiles also
 highlight that some features were more important than others, e.g.\
@@ -188,15 +204,7 @@ highly variable Grid, MLMMH.} \label{grid_mlmmh} \\
 \multicolumn{1}{c|}{\textbf{Milestone}} \\ 
 \hline 
 \endhead
-% 
-% \hline \multicolumn{4}{|r|}{{Continued on next page}} \\ \hline
-% \endfoot
-% 
-% \hline \hline
-% \endlastfoot
-% \hline
-% Requirement & ID & Story & Comments & Priority & Milestone & Test \\
-\hline
+
 An admin shall be able to create a new contest & FA-01 & SA-1 & A new contest
 equals a new web page & HIGH & M-03 \\
 \hline
@@ -382,13 +390,13 @@ MED & M-06 \\
 
 \subsection{Functional requirements for Functionary}
 
-\begin{tabular}{|m{1.1191599in}|m{0.33795986in}|m{0.33795986in}|m{1.2580599in}|m{0.5045598in}|m{1.1191599in}|m{1.0775598in}|}
+\begin{longtable}{|m{1.1191599in}|m{0.33795986in}|m{0.33795986in}|m{1.2580599in}|m{0.5045598in}|m{1.1191599in}|m{1.0775598in}|}
 \hline A functionary shall be able to register a balloon colour to each
 task/problem & FF-01 & SF-1 &
  & LOW & M-06 & TF-12\\\hline A functionary shall have access to information
 about newly completed problems & FF-02 & SF-1 &
  & MED & M-06 & TF-12\\\hline
-\end{tabular}
+\end{longtable}
 
 \subsection{Functional requirements for Teams}
 \begin{longtable}{|p{4cm}|l|l|p{4cm}|l|l|}
@@ -743,6 +751,8 @@ can be interpreted in the following way:
 
 \subsection{Authentication and Authorization}
 \begin{longtable}{|l|p{7cm}|l|p{5cm}|}
+\caption{Security requirements for authentication and authorization} 
+\label{table:nfaa} \\
 \hline \multicolumn{1}{|c|}{\textbf{ID}} &
 \multicolumn{1}{c|}{\textbf{Measure}} &
 \multicolumn{1}{c|}{\textbf{Priority}} &
@@ -793,6 +803,8 @@ simply acquire a session ID and use it on other computers to authenticate\\
 
 \subsection{Immunity}
 \begin{longtable}{|l|p{7cm}|l|p{5cm}|}
+\caption{Security requirements for immunity} 
+\label{table:nfii} \\
 \hline \multicolumn{1}{|c|}{\textbf{ID}} &
 \multicolumn{1}{c|}{\textbf{Measure}} &
 \multicolumn{1}{c|}{\textbf{Priority}} &
@@ -809,34 +821,36 @@ simply acquire a session ID and use it on other computers to authenticate\\
 \hline 
 \endhead
 
-S-08 & No input-field shall be susceptible to injection attacks & HIGH& \\ 
-\hline
+    S-08 & No input-field shall be susceptible to injection attacks & HIGH& \\ 
+    \hline
 
-S-09 & All data that passes the trust zone shall be in plaintext, and validated
-against code & HIGH & \\ 
-\hline
+    S-09 & All data that passes the trust zone shall be in plaintext, and validated
+    against code & HIGH & \\ 
+    \hline
 
-S-10 & Data from non-developers
-can only be directed saved in databases. & MED & \\ 
-\hline
+    S-10 & Data from non-developers
+    can only be directed saved in databases. & MED & \\ 
+    \hline
 
-S-11 & Uploaded submissions shall not write to any file & HIGH & \\ 
-\hline
+    S-11 & Uploaded submissions shall not write to any file & HIGH & \\ 
+    \hline
 
-S-12 & Uploaded submissions shall not read from any other file than stdin &HIGH & \\ 
-\hline
+    S-12 & Uploaded submissions shall not read from any other file than stdin &HIGH & \\ 
+    \hline
 
-S-13 & Uploaded submissions shall not access network or any other
-external service not needed to solve a problem.  & HIGH & \\ 
-\hline
+    S-13 & Uploaded submissions shall not access network or any other
+    external service not needed to solve a problem.  & HIGH & \\ 
+    \hline
 
-S-14 & Data from a user shall not be modified by non-users & MED & \\ 
-\hline
+    S-14 & Data from a user shall not be modified by non-users & MED & \\ 
+    \hline
 \end{longtable}
 
 
 \subsection{Non-repudiation}
 \begin{longtable}{|l|p{7cm}|l|p{5cm}|}
+\caption{Security requirements for non-repudiation} 
+\label{table:nfnr} \\
 \hline \multicolumn{1}{|c|}{\textbf{ID}} &
 \multicolumn{1}{c|}{\textbf{Measure}} &
 \multicolumn{1}{c|}{\textbf{Priority}} &
@@ -870,6 +884,8 @@ in the contest rules & HIGH & \\
 \newpage
 \subsection{Privacy}
 \begin{longtable}{|l|p{7cm}|l|p{5cm}|}
+\caption{Security requirements for privacy} 
+\label{table:nfp} \\
 \hline \multicolumn{1}{|c|}{\textbf{ID}} &
 \multicolumn{1}{c|}{\textbf{Measure}} &
 \multicolumn{1}{c|}{\textbf{Priority}} &
@@ -929,7 +945,7 @@ S-24 & Password that are used in development shall not be publicly available
 \hline
 \end{longtable}
 
-\section{Requirements Not Met}
+\section{Requirements Not Met}\label{section:reqNotMet}
 Most of the requirements on time.
 There were some minor requirements not fulfilled mainly due to time
 constraints. All of them were priority LOW.\ Here are the requirements

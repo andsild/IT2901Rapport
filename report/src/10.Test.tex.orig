@@ -1,3 +1,51 @@
+<<<<<<< HEAD
+\chapter{Testplan} 
+To determine requirement, structural and architectural
+coverage of our product, we have performed software testing. The tests are
+formalized to make it easier to agree on the coverage between the customer,
+maintainers and us. The results and process is documented in this chapter.
+
+\section{Testing Strategy Overview} It is common practise to structure tests in
+three categories. This way, tests can be communicated to developers,
+stakeholders and high-level non-technical users.  Following is our
+interpretation of each category.  
+
+\subsection{Unit Testing} Unit testing is the
+process of testing program components individually.  The tests invoke methods
+and structures in the code using different input parameters. The tests are
+usually written either before or immediately after a module is completed. This
+way, it is easier to assert that the module does what it is intended. Each test
+case is independent from each other, so several people can write test cases
+simultaneously without having to worry about dependencies.
+
+\subsection{Integration Testing} In development, many features are bundled into
+different components. The components are then joined together to form a system.
+Integration testing tests the interfaces to each of these components, and how
+they communicate with each other. The purpose is to ensure that communication
+between the components is correct, and that the components work as intended. It
+can be extensive if those responsible for integration have to review the code
+in each component, so integration testing abstract code away. If there are any
+errors, then one will either review the unit tests or notify the author.
+
+\subsection{System Testing} System testing is a high-level test of the system.
+It is performed after all of the integrated system parts have been tested and
+joined together. System testing is a black box test, as anyone should be able
+to perform the test without having any knowledge\ of the underlying code. The
+purpose of system testing is to test if our system fulfills the requirements in
+the requirement specification. This is important to find out if we meet the
+believed expectations from the customer. 
+
+\subsection{Acceptance Testing} Acceptance tests are usually executed by the
+customers. They are written after agreeing on the requirements specification
+for a delivery. The tests are then verified by the customer. Once both the
+customer and developers agree on the acceptance test, it will be possible to
+formally agree on whether or not a delivery meets the given requirements.
+
+\section{Testing Coverage} We wanted to provide complete test coverage, but we
+did not have the time. Thus, we needed to prioritize what components of the
+system were most prone to error, and most important to test. The following were
+our software assurance objectives: 
+=======
 \chapter{Testplan}
 To determine requirement, structural, and architectural coverage of our
 product, software testing has been performed. The tests are formalized
@@ -52,12 +100,91 @@ We wanted to provide complete test coverage, unfortunately, due to time contrain
 to achieve this goal. Thus, we needed to prioritize which components of the system were
 most prone to error, and most important to test. The following were our
 software assurance objectives:
+>>>>>>> 9e0123d92b7039f48b38d62014faa9e7d92593e7
 \begin{itemize}
-    \item Ensure that the system can be used by many users
+    \item Ensure that the system can be used by many users 
     \item Ensure that the contest can be held without any error that would
-critically impact the contest
+        critically impact the contest 
 \end{itemize}
 
+<<<<<<< HEAD
+Errors that solely impacted user experience were not prioritized to test. The
+majority of these were intended to be found from debugging the system. Since
+the developers would work closely with each other on GentleIDI, we concluded
+that we would fix small errors in regression.  If our team had more members, or
+if we had been working in different locations, this would have been a higher
+priority.
+
+In most projects, testing is used to ensure requirements coverage. In our case,
+however, with frequent customer-meetings and iterative development, we have not
+had a strong need for this. The customer has had access to prototypes of our
+solution and our source code. In order to see that the product does as
+intended, they could simply try it out for themselves. Some consequences of
+this is discussed in section X.X.
+
+As per our software assurance objectives, our largest focus has been simulating
+the role of a contestant. To meet our objectives, we intended to do a full
+coverage of all contestant scenarios. The privileged users were believed to be
+technically experienced and without intention to do harm. We still felt it was
+important to prevent user errors, but our coverage was not as complete for
+these usergroups.
+
+Since we were developing a website that would feature many users, developer
+testing alone could never simulate peak values for system demand. Therefore we
+have relied on load testing. Here, we gave our web server a fixed amount of
+HTTP requests per second, hereafter RPS.\ What pages were used in the
+simulation was determined by us. Thus, our testing also extends to cover
+simulated peak values for high loads.
+
+
+Our lacking experience in web development meant that it was hard for us to
+understand what components could go cause errors. Wikipedia holds a large list
+of categories that could be
+tested\footnote{http://en.wikipedia.org/wiki/Non-functional\_requirement}, but
+we avoided many of them, as it would take to long for us to gain a structural
+way to test these areas, combined with the lacking experience. 
+
+\section{Our Approach to Testing}
+\subsection{Unit Testing}
+Our unit tests are given in [source code].The reason for not including unit
+tests in the testplan is because it will be redundant, and take up unnecessary
+space in the report.
+
+We performed unit testing after the completion of a testable module. The unit
+tests use the PyUnit framework, and is written by another person than the one
+who produced the code for the module. In other words, if person A makes module
+M, then person B will write the unit tests for module M. The reason for having
+another person writing the test for a module is because that will give more
+people insight in the code, and make it easier to discover problems.
+
+\subsection{Integration Testing} Each integration test will test a different
+interface. The interface is defined as the connection between the different
+components in our system. The pre- and post-condition sets the boundaries for
+the test.  Input and output is used to determine if the test produces the
+expected output with a corresponding input. Comment is just an additional field
+in case we feel the need to explain a test more thoroughly to avoid
+misconceptions. The motivation behind integration testing is that we can
+determine whether a module has been successfully integrated. By going through
+the accompanied tests made for the interfaces that interact with the module
+
+
+\subsection{System Testing} Each separate test in the system test is linked to
+one or more of the requirements from the requirements specification. The
+template for system testing starts with specifying which function is being
+testing.  After that we say what the action/input should be, and what the
+expected result is. The expected result needs to be achieved for the test to be
+considered successful. Every separate system test is connected to one or more
+of the requirements from the requirements specification. This is to ensure that
+the system meets all the requirements set by the customer.
+
+
+\subsection{Acceptance Testing}
+The customer performed an acceptance test before each release of the system, so
+they could confirm that we met the expected requirements.  The acceptance test
+was based on our system test, with the customer executing the tasks in the
+system test. The acceptance test was approved when the customer was satisfied
+with how we implemented the requirements.
+=======
 Errors that solely impacted user experience were not prioritized to
 test. The majority of these were intended to be found from debugging
 the system. Since the developers would work closely with each other, 
@@ -133,6 +260,11 @@ requirements.
 The results from our testing is presented in this section.
 
 \subsection{Integration Test}
+Each test has a unique identifier, name, pre/post-conditions and
+corresponding input and output. An example is given in table X.X.
+>>>>>>> 9e0123d92b7039f48b38d62014faa9e7d92593e7
+
+\subsection{Integration Test}
 Each test has a unique identifier, name, pre/post-conditions and corresponding
 input and output. An example is given in table~\ref{table:integrationTest}.
 
@@ -147,11 +279,12 @@ Input & Image, URL\\\hline
 Output & Sponsor in contest\\\hline
 \end{longtable}
 
-In section X.X[12. Evaluation of testing methods] we explained why our
-coverage by integration testing was not extensive. The written
-integration tests are from our milestone M-03, First release, and only cover the
-requirements that was necessary for that milestone. As such, we have
-chosen to move all the integration tests to appendix D.
+<<<<<<< HEAD
+In section X.X[12. Evaluation of testing methods] we explained why our coverage
+by integration testing was not extensive. The written integration tests are
+from our M-03 milestone, and do only cover the requirements that was necessary
+for that milestone. As such, we have chosen to move all the integration tests
+to appendix~\ref{appendix:integrationTest}.
 
 We formally agreed on what modules our system was made out of and their
 interfaces. Figure~\ref{fig:componentDiagram} shows our view on the system as
@@ -159,6 +292,20 @@ per milestone M-03. In figure~\ref{fig:componentDiagram}, we have replaced
 some default UML symbols and replaced them with the equivalent UML stereotype.
 The explanations are given in table~\ref{table:component}. The integration
 tests we did make are given in appendix~\ref{appendix:integrationTest}.
+=======
+In section X.X[12. Evaluation of testing methods] we explained why our
+coverage by integration testing was not extensive. The written
+integration tests are from our milestone M-03, First release, and only cover the
+requirements that was necessary for that milestone. As such, we have
+chosen to move all the integration tests to appendix D.
+
+We formally agreed on what modules our system was made out of and their
+interfaces. Figure X.X shows our view on the system as per milestone
+M-03, First release. In figure X.X, we have replaced some default UML symbols and
+replaced them with the equivalent UML stereotype. The explanations are
+given in table 8.1. Our integration tests are based upon the
+interfaces defined in figure 8.2. 
+>>>>>>> 9e0123d92b7039f48b38d62014faa9e7d92593e7
 
 \begin{longtable}{|l|p{.6\textwidth}|}
     \caption{Symbiology for our UML component diagram} \label{table:component} \\
@@ -173,10 +320,11 @@ tests we did make are given in appendix~\ref{appendix:integrationTest}.
         \hline
 \end{longtable}
 
-    \begin{figure}[h!]
-        \includegraphics[scale=0.3]{UML_component.png}
-        \caption{Diagram from milestone M-03. Each interface connection, especially
-        ``createContest'' has been tested}
+\begin{figure}[h!]
+    \centering
+    \includegraphics[scale=0.3]{UML_component.png} 
+    \caption{Diagram from milestone M-03. Each interface connection,
+            especially ``createContest'' has been tested}
         \label{fig:componentDiagram}
 \end{figure}
 
@@ -211,7 +359,7 @@ table~\ref{table:systest}.
 \hline 
 \endhead
 
-ST-01 & Create a contest, and publish an article to that contest. Edit
+ST-01 & Create a contest, and publish an article to thatcontest. Edit
 article.Then, delete the contest. & Contest name, article text & Contest and
 article is no longer publicly    available & FA-16, & PASS\\
 \hline
@@ -265,11 +413,25 @@ word & FC-01 FC-02 & PASS\\
 \end{longtable}
 
 
-\section{Non-functional testing}
-Our non-functional tests ensures non-functional requirements coverage
-and scenario correctness. Additionally, it defines acceptance criteria
-related to the performance of our solution.
+\section{Non-functional Testing}
+Our non-functional tests ensures non-functional requirements coverage and
+scenario correctness. Additionally, it defines acceptance criteria related to
+the performance of our solution.
 
+<<<<<<< HEAD
+The tests related to performance usually comes in pairs, a value and the double
+of that value. This applies to the input and expected result.  This is to
+ensure that system performance does not scale down in a non-linear way. For
+example, if ``X'' transactions are processed and the server begins using swap
+memory instead of RAM, this would mean that a high load would cause an
+exponentially slower load rate for a high number of transactions.
+
+% Often, as mentioned in section~\ref{}, we did
+% inspection tests. Thus, table X.X below does not contain all tests that
+% are executed, and the table only covers the first 12 non-functional
+% requirements. The documented tests do, however, ensure some
+% requirements coverage.
+=======
 The tests related to performance usually comes in pairs, a value and the
 double of that value. This applies to the input and expected result.
 This is to ensure that system performance does not scale down in a
@@ -283,6 +445,7 @@ inspection tests. Thus, table X.X does not contain all tests that
 are executed, and the table only covers the first 12 non-functional
 requirements. The documented tests do, however, ensure some
 requirements coverage.
+>>>>>>> 9e0123d92b7039f48b38d62014faa9e7d92593e7
 
 \begin{longtable}{|p{4.3cm}|p{2.0cm}|l|p{3.8cm}|l|}
     \caption{System tests} \label{table:systest} \\
@@ -338,3 +501,28 @@ NF-01 & Response-time {\textless} 200 ms & FAIL\\
 \hline
 \end{longtable}
 
+<<<<<<< HEAD
+
+In table~\ref{table:systest} it can be seen that not all the tests passed. This
+is elaborated on in section~\ref{section:reqNotMet}
+
+\section{Risk and Dependencies}
+We did not test whether or not the privileged users of the system made any
+errors. They were responsible for uploading solutions and content on the web
+site.
+
+The majority of our testing has been inspection-based. This has been considered
+time efficient for us. As we have developed the entire system from scratch, and
+worked with it over a longer period of time, we have had good knowledge of the
+system. Thus, inspection-based testing has been largely effective. The problem
+is that there is no way to formally agree on what components have been tested,
+or to what extent. Additionally, future maintainers are much more likely to
+make errors as they do not know what components are connected, or what kind of
+tests should be executed.
+
+Our lacking experience in web development means that our test coverage is not
+complete. Some errors, for example, were caused by improper charset encodings,
+an error none of us knew we had to consider. To mitigate these kind of risks,
+more experienced developers should participate in writing tests.
+=======
+>>>>>>> 9e0123d92b7039f48b38d62014faa9e7d92593e7
