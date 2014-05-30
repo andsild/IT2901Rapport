@@ -1,4 +1,4 @@
-\chapter{Implementation}
+\chapter{Implementation}\label{chapter:implementation}
 
 This chapter goes into the details of our implementation. As mentioned
 in section X.X, Django follows the MVC pattern in a quite strict
@@ -7,9 +7,6 @@ our project is divided into several Django apps, which are separate
 modules containing their own models, views and controllers. The apps
 are intended to serve a specific purpose and provide a certain level of
 modularity. However, some apps are dependent on others.
-
-
-\bigskip
 
 \begin{figure}
 	\includegraphics[width=0.8\textwidth]{a07Implementation-img1.png}
@@ -20,47 +17,44 @@ modularity. However, some apps are dependent on others.
 
 \bigskip
 
-Figure~\ref{fig:appOverview} shows the directory structure to one of our apps, all apps
-follow this structure. An app{\textquoteright}s root folder contains
-four files worth taking a closer look at, models.py, views.py,
-forms.py, and admin.py. 
-
-
-\bigskip
+Figure~\ref{fig:appOverview} shows the directory structure to one of our apps,
+all apps follow this structure. An app's root folder contains four files worth
+taking a closer look at, models.py, views.py, forms.py, and admin.py. 
 
 \begin{itemize}
-\item models.py contains the app's models i.e. our database entities. Due
-to our site being MVC, every aspect of the site is in some way
-represented by a model defined in a models.py file.
+    \item models.py contains the app's models i.e.\ our database entities. Due
+        to our site being MVC, every aspect of the site is in some way
+        represented by a model defined in a models.py file.
 
-\item The file views.py defines the app{\textquoteright}s functions for
-handling requests, called views. Though the naming might be confusing,
-the views defined in this file are not views in the MVC sense of the
-word. The views are in essence MVC controllers. When an HTTP request is
-received by Django it is routed to a specific view, and the view then
-handles the request. Though most views simply serve web pages in
-response to GET requests, there are no limits as to what a view can be
-used for. 
-\item The forms.py file contains a set of Django forms, which are simply
-collections of input fields. The forms can be rendered as HTML, and
-serve as validators of the input received by POSTs. 
+    \item The file views.py defines the app's functions for
+    handling requests, called views. Though the naming might be confusing,
+    the views defined in this file are not views in the MVC sense of the
+    word. The views are in essence MVC controllers. When an HTTP request is
+    received by Django it is routed to a specific view, and the view then
+    handles the request. Though most views simply serve web pages in
+    response to GET requests, there are no limits as to what a view can be
+    used for. 
 
-\item This leaves the admin.py file. Django provides a quite modular and
-modifiable admin app for managing other apps. The admin
-page{\textquoteright}s main functionality is that of viewing, editing,
-creating and deleting models. However, the admin app does not have
-access to all of the models in the system by default. The admin.py file
-is where an app registers which of its models are to be modifiable by
-the admin page, how the models are to be rendered etc.
+    \item The forms.py file contains a set of Django forms, which are simply
+    collections of input fields. The forms can be rendered as HTML, and
+    serve as validators of the input received by POSTs. 
 
-\item The apps also contain a templates directory. The templates are in
-essence HTML files extended by Django's template language, making them
-easily processed/modified by Django. These templates corresponds to the MVC Views.
-When a Django view sends a response it is usually by inserting dynamic
-content into a template and then serving the final HTML file as
-an HTTP response. Though not visible in the figure, most of our
-templates are extensions of a global base template, this way redundancy
-is reduced and our user interface stays consistent.
+    \item This leaves the admin.py file. Django provides a quite modular and
+    modifiable admin app for managing other apps. The admin
+    page's main functionality is that of viewing, editing,
+    creating and deleting models. However, the admin app does not have
+    access to all of the models in the system by default. The admin.py file
+    is where an app registers which of its models are to be modifiable by
+    the admin page, how the models are to be rendered etc.
+
+    \item The apps also contain a templates directory. The templates are in
+    essence HTML files extended by Django's template language, making them
+    easily processed/modified by Django. These templates corresponds to the MVC
+    Views.  When a Django view sends a response it is usually by inserting
+    dynamic content into a template and then serving the final HTML file as an
+    HTTP response. Though not visible in the figure, most of our templates are
+    extensions of a global base template, this way redundancy is reduced and
+    our user interface stays consistent.
 \end{itemize}
 
 \bigskip
@@ -124,7 +118,7 @@ powered by a framework called Celery. The nodes can be configured to
 handle any number of concurrent submissions, and when a node has got
 available capacity it fetches another submission from the queue. Celery
 relies on the AMQP message passing standard, by means of an open source
-message broker system called RabbitMQ. All messages passed go through a
+message broker system called RabbitMQ.\ All messages passed go through a
 broker setup on the same host as the web server, the broker then
 distributes the messages to the appropriate host. 
 
@@ -151,5 +145,4 @@ the judges can see compiler errors, execution output and source code.
 During a contest questions can be asked by contestants to the staff. If
 a problem is ambiguously formulated, or they are experiencing system
 errors, these problems can be addressed by requesting a clarification.
-The questions are posted publicly on the website, as well as their replies. \ 
-
+The questions are posted publicly on the website, as well as their replies.
